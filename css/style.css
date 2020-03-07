@@ -1,0 +1,144 @@
+body, html {
+	margin:0;
+}
+/* center marker */
+body:after {
+	content: "";
+	background-color: red;
+	height:10px;
+	width:10px;
+	position: absolute;
+	top:50%;
+	margin-top:-5px;
+	left:50%;
+	margin-left: -5px;
+	border-radius: 10px;
+}
+/* All three background layers */
+/* zoomed out: 1920 x 1080 */
+body,
+.bg-wrapper,
+.bg-island,
+.wrapper {
+	background-size: 1920px 1080px;
+	background-position: center;
+	background-size: cover;
+}
+
+body.bg-water {
+	background-image: url('../img/bg-water.svg');
+	position: relative;
+	overflow:hidden;
+}
+
+body:before {
+	background-image: url('../img/bg-pixels.svg');
+	background-size: 1920px 1080px;
+	background-position: center;
+	background-size: cover;
+	content:"";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: .5;
+	z-index: -1;
+}
+
+.wrapper {
+	background-image: url('../img/bg-island.svg');
+	width: 1920px;
+	height: 1080px;
+	/*display: block;
+	margin:0 auto;*/
+	position: relative;
+}
+/* center marker */
+
+.wrapper:after {
+	content: "";
+	border:solid 2px red;
+	height:14px;
+	width:14px;
+	position: absolute;
+	top:50%;
+	margin-top:-8px;
+	left:50%;
+	margin-left: -8px;
+	border-radius: 16px;
+}
+canvas {
+	z-index: 0 !important;
+}
+
+.wrapper > div {
+	position: absolute;
+} 
+
+.top-left,
+.top-right,
+.bottom-right,
+.bottom-left {
+	width:10px;
+	height:10px;
+	background-color: red;
+}
+
+.top-left {
+	left:0;
+	top:0;
+}
+
+.top-right {
+	right:0;
+	top:0;
+}
+
+.bottom-right {
+	right:0;
+	bottom:0;
+}
+
+.bottom-left {
+	left:0;
+	bottom:0;
+}
+
+.zone-1,
+.zone-2,
+.zone-3,
+.zone-4,
+.zone-5 {
+	width:10px;
+	height:10px;
+	margin-left: -5px;
+	margin-top: -5px;
+	border-radius: 10px;
+	background-color: #0DFF00;
+}
+
+.zone-1 {
+	left:463px;
+	top:878px;
+}
+
+.zone-2 { /* coming soon */
+	left:696px;
+	top:652px;
+}
+
+.zone-3 {
+	left:991px;
+	top:794px;
+}
+
+.zone-4 {
+	left:1061px;
+	top:432px;
+}
+
+.zone-5 {
+	left:1454px;
+	top:663px;
+}

@@ -1,0 +1,37 @@
+<svg id="Island" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        mask: url(#mask);
+      }
+
+      .cls-3 {
+        fill: #b8e5e6;
+      }
+
+      .cls-4 {
+        fill: #c2e9ea;
+      }
+
+      .cls-5 {
+        fill: #85cbe1;
+      }
+    </style>
+    <mask id="mask" x="-696.42" y="-827.24" width="3869.51" height="2664.46" maskUnits="userSpaceOnUse">
+      <rect class="cls-1" x="-102.18" y="-72.45" width="2240.58" height="1325.65"/>
+    </mask>
+  </defs>
+  <title>bg-water</title>
+  <g class="cls-2">
+    <g>
+      <polyline class="cls-3" points="3110.22 1837.22 -669.37 1827.46 -637.93 -827.24 3147.22 -827.24 3110.22 1837.22"/>
+      <polygon class="cls-4" points="3094.31 -827.24 -637.93 -827.24 -669.37 782.32 3094.31 -827.24"/>
+      <polygon class="cls-4" points="3147.22 -740.29 -696.41 936.93 -696.41 1012.75 3147.22 -538.91 3147.22 -740.29"/>
+      <path class="cls-5" d="M3173.09-72.45c-205.94,83.39-3471.41,1340.53-3811,1477V1808l3779.59,9.75L3173.09-72.45"/>
+    </g>
+  </g>
+</svg>
