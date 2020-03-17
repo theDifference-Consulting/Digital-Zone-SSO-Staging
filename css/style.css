@@ -1,6 +1,12 @@
 body, html {
 	margin:0;
 }
+
+body {
+	transform:scale(3);
+
+}
+
 /* center marker */
 body:after {
 	content: "";
@@ -31,7 +37,7 @@ body.bg-water {
 	overflow:hidden;
 }
 
-body:before {
+html:before {
 	background-image: url('../img/bg-pixels.svg');
 	background-size: 1920px 1080px;
 	background-position: center;
@@ -47,29 +53,27 @@ body:before {
 }
 
 .wrapper {
-	background-image: url('../img/bg-island.svg');
 	width: 1920px;
 	height: 1080px;
 	/*display: block;
 	margin:0 auto;*/
 	position: relative;
 }
-/* center marker */
 
-.wrapper:after {
-	content: "";
-	border:solid 2px red;
-	height:14px;
-	width:14px;
-	position: absolute;
-	top:50%;
-	margin-top:-8px;
-	left:50%;
-	margin-left: -8px;
-	border-radius: 16px;
+#island {
+	background-image: url('../img/bg-island.svg');
+	width: 1920px;
+	height: 1080px;
 }
+
 canvas {
 	z-index: 0 !important;
+}
+#zone-anim, #water-anim {
+	position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top:-156px;
 }
 
 .wrapper > div {
@@ -119,26 +123,26 @@ canvas {
 }
 
 .zone-1 {
-	left:463px;
-	top:878px;
+	left:597px;
+	top:625px;
 }
 
 .zone-2 { /* coming soon */
-	left:696px;
-	top:652px;
+	left:775px;
+	top:443px;
 }
 
 .zone-3 {
-	left:991px;
-	top:794px;
+	left:982px;
+	top:567px;
 }
 
 .zone-4 {
-	left:1061px;
-	top:432px;
+	left:1017px;
+	top:287px;
 }
 
 .zone-5 {
-	left:1454px;
-	top:663px;
+	left:1309px;
+	top:476px;
 }

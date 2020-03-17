@@ -1,37 +1,16 @@
-<svg id="Island" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-      }
-
-      .cls-2 {
-        mask: url(#mask);
-      }
-
-      .cls-3 {
-        fill: #b8e5e6;
-      }
-
-      .cls-4 {
-        fill: #c2e9ea;
-      }
-
-      .cls-5 {
-        fill: #85cbe1;
-      }
-    </style>
-    <mask id="mask" x="-696.42" y="-827.24" width="3869.51" height="2664.46" maskUnits="userSpaceOnUse">
-      <rect class="cls-1" x="-102.18" y="-72.45" width="2240.58" height="1325.65"/>
-    </mask>
-  </defs>
-  <title>bg-water</title>
-  <g class="cls-2">
-    <g>
-      <polyline class="cls-3" points="3110.22 1837.22 -669.37 1827.46 -637.93 -827.24 3147.22 -827.24 3110.22 1837.22"/>
-      <polygon class="cls-4" points="3094.31 -827.24 -637.93 -827.24 -669.37 782.32 3094.31 -827.24"/>
-      <polygon class="cls-4" points="3147.22 -740.29 -696.41 936.93 -696.41 1012.75 3147.22 -538.91 3147.22 -740.29"/>
-      <path class="cls-5" d="M3173.09-72.45c-205.94,83.39-3471.41,1340.53-3811,1477V1808l3779.59,9.75L3173.09-72.45"/>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Water_base" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#B8E5E6;}
+	.st1{fill:#C2E9EA;}
+	.st2{fill:#85CBE1;}
+</style>
+<g>
+	<polyline class="st0" points="2288.2,1481.4 -382.7,1474.5 -360.5,-401.4 2314.3,-401.4 2288.2,1481.4 	"/>
+	<polygon class="st1" points="2276.9,-401.4 -360.5,-401.4 -382.7,736 	"/>
+	<polygon class="st1" points="2314.3,-340 -401.8,845.2 -401.8,898.8 2314.3,-197.7 	"/>
+	<path class="st2" d="M2332.6,131.9c-145.5,58.9-2453.1,947.3-2693.1,1043.7v285.1l2670.9,6.9L2332.6,131.9"/>
+</g>
 </svg>

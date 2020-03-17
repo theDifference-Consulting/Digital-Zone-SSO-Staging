@@ -1,0 +1,98 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <meta charset="UTF-8">
+    <head>
+       
+    </head>
+    <body id="body">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.5/lottie.js" type="text/javascript"></script>
+        <div id="intro"></div>
+        <div id="mdo-improve"></div>
+        <div id="mdo-end"></div>
+
+
+        <style>
+            body {
+                background-color: black;
+            }
+
+            body {
+                position: relative;
+            }
+
+            #mdo-improve {
+                position: relative;
+                color:white;
+                height:300vh;
+            }
+
+            #mdo-improve svg {
+                position: -webkit-sticky;
+                position:sticky;
+                top: 0;
+                height: 100vh !important;
+            }
+
+        </style>
+
+        <script>
+            // notes
+            /*  scroll position — what's the output?
+                opacity function
+                reveal/hide function
+                trigger functions
+                start/stop animations
+            */
+
+            // window scroll function
+            var winHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+
+            function opacityControl(animObject) { //fade in or out controls?
+                let scrollPos = window.scrollY ; //bottom of window
+                let elementObject = document.getElementById(animObject.wrapper.id);
+                let elementPos = elementObject.offsetTop;
+                let elementHeight = elementObject.offsetHeight; //height and scrool lengh controlled though CSS height of the element
+                let scrollPercent =  (scrollPos - elementPos) / elementHeight;
+                elementObject.style.opacity = ((scrollPercent - 1) * -1);
+                //console.log(introParams.container);
+            }
+
+            function animatebodymovin(animObject) { // start pos, stop pos, allocate to # of frames in the anim.
+                let scrollPos = window.scrollY + winHeight; //bottom of window
+                let elementObject = document.getElementById(animObject.wrapper.id);
+                let elementPos = elementObject.offsetTop;
+                let elementHeight = elementObject.offsetHeight; //height and scrool lengh controlled though CSS height of the element
+                if (scrollPos >= elementPos) {
+                    let scrollPercent =  (scrollPos - elementPos) / elementHeight;
+                    let maxFrames = animObject.totalFrames;
+                    let frame = maxFrames * scrollPercent;
+                    animObject.goToAndStop(frame, true);
+                    if (scrollPercent >= 1) { scrollPercent = 1;} //max scroll percent @ 1
+                }
+                //console.log(scrollPos);
+            }
+            // END
+
+
+            // Second animation params
+            var mdoimproveParams = {
+                container: document.getElementById('mdo-improve'),
+                renderer: 'svg',
+                loop: false,
+                autoplay: false,
+                path: '../anim/Island.json',
+            };
+
+            var improveAnim = lottie.loadAnimation(mdoimproveParams);
+            // END
+
+
+            onscroll = function()  {
+                animatebodymovin(improveAnim);
+            };
+            // END
+            console.log(improveAnim);
+        </script>
+    </body>
+</html>
