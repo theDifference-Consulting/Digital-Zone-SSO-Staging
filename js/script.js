@@ -46,35 +46,35 @@ $.fn.scrollPath("getPath")
 	//                    //
 	// Custom Snap Scroll //
 	//                    //
-	// let i = 0;
+	let i = 0;
 
-	// // Debounce by David Walsh 
-	// function debounce(func, wait, immediate) {
-	// 	var timeout;
-	// 	return function() {
-	// 		var context = this, args = arguments;
-	// 		var later = function() {
-	// 			timeout = null;
-	// 			if (!immediate) func.apply(context, args);
-	// 		};
-	// 		var callNow = immediate && !timeout;
-	// 		clearTimeout(timeout);
-	// 		timeout = setTimeout(later, wait);
-	// 		if (callNow) func.apply(context, args);
-	// 	};
-	// };
+	// Debounce by David Walsh 
+	function debounce(func, wait, immediate) {
+		var timeout;
+		return function() {
+			var context = this, args = arguments;
+			var later = function() {
+				timeout = null;
+				if (!immediate) func.apply(context, args);
+			};
+			var callNow = immediate && !timeout;
+			clearTimeout(timeout);
+			timeout = setTimeout(later, wait);
+			if (callNow) func.apply(context, args);
+		};
+	};
 
-	// $(window).bind('mousewheel', debounce(function(e) {
-	// 		if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
-	// 			e.preventDefault();
-	// 			if (i > 0 ){i--;} else {i = pointArray.length - 1;}				
-	// 		} else  {
-	// 			e.preventDefault();
-	// 			if (i < pointArray.length - 1){i++;} else {i = 0;}
-	// 		} 
-	// 		console.log(i);
-	// 		$.fn.scrollPath("scrollTo", pointArray[i], 1000, "easeInOutSine");
-	// },1000));
+	$(window).bind('mousewheel', debounce(function(e) {
+			if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
+				e.preventDefault();
+				if (i > 0 ){i--;} else {i = pointArray.length - 1;}				
+			} else  {
+				e.preventDefault();
+				if (i < pointArray.length - 1){i++;} else {i = 0;}
+			} 
+			console.log(i);
+			$.fn.scrollPath("scrollTo", pointArray[i], 1000, "easeInOutSine");
+	},1000));
 }	
 
 
