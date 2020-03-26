@@ -1,10 +1,10 @@
 	// ZOOM CONTROL
 let multiplier = 3; //on change, reset DOM
 setZoom(multiplier);
-// setTimeout(function () { 
-// 	document.getElementById('scroll-path').classList.remove('zoom');
-// 	console.log('fire');
-// },2000);
+setTimeout(function () { 
+	document.getElementById('scroll-path').classList.remove('zoom');
+	console.log('fire');
+},2000);
 
 function setZoom(multiplier) {
 	let baseWidth = 1920;
@@ -20,18 +20,18 @@ function setZoom(multiplier) {
 	document.getElementById('island').style.width = zoomWidth;
 	document.getElementById('island').style.height = zoomHeight
 
-	document.getElementById('center').style.left = 960 * multiplier;
-	document.getElementById('center').style.top = 540 * multiplier;
-	document.getElementById('zone-1').style.left = 597 * multiplier;
-	document.getElementById('zone-1').style.top = 625 * multiplier;
-	document.getElementById('zone-2').style.left = 775 * multiplier;
-	document.getElementById('zone-2').style.top = 443 * multiplier;
-	document.getElementById('zone-3').style.left = 982 * multiplier;
-	document.getElementById('zone-3').style.top = 567 * multiplier;
-	document.getElementById('zone-4').style.left = 1017 * multiplier;
-	document.getElementById('zone-4').style.top = 287 * multiplier;
-	document.getElementById('zone-5').style.left = 1309 * multiplier;
-	document.getElementById('zone-5').style.top = 476 * multiplier;
+	// document.getElementById('center').style.left = 960 * multiplier;
+	// document.getElementById('center').style.top = 540 * multiplier;
+	// document.getElementById('zone-1').style.left = 597 * multiplier;
+	// document.getElementById('zone-1').style.top = 625 * multiplier;
+	// document.getElementById('zone-2').style.left = 775 * multiplier;
+	// document.getElementById('zone-2').style.top = 443 * multiplier;
+	// document.getElementById('zone-3').style.left = 982 * multiplier;
+	// document.getElementById('zone-3').style.top = 567 * multiplier;
+	// document.getElementById('zone-4').style.left = 1017 * multiplier;
+	// document.getElementById('zone-4').style.top = 287 * multiplier;
+	// document.getElementById('zone-5').style.left = 1309 * multiplier;
+	// document.getElementById('zone-5').style.top = 476 * multiplier;
 }
 
 //navigation "where are we" function
@@ -78,7 +78,8 @@ function init() {
 				console.log(currentZone)
 				// Include the jQuery easing plugin (http://gsgd.co.uk/sandbox/jquery/easing/)
 				// for extra easing functions like the one below
-				$.fn.scrollPath("scrollTo", target, 100, "easeInOutSine");
+				$.fn.scrollPath("scrollTo", target, 500, "easeInOutSine");
+				$('#compass').toggleClass('spin');
 			});
 		});
 
@@ -147,6 +148,17 @@ var waterAnim = bodymovin.loadAnimation({
 
 var waterAnim = lottie.loadAnimation(waterAnim);
 setTimeout(function(){ waterAnim.play(); }, 0); //set delay
+
+var charTest = bodymovin.loadAnimation({
+				container: document.getElementById('character'), // Required
+				renderer: 'html', // Required
+				loop: true, // Optional
+				autoplay: true, // Optional
+				path: "anim/char-test.json"
+			})
+
+var charTest = lottie.loadAnimation(charTest);
+setTimeout(function(){ charTest.play(); }, 0); //set delay
 
 
 
