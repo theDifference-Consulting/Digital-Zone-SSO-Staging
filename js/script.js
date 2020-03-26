@@ -19,7 +19,6 @@ function setZoom(multiplier) {
 	document.getElementById('zone-anim').style.height = zoomHeight;
 	document.getElementById('island').style.width = zoomWidth;
 	document.getElementById('island').style.height = zoomHeight
-
 	// document.getElementById('center').style.left = 960 * multiplier;
 	// document.getElementById('center').style.top = 540 * multiplier;
 	// document.getElementById('zone-1').style.left = 597 * multiplier;
@@ -129,9 +128,12 @@ function init() {
 
 var zoneAnim = bodymovin.loadAnimation({
 				container: document.getElementById('zone-anim'), // Required
-				renderer: 'html', // Required
+				renderer: 'svg', // Required
 				loop: true, // Optional
 				autoplay: true, // Optional
+				rendererSettings: {
+			        progressiveLoad: true
+			      },
 				path: "anim/points-of-interest.json"
 			})
 
@@ -140,9 +142,12 @@ setTimeout(function(){ zoneAnim.play(); }, 0); //set delay
 
 var waterAnim = bodymovin.loadAnimation({
 				container: document.getElementById('water-anim'), // Required
-				renderer: 'html', // Required
+				renderer: 'svg', // Required
 				loop: true, // Optional
 				autoplay: true, // Optional
+				rendererSettings: {
+			        progressiveLoad: true
+			      },
 				path: "anim/water-loop.json"
 			})
 
@@ -151,9 +156,12 @@ setTimeout(function(){ waterAnim.play(); }, 0); //set delay
 
 var charTest = bodymovin.loadAnimation({
 				container: document.getElementById('character'), // Required
-				renderer: 'html', // Required
+				renderer: 'svg', // Required
 				loop: true, // Optional
 				autoplay: true, // Optional
+				rendererSettings: {
+			        progressiveLoad: true
+			      },
 				path: "anim/char-test.json"
 			})
 
