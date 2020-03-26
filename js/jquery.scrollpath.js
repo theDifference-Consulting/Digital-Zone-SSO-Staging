@@ -409,7 +409,7 @@
 
 		e.preventDefault();
 		$( window ).scrollTop( 0 ).scrollLeft( 0 );
-		scrollSteps( -dir * STEP_SIZE ); //STEP_SIZE
+		scrollSteps( -dir * 1); //replaced STEP_SIZE with "1"
 	}
 
 	/* Handles key scrolling (arrows and space) */
