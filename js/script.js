@@ -1,10 +1,13 @@
 	// ZOOM CONTROL
 let multiplier = 3; //on change, reset DOM
 setZoom(multiplier);
-setTimeout(function () { 
-	document.getElementById('scroll-path').classList.remove('zoom');
-	console.log('fire');
-},2000);
+window.addEventListener('DOMContentLoaded', function () {
+	console.log('loaded...');
+	setTimeout(function () { 
+		document.getElementById('scroll-path').classList.remove('zoom');
+		console.log('fire');
+	},2000);
+});
 
 function setZoom(multiplier) {
 	let baseWidth = 1920;
@@ -19,23 +22,7 @@ function setZoom(multiplier) {
 	document.getElementById('zone-anim').style.height = zoomHeight;
 	document.getElementById('island').style.width = zoomWidth;
 	document.getElementById('island').style.height = zoomHeight
-	// document.getElementById('center').style.left = 960 * multiplier;
-	// document.getElementById('center').style.top = 540 * multiplier;
-	// document.getElementById('zone-1').style.left = 597 * multiplier;
-	// document.getElementById('zone-1').style.top = 625 * multiplier;
-	// document.getElementById('zone-2').style.left = 775 * multiplier;
-	// document.getElementById('zone-2').style.top = 443 * multiplier;
-	// document.getElementById('zone-3').style.left = 982 * multiplier;
-	// document.getElementById('zone-3').style.top = 567 * multiplier;
-	// document.getElementById('zone-4').style.left = 1017 * multiplier;
-	// document.getElementById('zone-4').style.top = 287 * multiplier;
-	// document.getElementById('zone-5').style.left = 1309 * multiplier;
-	// document.getElementById('zone-5').style.top = 476 * multiplier;
 }
-
-//navigation "where are we" function
-
-
 
 	
 /* ========== Scroll camera path ============= */
@@ -45,88 +32,55 @@ $(document).ready(init);
 function init() {
 
 	$.fn.scrollPath("getPath")
-		// Move to center of island
-		// .moveTo(960 * multiplier , 540 * multiplier , {name: "center"})
 		// Move to 'zone-1' element
-		.moveTo(597 * multiplier , 625 * multiplier , {name: "zone-1"})
+		.moveTo(597 * multiplier , 625 * multiplier , {name: "zone01"})
 		// Line to 'zone-2' element
-		.lineTo(775 * multiplier, 443 * multiplier, {name: "zone-2"})
+		.lineTo(775 * multiplier, 443 * multiplier, {name: "zone02"})
 		// Line to 'zone-3' element
-		.lineTo(982 * multiplier, 567 * multiplier, {name: "zone-3"})
+		.lineTo(982 * multiplier, 567 * multiplier, {name: "zone03"})
 		// Line to 'zone-3' element
-		.lineTo(1017 * multiplier, 287 * multiplier, {name: "zone-4"})
+		.lineTo(1017 * multiplier, 287 * multiplier, {name: "zone04"})
 		// Line to 'zone-3' element
-		.lineTo(1309 * multiplier, 476 * multiplier, {name: "zone-5"})
+		.lineTo(1309 * multiplier, 476 * multiplier, {name: "zone05"})
 		// back to 'zone-1'
 		.lineTo(597 * multiplier, 625 * multiplier, {name: "end"})
 
 		// We're done with the path, let's initate the plugin on our wrapper element
-		$(".scroll-path").scrollPath({drawPath: false, wrapAround: true});
+		$(".scroll-path").scrollPath({drawPath: true, wrapAround: true});
 
-		let currentZone = 'zone-1';
+		let currentZone = 'zone01';
 		// Add scrollTo on click on the navigation anchors
 		$("nav").find("a").each(function() {
 			var target = $(this).attr("href").replace("#", "");
+
+			// show and hide zone info popup
 			$('#' + target).addClass('hidden');
-			$('#zone-1').removeClass('hidden');
+			$('#zone01').removeClass('hidden');
+
 			$(this).click(function(e) {
 				e.preventDefault();
 				$('#' + currentZone).addClass('hidden'); //roll this into a function
+
+				console.log('current zone:' + currentZone);
+
 				currentZone = target;
+
 				$('#' + currentZone).removeClass('hidden');
-				console.log(currentZone)
+
+				console.log('next zone:' + currentZone);
+
 				// Include the jQuery easing plugin (http://gsgd.co.uk/sandbox/jquery/easing/)
 				// for extra easing functions like the one below
 				$.fn.scrollPath("scrollTo", target, 500, "easeInOutSine");
+
 				$('#compass').toggleClass('spin');
 			});
 		});
-
 		console.log(currentZone)
-
-		//gather array of zones, set the initial zone, on scroll go to the next in the array
-		// let pointArray = [];
-
-		// $("nav").find("a").each(function() {
-		// 	 pointArray.push($(this).attr("href").replace("#", ""));
-		// });
-		
-		//                    //
-		// Custom Snap Scroll //
-		//                    //
-		//let i = 0;
-
-		// Debounce by David Walsh 
-		// function debounce(func, wait, immediate) {
-		// 	var timeout;
-		// 	return function() {
-		// 		var context = this, args = arguments;
-		// 		var later = function() {
-		// 			timeout = null;
-		// 			if (!immediate) func.apply(context, args);
-		// 		};
-		// 		var callNow = immediate && !timeout;
-		// 		clearTimeout(timeout);
-		// 		timeout = setTimeout(later, wait);
-		// 		if (callNow) func.apply(context, args);
-		// 	};
-		// };
-
-		// $(window).bind('mousewheel', debounce(function(e) {
-		// 		if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
-		// 			e.preventDefault();
-		// 			if (i > 0 ){i--;} else {i = pointArray.length - 1;}				
-		// 		} else  {
-		// 			e.preventDefault();
-		// 			if (i < pointArray.length - 1){i++;} else {i = 0;}
-		// 		} 
-		// 		console.log(i);
-		// 		$.fn.scrollPath("scrollTo", pointArray[i], 1000, "easeInOutSine");
-		// },100));
 }	
 
 
-var zoneAnim = bodymovin.loadAnimation({
+var zoneAnim = lottie.loadAnimation({
 				container: document.getElementById('zone-anim'), // Required
 				renderer: 'svg', // Required
 				loop: true, // Optional
@@ -137,36 +91,120 @@ var zoneAnim = bodymovin.loadAnimation({
 				path: "anim/points-of-interest.json"
 			})
 
-var zone_anim = lottie.loadAnimation(zoneAnim);
 setTimeout(function(){ zoneAnim.play(); }, 0); //set delay
 
-var waterAnim = bodymovin.loadAnimation({
+var waterAnim = lottie.loadAnimation({
 				container: document.getElementById('water-anim'), // Required
 				renderer: 'svg', // Required
-				loop: true, // Optional
-				autoplay: true, // Optional
+				loop: false, // Optional
+				autoplay: false, // Optional
 				rendererSettings: {
 			        progressiveLoad: true
 			      },
 				path: "anim/water-loop.json"
 			})
 
-var waterAnim = lottie.loadAnimation(waterAnim);
 setTimeout(function(){ waterAnim.play(); }, 0); //set delay
 
-var charTest = bodymovin.loadAnimation({
+var charTest = lottie.loadAnimation({
 				container: document.getElementById('character'), // Required
 				renderer: 'svg', // Required
 				loop: true, // Optional
-				autoplay: true, // Optional
-				rendererSettings: {
-			        progressiveLoad: true
-			      },
-				path: "anim/char-test.json"
+				autoplay: false, // Optional
+				path: "anim/char-01.json"
 			})
 
-var charTest = lottie.loadAnimation(charTest);
-setTimeout(function(){ charTest.play(); }, 0); //set delay
+// Action 01:
+// Animate In: 30-67
+// Animate Out: 90-102
+// Action 02:
+// Animate In: 128-140
+// Animate Out: 173-185
+// Action 03:
+// Animate In: 214-247
+// Loop: 248-265
+// Animate Out: 266-301
+// Action 04:
+// Animate In: 331-358
+// Animate Out: 394-406
+// Action 05:
+// Animate In: 434-445
+// Loop: 446-469
+// Animate Out: 470-482
+
+// let charAction = {
+// 	act01In: [30,67],
+// 	act01Out: [90,102],
+// 	act02In: [128,140],
+// 	act02Out: [173,184],
+// 	act03In: [214,247],
+// 	act03Loop: [248, 265],
+// 	act03Out: [266,301],
+// 	act04In: [331,358],
+// 	act04Out: [394,406],
+// 	act05In: [434,445],
+// 	act05Loop: [446,469],
+// 	act05Out: [470,482]
+// }
+
+let charAction = {
+	zone01: {
+		in: [30,67],
+		loop: [],
+		out: [90,102]
+	},
+	zone02: {
+		in: [128,140],
+		loop: [false],
+		out: [173,184]
+	},
+	zone03: {
+		in: [214,247],
+		loop: [248, 265],
+		out: [266,301]
+	},
+	zone04: {
+		in: [331,358],
+		loop: [false],
+		out: [394,406]
+	},
+	zone05: {
+		in: [434,445],
+		loop: [446,469],
+		out: [470,482]
+	}
+}
+
+// 1. where are we
+// 2. where are we going?
+// 3. pause or loop current location?
+
+charAction.pause = function() {
+    charTest.removeEventListener('loopComplete', charAction.pause);
+     charTest.goToAndStop(charTest.totalFrames - 1, true)
+  }
+
+document.getElementById('z2').addEventListener('click', (e) => {
+	charTest.playSegments([charAction.zone01.out, charAction.zone02.in, charAction.zone02.loop], true);
+    charTest.addEventListener('loopComplete', charAction.pause);
+});
+
+document.getElementById('z3').addEventListener('click', (e) => {
+	charTest.playSegments([charAction.zone02.out, charAction.zone03.in, charAction.zone03.loop], true);
+});
+
+document.getElementById('z4').addEventListener('click', (e) => {
+	charTest.playSegments([charAction.zone03.out, charAction.zone04.in], true);
+    charTest.addEventListener('loopComplete', charAction.pause);
+});
 
 
+
+
+charAction.animate = function(zoneOut, zoneIn, zoneLoop) {
+	console.log(charAction.zoneOut.out);
+
+};
+
+document.getElementById('z5').addEventListener('click', (e) => {charAction.animate(zone04, 'zone05', 'zone05')});
 

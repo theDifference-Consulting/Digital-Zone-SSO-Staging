@@ -2,19 +2,6 @@ body, html {
 	margin:0;
 }
 
-#island,
-#zone-anim,
-#water-anim,
-#scroll-path,
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
 body {
 	background-color: #85CBE1;
 	color:#474747;
@@ -158,7 +145,7 @@ html:before {
 #scroll-path.zoom {
 	transform:scale(.5) translateY(25%);
 	transform-origin: center left;
-	transition: transform ease .75s;
+	transition: transform ease-out .75s;
 }
 
 
@@ -250,20 +237,20 @@ nav a {
 	transition: transform 2s ease-out;
 }
 
-#zone-1.hidden,
-#zone-2.hidden,
-#zone-3.hidden,
-#zone-4.hidden,
-#zone-5.hidden  {
+#zone01.hidden,
+#zone02.hidden,
+#zone03.hidden,
+#zone04.hidden,
+#zone05.hidden  {
 	opacity:0;
 	transition:opacity ease .2s;
 }
 
-#zone-1,
-#zone-2,
-#zone-3,
-#zone-4,
-#zone-5 {
+#zone01,
+#zone02,
+#zone03,
+#zone04,
+#zone05 {
 	opacity: 1;
 	transition:opacity ease .2s;
 	position: fixed;
@@ -370,7 +357,7 @@ nav a {
 	box-shadow: 8px 10px rgba(0,0,0,.4);
 }
 
-.zone-wrapper:after { /*left arrow*/
+.chat-arrow:after { /*left arrow*/
 	content: "";
     width: 0;
     height: 0;
@@ -381,7 +368,7 @@ nav a {
     border-top: solid 80px rgba(255,255,255,.9);
 }
 
-.zone-wrapper:before { /* arrow shadow */
+.chat-arrow:before { /* arrow shadow */
     content: "";
     width: 47px;
     height: 30px;
@@ -394,17 +381,29 @@ nav a {
     transform: rotate(14deg);
 }
 
-.zone-1 .zone-wrapper {
+.zone01 .zone-wrapper {
 	width: auto;
 }
 
-.zone-1 .zone-wrapper .inline {
+.zone01 .zone-wrapper .inline {
 	display: inline-block;
 	margin:10px 15px;
 	cursor: pointer;
 }
 
-.zone-1 .zone-wrapper .inline img {
+.zone01 .zone-wrapper .inline img {
 	width:80px;
 	height: auto;
+}
+
+/*Hover controls*/
+
+#qr-yoda{
+	opacity:1;
+	transition: opacity .2s ease;
+}
+
+#qr-yoda:hover {
+	opacity:0;
+	transition: opacity .2s ease;
 }
