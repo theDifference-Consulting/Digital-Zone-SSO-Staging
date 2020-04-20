@@ -258,6 +258,10 @@ nav a {
 	right: 30px;
 }
 
+#zone01 {
+	transition:opacity ease 2s;
+}
+
 
 /*.top-left,
 .top-right,

@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	console.log('loaded...');
 	setTimeout(function () { 
 		document.getElementById('scroll-path').classList.remove('zoom');
+		document.getElementById('zone01').classList.remove('hidden');
 		console.log('fire');
 	},2000);
 });
@@ -55,7 +56,6 @@ function init() {
 
 			// show and hide zone info popup
 			$('#' + target).addClass('hidden');
-			$('#zone01').removeClass('hidden');
 
 			$(this).click(function(e) {
 				e.preventDefault();
