@@ -59,24 +59,25 @@ function init() {
 
 			$(this).click(function(e) {
 				e.preventDefault();
-				$('#' + currentZone).addClass('hidden'); //roll this into a function
+				// Show/Hide the zone info popups
+				$('#' + currentZone).addClass('hidden');
+				$('#' + target).removeClass('hidden');
 
-				console.log('current zone:' + currentZone);
+				// Animate the character
+				charAction.animate(currentZone, target, target);
 
-				currentZone = target;
-
-				$('#' + currentZone).removeClass('hidden');
-
-				console.log('next zone:' + currentZone);
-
-				// Include the jQuery easing plugin (http://gsgd.co.uk/sandbox/jquery/easing/)
-				// for extra easing functions like the one below
+				// Move to the target zone
 				$.fn.scrollPath("scrollTo", target, 500, "easeInOutSine");
 
+				//Spin the compass
 				$('#compass').toggleClass('spin');
+
+				console.log('current zone:' + currentZone);
+				console.log('next zone:' + target);
+				// Update the current zone var
+				 currentZone = target;
 			});
 		});
-		console.log(currentZone)
 }	
 
 
@@ -85,6 +86,7 @@ var zoneAnim = lottie.loadAnimation({
 				renderer: 'svg', // Required
 				loop: true, // Optional
 				autoplay: true, // Optional
+				useSubFrames: false,
 				rendererSettings: {
 			        progressiveLoad: true
 			      },
@@ -98,6 +100,7 @@ var waterAnim = lottie.loadAnimation({
 				renderer: 'svg', // Required
 				loop: false, // Optional
 				autoplay: false, // Optional
+				useSubFrames: false,
 				rendererSettings: {
 			        progressiveLoad: true
 			      },
@@ -111,51 +114,19 @@ var charTest = lottie.loadAnimation({
 				renderer: 'svg', // Required
 				loop: true, // Optional
 				autoplay: false, // Optional
+				useSubFrames: false,
 				path: "anim/char-01.json"
 			})
-
-// Action 01:
-// Animate In: 30-67
-// Animate Out: 90-102
-// Action 02:
-// Animate In: 128-140
-// Animate Out: 173-185
-// Action 03:
-// Animate In: 214-247
-// Loop: 248-265
-// Animate Out: 266-301
-// Action 04:
-// Animate In: 331-358
-// Animate Out: 394-406
-// Action 05:
-// Animate In: 434-445
-// Loop: 446-469
-// Animate Out: 470-482
-
-// let charAction = {
-// 	act01In: [30,67],
-// 	act01Out: [90,102],
-// 	act02In: [128,140],
-// 	act02Out: [173,184],
-// 	act03In: [214,247],
-// 	act03Loop: [248, 265],
-// 	act03Out: [266,301],
-// 	act04In: [331,358],
-// 	act04Out: [394,406],
-// 	act05In: [434,445],
-// 	act05Loop: [446,469],
-// 	act05Out: [470,482]
-// }
 
 let charAction = {
 	zone01: {
 		in: [30,67],
-		loop: [],
+		loop: [0,0],
 		out: [90,102]
 	},
 	zone02: {
 		in: [128,140],
-		loop: [false],
+		loop: [0,0],
 		out: [173,184]
 	},
 	zone03: {
@@ -165,7 +136,7 @@ let charAction = {
 	},
 	zone04: {
 		in: [331,358],
-		loop: [false],
+		loop: [0,0],
 		out: [394,406]
 	},
 	zone05: {
@@ -173,38 +144,12 @@ let charAction = {
 		loop: [446,469],
 		out: [470,482]
 	}
-}
-
-// 1. where are we
-// 2. where are we going?
-// 3. pause or loop current location?
-
-charAction.pause = function() {
-    charTest.removeEventListener('loopComplete', charAction.pause);
-     charTest.goToAndStop(charTest.totalFrames - 1, true)
-  }
-
-document.getElementById('z2').addEventListener('click', (e) => {
-	charTest.playSegments([charAction.zone01.out, charAction.zone02.in, charAction.zone02.loop], true);
-    charTest.addEventListener('loopComplete', charAction.pause);
-});
-
-document.getElementById('z3').addEventListener('click', (e) => {
-	charTest.playSegments([charAction.zone02.out, charAction.zone03.in, charAction.zone03.loop], true);
-});
-
-document.getElementById('z4').addEventListener('click', (e) => {
-	charTest.playSegments([charAction.zone03.out, charAction.zone04.in], true);
-    charTest.addEventListener('loopComplete', charAction.pause);
-});
-
-
-
-
-charAction.animate = function(zoneOut, zoneIn, zoneLoop) {
-	console.log(charAction.zoneOut.out);
-
 };
 
-document.getElementById('z5').addEventListener('click', (e) => {charAction.animate(zone04, 'zone05', 'zone05')});
+charAction.animate = function(zoneOut, zoneIn, zoneLoop) {
+	// console.log(this[zoneOut].out);
+	// console.log(this[zoneIn].in);
+	// console.log(this[zoneLoop].loop);
+	charTest.playSegments([this[zoneOut].out, this[zoneIn].in, this[zoneLoop].loop], true);
+};
 
