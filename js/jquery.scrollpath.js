@@ -453,7 +453,7 @@
 
 	/* Scrolls forward the given amount of steps. Negative values scroll backward. */
 	function scrollSteps( steps ) {
-		scrollToStep( wrapStep( step + steps ) );
+		scrollToStep( wrapStep( step + 0 ) ); //disabled scrolling
 	}
 
 	/* Animates forward the given amount of steps over the set duration. Negative values scroll backward */
