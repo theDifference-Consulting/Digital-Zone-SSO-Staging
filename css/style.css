@@ -284,7 +284,12 @@ nav a {
 #zone02.hidden,
 #zone03.hidden,
 #zone04.hidden,
-#zone05.hidden  {
+#zone05.hidden,
+#z1.hidden,
+#z2.hidden,
+#z3.hidden,
+#z4.hidden,
+#z5.hidden  {
 	opacity:0;
 	transition:opacity ease .2s;
 }

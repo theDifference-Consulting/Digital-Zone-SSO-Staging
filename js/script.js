@@ -1,14 +1,3 @@
-// var cloudAnim = lottie.loadAnimation({
-// 	container: document.getElementById('body'), // Required
-// 	renderer: 'svg', // Required
-// 	loop: false, // Optional
-// 	autoplay: true, // Optional
-// 	useSubFrames: false,
-// 	rendererSettings: {
-//         progressiveLoad: true
-//       },
-// 	path: "anim/cloud-opening.json"
-// })
 
 var zoneAnim = lottie.loadAnimation({
 	container: document.getElementById('zone-anim'), // Required
@@ -141,36 +130,6 @@ $.fn.scrollPath("getPath")
 		});
 	});
 }	
-let clickCharacter = '';
-
-function charSelection() {
-	let clickCharacter = "anim/char-01.json";
-	let charDiv = document.getElementById('character');
-	if (charDiv.childNodes[0]) {
-		charDiv.removeChild(charDiv.childNodes[0]); 
-	}
-
-
-	var charTest = lottie.loadAnimation({
-		container: document.getElementById('character'), // Required
-		renderer: 'svg', // Required
-		loop: true, // Optional
-		autoplay: false, // Optional
-		useSubFrames: false,
-		path: clickCharacter
-	})
-		charAction.animate = function(zoneOut, zoneIn, zoneLoop) {
-		// console.log(this[zoneOut].out);
-		// console.log(this[zoneIn].in);
-		// console.log(this[zoneLoop].loop);
-		charTest.playSegments([this[zoneOut].out, this[zoneIn].in, this[zoneLoop].loop], true);
-	};
-	charAction.animate('zone01', 'zone01', 'zone01');
-};
-document.getElementById("char-1").addEventListener("click", charSelection);
-document.getElementById("char-2").addEventListener("click", charSelection);
-document.getElementById("char-3").addEventListener("click", charSelection);
-document.getElementById("char-4").addEventListener("click", charSelection);
 
 let charAction = {
 	zone01: {
@@ -199,6 +158,56 @@ let charAction = {
 		out: [957,936]
 	}
 };
+
+var charTest = lottie.loadAnimation({
+	container: document.getElementById('character'), // Required
+	renderer: 'svg', // Required
+	loop: true, // Optional
+	autoplay: false, // Optional
+	useSubFrames: false,
+	path: ''
+})
+
+
+
+let clickCharacter = '';
+
+function charSelection() {
+	let clickCharacter = "anim/char-01.json";
+	let charDiv = document.getElementById('character');
+	if (charDiv.childNodes[0]) {
+		charDiv.removeChild(charDiv.childNodes[0]); 
+	}
+
+	charTest = lottie.loadAnimation({
+		container: document.getElementById('character'), // Required
+		renderer: 'svg', // Required
+		loop: true, // Optional
+		autoplay: false, // Optional
+		useSubFrames: false,
+		path: clickCharacter
+	})
+
+	charAction.animate('zone01', 'zone01', 'zone01');
+
+	document.getElementById('z1').classList.remove('hidden');
+	document.getElementById('z2').classList.remove('hidden');
+	document.getElementById('z3').classList.remove('hidden');
+	document.getElementById('z4').classList.remove('hidden');
+	document.getElementById('z5').classList.remove('hidden');
+};
+
+charAction.animate = function(zoneOut, zoneIn, zoneLoop) {
+	// console.log(this[zoneOut].out);
+	// console.log(this[zoneIn].in);
+	// console.log(this[zoneLoop].loop);
+	charTest.playSegments([this[zoneOut].out, this[zoneIn].in, this[zoneLoop].loop], true);
+};
+
+document.getElementById("char-1").addEventListener("click", charSelection);
+document.getElementById("char-2").addEventListener("click", charSelection);
+document.getElementById("char-3").addEventListener("click", charSelection);
+document.getElementById("char-4").addEventListener("click", charSelection);
 
 
 function getUrlVars() {
