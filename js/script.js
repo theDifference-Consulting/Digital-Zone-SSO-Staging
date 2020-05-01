@@ -159,21 +159,10 @@ let charAction = {
 	}
 };
 
-var charTest = lottie.loadAnimation({
-	container: document.getElementById('character'), // Required
-	renderer: 'svg', // Required
-	loop: true, // Optional
-	autoplay: false, // Optional
-	useSubFrames: false,
-	path: ''
-})
-
-
-
 let clickCharacter = '';
 
-function charSelection() {
-	let clickCharacter = "anim/char-01.json";
+charSelection = function(json) {
+	let clickCharacter = 'anim/' + json;
 	let charDiv = document.getElementById('character');
 	if (charDiv.childNodes[0]) {
 		charDiv.removeChild(charDiv.childNodes[0]); 
@@ -195,6 +184,8 @@ function charSelection() {
 	document.getElementById('z3').classList.remove('hidden');
 	document.getElementById('z4').classList.remove('hidden');
 	document.getElementById('z5').classList.remove('hidden');
+	console.log(json
+		);
 };
 
 charAction.animate = function(zoneOut, zoneIn, zoneLoop) {
@@ -204,10 +195,10 @@ charAction.animate = function(zoneOut, zoneIn, zoneLoop) {
 	charTest.playSegments([this[zoneOut].out, this[zoneIn].in, this[zoneLoop].loop], true);
 };
 
-document.getElementById("char-1").addEventListener("click", charSelection);
-document.getElementById("char-2").addEventListener("click", charSelection);
-document.getElementById("char-3").addEventListener("click", charSelection);
-document.getElementById("char-4").addEventListener("click", charSelection);
+document.getElementById("char-1").addEventListener("click", charSelection.bind(null,"char-1.json"));
+document.getElementById("char-2").addEventListener("click", charSelection.bind(null,"char-2.json"));
+document.getElementById("char-3").addEventListener("click", charSelection.bind(null,"char-3.json"));
+document.getElementById("char-4").addEventListener("click", charSelection.bind(null,"char-4.json"));
 
 
 function getUrlVars() {
@@ -220,5 +211,5 @@ function getUrlVars() {
 
 console.log(getUrlVars()["char"]);
 
-history.pushState({page: 1}, "Welcome to the Digital Zone", "?char=2")
+// history.pushState({page: 1}, "Welcome to the Digital Zone", "?char=2")
 
