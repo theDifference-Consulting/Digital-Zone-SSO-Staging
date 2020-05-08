@@ -1,0 +1,19 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.29 80.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f5fffe;
+      }
+
+      .cls-2 {
+        fill: #ffd255;
+      }
+    </style>
+  </defs>
+  <title>h1-cloud</title>
+  <g>
+    <rect class="cls-1" x="2.27" width="192.01" height="70.12" rx="35.06"/>
+    <rect class="cls-2" x="82.82" y="17.94" width="76.91" height="31.76"/>
+    <polygon class="cls-2" points="23.66 66.75 13.02 78.75 1.51 66.75 1.51 36.61 23.66 36.61 23.66 66.75"/>
+  </g>
+</svg>
