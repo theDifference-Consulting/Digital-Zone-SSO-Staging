@@ -47,6 +47,7 @@ blockquote {
 	font-size: 45px;
 	text-align: center;
 	margin:40px 0;
+	border:none;
 }
 
  ol {
@@ -74,8 +75,64 @@ ol li {
     display: inline-block;
  }
 
-.block-highlight,
-button {
+/* Navigation */
+
+nav {
+	margin-left: -15px;
+    margin-right: -15px;
+    background-color: #FFD255;
+    text-align: center;
+}
+
+nav a {
+    color:#515151;
+    font-weight: 900;
+   	border-bottom: 2px solid transparent;
+   	display: table !important;
+    margin: 16px auto;
+    padding:0 !important;
+}
+
+.navbar-nav {
+	padding: 20px 0;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active,
+nav li.active a  {
+	background-color: initial !important;
+	color: #515151 !important;
+	border-bottom: 2px solid #515151;
+}
+
+.navbar-toggle {
+  display: block;
+  border-radius: 4px;
+  background-color: #FFD255;
+  border:none;
+  padding:8px 6px 6px 6px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 100000000;
+}
+
+.navbar .icon-bar {
+	display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+	border-top: solid 3px #515151;
+	margin-bottom: 3px;
+}
+
+/* buttons */
+
+textarea, select, input, button { outline: none; }
+
+
+.block-highlight {
 	background-color:#FFCC4B;
 	color:#474747;
 	font-weight: 900;
@@ -86,8 +143,7 @@ button {
 	cursor: pointer;
 }
 
-.block-highlight:before,
-button:before {
+.block-highlight:before{
 	content:"";
 	width:16px;
 	height: 16px;
@@ -98,8 +154,7 @@ button:before {
 	right: -8px;
 }
 
-.block-highlight:after,
-button:after {
+.block-highlight:after {
 	content:"";
 	width:8px;
 	height: 8px;

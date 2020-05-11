@@ -19,6 +19,28 @@
     </head>
     <body class="secondary-template">
         <div class="container-fluid podcast-alley">
+            <nav class="navbar">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li class="active">
+                            <a href="/podcast-alley">Podcast Alley</a>
+                        </li>
+                        <li>
+                            <a href="/qr-castle">QR Castle</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <header>
                 <div class="container">
                     <div class="heading-cloud-wrapper row">
@@ -59,13 +81,13 @@
                         Executive Director, Medical Affairs
                     </p>
                     <div class="audio-block">
-                        <button onclick="document.getElementById('player').play()">Play Audio</button> 
+                        <button class="block-highlight" onclick="document.getElementById('player').play()">Play Audio</button>
                         <audio
                             id="player"
                             controls
                             src="https://raw.githubusercontent.com/kyleschoenberger/Digital-Zone/master/media/GeraldineReilly-PodcastingQuote.wav">
-                                Your browser does not support the
-                                <code>audio</code> element.
+                            Your browser does not support the
+                            <code>audio</code> element.
                         </audio>
                     </div>
                 </div>
