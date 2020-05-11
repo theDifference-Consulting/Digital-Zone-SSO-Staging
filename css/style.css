@@ -27,11 +27,11 @@ h2 {
 }
 
 h3 {
-	font-size: 18px;
+	font-size: 22px;
 }
 
 h4 {
-	font-size: 16px;
+	font-size: 20px;
 }
 
 p {
@@ -50,7 +50,7 @@ blockquote {
 	border:none;
 }
 
- ol {
+ol {
 	list-style: none;
 	counter-reset: item;
  }
@@ -60,10 +60,10 @@ ol li {
 	counter-increment: item;
  }
 
- ol li:before {
+ol li:before {
 	margin-left: -42px;
     content: counter(item);
-    background: #FFCC4B;
+    background: #FFD255;
     font-weight: 900;
     border-radius: 100%;
     width: 36px;
@@ -75,6 +75,24 @@ ol li {
     display: inline-block;
  }
 
+ul.triangle {
+    margin: 0.75em 0;
+    padding: 0 1em;
+    list-style: none;
+}
+ul.triangle li:before { 
+content: "";
+    border-color: transparent #FFD255;
+    border-style: solid;
+    border-width: 10px 0 10px 14px;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -20px;
+    top: 23px;
+    position: relative;
+}
+
 /* Navigation */
 
 nav {
@@ -84,7 +102,7 @@ nav {
     text-align: center;
 }
 
-nav a {
+nav li a {
     color:#515151;
     font-weight: 900;
    	border-bottom: 2px solid transparent;
@@ -97,9 +115,9 @@ nav a {
 	padding: 20px 0;
 }
 
-nav a:hover,
-nav a:focus,
-nav a:active,
+nav li a:hover,
+nav li a:focus,
+nav li a:active,
 nav li.active a  {
 	background-color: initial !important;
 	color: #515151 !important;
@@ -133,7 +151,7 @@ textarea, select, input, button { outline: none; }
 
 
 .block-highlight {
-	background-color:#FFCC4B;
+	background-color:#FFD255;
 	color:#474747;
 	font-weight: 900;
 	padding: 8px 20px;
@@ -147,7 +165,7 @@ textarea, select, input, button { outline: none; }
 	content:"";
 	width:16px;
 	height: 16px;
-	background-color:#FFCC4B;
+	background-color:#FFD255;
 	position: absolute;
 	display: block;
 	bottom:-8px;
@@ -158,7 +176,7 @@ textarea, select, input, button { outline: none; }
 	content:"";
 	width:8px;
 	height: 8px;
-	background-color:#FFCC4B;
+	background-color:#FFD255;
 	position: absolute;
 	display: block;
 	bottom:-12px;
@@ -169,6 +187,10 @@ textarea, select, input, button { outline: none; }
 
 .light-bg {
 	background-color: #E1F5F4;
+}
+
+.yellow-bg {
+	background-color:#FFD255;
 }
 
 /*--------------------*/
@@ -189,54 +211,31 @@ textarea, select, input, button { outline: none; }
     transform: translateX(-50%);
 }
 
-/*-----------------------*/
-/* Page Specific Styling */
-/*-----------------------*/
-
-/* Podcast Alley */
-
-.podcast-alley header .container {
-	background-image: url('../img/podcast-hero.svg');
+header .container {
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: bottom center;
+}
+
+@media (min-width: 1200px) {
+		header .container {
+		background-size: 900px;
+	}
 }
 
 @media (max-width: 768px) {
-	.podcast-alley header .container {
+	header .container {
 		margin-right: -15px;
 		margin-left: -15px;
 	}
 }
 
-.podcast-alley .heading-cloud-wrapper {
-	background-image: url(../img/podcast-hero-cloud.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center bottom;
+header .heading-cloud-wrapper {
     height: 400px;
     position: relative;
 }
 
-.podcast-alley .heading-cloud-wrapper:after {
-	content:'';
-	background-image: url(../img/cloud-highlight.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-	height:100px;
-	width:33%;
-	bottom:80px;
-    position: absolute;
-}
-
-.podcast-alley .vimeo-embed {
-	display: block;
-	margin:30px auto;
-	max-width: 100%;
-}
-
-.podcast-alley h1 {
+header h1 {
 	background-image: url('../img/h1-cloud-highlight.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -245,12 +244,12 @@ textarea, select, input, button { outline: none; }
 	padding:20px 60px 30px 190px;
 	position: absolute;
 	right: 60px;
-	bottom:20px;
+	bottom:30px;
 	z-index: 1000;
 	margin-left:-190px;
 }
 
-.podcast-alley h2 {
+.secondary-template h2 {
 	background-color: #FFD255;
 	padding:10px 8px 0 20px;
 	display:table;
@@ -258,7 +257,7 @@ textarea, select, input, button { outline: none; }
 	position: relative;
 }
 
-.podcast-alley h2:before {
+.secondary-template h2:before {
 	content: '';
 	background-color: #FFD255;
 	width:20px;
@@ -268,7 +267,7 @@ textarea, select, input, button { outline: none; }
 	bottom: -15px;
 }
 
-.podcast-alley h2:after {
+.secondary-template h2:after {
 	content: '';
     background-color: #FFD255;
     width: 22px;
@@ -278,18 +277,54 @@ textarea, select, input, button { outline: none; }
     top: -8px;
 }
 
-.podcast-alley section {
-	margin-bottom:40px;
-	margin-top:40px;
+.secondary-template section {
+	margin-bottom:80px;
 	padding-top:60px;
 	padding-bottom: 60px;
 	position: relative;
 }
 
-.podcast-alley .podcast-bug {
+
+.secondary-template .bug {
 	height:40px;
 	width: auto;
 	float:right;
+}
+
+footer {
+	background-color:#FFD255;
+	padding-bottom:10px;
+	text-align: center;
+	margin-top: 60px;
+	margin-left: -15px;
+    margin-right: -15px;
+}
+
+footer .row  div {
+	font-size: 20px;
+	font-weight: 900;
+}
+
+footer .copyright {
+	text-align: center;
+	padding-top: 40px;
+}
+
+/*-----------------------*/
+/* Page Specific Styling */
+/*-----------------------*/
+
+/* Podcast Alley */
+
+
+.podcast-alley header .container {
+	background-image: url('../img/podcast-alley-header.svg');
+}
+
+.podcast-alley .vimeo-embed {
+	display: block;
+	margin:30px auto;
+	max-width: 100%;
 }
 
 .podcast-alley .audio-quote{
@@ -336,16 +371,16 @@ textarea, select, input, button { outline: none; }
 	color:#474747;
 }
 
-#create-own {
+.podcast-alley #create-own {
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
 
-#create-own .full-width {
+.podcast-alley #create-own .full-width {
 	margin-bottom: 0;
 }
 
-.podcast-guide {
+.podcast-alley .podcast-guide {
 	height:600px;
 	max-height: 80vh;
 	width: auto;
@@ -374,21 +409,34 @@ textarea, select, input, button { outline: none; }
 	margin:15px auto;
 }
 
-footer {
-	background-color:#FFD255;
-	padding-bottom:10px;
-	text-align: center;
-	margin-top: 60px;
-	margin-left: -15px;
-    margin-right: -15px;
+/* QR Castle */
+
+.qr-castle header .container {
+	background-image: url('../img/qr-castle-hero.svg');
 }
 
-footer .row  div {
-	font-size: 20px;
-	font-weight: 900;
+#qr-at-gilead h3{
+	margin:80px 0 20px 0;
+	text-align: center;
 }
 
-footer .copyright {
+.qr-castle #welcome {
+	margin-bottom: 0;
+}
+
+.qr-castle .qr-example {
+	max-width:200px;
+	height:auto;
+	display: block;
+	margin:20px auto;
+}
+
+.qr-castle #create-own h3 {
 	text-align: center;
-	padding-top: 40px;
+	padding:12px 0;
+	margin: 20px 0 40px 0;
+}
+
+.qr-castle .example-spacer {
+	height:60px;
 }
