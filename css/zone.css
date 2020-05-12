@@ -8,7 +8,7 @@ body > svg {
 }
 
 /* center marker */
-body:after {
+/*body:after {
 	content: "";
 	background-color: red;
 	height:10px;
@@ -19,7 +19,7 @@ body:after {
 	left:50%;
 	margin-left: -5px;
 	border-radius: 10px;
-}
+}*/
 /* All three background layers */
 /* zoomed out: 1920 x 1080 */
 
