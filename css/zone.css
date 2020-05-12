@@ -371,7 +371,7 @@ nav a {
     width: 0;
     height: 0;
     right: 240px;
-    bottom: -100px;
+    bottom: -70px;
     position: absolute;
     border: solid 20px transparent;
     border-top: solid 80px rgba(255,255,255,.9);
@@ -382,7 +382,7 @@ nav a {
     width: 47px;
     height: 30px;
     right: 237px;
-    bottom: -52px;
+    bottom: -22px;
     position: absolute;
     border: solid 20px transparent;
     border-top: solid transparent 2px;

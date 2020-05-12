@@ -161,7 +161,7 @@ let charAction = {
 
 let clickCharacter = '';
 
-charSelection = function(json) {
+charSelection = function(json, url) {
 	let clickCharacter = 'anim/' + json;
 	let charDiv = document.getElementById('character');
 	if (charDiv.childNodes[0]) {
@@ -183,9 +183,10 @@ charSelection = function(json) {
 	document.getElementById('z2').classList.remove('hidden');
 	document.getElementById('z3').classList.remove('hidden');
 	document.getElementById('z4').classList.remove('hidden');
-	document.getElementById('z5').classList.remove('hidden');
-	console.log(json
-		);
+	console.log(json);
+
+	history.pushState({page: 1}, "Welcome to the Digital Zone", url)
+
 };
 
 charAction.animate = function(zoneOut, zoneIn, zoneLoop) {
@@ -195,11 +196,10 @@ charAction.animate = function(zoneOut, zoneIn, zoneLoop) {
 	charTest.playSegments([this[zoneOut].out, this[zoneIn].in, this[zoneLoop].loop], true);
 };
 
-document.getElementById("char-1").addEventListener("click", charSelection.bind(null,"char-1.json"));
-document.getElementById("char-2").addEventListener("click", charSelection.bind(null,"char-2.json"));
-document.getElementById("char-3").addEventListener("click", charSelection.bind(null,"char-3.json"));
-document.getElementById("char-4").addEventListener("click", charSelection.bind(null,"char-4.json"));
-
+document.getElementById("char-1").addEventListener("click", charSelection.bind(null,"char-1.json", "?char=1"));
+document.getElementById("char-2").addEventListener("click", charSelection.bind(null,"char-2.json", "?char=2"));
+document.getElementById("char-3").addEventListener("click", charSelection.bind(null,"char-3.json", "?char=3"));
+document.getElementById("char-4").addEventListener("click", charSelection.bind(null,"char-4.json", "?char=4"));
 
 function getUrlVars() {
     var vars = {};
@@ -209,7 +209,8 @@ function getUrlVars() {
     return vars;
 }
 
+
+
 console.log(getUrlVars()["char"]);
 
-// history.pushState({page: 1}, "Welcome to the Digital Zone", "?char=2")
 
