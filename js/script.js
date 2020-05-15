@@ -23,44 +23,33 @@ var waterAnim = lottie.loadAnimation({
 	path: "anim/water-loop.json"
 })
 
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', function() {
 	zoneAnim.play();
 	waterAnim.play();
-	setTimeout( function() {
-		document.getElementById('cloud-1').classList.add('reveal');
-		document.getElementById('cloud-2').classList.add('reveal');
-	},500);
-setTimeout( function() {
-	 //match the zoom CSS transition timing 
-	document.getElementById('scroll-path').classList.remove('zoom');
-	setTimeout( function() {
+	if (!savedCharacter) { //if there isn't a character saved in the browswer
+		setTimeout( function() {
+			document.getElementById('cloud-1').classList.add('reveal');
+			document.getElementById('cloud-2').classList.add('reveal');
+		},500);
+		setTimeout( function() {
+			 //match the zoom CSS transition timing 
+			document.getElementById('scroll-path').classList.remove('zoom');
+			setTimeout( function() {
+				document.getElementById('zone01').classList.remove('hidden');
+			},750); //match the zoom CSS transition timing 
+		},3000);
+	} else { //if a character has already been selected, don't animate the clouds in
+		document.getElementById('cloud-1').classList.add('hidden');
+		document.getElementById('cloud-2').classList.add('hidden');
+		document.getElementById('scroll-path').classList.remove('zoom');
 		document.getElementById('zone01').classList.remove('hidden');
-	},750); //match the zoom CSS transition timing 
-},3000);
+	}
 });
-
-// cloudAnim.addEventListener('complete', function(){
-// 	//fire functions after the clouds part
-// 	document.getElementById('scroll-path').classList.remove('zoom');
-// 	setTimeout( function() {
-// 		document.getElementById('zone01').classList.remove('hidden');
-// 	},750); //match the zoom CSS transition timing 
-// } );
-
-
 
 
 	// ZOOM CONTROL
 let multiplier = 3; //on change, reset DOM
 setZoom(multiplier);
-// window.addEventListener('DOMContentLoaded', function () {
-// 	console.log('loaded...');
-// 	setTimeout(function () { 
-// 		document.getElementById('scroll-path').classList.remove('zoom');
-// 		document.getElementById('zone01').classList.remove('hidden');
-// 		console.log('fire');
-// 	},2000);
-// });
 
 function setZoom(multiplier) {
 	let baseWidth = 1920;
@@ -100,7 +89,23 @@ $.fn.scrollPath("getPath")
 	// We're done with the path, let's initate the plugin on our wrapper element
 	$(".scroll-path").scrollPath({drawPath: false, wrapAround: true});
 
-	let currentZone = 'zone01';
+	var currentZone = 'zone01';
+	function getAnchor() {
+	    return (document.URL.split('#').length > 1) ? document.URL.split('#')[1] : null;
+	}
+
+	if (getAnchor()) {
+		$.fn.scrollPath("scrollTo", getAnchor(), 100);
+		setTimeout( function() { //this is messy. can't execute the function until the previous is declared.
+			charAction.animate(getAnchor(), getAnchor(), getAnchor());
+			$('#zone01').addClass('hidden');
+			$('#' + getAnchor()).removeClass('hidden');
+		},100);
+
+		currentZone = getAnchor();
+		console.log(currentZone);
+	}
+
 	// Add scrollTo on click on the navigation anchors
 	$("nav").find("a").each(function() {
 		var target = $(this).attr("href").replace("#", "");
@@ -109,7 +114,7 @@ $.fn.scrollPath("getPath")
 		$('#' + target).addClass('hidden');
 
 		$(this).click(function(e) {
-			e.preventDefault();
+			//e.preventDefault();
 			// Show/Hide the zone info popups
 			$('#' + currentZone).addClass('hidden');
 			$('#' + target).removeClass('hidden');
@@ -123,8 +128,6 @@ $.fn.scrollPath("getPath")
 			//Spin the compass
 			$('#compass').toggleClass('spin');
 
-			console.log('current zone:' + currentZone);
-			console.log('next zone:' + target);
 			// Update the current zone var
 			 currentZone = target;
 		});
@@ -161,7 +164,7 @@ let charAction = {
 
 let clickCharacter = '';
 
-charSelection = function(json, url) {
+charSelection = function(json) {
 	let clickCharacter = 'anim/' + json;
 	let charDiv = document.getElementById('character');
 	if (charDiv.childNodes[0]) {
@@ -183,23 +186,19 @@ charSelection = function(json, url) {
 	document.getElementById('z2').classList.remove('hidden');
 	document.getElementById('z3').classList.remove('hidden');
 	document.getElementById('z4').classList.remove('hidden');
-	console.log(json);
 
-	history.pushState({page: 1}, "Welcome to the Digital Zone", url)
+	localStorage.setItem("character", json);
 
 };
 
 charAction.animate = function(zoneOut, zoneIn, zoneLoop) {
-	// console.log(this[zoneOut].out);
-	// console.log(this[zoneIn].in);
-	// console.log(this[zoneLoop].loop);
 	charTest.playSegments([this[zoneOut].out, this[zoneIn].in, this[zoneLoop].loop], true);
 };
 
-document.getElementById("char-1").addEventListener("click", charSelection.bind(null,"char-1.json", "?char=1"));
-document.getElementById("char-2").addEventListener("click", charSelection.bind(null,"char-2.json", "?char=2"));
-document.getElementById("char-3").addEventListener("click", charSelection.bind(null,"char-3.json", "?char=3"));
-document.getElementById("char-4").addEventListener("click", charSelection.bind(null,"char-4.json", "?char=4"));
+document.getElementById("char-1").addEventListener("click", charSelection.bind(null,"char-1.json"));
+document.getElementById("char-2").addEventListener("click", charSelection.bind(null,"char-2.json"));
+document.getElementById("char-3").addEventListener("click", charSelection.bind(null,"char-3.json"));
+document.getElementById("char-4").addEventListener("click", charSelection.bind(null,"char-4.json"));
 
 function getUrlVars() {
     var vars = {};
@@ -209,8 +208,9 @@ function getUrlVars() {
     return vars;
 }
 
+console.log(localStorage.getItem("character"));
+let savedCharacter = localStorage.getItem("character");
 
-
-console.log(getUrlVars()["char"]);
-
-
+if (savedCharacter) {
+	charSelection.call(null, savedCharacter);
+}

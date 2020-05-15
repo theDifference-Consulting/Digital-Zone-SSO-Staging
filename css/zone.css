@@ -74,6 +74,10 @@ body {
 	transition: background-position linear 2s;
 }
 
+#cloud-1.hidden, #cloud-2.hidden {
+	display: none;
+}
+
 #bg-water {
 	background-image: url('../img/bg-water.svg');
 	width: 7680px;
@@ -242,12 +246,16 @@ nav a {
 #zone04 .zone-wrapper,
 #zone05 .zone-wrapper {
 	margin:30px;
+	width: 50%;
+	align-self: flex-end;
 }
 
 #zone01 .zone-wrapper {
 	display: flex;
     flex-direction: column;
     height:100%;
+    width: auto;
+    align-self: initial;
 }
 
 #zone01 {
@@ -265,7 +273,6 @@ nav a {
 	display:flex;
 	flex-direction: row;
 	justify-content: space-around;
-	padding-top:50px; /*for the name button */
 }
 
 #character svg {
@@ -325,6 +332,7 @@ nav a {
 /* Responsive Utilities */
 
 @media (max-width: 768px) {
+
 }
 
 @media (max-width: 991px) {
@@ -340,12 +348,18 @@ nav a {
 	#character {
     	flex-direction: column;
 	}
+
 	#island, #zone-anim, #water-anim, #scroll-path {
 	    background-repeat: no-repeat;
 	    transform: translateY(-12.5vh) translateX(0); 
 	}
+
 	#compass {
 		display: none;
+	}
+
+	#zone01 .zone-wrapper {
+		height: inherit;
 	}
 }
 
