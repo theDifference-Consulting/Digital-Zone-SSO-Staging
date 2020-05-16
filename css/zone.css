@@ -8,7 +8,7 @@ body > svg {
 }
 
 /* center marker */
-/*body:after {
+body:after {
 	content: "";
 	background-color: red;
 	height:10px;
@@ -19,7 +19,7 @@ body > svg {
 	left:50%;
 	margin-left: -5px;
 	border-radius: 10px;
-}*/
+}
 /* All three background layers */
 /* zoomed out: 1920 x 1080 */
 
@@ -34,6 +34,8 @@ body > svg {
 body {
 	position: relative;
 	overflow:hidden;
+	display: flex;
+    justify-content: center;
 }
 
 #cloud-1 {
@@ -107,18 +109,26 @@ html:before {
 
 #wrapper {	
 	position: absolute;
+	/*transform: translateX(calc(50vw - 50%)) translateY(calc(50vh - 50%)); /* Center the wrapper within the body */
+	flex-shrink: 0;
+    align-self: center;
 }
 
-#scroll-path {
+#scroll-path { /* zoom is controlled on the #scroll-path div */
 	transform:scale(1) translateY(0);
 	transform-origin: center left;
 	transition: transform ease .75s;
 }
 
 #scroll-path.zoom {
-	transform:scale(.5) translateY(25%);
+	transform:scale(.5);
 	transform-origin: center left;
 	transition: transform ease-out .75s;
+}
+
+#scroll-path div {
+	transition: height width ease 4s;
+
 }
 
 
@@ -210,162 +220,6 @@ nav a {
 	transition: transform 2s ease-out;
 }
 
-#zone01.hidden,
-#zone02.hidden,
-#zone03.hidden,
-#zone04.hidden,
-#zone05.hidden,
-#z1.hidden,
-#z2.hidden,
-#z3.hidden,
-#z4.hidden,
-#z5.hidden  {
-	opacity:0;
-	transition:opacity ease .2s;
-	display: none;
-}
-
-#zone01,
-#zone02,
-#zone03,
-#zone04,
-#zone05,
-#character {
-	opacity: 1;
-	display: flex;
-    flex-direction: column-reverse;
-	transition:opacity ease .2s;
-	width: 50%;
-	height: 50%;
-	position:relative;
-}
-
-#zone01 .zone-wrapper,
-#zone02 .zone-wrapper,
-#zone03 .zone-wrapper,
-#zone04 .zone-wrapper,
-#zone05 .zone-wrapper {
-	margin:30px;
-	width: 50%;
-	align-self: flex-end;
-}
-
-#zone01 .zone-wrapper {
-	display: flex;
-    flex-direction: column;
-    height:100%;
-    width: auto;
-    align-self: initial;
-}
-
-#zone01 {
-	transition:opacity ease 2s;
-	width:50%; /* since content scales to the size available */
-	height: 50%
-}
-
-/*-----------*/
-/* Character */
-/*-----------*/
-
-.character-wrapper {
-	flex-grow:1;
-	display:flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-
-#character svg {
-	z-index: 3000;
-	position: fixed;
-	bottom:-25px;
-	right:0;
-	height: 600px !important;
-	width: auto !important;
-	pointer-events: none;
-}
-
-#char-1,
-#char-2,
-#char-3,
-#char-4 {
-	cursor: pointer;
-	flex: 1;
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-}
-
-#char-1 {
-	background-image:url('../img/char-1.svg');
-}
-
-#char-2 {
-	background-image:url('../img/char-2.svg');
-}
-
-#char-3 {
-	background-image:url('../img/char-3.svg');
-}
-
-#char-4 {
-	background-image:url('../img/char-4.svg');
-}
-
-.info-wrapper {
-    display: flex;
-	flex-direction: column;
-    align-items: flex-end;
-    height:100%;
-}
-
-.character-wrapper .block-highlight {
-	margin-top:-50px;
-}
-
-#island, #zone-anim, #water-anim, #scroll-path {
-    background-repeat: no-repeat;
-    transform: translateX(-12.5vw);
-    /* transform: translateY(-12.5vh); */
-}
-
-/* Responsive Utilities */
-
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 991px) {
-	.info-wrapper {
-		flex-direction: row;
-	}
-
-	#zone01,
-	#zone02,
-	#zone03,
-	#zone04,
-	#zone05,
-	#character {
-    	flex-direction: column;
-	}
-
-	#island, #zone-anim, #water-anim, #scroll-path {
-	    background-repeat: no-repeat;
-	    transform: translateY(-12.5vh) translateX(0); 
-	}
-
-	#compass {
-		display: none;
-	}
-
-	#zone01 .zone-wrapper {
-		height: inherit;
-	}
-}
-
-@media (max-width: 1199px) {
-}
-
 /*----------------------*/
 /* Zone Content Overlay */
 /*----------------------*/
@@ -380,44 +234,6 @@ nav a {
 	box-shadow: 8px 10px rgba(0,0,0,.4);
 }
 
-.chat-arrow:after { /*left arrow*/
-	content: "";
-    width: 0;
-    height: 0;
-    right: 240px;
-    bottom: -70px;
-    position: absolute;
-    border: solid 20px transparent;
-    border-top: solid 80px rgba(255,255,255,.9);
-}
-
-.chat-arrow:before { /* arrow shadow */
-    content: "";
-    width: 47px;
-    height: 30px;
-    right: 237px;
-    bottom: -22px;
-    position: absolute;
-    border: solid 20px transparent;
-    border-top: solid transparent 2px;
-    border-right: solid 10px rgba(0,0,0,.4);
-    transform: rotate(14deg);
-}
-
-.zone01 .zone-wrapper {
-	width: auto;
-}
-
-.zone01 .zone-wrapper .inline {
-	margin:10px 15px;
-	cursor: pointer;
-}
-
-.zone01 .zone-wrapper .inline img {
-	/*width:80px;*/
-	height: auto;
-}
-
 /*Hover controls*/
 
 #qr-yoda{
@@ -428,4 +244,17 @@ nav a {
 #qr-yoda:hover {
 	opacity:1;
 	transition: opacity .2s ease;
+}
+
+.scroll-path div {
+	pointer-events: none;
+}
+
+.scroll-path .active-zone > svg > g {
+	pointer-events: auto;
+	cursor: pointer;
+}
+.scroll-path .active-zone > svg > g:hover {
+	outline:solid 0px #fff;
+}
 }

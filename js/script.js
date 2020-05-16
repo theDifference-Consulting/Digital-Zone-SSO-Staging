@@ -1,6 +1,6 @@
 
 var zoneAnim = lottie.loadAnimation({
-	container: document.getElementById('zone-anim'), // Required
+	container: document.getElementById('lighthouse'), // Required
 	renderer: 'svg', // Required
 	loop: true, // Optional
 	autoplay: true, // Optional
@@ -8,7 +8,91 @@ var zoneAnim = lottie.loadAnimation({
 	rendererSettings: {
         progressiveLoad: true
       },
-	path: "anim/points-of-interest.json"
+	path: "anim/lighthouse.json"
+})
+
+var zoneAnim = lottie.loadAnimation({
+	container: document.getElementById('construction01'), // Required
+	renderer: 'svg', // Required
+	loop: true, // Optional
+	autoplay: true, // Optional
+	useSubFrames: false,
+	rendererSettings: {
+        progressiveLoad: true
+      },
+	path: "anim/construction01.json"
+})
+
+var zoneAnim = lottie.loadAnimation({
+	container: document.getElementById('construction02'), // Required
+	renderer: 'svg', // Required
+	loop: true, // Optional
+	autoplay: true, // Optional
+	useSubFrames: false,
+	rendererSettings: {
+        progressiveLoad: true
+      },
+	path: "anim/construction02.json"
+})
+
+var zoneAnim = lottie.loadAnimation({
+	container: document.getElementById('construction03'), // Required
+	renderer: 'svg', // Required
+	loop: true, // Optional
+	autoplay: true, // Optional
+	useSubFrames: false,
+	rendererSettings: {
+        progressiveLoad: true
+      },
+	path: "anim/construction03.json"
+})
+
+var zoneAnim = lottie.loadAnimation({
+	container: document.getElementById('podcast-alley'), // Required
+	renderer: 'svg', // Required
+	loop: true, // Optional
+	autoplay: true, // Optional
+	useSubFrames: false,
+	rendererSettings: {
+        progressiveLoad: true
+      },
+	path: "anim/podcast-alley.json"
+})
+
+var zoneAnim = lottie.loadAnimation({
+	container: document.getElementById('qr-castle'), // Required
+	renderer: 'svg', // Required
+	loop: true, // Optional
+	autoplay: true, // Optional
+	useSubFrames: false,
+	rendererSettings: {
+        progressiveLoad: true
+      },
+	path: "anim/qr-castle.json"
+})
+
+var zoneAnim = lottie.loadAnimation({
+	container: document.getElementById('sea-monster'), // Required
+	renderer: 'svg', // Required
+	loop: true, // Optional
+	autoplay: true, // Optional
+	useSubFrames: false,
+	rendererSettings: {
+        progressiveLoad: true
+      },
+	path: "anim/sea-monster.json"
+})
+
+var zoneAnim = lottie.loadAnimation({
+	container: document.getElementById('airship'), // Required
+	renderer: 'svg', // Required
+	loop: true, // Optional
+	autoplay: true, // Optional
+	useSubFrames: false,
+	rendererSettings: {
+        progressiveLoad: true
+      },
+	path: "anim/airship.json"
 })
 
 var waterAnim = lottie.loadAnimation({
@@ -26,29 +110,19 @@ var waterAnim = lottie.loadAnimation({
 window.addEventListener('DOMContentLoaded', function() {
 	zoneAnim.play();
 	waterAnim.play();
-	if (!savedCharacter) { //if there isn't a character saved in the browswer
-		setTimeout( function() {
-			document.getElementById('cloud-1').classList.add('reveal');
-			document.getElementById('cloud-2').classList.add('reveal');
-		},500);
-		setTimeout( function() {
-			 //match the zoom CSS transition timing 
-			document.getElementById('scroll-path').classList.remove('zoom');
-			setTimeout( function() {
-				document.getElementById('zone01').classList.remove('hidden');
-			},750); //match the zoom CSS transition timing 
-		},3000);
-	} else { //if a character has already been selected, don't animate the clouds in
-		document.getElementById('cloud-1').classList.add('hidden');
-		document.getElementById('cloud-2').classList.add('hidden');
+	setTimeout( function() {
+		document.getElementById('cloud-1').classList.add('reveal');
+		document.getElementById('cloud-2').classList.add('reveal');
+	},500);
+	setTimeout( function() {
+		 //match the zoom CSS transition timing 
 		document.getElementById('scroll-path').classList.remove('zoom');
-		document.getElementById('zone01').classList.remove('hidden');
-	}
+	},3000);
+
 });
 
-
-	// ZOOM CONTROL
-let multiplier = 3; //on change, reset DOM
+// ZOOM CONTROL
+let multiplier = 1; //on change, reset DOM
 setZoom(multiplier);
 
 function setZoom(multiplier) {
@@ -56,161 +130,51 @@ function setZoom(multiplier) {
 	let baseHeight = 1080;
 	let zoomWidth = baseWidth * multiplier;
 	let zoomHeight = baseHeight * multiplier;
+	// make an object of zones to loop through and apply the functions
 	document.getElementById('scroll-path').style.width = zoomWidth;
 	document.getElementById('scroll-path').style.height = zoomHeight;
 	document.getElementById('water-anim').style.width = zoomWidth;
 	document.getElementById('water-anim').style.height = zoomHeight;
-	document.getElementById('zone-anim').style.width = zoomWidth;
-	document.getElementById('zone-anim').style.height = zoomHeight;
+	document.getElementById('lighthouse').style.width = zoomWidth;
+	document.getElementById('lighthouse').style.height = zoomHeight;
+	document.getElementById('construction01').style.width = zoomWidth;
+	document.getElementById('construction01').style.height = zoomHeight;
+	document.getElementById('construction02').style.width = zoomWidth;
+	document.getElementById('construction02').style.height = zoomHeight;
+	document.getElementById('construction03').style.width = zoomWidth;
+	document.getElementById('construction03').style.height = zoomHeight;
+	document.getElementById('podcast-alley').style.width = zoomWidth;
+	document.getElementById('podcast-alley').style.height = zoomHeight;
+	document.getElementById('qr-castle').style.width = zoomWidth;
+	document.getElementById('qr-castle').style.height = zoomHeight;
+	document.getElementById('airship').style.width = zoomWidth;
+	document.getElementById('airship').style.height = zoomHeight;
+	document.getElementById('sea-monster').style.width = zoomWidth;
+	document.getElementById('sea-monster').style.height = zoomHeight;
 	document.getElementById('island').style.width = zoomWidth;
-	document.getElementById('island').style.height = zoomHeight
-}
-	
-/* ========== Scroll camera path ============= */
+	document.getElementById('island').style.height = zoomHeight;
+};
 
-$(document).ready(init);
+function zoneZoom() {
+	setTimeout(function() {
+		let e = document.querySelector("#construction01 > svg > g");
+		let width = e.offsetWidth;
+		let height = e.offsetHeight;
 
-function init() {
+		let zoneOffset = "137px, 18px"; // add to the object of each zone
 
-$.fn.scrollPath("getPath")
-	// Move to 'zone-1' element
-	.moveTo(597 * multiplier , 625 * multiplier , {name: "zone01"})
-	// Line to 'zone-2' element
-	.lineTo(775 * multiplier, 443 * multiplier, {name: "zone02"})
-	// Line to 'zone-3' element
-	.lineTo(982 * multiplier, 567 * multiplier, {name: "zone03"})
-	// Line to 'zone-3' element
-	.lineTo(1017 * multiplier, 287 * multiplier, {name: "zone04"})
-	// Line to 'zone-3' element
-	.lineTo(1309 * multiplier, 476 * multiplier, {name: "zone05"})
-	// back to 'zone-1'
-	.lineTo(597 * multiplier, 625 * multiplier, {name: "end"})
-
-	// We're done with the path, let's initate the plugin on our wrapper element
-	$(".scroll-path").scrollPath({drawPath: false, wrapAround: true});
-
-	var currentZone = 'zone01';
-	function getAnchor() {
-	    return (document.URL.split('#').length > 1) ? document.URL.split('#')[1] : null;
-	}
-
-	if (getAnchor()) {
-		$.fn.scrollPath("scrollTo", getAnchor(), 100);
-		setTimeout( function() { //this is messy. can't execute the function until the previous is declared.
-			charAction.animate(getAnchor(), getAnchor(), getAnchor());
-			$('#zone01').addClass('hidden');
-			$('#' + getAnchor()).removeClass('hidden');
-		},100);
-
-		currentZone = getAnchor();
-		console.log(currentZone);
-	}
-
-	// Add scrollTo on click on the navigation anchors
-	$("nav").find("a").each(function() {
-		var target = $(this).attr("href").replace("#", "");
-
-		// show and hide zone info popup
-		$('#' + target).addClass('hidden');
-
-		$(this).click(function(e) {
-			//e.preventDefault();
-			// Show/Hide the zone info popups
-			$('#' + currentZone).addClass('hidden');
-			$('#' + target).removeClass('hidden');
-
-			// Animate the character
-			charAction.animate(currentZone, target, target);
-
-			// Move to the target zone
-			$.fn.scrollPath("scrollTo", target, 500, "easeInOutSine");
-
-			//Spin the compass
-			$('#compass').toggleClass('spin');
-
-			// Update the current zone var
-			 currentZone = target;
+		console.log("window H: " + window.innerHeight + " element H: " +  e.getBoundingClientRect().height);
+		let zoomFactor = window.innerHeight / e.getBoundingClientRect().height;
+		console.log(zoomFactor);
+		document.querySelector("#construction01 > svg > g").addEventListener('click', function() {
+			document.getElementById('wrapper').setAttribute("style", "transform:scale("+zoomFactor+") translate(" + zoneOffset + "); ");
 		});
-	});
-}	
-
-let charAction = {
-	zone01: {
-		in: [30,54],
-		loop: [55,170],
-		out: [171,177]
-	},
-	zone02: {
-		in: [260,272],
-		loop: [273,421],
-		out: [422,428]
-	},
-	zone03: {
-		in: [506,518],
-		loop: [519,541],
-		out: [542,548]
-	},
-	zone04: {
-		in: [622,646],
-		loop: [647,830],
-		out: [831,837]
-	},
-	zone05: {
-		in: [921,933],
-		loop: [934,956],
-		out: [957,936]
-	}
-};
-
-let clickCharacter = '';
-
-charSelection = function(json) {
-	let clickCharacter = 'anim/' + json;
-	let charDiv = document.getElementById('character');
-	if (charDiv.childNodes[0]) {
-		charDiv.removeChild(charDiv.childNodes[0]); 
-	}
-
-	charTest = lottie.loadAnimation({
-		container: document.getElementById('character'), // Required
-		renderer: 'svg', // Required
-		loop: true, // Optional
-		autoplay: false, // Optional
-		useSubFrames: false,
-		path: clickCharacter
-	})
-
-	charAction.animate('zone01', 'zone01', 'zone01');
-
-	document.getElementById('z1').classList.remove('hidden');
-	document.getElementById('z2').classList.remove('hidden');
-	document.getElementById('z3').classList.remove('hidden');
-	document.getElementById('z4').classList.remove('hidden');
-
-	localStorage.setItem("character", json);
-
-};
-
-charAction.animate = function(zoneOut, zoneIn, zoneLoop) {
-	charTest.playSegments([this[zoneOut].out, this[zoneIn].in, this[zoneLoop].loop], true);
-};
-
-document.getElementById("char-1").addEventListener("click", charSelection.bind(null,"char-1.json"));
-document.getElementById("char-2").addEventListener("click", charSelection.bind(null,"char-2.json"));
-document.getElementById("char-3").addEventListener("click", charSelection.bind(null,"char-3.json"));
-document.getElementById("char-4").addEventListener("click", charSelection.bind(null,"char-4.json"));
-
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-    });
-    return vars;
+	},6000); // waterfall this with the loading/intro.
 }
 
-console.log(localStorage.getItem("character"));
-let savedCharacter = localStorage.getItem("character");
+zoneZoom();
 
-if (savedCharacter) {
-	charSelection.call(null, savedCharacter);
+function screenAspect() {
+	// compage width and height to know which is the constraint
+	// add a warning that it looks better horizontal
 }
