@@ -7,7 +7,7 @@ body > svg {
 }
 
 /* center marker */
-body:after {
+/*body:after {
 	content: "";
 	background-color: red;
 	height:10px;
@@ -18,7 +18,7 @@ body:after {
 	left:50%;
 	margin-left: -5px;
 	border-radius: 10px;
-}
+}*/
 /* All three background layers */
 /* zoomed out: 1920 x 1080 */
 
@@ -49,12 +49,15 @@ body {
 	left:0;
 	height: 100%;
 	pointer-events: none;
+	opacity: 1;
 	transition: background-position linear 2s;
 }
 
 #cloud-1.reveal {
+	background-position-x: -400vw; /*for safari*/
 	background-position: -400vw;
-	transition: background-position linear 2s;
+	opacity:0;
+	transition: background-position opacity linear 2s;
 }
 
 #cloud-2 {
@@ -68,12 +71,15 @@ body {
 	left:0;
 	height: 100%;
 	pointer-events: none;
+	opacity: 1;
 	transition: background-position linear 2s;
 }
 
 #cloud-2.reveal {
+	background-position-x: 400vw; /*for safari*/
 	background-position: 400vw;
-	transition: background-position linear 2s;
+	opacity:0;
+	transition: background-position opacity linear 2s;
 }
 
 #cloud-1.hidden, #cloud-2.hidden {
@@ -243,6 +249,14 @@ html:before {
     font-size: 30px;
     margin-top: -25px;
     margin-left: -69px;
+}
+
+@media (max-width: 750px), (max-height: 750px)  {
+	.info-wrapper button {
+		position: fixed;
+	    top:auto;
+	    bottom:13px;
+	}
 }
 
 .info-wrapper button,
