@@ -1,5 +1,4 @@
 /* Digital Zone Animation page specific styling */
-
 body > svg {
 	pointer-events: none;
 	width: 100%;
@@ -36,6 +35,7 @@ body {
 	overflow:hidden;
 	display: flex;
     justify-content: center;
+    height:100%;
 }
 
 #cloud-1 {
@@ -103,30 +103,30 @@ html:before {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	opacity: .5;
+	opacity: .3;
 	z-index: -1;
 }
 
 #wrapper {	
 	position: absolute;
-	/*transform: translateX(calc(50vw - 50%)) translateY(calc(50vh - 50%)); /* Center the wrapper within the body */
 	flex-shrink: 0;
     align-self: center;
+    width:1920px;
+    height:1080px;
+    transform-origin: center;
 }
 
-#scroll-path { /* zoom is controlled on the #scroll-path div */
+#wrapper { /* zoom is controlled on the #scroll-path div */
 	transform:scale(1) translateY(0);
-	transform-origin: center left;
 	transition: transform ease .75s;
 }
 
-#scroll-path.zoom {
+#wrapper.zoom {
 	transform:scale(.5);
-	transform-origin: center left;
 	transition: transform ease-out .75s;
 }
 
-#scroll-path div {
+#wrapper div {
 	transition: height width ease 4s;
 
 }
@@ -134,8 +134,7 @@ html:before {
 
 #island,
 #zone-anim,
-#water-anim,
-#scroll-path  {
+#water-anim {
 	background-repeat: no-repeat;
 }
 
@@ -144,49 +143,41 @@ html:before {
 	position: absolute;
 }
 
-.scroll-path {
+/*.wrapper {
 	position: relative;
-}
+}*/
 
 #island {
 	background-image: url('../img/bg-island.svg');
 }
 
-canvas {
-	/*z-index: 0 !important;*/
+#trees {
+	background-image: url('../img/trees.svg');
 }
+
+#path-around {
+	background-image: url('../img/path-around.svg');
+}
+
+#path-above {
+	background-image: url('../img/path-above.svg');
+}
+
 #zone-anim, #water-anim {
 	position: absolute;
     
 }
 
-.scroll-path > div {
+#wrapper > div {
 	position: absolute;
+	pointer-events: none;
+	width:100%;
+	height:100%;
 } 
 
 /*------------*/
 /* Navigation */
 /*------------*/
-
-nav {
-    position: fixed;
-    text-align: center;
-    bottom: 0;
-    right: 0;
-    left:0;
-    padding:30px 20px;
-	background-color:#FFD255;
-	padding: 15px;
-	height:19px;
-}
-
-nav a {
-	display: inline-block;
-	text-decoration: none;
-	color:#474747 !important;
-	margin: 0 10px;
-	font-weight: 900;
-}
 
 #compass {
 	height:200px;
@@ -195,10 +186,13 @@ nav a {
 	background-image: url("../img/compas-bg.svg");
 	background-size: 200px 200px;
 	background-position: center;
-	background-color: rgba(177,224,237, .8);
 	position: absolute;
-	left:30px;
-	bottom:80px;
+	right:30px;
+	bottom:30px;
+}
+
+#compass.back {
+	cursor: pointer;
 }
 
 #compass:after {
@@ -216,22 +210,92 @@ nav a {
 }
 
 #compass.spin:after {
-	transform:rotate(1720deg);
+	transform:rotate(1440deg);
 	transition: transform 2s ease-out;
+}
+
+#compass:before {
+	content:"";
+	height:200px;
+	width:200px;
+	display: block;
+	position: absolute;
+	left:0;
+	opacity:0;
+	background-image: url("../img/compas-back-btn.svg");
+	background-size: 200px 200px;
+	background-position: center;
+	z-index: 10000;
+}
+
+#compass.back:before {
+	opacity:1;
 }
 
 /*----------------------*/
 /* Zone Content Overlay */
 /*----------------------*/
 
-.zone-wrapper {
-	padding:30px 20px;
-	background-color:rgba(255,255,255,.9);
-	border-radius: 20px;
-	text-align: center;
-	-moz-box-shadow: 8px 10px rgba(0,0,0,.4);
-	-webkit-box-shadow: 8px 10px rgba(0,0,0,.4);
-	box-shadow: 8px 10px rgba(0,0,0,.4);
+.info-wrapper button {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    margin-top: -25px;
+    margin-left: -69px;
+}
+
+.info-wrapper button,
+.info-wrapper button:after,
+.info-wrapper button:before {
+	box-shadow: 5px 5px 0 #7F5F5D;
+}
+
+.info-wrapper > div {
+	display: block;
+    position: fixed;
+    text-align: left;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    padding: 30px 260px;
+    background-color: #fff;
+    border-bottom: 6px solid #FFD255;
+    opacity:1;
+	transition:opacity ease .5s;
+}
+
+.info-wrapper > div:after {
+	content: "";
+    display: block;
+    background-image: url(../img/cloud-decoration.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 130px;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+
+.info-wrapper > div:before {
+	content: "";
+    display: block;
+    background-image: url(../img/cloud-decoration.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 130px;
+    position: absolute;
+    bottom: -20px;
+    right: 180px;
+    transform: rotate(180deg);
+}
+
+.info-wrapper > div.hidden {
+	display: none;
+	opacity:0;
+	transition:opacity ease .5s;
 }
 
 /*Hover controls*/
@@ -246,15 +310,30 @@ nav a {
 	transition: opacity .2s ease;
 }
 
-.scroll-path div {
-	pointer-events: none;
-}
-
-.scroll-path .active-zone > svg > g {
+#wrapper .active-zone > svg > g {
 	pointer-events: auto;
 	cursor: pointer;
 }
-.scroll-path .active-zone > svg > g:hover {
-	outline:solid 0px #fff;
+
+#wrapper.zoomed-in .active-zone > svg > g {
+	pointer-events: none;
 }
+
+.active-zone > svg > g #PodcastAlley-Halo, .zoomed-in .active-zone > svg > g:hover #PodcastAlley-Halo,
+.active-zone > svg > g #airship-halo, .zoomed-in .active-zone > svg > g:hover #airship-halo,
+.active-zone > svg > g #qr-halo, .zoomed-in .active-zone > svg > g:hover #qr-halo,
+.active-zone > svg > g #lighthouse-halo, .zoomed-in .active-zone > svg > g:hover #lighthouse-halo  {
+	opacity:0;
+	transition: opacity .2s ease;
 }
+
+.active-zone > svg > g:hover #PodcastAlley-Halo,
+.active-zone > svg > g:hover #airship-halo,
+.active-zone > svg > g:hover #qr-halo,
+.active-zone > svg > g:hover #lighthouse-halo {
+	opacity:1;
+	transition: opacity .2s ease;
+}
+
+
+

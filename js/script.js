@@ -1,180 +1,141 @@
+const wrapper = document.getElementById('wrapper');
 
-var zoneAnim = lottie.loadAnimation({
-	container: document.getElementById('lighthouse'), // Required
-	renderer: 'svg', // Required
-	loop: true, // Optional
-	autoplay: true, // Optional
-	useSubFrames: false,
-	rendererSettings: {
-        progressiveLoad: true
-      },
-	path: "anim/lighthouse.json"
-})
+// base size variables
+const baseWidth = 1920;
+const baseHeight = 1080;
 
-var zoneAnim = lottie.loadAnimation({
-	container: document.getElementById('construction01'), // Required
-	renderer: 'svg', // Required
-	loop: true, // Optional
-	autoplay: true, // Optional
-	useSubFrames: false,
-	rendererSettings: {
-        progressiveLoad: true
-      },
-	path: "anim/construction01.json"
-})
+const animations = document.getElementsByClassName("anim");
+var arr = [];
+for (var i = 0; i < animations.length; i++) {
+	arr.push(animations[i]);
+}
 
-var zoneAnim = lottie.loadAnimation({
-	container: document.getElementById('construction02'), // Required
-	renderer: 'svg', // Required
-	loop: true, // Optional
-	autoplay: true, // Optional
-	useSubFrames: false,
-	rendererSettings: {
-        progressiveLoad: true
-      },
-	path: "anim/construction02.json"
-})
+for (var i = 0; i < animations.length; i++) {
+	var anim = lottie.loadAnimation({
+		container: document.getElementById(animations[i].id), // Required
+		renderer: 'svg', // Required
+		loop: true, // Optional
+		autoplay: true, // Optional
+		useSubFrames: false,
+		rendererSettings: {
+	        progressiveLoad: true
+	      },
+		path: "anim/"+animations[i].id+".json"
+	})
+	anim.play();
+}
 
-var zoneAnim = lottie.loadAnimation({
-	container: document.getElementById('construction03'), // Required
-	renderer: 'svg', // Required
-	loop: true, // Optional
-	autoplay: true, // Optional
-	useSubFrames: false,
-	rendererSettings: {
-        progressiveLoad: true
-      },
-	path: "anim/construction03.json"
-})
+const zones = document.getElementsByClassName("active-zone");
+var arr = [];
+for (var i = 0; i < zones.length; i++) {
+	arr.push(zones[i]);
+}
 
-var zoneAnim = lottie.loadAnimation({
-	container: document.getElementById('podcast-alley'), // Required
-	renderer: 'svg', // Required
-	loop: true, // Optional
-	autoplay: true, // Optional
-	useSubFrames: false,
-	rendererSettings: {
-        progressiveLoad: true
-      },
-	path: "anim/podcast-alley.json"
-})
-
-var zoneAnim = lottie.loadAnimation({
-	container: document.getElementById('qr-castle'), // Required
-	renderer: 'svg', // Required
-	loop: true, // Optional
-	autoplay: true, // Optional
-	useSubFrames: false,
-	rendererSettings: {
-        progressiveLoad: true
-      },
-	path: "anim/qr-castle.json"
-})
-
-var zoneAnim = lottie.loadAnimation({
-	container: document.getElementById('sea-monster'), // Required
-	renderer: 'svg', // Required
-	loop: true, // Optional
-	autoplay: true, // Optional
-	useSubFrames: false,
-	rendererSettings: {
-        progressiveLoad: true
-      },
-	path: "anim/sea-monster.json"
-})
-
-var zoneAnim = lottie.loadAnimation({
-	container: document.getElementById('airship'), // Required
-	renderer: 'svg', // Required
-	loop: true, // Optional
-	autoplay: true, // Optional
-	useSubFrames: false,
-	rendererSettings: {
-        progressiveLoad: true
-      },
-	path: "anim/airship.json"
-})
-
-var waterAnim = lottie.loadAnimation({
-	container: document.getElementById('water-anim'), // Required
-	renderer: 'svg', // Required
-	loop: false, // Optional
-	autoplay: false, // Optional
-	useSubFrames: false,
-	rendererSettings: {
-        progressiveLoad: true
-      },
-	path: "anim/water-loop.json"
-})
-
+//initro timing functions.
+// --> add some logic to wait until everything is actually loaded
 window.addEventListener('DOMContentLoaded', function() {
-	zoneAnim.play();
-	waterAnim.play();
 	setTimeout( function() {
 		document.getElementById('cloud-1').classList.add('reveal');
 		document.getElementById('cloud-2').classList.add('reveal');
-	},500);
+	},1000);
 	setTimeout( function() {
 		 //match the zoom CSS transition timing 
-		document.getElementById('scroll-path').classList.remove('zoom');
+		document.getElementById('wrapper').classList.remove('zoom');
 	},3000);
 
 });
 
 // ZOOM CONTROL
-let multiplier = 1; //on change, reset DOM
-setZoom(multiplier);
+
+function calcZoom(inputWidth, inputHeight) {
+	function getWidth() {
+		return Math.max(
+			document.body.offsetWidth,
+			document.documentElement.offsetWidth,
+			document.documentElement.clientWidth,
+			document.body.clientWidth,
+			window.innerWidth
+			);
+		}
+
+		function getHeight() {
+		return Math.max(
+			document.body.offsetHeight,
+			document.documentElement.offsetHeight,
+			document.documentElement.clientHeight,
+			document.body.clientHeight,
+			window.innerHeight
+			);
+		}
+
+	winWidth = getWidth();
+	winHeight = getHeight();
+
+	var baseAspect =  inputHeight / inputWidth;
+	var widthFactor = winWidth / inputWidth;
+	var heightFactor = winHeight / inputHeight;
+
+	if (widthFactor >= 1 && heightFactor >= 1) {
+		// both dimensions are larger
+		if (winWidth > winHeight) {
+			console.log(1);
+			return heightFactor;
+		} else {
+			console.log(2);
+			return widthFactor;
+		}
+	} else {
+		// at least one dimension is smaller
+		if (winWidth >= winHeight / baseAspect) {
+			// wide aspect, but not narrower than the base aspect
+			console.log(3);
+			return heightFactor;
+		} else {
+			//narrow aspect
+			console.log(winWidth);
+			return widthFactor;
+		}
+	}
+}
 
 function setZoom(multiplier) {
-	let baseWidth = 1920;
-	let baseHeight = 1080;
-	let zoomWidth = baseWidth * multiplier;
-	let zoomHeight = baseHeight * multiplier;
-	// make an object of zones to loop through and apply the functions
-	document.getElementById('scroll-path').style.width = zoomWidth;
-	document.getElementById('scroll-path').style.height = zoomHeight;
-	document.getElementById('water-anim').style.width = zoomWidth;
-	document.getElementById('water-anim').style.height = zoomHeight;
-	document.getElementById('lighthouse').style.width = zoomWidth;
-	document.getElementById('lighthouse').style.height = zoomHeight;
-	document.getElementById('construction01').style.width = zoomWidth;
-	document.getElementById('construction01').style.height = zoomHeight;
-	document.getElementById('construction02').style.width = zoomWidth;
-	document.getElementById('construction02').style.height = zoomHeight;
-	document.getElementById('construction03').style.width = zoomWidth;
-	document.getElementById('construction03').style.height = zoomHeight;
-	document.getElementById('podcast-alley').style.width = zoomWidth;
-	document.getElementById('podcast-alley').style.height = zoomHeight;
-	document.getElementById('qr-castle').style.width = zoomWidth;
-	document.getElementById('qr-castle').style.height = zoomHeight;
-	document.getElementById('airship').style.width = zoomWidth;
-	document.getElementById('airship').style.height = zoomHeight;
-	document.getElementById('sea-monster').style.width = zoomWidth;
-	document.getElementById('sea-monster').style.height = zoomHeight;
-	document.getElementById('island').style.width = zoomWidth;
-	document.getElementById('island').style.height = zoomHeight;
+	// is this always used with calcZoom?
+	var zoomWidth = baseWidth * multiplier;
+	var zoomHeight = baseHeight * multiplier;
+	document.getElementById("wrapper").setAttribute("style", "transform:scale("+multiplier+");");
 };
 
-function zoneZoom() {
-	setTimeout(function() {
-		let e = document.querySelector("#construction01 > svg > g");
-		let width = e.offsetWidth;
-		let height = e.offsetHeight;
+setZoom(calcZoom(baseWidth, baseHeight));
+window.addEventListener("resize", function() {setZoom(calcZoom(baseWidth, baseHeight))});
 
-		let zoneOffset = "137px, 18px"; // add to the object of each zone
-
-		console.log("window H: " + window.innerHeight + " element H: " +  e.getBoundingClientRect().height);
-		let zoomFactor = window.innerHeight / e.getBoundingClientRect().height;
-		console.log(zoomFactor);
-		document.querySelector("#construction01 > svg > g").addEventListener('click', function() {
-			document.getElementById('wrapper').setAttribute("style", "transform:scale("+zoomFactor+") translate(" + zoneOffset + "); ");
+setTimeout ( function() {
+	for (var i = 0; i < zones.length; i++) {
+		var e = document.querySelector("#" + zones[i].id + " > svg > g");
+		e.addEventListener('click', function() {
+			let zoneMargin = 80;
+			let zoneWidth = this.getBoundingClientRect().width + zoneMargin;
+			let zoneHeight = this.getBoundingClientRect().height + zoneMargin;
+			// holy shit the zone centering coords are crazy to calculate!
+			let hroizontalOffset = (wrapper.getBoundingClientRect().left + ((wrapper.getBoundingClientRect().width / 2) - this.getBoundingClientRect().left - ( zoneWidth / 2) + (zoneMargin /2))) * (-1 / calcZoom(baseWidth, baseHeight));
+			let verticalOffset = (wrapper.getBoundingClientRect().top + ((wrapper.getBoundingClientRect().height / 2) - this.getBoundingClientRect().top - ( zoneHeight / 2) + 5)) * (-1 / calcZoom(baseWidth, baseHeight));
+	
+			let zoomFactor = calcZoom(zoneWidth, zoneHeight) * calcZoom(baseWidth, baseHeight);
+			wrapper.setAttribute("style", "transform:scale("+zoomFactor+") translate("+hroizontalOffset * -1+"px,"+verticalOffset * -1+"px); ");
+			wrapper.classList.add('zoomed-in');
+			activeZone = this.parentElement.parentElement.id;
+			document.getElementById(activeZone + "-info").classList.remove('hidden');
+			document.querySelector("#compass").classList.toggle("spin");
+			document.querySelector("#compass").classList.add("back");
 		});
-	},6000); // waterfall this with the loading/intro.
-}
+	}
+}, 4000);
 
-zoneZoom();
-
-function screenAspect() {
-	// compage width and height to know which is the constraint
-	// add a warning that it looks better horizontal
-}
+document.querySelector("#compass").addEventListener('click', function() {
+	setZoom(calcZoom(baseWidth, baseHeight))
+	wrapper.classList.remove("zoomed-in");
+	this.classList.toggle("spin");
+	this.classList.remove("back");
+	try {
+		document.getElementById(activeZone + "-info").classList.add('hidden');
+	} catch {};
+});

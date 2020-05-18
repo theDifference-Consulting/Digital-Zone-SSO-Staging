@@ -15,6 +15,7 @@ body {
 h1,h2,h3,h4,h5,strong {
 	font-weight: 900;
 	margin:0;
+	margin-bottom:14px;
 }
 
 h1 {
@@ -76,12 +77,11 @@ ol li:before {
  }
 
 ul.triangle {
-    margin: 0.75em 0;
     padding: 0 1em;
     list-style: none;
 }
 ul.triangle li:before { 
-content: "";
+	content: "";
     border-color: transparent #FFD255;
     border-style: solid;
     border-width: 10px 0 10px 14px;
@@ -159,6 +159,7 @@ textarea, select, input, button { outline: none; }
 	position: relative;
 	margin-bottom: 16px;
 	cursor: pointer;
+	border:none;
 }
 
 .block-highlight:before{
@@ -434,4 +435,17 @@ footer .copyright {
 
 .qr-castle .example-spacer {
 	height:60px;
+}
+
+/* News */
+
+.news header .container {
+	background-image: url('../img/news-header.svg');
+}
+
+
+/* Visitor Info */
+
+.visitor-info header .container {
+	background-image: url('../img/visitor-info.svg');
 }

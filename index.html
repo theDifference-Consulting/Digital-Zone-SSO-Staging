@@ -6,72 +6,73 @@
 		<link rel="stylesheet" type="text/css" href="css/zone.css"/>
 	</head>
 	<body id="body">
-		<div class="wrapper" id="wrapper"> <!-- this will move and center the desired zone in the browser -->
-			<div class="scroll-path zoom" id="scroll-path"> <!-- this will zoom and move to each zone -->
-				<div id="bg-water"></div>
-				<div id="water-anim"></div>
-				<div id="island"></div>
-				<div id="qr-castle" class="active-zone"></div>
-				<div id="construction01" class="active-zone"></div>
-				<div id="construction02" class="active-zone"></div>
-				<div id="construction03" class="active-zone"></div>
-				<div id="lighthouse" class="active-zone"></div>
-				<div id="podcast-alley" class="active-zone"></div>
-				<div id="airship" class="active-zone"></div>
-				<div id="sea-monster" ></div>
-			</div>
+		<div class="zoom" id="wrapper"> <!-- this will move and center the desired zone in the browser -->
+			<div id="bg-water"></div>
+			<div id="water-loop" class="anim"></div>
+			<div id="lighthouse" class="active-zone anim"></div>
+			<div id="arrow" class="anim"></div>
+			<div id="island"></div>
+			<div id="waterfall" class="anim"></div>
+			<div id="sea-monster" class="anim"></div>
+			<div id="qr-castle" class="active-zone anim"></div>
+			<div id="construction03" class="anim"></div>
+			<div id="construction02" class="anim"></div>
+			<div id="airship" class="active-zone anim"></div>
+			<div id="path-around"></div>
+			<div id="construction01" class="anim"></div>
+			<div id="trees"></div>
+			<div id="path-above"></div>
+			<div id="podcast-alley" class="active-zone anim"></div>
 		</div>
-		<!-- <div class="info-wrapper">
-				<div class="zone04 hidden" id="zone04">
-						<div class="zone-wrapper chat-arrow">
-								<p>
-										You have arrived at
-								</p>
-								<h2>QR Castle</h2>
+		<div class="info-wrapper">
+				<div class="hidden" id="qr-castle-info">
+						<div class="zone-wrapper">
 								<p>
 										Here you'll learn all about using QR codes at Gilead. You'll see examples, get tips and hear how colleagues are using them to enhance and extend conference posters.
 								</p>
 								<a href="qr-castle.html">
-										<button class="block-highlight">ENTER</button>
+										<button class="block-highlight">Enter</button>
 								</a>
 						</div>
 				</div>
-				<div class="zone03 hidden" id="zone03">
-						<div class="zone-wrapper chat-arrow">
+				<div class="hidden" id="airship-info">
+						<div class="zone-wrapper">
 								<p>
-										Welcome to
+										Check here often for breaking news about some of the innovations and digital projects that are happening across Gilead and the world.
 								</p>
-								<h2>Podcast Alley</h2>
+								<a href="news.html">
+										<button class="block-highlight">Enter</button>
+								</a>
+						</div>
+				</div>
+				<div class="hidden" id="lighthouse-info">
+						<div class="zone-wrapper">
+								<p>
+										The island is your main navigation page. The topic areas are structures around the island, and each active topic area is labeled.
+								</p>
+								<p>
+									Click on a topic area to zoom in and see a summary of the topic.
+								</p>
+								<p>
+									Click the compass to go back to the full island or click through to access the topic area's full content page with a variety of tools, tips and articles. Visit the Visitor Centre content page to learn more about the Zone and the people behind it!
+								</p>
+								<a href="visitor-centre.html">
+										<button class="block-highlight">Enter</button>
+								</a>
+						</div>
+				</div>
+				<div class="hidden" id="podcast-alley-info">
+						<div class="zone-wrapper">
 								<p>
 										Here you'll find the Digital Zone's podcasting resources. You can listen and subscribe to episodes and get tips and guidance to help make your own podcasts.
 								</p>
 								<a href="podcast-alley.html">
-										<button class="block-highlight">ENTER</button>
+										<button class="block-highlight">Enter</button>
 								</a>
 						</div>
 				</div>
-				<div class="zone02 hidden" id="zone02">
-						<div class="zone-wrapper chat-arrow">
-								<h2> Under Construction</h2>
-								<p>
-										Stay tuned for more exciting Zone content!
-								</p>
-						</div>
-				</div>
-				<div class="zone01 hidden" id="zone01">
-						<div class="zone-wrapper">
-								<p>Select <span>your guide to get started, then select </span>a zone to explore</p>
-								<h1>The Gilead Digital Zone</h1>
-						</div>
-				</div>
-		</div> -->
-		<nav>
-			<a href="#zone01" id="z1" class="hidden">Welcome</a>
-			<a href="#zone02" id="z2" class="hidden">Coming Soon</a>
-			<a href="#zone03" id="z3" class="hidden">Podcast Alley</a>
-			<a href="#zone04" id="z4" class="hidden">QR Castle</a>
-			<div id="compass"></div>
-		</nav>
+		</div>
+		<div id="compass"></div>
 		<div id="cloud-1"></div>
 		<div id="cloud-2"></div>
 	</body>

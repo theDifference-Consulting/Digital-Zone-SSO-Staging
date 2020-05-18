@@ -1,0 +1,32 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.07 39.97">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f5fffe;
+      }
+
+      .cls-2 {
+        fill: #ffd255;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #515151;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>news-bug</title>
+  <g>
+    <g>
+      <g>
+        <rect class="cls-1" y="12.17" width="60.5" height="24.86" rx="11.72"/>
+        <rect class="cls-1" x="25.57" y="2.41" width="60.5" height="24.86" rx="11.72"/>
+      </g>
+      <rect class="cls-2" x="20.73" width="49.34" height="39.97" rx="7.87"/>
+    </g>
+    <path class="cls-3" d="M27.05,11.15l36.7-5.24L40.86,35.08,39.58,22.44l-.06-2.29L39.33,20l0-.23-1.95-1.2-10.3-7.43ZM62.67,6.54,39.41,20"/>
+  </g>
+</svg>
