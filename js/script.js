@@ -137,5 +137,5 @@ document.querySelector("#compass").addEventListener('click', function() {
 	this.classList.remove("back");
 	try {
 		document.getElementById(activeZone + "-info").classList.add('hidden');
-	} catch {};
+	} catch (error){};
 });
