@@ -50,14 +50,13 @@ body {
 	height: 100%;
 	pointer-events: none;
 	opacity: 1;
-	transition: background-position linear 2s;
 }
 
 #cloud-1.reveal {
 	background-position-x: -400vw; /*for safari*/
 	background-position: -400vw;
-	opacity:0;
-	transition: background-position opacity linear 2s;
+	opacity:1;
+	transition: all ease-in 2s;
 }
 
 #cloud-2 {
@@ -72,29 +71,23 @@ body {
 	height: 100%;
 	pointer-events: none;
 	opacity: 1;
-	transition: background-position linear 2s;
 }
 
 #cloud-2.reveal {
 	background-position-x: 400vw; /*for safari*/
 	background-position: 400vw;
-	opacity:0;
-	transition: background-position opacity linear 2s;
+	opacity:1;
+	transition: all ease-in 2s;
 }
 
 #cloud-1.hidden, #cloud-2.hidden {
 	display: none;
 }
 
-#bg-water {
+html {
 	background-image: url('../img/bg-water.svg');
-	width: 7680px;
-	height: 4320px;
 	background-position: center; 
-	margin-left: -3840px;
-    left: 50%;
-    margin-top: -2160px;
-    top: 50%;
+	background-size: cover;
 }
 
 
@@ -244,20 +237,13 @@ html:before {
 
 .info-wrapper button {
 	position: fixed;
-    top: 50%;
+    top:auto;
+    bottom:13px;
     left: 50%;
     font-size: 30px;
-    margin-top: -25px;
     margin-left: -69px;
 }
 
-@media (max-width: 750px), (max-height: 750px)  {
-	.info-wrapper button {
-		position: fixed;
-	    top:auto;
-	    bottom:13px;
-	}
-}
 
 .info-wrapper button,
 .info-wrapper button:after,
@@ -349,5 +335,16 @@ html:before {
 	transition: opacity .2s ease;
 }
 
-
+#ie-notice {
+	position: fixed;
+    top: 0;
+    padding: 6px;
+    color: #fff;
+    background-color: #F15723;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+}
 

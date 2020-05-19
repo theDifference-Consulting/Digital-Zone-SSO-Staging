@@ -5,10 +5,6 @@ const baseWidth = 1920;
 const baseHeight = 1080;
 
 const animations = document.getElementsByClassName("anim");
-var arr = [];
-for (var i = 0; i < animations.length; i++) {
-	arr.push(animations[i]);
-}
 
 for (var i = 0; i < animations.length; i++) {
 	var anim = lottie.loadAnimation({
@@ -21,27 +17,30 @@ for (var i = 0; i < animations.length; i++) {
 	        progressiveLoad: true
 	      },
 		path: "anim/"+animations[i].id+".json"
-	})
+	});
 	anim.play();
 }
 
-const zones = document.getElementsByClassName("active-zone");
-var arr = [];
-for (var i = 0; i < zones.length; i++) {
-	arr.push(zones[i]);
+function setZoom(multiplier) {
+	// is this always used with calcZoom?
+	document.getElementById("wrapper").setAttribute("style", "transform:scale("+multiplier+");");
 }
+
+window.addEventListener("resize", function() {
+	setZoom(calcZoom(baseWidth, baseHeight));
+});
 
 //initro timing functions.
 // --> add some logic to wait until everything is actually loaded
 window.addEventListener('DOMContentLoaded', function() {
-	setTimeout( function() {
+	anim.addEventListener('DOMLoaded', function() { 
 		document.getElementById('cloud-1').classList.add('reveal');
 		document.getElementById('cloud-2').classList.add('reveal');
-	},1000);
+	});
 	setTimeout( function() {
 		 //match the zoom CSS transition timing 
-		document.getElementById('wrapper').classList.remove('zoom');
-	},3000);
+		setZoom(calcZoom(baseWidth, baseHeight));
+	},2300);
 
 });
 
@@ -78,37 +77,25 @@ function calcZoom(inputWidth, inputHeight) {
 	if (widthFactor >= 1 && heightFactor >= 1) {
 		// both dimensions are larger
 		if (winWidth > winHeight) {
-			console.log(1);
 			return heightFactor;
 		} else {
-			console.log(2);
 			return widthFactor;
 		}
 	} else {
 		// at least one dimension is smaller
 		if (winWidth >= winHeight / baseAspect) {
 			// wide aspect, but not narrower than the base aspect
-			console.log(3);
 			return heightFactor;
 		} else {
 			//narrow aspect
-			console.log(winWidth);
 			return widthFactor;
 		}
 	}
 }
 
-function setZoom(multiplier) {
-	// is this always used with calcZoom?
-	var zoomWidth = baseWidth * multiplier;
-	var zoomHeight = baseHeight * multiplier;
-	document.getElementById("wrapper").setAttribute("style", "transform:scale("+multiplier+");");
-};
-
-setZoom(calcZoom(baseWidth, baseHeight));
-window.addEventListener("resize", function() {setZoom(calcZoom(baseWidth, baseHeight))});
-
-setTimeout ( function() {
+anim.addEventListener('DOMLoaded', function() { 
+	const zones = document.getElementsByClassName("active-zone");
+	var arr = [];
 	for (var i = 0; i < zones.length; i++) {
 		var e = document.querySelector("#" + zones[i].id + " > svg > g");
 		e.addEventListener('click', function() {
@@ -128,14 +115,14 @@ setTimeout ( function() {
 			document.querySelector("#compass").classList.add("back");
 		});
 	}
-}, 4000);
+});
 
 document.querySelector("#compass").addEventListener('click', function() {
-	setZoom(calcZoom(baseWidth, baseHeight))
+	setZoom(calcZoom(baseWidth, baseHeight));
 	wrapper.classList.remove("zoomed-in");
 	this.classList.toggle("spin");
 	this.classList.remove("back");
 	try {
 		document.getElementById(activeZone + "-info").classList.add('hidden');
-	} catch (error){};
+	} catch (error){}
 });
