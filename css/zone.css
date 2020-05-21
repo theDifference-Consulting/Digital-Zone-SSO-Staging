@@ -59,6 +59,10 @@ body:after {
 	z-index: -1;
 }
 
+svg * {
+   	font-family: 'Lato', sans-serif;
+}
+
 #cloud-1 {
 	background-image: url("../img/cloud-left.svg");
 	background-repeat: no-repeat;
