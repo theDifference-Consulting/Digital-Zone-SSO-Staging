@@ -145,6 +145,23 @@ nav li.active a  {
 	margin-bottom: 3px;
 }
 
+#back-compass {
+	background-image: url('../img/back-compass.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	width:120px;
+	height: 101px;
+	position: fixed;
+	bottom:20px;
+	right: 15px;
+}
+
+@media (max-width: 1349px) {
+	#back-compass {
+		display:none;
+	}
+}
+
 /* buttons */
 
 textarea, select, input, button { outline: none; }

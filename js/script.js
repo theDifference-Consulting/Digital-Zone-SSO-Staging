@@ -40,8 +40,8 @@ window.addEventListener('DOMContentLoaded', function() {
 	setTimeout( function() {
 		 //match the zoom CSS transition timing 
 		setZoom(calcZoom(baseWidth, baseHeight));
+		document.getElementById('audio').play();
 	},2300);
-
 });
 
 // ZOOM CONTROL
@@ -126,3 +126,16 @@ document.querySelector("#compass").addEventListener('click', function() {
 		document.getElementById(activeZone + "-info").classList.add('hidden');
 	} catch (error){}
 });
+
+var playing = true;
+document.getElementById('play-mute').addEventListener('click', function() {
+	if (playing) {
+		document.getElementById('audio').pause();
+		playing = false;
+	} else {
+		document.getElementById('audio').play();
+		playing = true;
+	}
+	document.getElementById('play-mute').classList.toggle('play');
+});
+
