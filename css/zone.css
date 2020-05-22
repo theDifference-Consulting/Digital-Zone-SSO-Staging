@@ -110,6 +110,21 @@ svg * {
 	display: none;
 }
 
+#loading {
+	width:150px;
+	height: 150px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-top: -75px;
+	margin-left: -75px;
+	z-index: 1001;
+}
+
+#loading.hidden {
+	display:none;
+}
+
 #wrapper {	
 	position: absolute;
 	flex-shrink: 0;
@@ -184,7 +199,7 @@ svg * {
 	height:200px;
 	width:200px;
 	border-radius: 200px;
-	background-image: url("../img/compas-bg.svg");
+	background-image: url("../img/compass-bg.svg");
 	background-size: 200px 200px;
 	background-position: center;
 	position: fixed;
@@ -205,7 +220,7 @@ svg * {
 	display: block;
 	position: absolute;
 	left:0;
-	background-image: url("../img/compas-arrow.svg");
+	background-image: url("../img/compass-arrow.svg");
 	background-size: 200px 200px;
 	background-position: center;
 	transform:rotate(30deg);

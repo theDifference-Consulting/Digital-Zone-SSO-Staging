@@ -34,6 +34,7 @@ window.addEventListener("resize", function() {
 // --> add some logic to wait until everything is actually loaded
 window.addEventListener('DOMContentLoaded', function() {
 	anim.addEventListener('DOMLoaded', function() { 
+		document.getElementById('loading').classList.add('hidden');
 		document.getElementById('cloud-1').classList.add('reveal');
 		document.getElementById('cloud-2').classList.add('reveal');
 	});
