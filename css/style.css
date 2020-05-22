@@ -345,8 +345,10 @@ footer .copyright {
 	max-width: 100%;
 }
 
-.podcast-alley .audio-quote{
-	padding:0 40px;
+@media (min-width: 700px) {
+	.podcast-alley .audio-quote{
+		padding:0 40px;
+	}
 }
 
 .podcast-alley .audio-quote button {
