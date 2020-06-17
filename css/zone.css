@@ -393,3 +393,7 @@ svg * {
 #play-mute.play {
 	background-image: url('../img/play.svg');
 }
+
+#digital-champions .full-width {
+	text-align: center;
+}

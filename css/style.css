@@ -57,7 +57,7 @@ ol {
  }
 
 ol li {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	counter-increment: item;
  }
 
@@ -467,4 +467,20 @@ footer .copyright {
 
 .visitor-info header .container {
 	background-image: url('../img/visitor-info.svg');
+}
+
+#digital-champions .full-width {
+    text-align: center;
+    background-color: #FFD255;
+    margin-top: 40px;
+}
+#digital-champions .full-width h3 {
+    font-size: 28px;
+}
+
+#digital-champions .champion-names {
+	background-color: #FFD255;
+	text-align: center;
+	padding:30px 5px;
+	word-break: break-word;
 }
