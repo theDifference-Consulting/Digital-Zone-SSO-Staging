@@ -395,6 +395,10 @@ footer .copyright {
 	margin-bottom: 0;
 }
 
+#advice .pros {
+    margin-bottom: 30px;
+}
+
 .podcast-alley .podcast-guide {
 	height:600px;
 	max-height: 80vh;
