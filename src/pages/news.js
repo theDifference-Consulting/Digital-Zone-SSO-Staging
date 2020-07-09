@@ -37,7 +37,7 @@ export default function News() {
             <header>
                 <div class="container">
                     <div class="heading-cloud-wrapper row">
-                        <h1>News</h1>
+                        <h1>test</h1>
                     </div>
                 </div>
             </header>
