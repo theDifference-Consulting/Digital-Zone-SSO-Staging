@@ -1,10 +1,20 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
+
 
 export default function News() {
   return (
     <>
-    <body class="secondary-template">
+    <Helmet>
+        <title>Gilead Digital Zone — News</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+    </Helmet>
+    <main class="secondary-template">
         <div class="container-fluid news">
             <nav class="navbar">
                 <div class="navbar-header">
@@ -37,7 +47,7 @@ export default function News() {
             <header>
                 <div class="container">
                     <div class="heading-cloud-wrapper row">
-                        <h1>test</h1>
+                        <h1>News</h1>
                     </div>
                 </div>
             </header>
@@ -119,7 +129,7 @@ export default function News() {
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-    </body>
+    </main>
     </>
   )
 }
