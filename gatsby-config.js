@@ -8,6 +8,7 @@ module.exports = {
   /* Your site config here */
   plugins: [
   	`gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify-cms`,
   	{
     resolve: `gatsby-plugin-html-comments`,
     options: {
@@ -19,6 +20,14 @@ module.exports = {
           },
       ]
     }
-  }
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `markdown-pages`,
+      path: `${__dirname}/static/_posts/news`,
+    },
+  },
+  `gatsby-transformer-remark`,
   ],
 }

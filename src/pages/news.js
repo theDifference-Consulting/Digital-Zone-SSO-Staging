@@ -1,49 +1,30 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
+import Navbar from "../components/navBar"
+import BlogRoll from '../components/BlogRoll'
 
 
-export default function News() {
-  return (
+
+
+export default class BlogIndexPage extends React.Component {
+  render() {
+    return (
     <>
     <Helmet>
         <title>Gilead Digital Zone — News</title>
-        <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="../css/style.css"/>
-    	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,900&display=swap" rel="stylesheet"/>
+    	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
     </Helmet>
     <main class="secondary-template">
         <div class="container-fluid news">
-            <nav class="navbar">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
-                        <li>
-                            <a href="/visitor-centre.html">Visitor Info</a>
-                        </li>
-                        <li>
-                            <a href="/podcast-alley.html">Podcast Alley</a>
-                        </li>
-                        <li>
-                            <a href="/qr-castle.html">QR Castle</a>
-                        </li>
-                        <li class="active">
-                            <a href="/news.html">News</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <Navbar/>
             <header>
                 <div class="container">
                     <div class="heading-cloud-wrapper row">
@@ -51,9 +32,14 @@ export default function News() {
                     </div>
                 </div>
             </header>
+
+			<React.Fragment>
+				<BlogRoll />
+			</React.Fragment>
+
             <section class="light-bg row" id="">
                 <div class="container">
-                    <img src="img/news-bug.svg" class="bug"/>
+                    <img src="../img/news-bug.svg" class="bug"/>
                     <h2>What's new in the Digital Zone!</h2>
                     <h3>Meet the Digital Country Champions</h3>
                     <p>
@@ -82,9 +68,10 @@ export default function News() {
                     </p>
                 </div>
             </section>
+
             <section class="light-bg row" id="">
                 <div class="container">
-                    <img src="img/news-bug.svg" class="bug"/>
+                    <img src="../img/news-bug.svg" class="bug"/>
                     <h2>Coming Soon: The Virtual Advisory Board Zone</h2>
                     <p>
                         Stay tuned for this exciting new zone to open up! We will profile a series of rolling advisory board projects being done across ACE &mdash; in Canada (Dana Mundil), the UK (Joyeta Das) and Australia (Danielle Croall).
@@ -93,7 +80,7 @@ export default function News() {
             </section>
             <section class="light-bg row" id="">
                 <div class="container">
-                    <img src="img/news-bug.svg" class="bug"/>
+                    <img src="../img/news-bug.svg" class="bug"/>
                     <h2>Coming Soon: Have a Bite at the Compliance Cafe!</h2>
                     <p>
                         Hungry for more knowledge? Stop by this small neighborhood café that contains tips and tricks from a Legal/BC point of view to consider when you are working on a digital project.
@@ -102,7 +89,7 @@ export default function News() {
             </section>
             <section class="light-bg row" id="welcome">
                 <div class="container">
-                    <img src="img/news-bug.svg" class="bug"/>
+                    <img src="../img/news-bug.svg" class="bug"/>
                     <h2>Welcome!</h2>
                     <h3>The Digital Zone is Live</h3>
                     
@@ -128,8 +115,9 @@ export default function News() {
             <a href="/" id="back-compass"></a>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
     </main>
     </>
   )
+}
 }
