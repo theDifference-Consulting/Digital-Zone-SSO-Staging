@@ -13,7 +13,7 @@ class BlogRoll extends React.Component {
             posts.map(({ node: post }) => (
             <section className="light-bg row">
               <div className="container">
-                <img src="./img/news-bug.svg" className="bug"/>
+                <img src="/../img/news-bug.svg" className="bug"/>
                 <h2>{post.frontmatter.title}</h2>
                 <h5>{post.frontmatter.date}</h5>
                 <p>
