@@ -466,6 +466,10 @@ footer .copyright {
 	background-image: url('../img/news-header.svg');
 }
 
+.news-item img {
+	max-width: 100%;
+}
+
 
 /* Visitor Info */
 
