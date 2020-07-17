@@ -6,6 +6,7 @@ class BlogRoll extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
+    const {bug} = "../img/news-bug.svg";
 
     return (
       <div>
@@ -13,7 +14,7 @@ class BlogRoll extends React.Component {
             posts.map(({ node: post }) => (
             <section className="light-bg row">
               <div className="container">
-                <img src="../img/news-bug.svg" className="bug"/>
+                <img src= className="bug"/>
                 <h2>{post.frontmatter.title}</h2>
                 <h5>{post.frontmatter.date}</h5>
                 <p>
