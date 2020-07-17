@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 import Navbar from "../components/navBar"
-import BlogRoll from '../components/BlogRoll'
+import BlogRoll from '../components/blogRoll'
 
 export default class BlogIndexPage extends React.Component {
   render() {
