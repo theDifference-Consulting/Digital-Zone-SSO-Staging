@@ -28,6 +28,13 @@ module.exports = {
       path: `${__dirname}/static/_posts/news`,
     },
   },
+  {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+      trackingId: `UA-167767244-1`,
+    },
+  },
   `gatsby-transformer-remark`,
   ],
 }

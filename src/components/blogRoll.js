@@ -8,20 +8,21 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      
-      <section class="light-bg row" id="welcome">
+      <div>
         {posts &&
             posts.map(({ node: post }) => (
-            <div class="container">
-                <img src="../img/news-bug.svg" class="bug"/>
+            <section className="light-bg row">
+              <div className="container">
+                <img src="../img/news-bug.svg" className="bug"/>
                 <h2>{post.frontmatter.title}</h2>
                 <h5>{post.frontmatter.date}</h5>
                 <p>
-                  {post.excerpt}
+                  <div dangerouslySetInnerHTML={{__html: post.html}}/>
                 </p>
               </div>
+            </section>
           ))}
-      </section>
+        </div>
     )
   }
 }
@@ -43,7 +44,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              html
               id
               frontmatter {
                 title

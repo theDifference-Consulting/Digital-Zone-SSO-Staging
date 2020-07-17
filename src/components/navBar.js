@@ -22,13 +22,13 @@ const CustomNavbar = ({ pageInfo }) => {
                       <a href="/visitor-centre.html">Visitor Info</a>
                   </li>
                   <li>
-                      <a href="/podcast-alley.html">Podcast Alley</a>
+                      <a href="/podcast-alley">Podcast Alley</a>
                   </li>
                   <li>
                       <a href="/qr-castle.html">QR Castle</a>
                   </li>
                   <li class="active">
-                      <a href="/news.html">News</a>
+                      <a href="/news">News</a>
                   </li>
               </ul>
           </div>
