@@ -1,73 +1,35 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167767244-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-167767244-1');
-        </script>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noindex, nofollow">
+import React from "react"
+import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
+import Navbar from "../components/navBar"
+
+export default function index() {
+  return (
+    <>
+	<Helmet>
         <title>Gilead Digital Zone — Visitor Centre</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- Leave those next 4 lines if you care about users using IE8 -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    </head>
-    <body class="secondary-template">
-        <div class="container-fluid visitor-info">
-            <nav class="navbar">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
-                        <li class="active">
-                            <a href="/visitor-centre.html">Visitor Info</a>
-                        </li>
-                        <li>
-                            <a href="/podcast-alley.html">Podcast Alley</a>
-                        </li>
-                        <li>
-                            <a href="/qr-castle.html">QR Castle</a>
-                        </li>
-                        <li>
-                            <a href="/news.html">News</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,900&display=swap" rel="stylesheet"/>
+    	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
+    </Helmet>
+    <main className="secondary-template">
+        <div className="container-fluid podcast-alley">
+            <Navbar/>
             <header>
-                <div class="container">
-                    <div class="heading-cloud-wrapper row">
+                <div className="container">
+                    <div className="heading-cloud-wrapper row">
                         <h1>Visitor Centre</h1>
                     </div>
                 </div>
             </header>
-            <section class="light-bg row" id="welcome">
-                <div class="container">
-                    <img src="img/info-bug.svg" class="bug"/>
+
+		 <section className="light-bg row" id="welcome">
+                <div className="container">
+                    <img src="../img/info-bug.svg" className="bug"/>
                     <h2>Welcome!</h2>
                     <h3>Welcome to the Digital Zone!</h3>
                     <p>
@@ -75,7 +37,7 @@
                     </p>
                     <br/>
                     <h3>Our goal is to</h3>
-                    <ul class="triangle">
+                    <ul className="triangle">
                         <li>
                             Establish the Digital Zone as the first point of reference when considering digital strategies that may be of interest
                         </li>
@@ -94,9 +56,9 @@
                     </ul>
                 </div>
             </section>
-            <section class="light-bg row" id="">
-                <div class="container">
-                    <img src="img/info-bug.svg" class="bug"/>
+            <section className="light-bg row" id="">
+                <div className="container">
+                    <img src="../img/info-bug.svg" className="bug"/>
                     <h2>Navigating the Zone</h2>
                     <p>
                         The island is your main navigation page. The topic areas are structures around the island, and each active topic area is labeled. Click on a topic area to zoom in and see a summary of the topic.
@@ -113,9 +75,9 @@
                     </p>
                 </div>
             </section>
-            <section class="light-bg row" id="who-we-are">
-                <div class="container">
-                    <img src="img/info-bug.svg" class="bug"/>
+            <section className="light-bg row" id="who-we-are">
+                <div className="container">
+                    <img src="../img/info-bug.svg" className="bug"/>
                     <h2>Who We Are</h2>
                     <p>
                         We are the Digital Zone Tourism Board, a group of dedicated digital pioneers across Gilead who have teamed up to make sure the Zone is filled with exciting and useful content for you.
@@ -124,125 +86,124 @@
                         We coordinate interviews with digital groundbreakers across Gilead, share useful tips, tricks and hacks for implementing digital tools in our work, and lead by example, embracing digital tools wherever we can. Feel free to reach out to any board member nearest your region if you’d like expert input on using digital tools at Gilead.
                     </p>
                     <br/>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="headshot-bg">
+                    <div className="row">
+                        <div className="col-sm-4">
+                            <div className="headshot-bg">
                                 <h3>
                                 Julie Newman
                                 </h3>
                                 Australia<br/>
                                 julie.newman@gilead.com
-                                <img src="img/Julie_ProfilePic.png"/>
+                                <img src="../img/Julie_ProfilePic.png"/>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="headshot-bg">
+                        <div className="col-sm-4">
+                            <div className="headshot-bg">
                                 <h3>
                                 Ramon Thali
                                 </h3>
                                 Switzerland<br/>
                                 ramon.thali@gilead.com
-                                <img src="img/ramon.jpg"/>
+                                <img src="../img/ramon.jpg"/>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="headshot-bg">
+                        <div className="col-sm-4">
+                            <div className="headshot-bg">
                                 <h3>
                                 Ahmet Yilmaz
                                 </h3>
                                 Turkey<br/>
                                 ahmet.yilmaz1@gilead.com
-                                <img src="img/ahmet.jpg"/>
+                                <img src="../img/ahmet.jpg"/>
                             </div>
                         </div>
-                        <div class="clearfix hidden-xs"></div>
-                        <div class="col-sm-4">
-                            <div class="headshot-bg">
+                        <div className="clearfix hidden-xs"></div>
+                        <div className="col-sm-4">
+                            <div className="headshot-bg">
                                 <h3>
                                 Nimesh Vadgama
                                 </h3>
                                 UK<br/>
                                 nimesh.vadgama@gilead.com
-                                <img src="img/nimesh.jpg"/>
+                                <img src="../img/nimesh.jpg"/>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="headshot-bg">
+                        <div className="col-sm-4">
+                            <div className="headshot-bg">
                                 <h3>
                                 Hans Gilhuys
                                 </h3>
                                 UK<br/>
                                 hans.gilhuys@gilead.com
-                                <img src="img/hans.jpg"/>
+                                <img src="../img/hans.jpg"/>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="headshot-bg">
+                        <div className="col-sm-4">
+                            <div className="headshot-bg">
                                 <h3>
                                 Cindy Elliott
                                 </h3>
                                 UK<br/>
                                 cindy.elliott@gilead.com
-                                <img src="img/cindy.jpg"/>
+                                <img src="../img/cindy.jpg"/>
                             </div>
                         </div>
-                        <div class="clearfix hidden-xs"></div>
-                        <div class="col-sm-4">
-                            <div class="headshot-bg">
-                                <h3>
-                                Mario Garcia
-                                </h3>
+                        <div className="clearfix hidden-xs"></div>
+                        <div className="col-sm-4">
+                            <div className="headshot-bg">
+                                <h3>Mario Garcia</h3>
                                 Spain<br/>
                                 mario.garcia@gilead.com
-                                <img src="img/mario.jpg"/>
+                                <img src="../img/mario.jpg"/>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="headshot-bg">
+                        <div className="col-sm-4">
+                            <div className="headshot-bg">
                                 <h3>
                                 Joyeta Das
                                 </h3>
                                 London<br/>
                                 joyeta.das@gilead.com
-                                <img src="img/joyeta.jpg"/>
+                                <img src="../img/joyeta.jpg"/>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="headshot-bg">
+                        <div className="col-sm-4">
+                            <div className="headshot-bg">
                                 <h3>
                                 Olivier Lada
                                 </h3>
                                 France<br/>
                                 olivier.lada@gilead.com
-                                <img src="img/olivier.jpg"/>
+                                <img src="../img/olivier.jpg"/>
                             </div>
                         </div>
-                        <div class="clearfix hidden-xs"></div>
-                        <div class="col-sm-4">
-                            <div class="headshot-bg">
+                        <div className="clearfix hidden-xs"></div>
+                        <div className="col-sm-4">
+                            <div className="headshot-bg">
                                 <h3>
                                 Tina Raselli
                                 </h3>
                                 Switzerland<br/>
                                 tina.raselli@gilead.com
-                                <img src="img/tina.jpg"/>
+                                <img src="../img/tina.jpg"/>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="headshot-bg">
+                        <div className="col-sm-4">
+                            <div className="headshot-bg">
                                 <h3>
                                 Guillaume Walckenaer
                                 </h3>
                                 France<br/>
                                 Guillaume.Walckenaer@gilead.com
-                                <img src="img/GuillaumeWalckenaer.png"/>
+                                <img src="../img/GuillaumeWalckenaer.png"/>
                             </div>
                         </div>
                     </div>
+                    </div>
                 </section>
-                <section class="light-bg row" id="digital-champions">
-                    <div class="container">
-                        <img src="img/info-bug.svg" class="bug"/>
+                <section className="light-bg row" id="digital-champions">
+                    <div className="container">
+                        <img src="../img/info-bug.svg" className="bug"/>
                         <h2>Local Digital Champions<br/> are a Great Resource</h2>
                         <p>
                             <h3><b>Digital Champion Role:</b> (there are some differences among countries)</h3>
@@ -261,45 +222,45 @@
                                 Advocate for the Digital Zone which will soon be rolled out
                             </li>
                         </ol>
-                        <div class="full-width">
+                        <div className="full-width">
                             <h3>ACE Digital Champions </h3>
                         </div>
                         <br/>
-                        <div class="row">
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                        <div className="row">
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Julie Newman
                                     </h3>
                                     Australia<br/>
                                     julie.newman@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Martin Baril
                                     </h3>
                                     Canada<br/>
                                     martin.baril@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="clearfix visible-xs-block"></div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="clearfix visible-xs-block"></div>
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Dylana Mumm
                                     </h3>
                                     Canada<br/>
                                     dylana.mumm@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="clearfix hidden-xs"></div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="clearfix hidden-xs"></div>
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Christopher Robinson
                                     </h3>
@@ -307,11 +268,11 @@
                                     <br/>
                                     christopher.robinson@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="clearfix visible-xs-block"></div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="clearfix visible-xs-block"></div>
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Christine Millet-Dusastre
                                     </h3>
@@ -319,10 +280,10 @@
                                     <br/>
                                     christine.milletdusastre@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Silvia Dambacher
                                     </h3>
@@ -330,11 +291,11 @@
                                     <br/>
                                     silvia.dambacher@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="clearfix"></div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="clearfix"></div>
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Boris Albuquerque
                                     </h3>
@@ -342,10 +303,10 @@
                                     <br/>
                                     boris.albuquerque@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Daniel Canimanuel
                                     </h3>
@@ -353,11 +314,11 @@
                                     <br/>
                                     daniel.canimanuel@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="clearfix visible-xs-block"></div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="clearfix visible-xs-block"></div>
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Roberto La Ferla
                                     </h3>
@@ -365,11 +326,11 @@
                                     <br/>
                                     roberto.laferla@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="clearfix hidden-xs"></div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="clearfix hidden-xs"></div>
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Reiner Ribarics
                                     </h3>
@@ -377,11 +338,11 @@
                                     <br/>
                                     reiner.ribarics@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="clearfix visible-xs-block"></div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="clearfix visible-xs-block"></div>
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Thierry Marysael
                                     </h3>
@@ -389,10 +350,10 @@
                                     <br/>
                                     thierry.marysael@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Ramon Thali
                                     </h3>
@@ -400,11 +361,11 @@
                                     <br/>
                                     ramon.thali@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="clearfix"></div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="clearfix"></div>
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Hassan Aladdin
                                     </h3>
@@ -412,10 +373,10 @@
                                     <br/>
                                     hassan.aladdin@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Ahmet Yilmaz
                                     </h3>
@@ -423,11 +384,11 @@
                                     <br/>
                                     ahmet.yilmaz1@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="clearfix visible-xs-block"></div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="clearfix visible-xs-block"></div>
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Tiago Antonio
                                     </h3>
@@ -435,11 +396,11 @@
                                     <br/>
                                     tiago.antonio@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="clearfix hidden-xs"></div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="clearfix hidden-xs"></div>
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Carla Santos
                                     </h3>
@@ -447,11 +408,11 @@
                                     <br/>
                                     carla.santos@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="clearfix visible-xs-block"></div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="clearfix visible-xs-block"></div>
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Yulia Ivanets
                                     </h3>
@@ -459,10 +420,10 @@
                                     <br/>
                                     yulia.ivanets@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="champion-names">
+                            <div className="col-xs-6 col-sm-4">
+                                <div className="champion-names">
                                     <h3>
                                     Sherif Khatab
                                     </h3>
@@ -470,20 +431,22 @@
                                     <br/>
                                     sherif.khattab@gilead.com
                                 </div>
-                                <img src="img/headshot-bottom-bg.svg">
+                                <img src="../img/headshot-bottom-bg.svg"/>
                             </div>
                         </div>
                     </div>
                 </section>
-                <footer>
-                    <div class="container">
-                        <div class="copyright">©2020 Gilead</div>
-                    </div>
-                </footer>
-                <a href="/" id="back-compass"></a>
-            </div>
-            <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-        </body>
-    </html>
+
+	        <footer>
+	            <div className="container">
+	                <div className="copyright">©2020 Gilead</div>
+	            </div>
+	        </footer>
+	        <a href="/" id="back-compass"></a>
+	        </div>
+	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	        <script src="../js/bootstrap.min.js"></script>
+	    </main>
+    </>
+	)
+}
