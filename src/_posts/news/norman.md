@@ -4,4 +4,4 @@ date: 2020-07-17T06:02:42.212Z
 ---
 cheers
 
-![](/img/uploads/img_7236.jpg)
+![](test/flyrite-high-noon.jpg)
