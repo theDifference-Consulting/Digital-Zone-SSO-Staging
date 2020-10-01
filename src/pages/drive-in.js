@@ -18,15 +18,13 @@ export default function index() {
     </Helmet>
     <main className="secondary-template">
         <div className="container-fluid drive-in">
-            <Navbar activePage='drive-in'/>
-            <header>
+g            <header>
                 <div className="container">
                     <div className="heading-cloud-wrapper row">
                         <h1>Drive-Innovation <br/>Theater</h1>
                     </div>
                 </div>
             </header>
-
 			<section className="light-bg row" id="welcome">
                 <div className="container">
                     <img src="../img/popcorn-bug.svg" className="bug"/>
@@ -39,7 +37,6 @@ export default function index() {
                     </p>
                 </div>
             </section>
-
             <section className="light-bg row" id="now-showing">
                 <div className="container">
                     <img src="../img/popcorn-bug.svg" className="bug"/>
