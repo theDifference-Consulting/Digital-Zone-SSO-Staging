@@ -50,56 +50,58 @@ export default function index() {
                     <p>
                         Learn how the Middle East Medical Affairs team uses a digital platform to expand its reach to local HIV specialists, provide them with much needed scientific information and learn about their interests and behaviors.
                     </p>
-                    <div class="row margin-top-md">
-                        <div className="col-sm-6 ">
-                            <div className="yellow-video-block">
-                                <h3>Video Title</h3>
-                                    <div className="embed-responsive embed-responsive-16by9">
-                                        <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/xxx" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                                    </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ...
-                                </p>
-                            </div>
-                            <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
-                        </div>
-                        <div className="col-sm-6 ">
-                            <div className="yellow-video-block">
-                                <h3>Video Title</h3>
-                                    <div className="embed-responsive embed-responsive-16by9">
-                                        <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/xxx" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                                    </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ...
-                                </p>
-                            </div>
-                            <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
-                        </div>
-                        <div className="col-sm-6 ">
-                            <div className="yellow-video-block">
-                                <h3>Video Title</h3>
-                                    <div className="embed-responsive embed-responsive-16by9">
-                                        <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/xxx" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                                    </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ...
-                                </p>
-                            </div>
-                            <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
-                        </div>
-                        <div className="col-sm-6 ">
-                            <div className="yellow-video-block">
-                                <h3>Video Title</h3>
-                                    <div className="embed-responsive embed-responsive-16by9">
-                                        <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/xxx" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                                    </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ...
-                                </p>
-                            </div>
-                            <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
-                        </div>
-                    </div>
+                    {
+                    // <div class="row margin-top-md">
+                    //     <div className="col-sm-6 ">
+                    //         <div className="yellow-video-block">
+                    //             <h3>Video Title</h3>
+                    //                 <div className="embed-responsive embed-responsive-16by9">
+                    //                     <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/xxx" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    //                 </div>
+                    //             <p>
+                    //                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ...
+                    //             </p>
+                    //         </div>
+                    //         <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
+                    //     </div>
+                    //     <div className="col-sm-6 ">
+                    //         <div className="yellow-video-block">
+                    //             <h3>Video Title</h3>
+                    //                 <div className="embed-responsive embed-responsive-16by9">
+                    //                     <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/xxx" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    //                 </div>
+                    //             <p>
+                    //                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ...
+                    //             </p>
+                    //         </div>
+                    //         <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
+                    //     </div>
+                    //     <div className="col-sm-6 ">
+                    //         <div className="yellow-video-block">
+                    //             <h3>Video Title</h3>
+                    //                 <div className="embed-responsive embed-responsive-16by9">
+                    //                     <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/xxx" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    //                 </div>
+                    //             <p>
+                    //                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ...
+                    //             </p>
+                    //         </div>
+                    //         <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
+                    //     </div>
+                    //     <div className="col-sm-6 ">
+                    //         <div className="yellow-video-block">
+                    //             <h3>Video Title</h3>
+                    //                 <div className="embed-responsive embed-responsive-16by9">
+                    //                     <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/xxx" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    //                 </div>
+                    //             <p>
+                    //                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ...
+                    //             </p>
+                    //         </div>
+                    //         <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
+                    //     </div>
+                    // </div>
+                }
                 </div>
             </section>
            
