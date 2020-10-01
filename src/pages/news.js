@@ -21,7 +21,7 @@ export default class BlogIndexPage extends React.Component {
     </Helmet>
     <main class="secondary-template">
         <div class="container-fluid news">
-            <Navbar/>
+            <Navbar activePage='news'/>
             <header>
                 <div class="container">
                     <div class="heading-cloud-wrapper row">

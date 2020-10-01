@@ -344,7 +344,8 @@ svg * {
 .active-zone > svg > g #PodcastAlley-Halo, .zoomed-in .active-zone > svg > g:hover #PodcastAlley-Halo,
 .active-zone > svg > g #airship-halo, .zoomed-in .active-zone > svg > g:hover #airship-halo,
 .active-zone > svg > g #qr-halo, .zoomed-in .active-zone > svg > g:hover #qr-halo,
-.active-zone > svg > g #lighthouse-halo, .zoomed-in .active-zone > svg > g:hover #lighthouse-halo  {
+.active-zone > svg > g #lighthouse-halo, .zoomed-in .active-zone > svg > g:hover #lighthouse-halo,
+.active-zone > svg > g #drivein-halo, .zoomed-in .active-zone > svg > g:hover #drivein-halo  {
 	opacity:0;
 	transition: opacity .2s ease;
 }
@@ -352,7 +353,8 @@ svg * {
 .active-zone > svg > g:hover #PodcastAlley-Halo,
 .active-zone > svg > g:hover #airship-halo,
 .active-zone > svg > g:hover #qr-halo,
-.active-zone > svg > g:hover #lighthouse-halo {
+.active-zone > svg > g:hover #lighthouse-halo,
+.active-zone > svg > g:hover #drivein-halo {
 	opacity:1;
 	transition: opacity .2s ease;
 }

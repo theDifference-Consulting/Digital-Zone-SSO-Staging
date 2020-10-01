@@ -30,21 +30,6 @@ window.addEventListener("resize", function() {
 	setZoom(calcZoom(baseWidth, baseHeight));
 });
 
-//initro timing functions.
-// --> add some logic to wait until everything is actually loaded
-window.addEventListener('DOMContentLoaded', function() {
-	anim.addEventListener('DOMLoaded', function() { 
-		document.getElementById('loading').classList.add('hidden');
-		document.getElementById('cloud-1').classList.add('reveal');
-		document.getElementById('cloud-2').classList.add('reveal');
-	});
-	setTimeout( function() {
-		 //match the zoom CSS transition timing 
-		setZoom(calcZoom(baseWidth, baseHeight));
-		document.getElementById('audio').play();
-	},2300);
-});
-
 // ZOOM CONTROL
 
 function calcZoom(inputWidth, inputHeight) {
@@ -94,11 +79,13 @@ function calcZoom(inputWidth, inputHeight) {
 	}
 }
 
-anim.addEventListener('DOMLoaded', function() { 
+function animLoad() { 
 	const zones = document.getElementsByClassName("active-zone");
 	var arr = [];
 	for (var i = 0; i < zones.length; i++) {
 		var e = document.querySelector("#" + zones[i].id + " > svg > g");
+			setTimeout(function() {
+			},500);
 		e.addEventListener('click', function() {
 			let zoneMargin = 80;
 			let zoneWidth = this.getBoundingClientRect().width + zoneMargin;
@@ -116,6 +103,22 @@ anim.addEventListener('DOMLoaded', function() {
 			document.querySelector("#compass").classList.add("back");
 		});
 	}
+};
+
+//initro timing functions.
+// --> add some logic to wait until everything is actually loaded
+window.addEventListener('DOMContentLoaded', function() {
+	anim.addEventListener('DOMLoaded', function() { 
+		document.getElementById('loading').classList.add('hidden');
+		document.getElementById('cloud-1').classList.add('reveal');
+		document.getElementById('cloud-2').classList.add('reveal');
+	});
+	setTimeout( function() {
+		 //match the zoom CSS transition timing 
+		setZoom(calcZoom(baseWidth, baseHeight));
+		document.getElementById('audio').play();
+		animLoad();
+	},2300);
 });
 
 document.querySelector("#compass").addEventListener('click', function() {

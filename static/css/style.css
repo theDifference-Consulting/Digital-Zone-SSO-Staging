@@ -95,14 +95,14 @@ ul.triangle li:before {
 
 /* Navigation */
 
-nav {
+.navbar {
 	margin-left: -15px;
     margin-right: -15px;
     background-color: #FFD255;
     text-align: center;
 }
 
-nav li a {
+.navbar li a {
     color:#515151;
     font-weight: 900;
    	border-bottom: 2px solid transparent;
@@ -115,14 +115,22 @@ nav li a {
 	padding: 20px 0;
 }
 
-nav li a:hover,
-nav li a:focus,
-nav li a:active,
-nav li.active a  {
+.navbar .nav-link:hover,
+.navbar .nav-linkfocus,
+.navbar .nav-link:active,
+.navbar .nav-link.active  {
 	background-color: initial !important;
 	color: #515151 !important;
 	border-bottom: 2px solid #515151;
 }
+
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:active {
+	background-color: transparent !important;
+}
+
+
 
 .navbar-toggle {
   display: block;
@@ -491,4 +499,29 @@ footer .copyright {
 	text-align: center;
 	padding:30px 5px;
 	word-break: break-word;
+}
+
+/* Drive-In*/
+
+.drive-in header .container {
+	background-image: url('../img/drive-in-hero.svg');
+}
+
+.embed-responsive {
+	margin-bottom: 30px;
+}
+
+.margin-top-md {
+	margin-top: 60px;
+}
+
+.yellow-video-block {
+	background-color:#FFD255;
+	padding:30px 20px 30px 20px;
+	text-align: center;
+}
+
+.yellow-video-block-img {
+	width:100%;
+	height: auto;
 }

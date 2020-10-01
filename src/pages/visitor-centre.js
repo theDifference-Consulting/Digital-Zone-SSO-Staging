@@ -18,7 +18,7 @@ export default function index() {
     </Helmet>
     <main className="secondary-template">
         <div className="container-fluid podcast-alley">
-            <Navbar/>
+            <Navbar activePage='visitor-centre'/>
             <header>
                 <div className="container">
                     <div className="heading-cloud-wrapper row">

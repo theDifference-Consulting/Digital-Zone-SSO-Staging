@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
+import { Navbar, Nav } from "react-bootstrap"
 
-const CustomNavbar = ({ pageInfo }) => {
-  console.log(pageInfo)
+const CustomNavbar = ({ pageInfo, ...props }) => {
   return (
     <>
-      <nav class="navbar">
+        <Nav className="navbar" activeKey={props.activePage}>
           <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="icon-bar"></span>
@@ -16,23 +16,50 @@ const CustomNavbar = ({ pageInfo }) => {
           <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                   <li>
-                      <a href="/">Home</a>
+                    <Link to="/" className="link-no-style" activeClassName="active">
+                      <Nav.Link as="span">
+                        Home
+                      </Nav.Link>
+                    </Link>
                   </li>
                   <li>
-                      <a href="/visitor-centre.html">Visitor Info</a>
+                  <Link to="/visitor-centre.html" className="link-no-style" activeClassName="active">
+                      <Nav.Link as="span" eventKey="visitor-centre">
+                        Visitor Info
+                      </Nav.Link>
+                    </Link>
                   </li>
                   <li>
-                      <a href="/podcast-alley">Podcast Alley</a>
+                  <Link to="/podcast-alley.html" className="link-no-style" activeClassName="active">
+                      <Nav.Link as="span" eventKey="podcast-alley">
+                        Podcast Alley
+                      </Nav.Link>
+                    </Link>
                   </li>
                   <li>
-                      <a href="/qr-castle.html">QR Castle</a>
+                    <Link to="/qr-castle.html" className="link-no-style" activeClassName="active">
+                      <Nav.Link as="span" eventKey="qr-castle">
+                        QR Castle
+                      </Nav.Link>
+                    </Link>
                   </li>
-                  <li class="active">
-                      <a href="/news">News</a>
+                  <li>
+                    <Link to="/drive-in.html" className="link-no-style" activeClassName="active">
+                      <Nav.Link as="span" eventKey="drive-in">
+                        Drive-Innovation Theater
+                      </Nav.Link>
+                    </Link>
+                  </li>
+                  <li>
+                  <Link to="/news.html" className="link-no-style" activeClassName="active">
+                      <Nav.Link as="span" eventKey="news">
+                        News
+                      </Nav.Link>
+                    </Link>
                   </li>
               </ul>
           </div>
-        </nav>
+        </Nav>
     </>
   )
 }
