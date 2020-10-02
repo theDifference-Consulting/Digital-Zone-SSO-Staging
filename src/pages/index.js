@@ -7,7 +7,7 @@ export default function index() {
     <>
     	<Helmet>
     		<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.7/lottie.js" type="text/javascript" />
-			<script src="../js/script.js" type="text/javascript" />
+			<script defer src="../js/script.js" type="text/javascript" />
 			<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript" />
 			<meta name="robots" content="noindex, nofollow"/>
 			<link href="https://fonts.googleapis.com/css?family=Lato:300,900&display=swap" rel="stylesheet"/>
@@ -23,7 +23,7 @@ export default function index() {
 			<link rel="preload" as="image" href="img/cloud-right.svg"/>
 			<link rel="preload" as="image" href="img/DigitalZoneLoading.gif"/>
 		</Helmet>
-		<div id="wrapper"> 
+		<div id="wrapper">
 			<div id="bg-water"></div>
 			<div id="water-loop" className="anim"></div>
 			<div id="lighthouse" className="active-zone anim"></div>

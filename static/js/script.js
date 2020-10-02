@@ -5,7 +5,6 @@ const baseWidth = 1920;
 const baseHeight = 1080;
 
 const animations = document.getElementsByClassName("anim");
-
 for (var i = 0; i < animations.length; i++) {
 	var anim = lottie.loadAnimation({
 		container: document.getElementById(animations[i].id), // Required
