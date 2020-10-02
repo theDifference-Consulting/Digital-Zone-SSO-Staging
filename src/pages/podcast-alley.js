@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 import Navbar from "../components/navBar"
 
+
 export default function index() {
   return (
     <>
@@ -65,7 +66,7 @@ export default function index() {
                         Executive Director, Medical Affairs
                     </p>
                     <div className="audio-block">
-                        <button className="block-highlight" onClick={window.onload=function(){document.getElementById('player').play()}}>Play Audio</button>
+                        <button className="block-highlight" onClick={() => this.play()}>Play Audio</button>
                         <audio id="player" controls src="../media/GeraldineReilly-PodcastingQuote.wav">
                             Your browser does not support the
                             <code>audio</code> element.
