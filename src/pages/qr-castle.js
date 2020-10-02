@@ -15,6 +15,8 @@ export default function index() {
     	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript" />
+        <script src="../js/bootstrap.min.js" type="text/javascript" />
     </Helmet>
     <main className="secondary-template">
         <div className="container-fluid podcast-alley">
@@ -80,7 +82,7 @@ export default function index() {
                     <p>
                         Hear how Damien Fagan, Associate Director Medical Affairs, HIV in Melbourne and his colleagues used QR codes to substantially increase the number of people who benefitted from their poster presentations.
                     </p>
-	                <div className="vimeo-embed" style={{padding:`56.25% 0 0 0`, position:`relative`}}><iframe src="https://player.vimeo.com/video/416411111?title=0&byline=0&portrait=0" style={{position:`absolute`,top:`0`,left:`0`,width:`100%`,height:`100%`}} frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+	                <div className="vimeo-embed" style={{padding:`56.25% 0 0 0`, position:`relative`}}><iframe src="https://player.vimeo.com/video/416411111?title=0&byline=0&portrait=0" style={{position:`absolute`,top:`0`,left:`0`,width:`100%`,height:`100%`}} frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 	                <h3>Use the QR code on the posters to access additional content!</h3>
 	                <div className="row">
 	                    <div className="col-sm-6">
@@ -187,8 +189,6 @@ export default function index() {
 	        </footer>
 	        <a href="/" id="back-compass"></a>
 	        </div>
-	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	        <script src="../js/bootstrap.min.js"></script>
 	    </main>
     </>
 	)

@@ -15,6 +15,8 @@ export default function index() {
     	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript" />
+        <script src="../js/bootstrap.min.js" type="text/javascript" />
     </Helmet>
     <main className="secondary-template">
         <div className="container-fluid podcast-alley">
@@ -32,7 +34,7 @@ export default function index() {
                     <img src="../img/podcast-bug.svg" className="bug"/>
                     <h2>Welcome!</h2>
                     <div className="vimeo-embed" style={{padding:`56.25% 0 0 0`, position:`relative`}}>
-                    	<iframe src="https://player.vimeo.com/video/416415760?title=0&byline=0&portrait=0" style={{position:`absolute`, top:`0`, left:`0`, width:`100%`, height:`100%`}} frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    	<iframe src="https://player.vimeo.com/video/416415760?title=0&byline=0&portrait=0" style={{position:`absolute`, top:`0`, left:`0`, width:`100%`, height:`100%`}} frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                 	</div>
                 	<script src="https://player.vimeo.com/api/player.js"></script>
                     <p>
@@ -63,7 +65,7 @@ export default function index() {
                         Executive Director, Medical Affairs
                     </p>
                     <div className="audio-block">
-                        <button className="block-highlight" onclick="document.getElementById('player').play()">Play Audio</button>
+                        <button className="block-highlight" onClick={window.onload=function(){document.getElementById('player').play()}}>Play Audio</button>
                         <audio id="player" controls src="../media/GeraldineReilly-PodcastingQuote.wav">
                             Your browser does not support the
                             <code>audio</code> element.
@@ -87,7 +89,7 @@ export default function index() {
                     <p>
                         The in Podcast series is an educational initiative created by Gilead for the benefit of healthcare professionals and patients. It explores the latest innovations in healthcare by way of interviews and insights from some of the world’s leading medical experts. Hear more about the series from its creator, Julie Newman.
                     </p>
-                    <div className="vimeo-embed" style={{padding:`56.25% 0 0 0`, position:`relative`}}><iframe src="https://player.vimeo.com/video/416414834?title=0&byline=0&portrait=0" style={{position:`absolute`, top:`0`, left:`0`, width:`100%`, height:`100%`}} frameborder="0" allow="autoplay; fullscreen allowfullscreen"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <div className="vimeo-embed" style={{padding:`56.25% 0 0 0`, position:`relative`}}><iframe src="https://player.vimeo.com/video/416414834?title=0&byline=0&portrait=0" style={{position:`absolute`, top:`0`, left:`0`, width:`100%`, height:`100%`}} frameBorder="0" allow="autoplay; fullscreen allowfullscreen"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                     <div className="in-podcast-wrapper full-width">
                         <img src="../img/in-podcast-logo.svg" className="in-podcast-banner"/>
                     </div>
@@ -241,8 +243,6 @@ export default function index() {
 	        </footer>
 	        <a href="/" id="back-compass"></a>
 	        </div>
-	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	        <script src="../js/bootstrap.min.js"></script>
 	    </main>
     </>
 	)

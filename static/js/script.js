@@ -107,7 +107,6 @@ function animLoad() {
 
 //initro timing functions.
 // --> add some logic to wait until everything is actually loaded
-window.addEventListener('DOMContentLoaded', function() {
 	anim.addEventListener('DOMLoaded', function() { 
 		document.getElementById('loading').classList.add('hidden');
 		document.getElementById('cloud-1').classList.add('reveal');
@@ -119,7 +118,6 @@ window.addEventListener('DOMContentLoaded', function() {
 		document.getElementById('audio').play();
 		animLoad();
 	},2300);
-});
 
 document.querySelector("#compass").addEventListener('click', function() {
 	setZoom(calcZoom(baseWidth, baseHeight));

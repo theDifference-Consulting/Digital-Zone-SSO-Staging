@@ -15,6 +15,8 @@ export default function index() {
     	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript" />
+        <script src="../js/bootstrap.min.js" type="text/javascript" />
     </Helmet>
     <main className="secondary-template">
         <div className="container-fluid drive-in">
@@ -32,7 +34,7 @@ export default function index() {
                     <img src="../img/popcorn-bug.svg" className="bug"/>
                     <h2>Welcome!</h2>
                     <div className="embed-responsive embed-responsive-16by9">
-                        <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463565573" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463565573" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                     </div>
                     <p>
                         This is where you’ll find the latest video stories about digital innovation happening around Gilead. We will be posting new videos regularly so check back often!
@@ -45,7 +47,7 @@ export default function index() {
                     <img src="../img/popcorn-bug.svg" className="bug"/>
                     <h2>Now Showing</h2>
                     <div className="embed-responsive embed-responsive-16by9">
-                        <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463555097" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463555097" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                     </div>
                     <p>
                         Learn how the Middle East Medical Affairs team uses a digital platform to expand its reach to local HIV specialists, provide them with much needed scientific information and learn about their interests and behaviors.
@@ -113,8 +115,6 @@ export default function index() {
 	        </footer>
 	        <a href="/" id="back-compass"></a>
 	        </div>
-	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	        <script src="../js/bootstrap.min.js"></script>
 	    </main>
     </>
 	)

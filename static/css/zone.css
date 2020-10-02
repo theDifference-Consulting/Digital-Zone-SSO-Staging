@@ -26,7 +26,7 @@ body > svg {
 .bg-island,
 .wrapper {
 	background-size: 1920px 1080px;
-	background-position: center;
+	background-position: left center;
 	background-size: cover;
 }
 
@@ -126,7 +126,7 @@ svg * {
 }
 
 #wrapper {	
-	position: absolute;
+	/*position: absolute; not sure why this isn't working in gatsby*/
 	flex-shrink: 0;
     align-self: center;
     width:1920px;

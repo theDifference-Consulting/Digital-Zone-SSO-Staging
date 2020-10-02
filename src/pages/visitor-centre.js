@@ -15,6 +15,8 @@ export default function index() {
     	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript" />
+        <script src="../js/bootstrap.min.js" type="text/javascript" />
     </Helmet>
     <main className="secondary-template">
         <div className="container-fluid podcast-alley">
@@ -444,8 +446,6 @@ export default function index() {
 	        </footer>
 	        <a href="/" id="back-compass"></a>
 	        </div>
-	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	        <script src="../js/bootstrap.min.js"></script>
 	    </main>
     </>
 	)
