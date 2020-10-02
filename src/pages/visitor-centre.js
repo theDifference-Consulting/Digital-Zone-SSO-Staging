@@ -133,11 +133,11 @@ export default function index() {
                         <div className="col-sm-4">
                             <div className="headshot-bg">
                                 <h3>
-                                Hans Gilhuys
+                                Hassan Aladdin, PhD
                                 </h3>
-                                UK<br/>
-                                hans.gilhuys@gilead.com
-                                <img src="../img/hans.jpg"/>
+                                Nordics<br/>
+                                Hassan.Aladdin@gilead.com
+                                <img src="../img/Hassan-Alladin.png"/>
                             </div>
                         </div>
                         <div className="col-sm-4">
