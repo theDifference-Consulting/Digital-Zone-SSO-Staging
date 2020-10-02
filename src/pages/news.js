@@ -18,13 +18,15 @@ export default class BlogIndexPage extends React.Component {
     	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript" />
+        <script src="../js/bootstrap.min.js" type="text/javascript" />
     </Helmet>
-    <main class="secondary-template">
-        <div class="container-fluid news">
+    <main className="secondary-template">
+        <div className="container-fluid news">
             <Navbar activePage='news'/>
             <header>
-                <div class="container">
-                    <div class="heading-cloud-wrapper row">
+                <div className="container">
+                    <div className="heading-cloud-wrapper row">
                         <h1>News</h1>
                     </div>
                 </div>
@@ -34,14 +36,12 @@ export default class BlogIndexPage extends React.Component {
 				<BlogRoll />
 			</React.Fragment>
             <footer>
-                <div class="container">
-                    <div class="copyright">©2020 Gilead</div>
+                <div className="container">
+                    <div className="copyright">©2020 Gilead</div>
                 </div>
             </footer>
             <a href="/" id="back-compass"></a>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
     </main>
     </>
   )
