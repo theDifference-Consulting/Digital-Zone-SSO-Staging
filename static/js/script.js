@@ -5,6 +5,7 @@ const baseWidth = 1920;
 const baseHeight = 1080;
 
 const animations = document.getElementsByClassName("anim");
+
 for (var i = 0; i < animations.length; i++) {
 	var anim = lottie.loadAnimation({
 		container: document.getElementById(animations[i].id), // Required
@@ -106,17 +107,18 @@ function animLoad() {
 
 //initro timing functions.
 // --> add some logic to wait until everything is actually loaded
-	anim.addEventListener('DOMLoaded', function() { 
-		document.getElementById('loading').classList.add('hidden');
-		document.getElementById('cloud-1').classList.add('reveal');
-		document.getElementById('cloud-2').classList.add('reveal');
-	});
+anim.addEventListener('DOMLoaded', function() { 
+	document.getElementById('loading').classList.add('hidden');
+	document.getElementById('cloud-1').classList.add('reveal');
+	document.getElementById('cloud-2').classList.add('reveal');
+
 	setTimeout( function() {
 		 //match the zoom CSS transition timing 
 		setZoom(calcZoom(baseWidth, baseHeight));
 		document.getElementById('audio').play();
 		animLoad();
-	},2300);
+	},300);
+});
 
 document.querySelector("#compass").addEventListener('click', function() {
 	setZoom(calcZoom(baseWidth, baseHeight));

@@ -6,8 +6,7 @@ export default function index() {
   return (
     <>
     	<Helmet>
-    		<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.7/lottie.js" type="text/javascript" />
-			<script defer src="../js/script.js" type="text/javascript" />
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.7/lottie.js" type="text/javascript" />
 			<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript" />
 			<meta name="robots" content="noindex, nofollow"/>
 			<link href="https://fonts.googleapis.com/css?family=Lato:300,900&display=swap" rel="stylesheet"/>
@@ -110,6 +109,9 @@ export default function index() {
 		<audio id="audio" autoPlay loop>
 			<source src="/media/beach-ambience1.mp3" type="audio/mpeg"/>
 		</audio>
+    	<Helmet>
+			<script defer src="../js/script.js" type="text/javascript"/>
+		</Helmet>
  	</>
 	)
 }

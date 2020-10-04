@@ -30,7 +30,7 @@ body > svg {
 	background-size: cover;
 }
 
-body {
+#gatsby-focus-wrapper { /* formerly set on the body tag */
 	position: relative;
 	overflow:hidden;
 	display: flex;
@@ -43,7 +43,7 @@ body {
 }
 
 
-body:after {
+#gatsby-focus-wrapper:after { /* formerly set on the body tag */
 	background-image: url('../img/bg-pixels.svg');
 	background-size: 1920px 1080px;
 	background-position: center;
@@ -135,7 +135,7 @@ svg * {
 }
 
 #wrapper { /* zoom is controlled on the #scroll-path div */
-	transform:scale(1) translateY(0);
+	transform:scale(.1) translateY(0);
 	transition: transform ease .75s;
 }
 
