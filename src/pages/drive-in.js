@@ -33,12 +33,18 @@ export default function index() {
                 <div className="container">
                     <img src="../img/popcorn-bug.svg" className="bug"/>
                     <h2>Welcome!</h2>
-                    <div className="embed-responsive embed-responsive-16by9">
-                        <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463565573" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
-                    </div>
-                    <p>
+                    <div style={{padding:'30px 0'}}>
                         This is where you’ll find the latest video stories about digital innovation happening around Gilead. We will be posting new videos regularly so check back often!
-                    </p>
+                    </div>
+                    <div className="yellow-video-block">
+                        <div className="embed-responsive embed-responsive-16by9">
+                            <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463565573" width="640" height="360" frameBorder="0" allow="fullscreen" allowFullScreen></iframe>
+                        </div>
+                        <b>Mike Elliott</b><br/>
+                            Stockley Park, UK<br/>
+                            michael.elliott@gilead.com
+                    </div>
+                    
                 </div>
             </section>
 
@@ -46,12 +52,18 @@ export default function index() {
                 <div className="container">
                     <img src="../img/popcorn-bug.svg" className="bug"/>
                     <h2>Now Showing</h2>
-                    <div className="embed-responsive embed-responsive-16by9">
-                        <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463555097" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
-                    </div>
-                    <p>
+                    <div style={{padding:'30px 0'}}>
                         Learn how the Middle East Medical Affairs team uses a digital platform to expand its reach to local HIV specialists, provide them with much needed scientific information and learn about their interests and behaviors.
-                    </p>
+                    </div>
+                    <div className="yellow-video-block">
+                        <div className="embed-responsive embed-responsive-16by9">
+                            <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463555097" width="640" height="360" frameBorder="0" allow="fullscreen" allowFullScreen></iframe>
+                        </div>
+                        <b>Sherif Khattab</b><br/>
+                        Dubai, UAE<br/>
+                        sherif.khattab@gilead.com
+                    </div>
+                    
                     {
                     // <div class="row margin-top-md">
                     //     <div className="col-sm-6 ">

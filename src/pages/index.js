@@ -90,7 +90,7 @@ export default function index() {
 			<div className="hidden" id="drive-in-info">
 				<div className="zone-wrapper">
 					<p>
-						This is where you’ll find the latest video stories about digital innovation happening around Gilead.We will be posting new videos regularly so check back often!
+						This is where you’ll find the latest video stories about digital innovation happening around Gilead. We will be posting new videos regularly so check back often!
 					</p>
 					<a href="/drive-in/">
 						<button className="block-highlight">Enter</button>
