@@ -1,4 +1,4 @@
-const wrapper = document.getElementById('wrapper');
+let wrapper = document.getElementById('wrapper');
 
 // base size variables
 const baseWidth = 1920;
@@ -116,7 +116,7 @@ anim.addEventListener('DOMLoaded', function() {
 		 //match the zoom CSS transition timing 
 		setZoom(calcZoom(baseWidth, baseHeight));
 		document.getElementById('audio').play();
-		animLoad;
+		animLoad();
 	},300);
 });
 
