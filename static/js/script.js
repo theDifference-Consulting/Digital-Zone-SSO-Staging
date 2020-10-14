@@ -1,4 +1,4 @@
-let wrapper = document.getElementById('wrapper');
+const zoneWrapper = document.getElementById('wrapper');
 
 // base size variables
 const baseWidth = 1920;
@@ -91,12 +91,12 @@ function animLoad() {
 			let zoneWidth = this.getBoundingClientRect().width + zoneMargin;
 			let zoneHeight = this.getBoundingClientRect().height + zoneMargin;
 			// holy shit the zone centering coords are crazy to calculate!
-			let hroizontalOffset = (wrapper.getBoundingClientRect().left + ((wrapper.getBoundingClientRect().width / 2) - this.getBoundingClientRect().left - ( zoneWidth / 2) + (zoneMargin /2))) * (-1 / calcZoom(baseWidth, baseHeight));
-			let verticalOffset = (wrapper.getBoundingClientRect().top + ((wrapper.getBoundingClientRect().height / 2) - this.getBoundingClientRect().top - ( zoneHeight / 2) + 5)) * (-1 / calcZoom(baseWidth, baseHeight));
+			let hroizontalOffset = (zoneWrapper.getBoundingClientRect().left + ((zoneWrapper.getBoundingClientRect().width / 2) - this.getBoundingClientRect().left - ( zoneWidth / 2) + (zoneMargin /2))) * (-1 / calcZoom(baseWidth, baseHeight));
+			let verticalOffset = (zoneWrapper.getBoundingClientRect().top + ((zoneWrapper.getBoundingClientRect().height / 2) - this.getBoundingClientRect().top - ( zoneHeight / 2) + 5)) * (-1 / calcZoom(baseWidth, baseHeight));
 	
 			let zoomFactor = calcZoom(zoneWidth, zoneHeight) * calcZoom(baseWidth, baseHeight);
-			wrapper.setAttribute("style", "transform:scale("+zoomFactor+") translate("+hroizontalOffset * -1+"px,"+verticalOffset * -1+"px); ");
-			wrapper.classList.add('zoomed-in');
+			zoneWrapper.setAttribute("style", "transform:scale("+zoomFactor+") translate("+hroizontalOffset * -1+"px,"+verticalOffset * -1+"px); ");
+			zoneWrapper.classList.add('zoomed-in');
 			activeZone = this.parentElement.parentElement.id;
 			document.getElementById(activeZone + "-info").classList.remove('hidden');
 			document.querySelector("#compass").classList.toggle("spin");
@@ -122,7 +122,7 @@ anim.addEventListener('DOMLoaded', function() {
 
 document.querySelector("#compass").addEventListener('click', function() {
 	setZoom(calcZoom(baseWidth, baseHeight));
-	wrapper.classList.remove("zoomed-in");
+	zoneWrapper.classList.remove("zoomed-in");
 	this.classList.toggle("spin");
 	this.classList.remove("back");
 	try {
