@@ -80,29 +80,31 @@ function calcZoom(inputWidth, inputHeight) {
 }
 
 function animLoad() { 
-	const zones = document.getElementsByClassName("active-zone");
-	var arr = [];
-	for (var i = 0; i < zones.length; i++) {
-		var e = document.querySelector("#" + zones[i].id + " > svg > g");
-		setTimeout(function() {
-		},500);
-		e.addEventListener('click', function() {
-			let zoneMargin = 80;
-			let zoneWidth = this.getBoundingClientRect().width + zoneMargin;
-			let zoneHeight = this.getBoundingClientRect().height + zoneMargin;
-			// holy shit the zone centering coords are crazy to calculate!
-			let hroizontalOffset = (zoneWrapper.getBoundingClientRect().left + ((zoneWrapper.getBoundingClientRect().width / 2) - this.getBoundingClientRect().left - ( zoneWidth / 2) + (zoneMargin /2))) * (-1 / calcZoom(baseWidth, baseHeight));
-			let verticalOffset = (zoneWrapper.getBoundingClientRect().top + ((zoneWrapper.getBoundingClientRect().height / 2) - this.getBoundingClientRect().top - ( zoneHeight / 2) + 5)) * (-1 / calcZoom(baseWidth, baseHeight));
-	
-			let zoomFactor = calcZoom(zoneWidth, zoneHeight) * calcZoom(baseWidth, baseHeight);
-			zoneWrapper.setAttribute("style", "transform:scale("+zoomFactor+") translate("+hroizontalOffset * -1+"px,"+verticalOffset * -1+"px); ");
-			zoneWrapper.classList.add('zoomed-in');
-			activeZone = this.parentElement.parentElement.id;
-			document.getElementById(activeZone + "-info").classList.remove('hidden');
-			document.querySelector("#compass").classList.toggle("spin");
-			document.querySelector("#compass").classList.add("back");
-		});
-	}
+	window.addEventListener('DOMContentLoaded', function() {
+		const zones = document.getElementsByClassName("active-zone");
+		var arr = [];
+		for (var i = 0; i < zones.length; i++) {
+			var e = document.querySelector("#" + zones[i].id + " > svg > g");
+			setTimeout(function() {
+			},500);
+			e.addEventListener('click', function() {
+				let zoneMargin = 80;
+				let zoneWidth = this.getBoundingClientRect().width + zoneMargin;
+				let zoneHeight = this.getBoundingClientRect().height + zoneMargin;
+				// holy shit the zone centering coords are crazy to calculate!
+				let hroizontalOffset = (zoneWrapper.getBoundingClientRect().left + ((zoneWrapper.getBoundingClientRect().width / 2) - this.getBoundingClientRect().left - ( zoneWidth / 2) + (zoneMargin /2))) * (-1 / calcZoom(baseWidth, baseHeight));
+				let verticalOffset = (zoneWrapper.getBoundingClientRect().top + ((zoneWrapper.getBoundingClientRect().height / 2) - this.getBoundingClientRect().top - ( zoneHeight / 2) + 5)) * (-1 / calcZoom(baseWidth, baseHeight));
+		
+				let zoomFactor = calcZoom(zoneWidth, zoneHeight) * calcZoom(baseWidth, baseHeight);
+				zoneWrapper.setAttribute("style", "transform:scale("+zoomFactor+") translate("+hroizontalOffset * -1+"px,"+verticalOffset * -1+"px); ");
+				zoneWrapper.classList.add('zoomed-in');
+				activeZone = this.parentElement.parentElement.id;
+				document.getElementById(activeZone + "-info").classList.remove('hidden');
+				document.querySelector("#compass").classList.toggle("spin");
+				document.querySelector("#compass").classList.add("back");
+			});
+		}
+	});
 };
 
 //initro timing functions.
@@ -111,13 +113,12 @@ anim.addEventListener('DOMLoaded', function() {
 	document.getElementById('loading').classList.add('hidden');
 	document.getElementById('cloud-1').classList.add('reveal');
 	document.getElementById('cloud-2').classList.add('reveal');
-
 	setTimeout( function() {
 		 //match the zoom CSS transition timing 
 		setZoom(calcZoom(baseWidth, baseHeight));
 		document.getElementById('audio').play();
 		animLoad();
-	},2500);
+	},300);
 });
 
 document.querySelector("#compass").addEventListener('click', function() {
