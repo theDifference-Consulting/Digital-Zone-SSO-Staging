@@ -84,8 +84,8 @@ function animLoad() {
 	var arr = [];
 	for (var i = 0; i < zones.length; i++) {
 		var e = document.querySelector("#" + zones[i].id + " > svg > g");
-			setTimeout(function() {
-			},500);
+		setTimeout(function() {
+		},500);
 		e.addEventListener('click', function() {
 			let zoneMargin = 80;
 			let zoneWidth = this.getBoundingClientRect().width + zoneMargin;
@@ -116,7 +116,7 @@ anim.addEventListener('DOMLoaded', function() {
 		 //match the zoom CSS transition timing 
 		setZoom(calcZoom(baseWidth, baseHeight));
 		document.getElementById('audio').play();
-		animLoad();
+		animLoad;
 	},300);
 });
 
