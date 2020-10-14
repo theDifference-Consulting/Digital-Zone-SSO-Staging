@@ -117,7 +117,7 @@ anim.addEventListener('DOMLoaded', function() {
 		setZoom(calcZoom(baseWidth, baseHeight));
 		document.getElementById('audio').play();
 		animLoad();
-	},300);
+	},2500);
 });
 
 document.querySelector("#compass").addEventListener('click', function() {
