@@ -80,7 +80,7 @@ export default function index() {
                         <div className="col-sm-6 ">
                             <div className="yellow-video-block">
                                 <p>
-                                    Learn how the Middle East Medical Affairs team uses a digital platform to expand its reach to local HIV specialists, provide them with much needed scientific information and learn about their interests and behaviors.
+                                    Learn about the way HIV experts in Australia have adapted to stay connected and share their expertise with each other.
                                 </p>
                                     <div className="embed-responsive embed-responsive-16by9">
                                         <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/465969769" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
