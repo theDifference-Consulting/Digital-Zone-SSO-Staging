@@ -53,19 +53,44 @@ export default function index() {
                     <img src="../img/popcorn-bug.svg" className="bug"/>
                     <h2>Now Showing</h2>
                     <div style={{padding:'30px 0'}}>
-                        Learn about the way HIV experts in Australia have adapted to stay connected and share their expertise with each other.
+                        Learn about 2020’s ESL IHC convention and our preparations to get the most out of a virtual experience.
                     </div>
                     <div className="yellow-video-block">
                         <div className="embed-responsive embed-responsive-16by9">
-                            <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/465969769" width="640" height="360" frameBorder="0" allow="fullscreen" allowFullScreen></iframe>
+                            <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/467531893" width="640" height="360" frameBorder="0" allow="fullscreen" allowFullScreen></iframe>
                         </div>
-                        <b>Julie Newman</b><br/>
+                        <div className="row">
+                            <div className="col-sm-6">
+                                <p>
+                                    <b>Ramon Thali</b><br/>
+                                    Switzerland<br/>
+                                    ramon.thali@gilead.com
+                                </p>
+                            </div>
+                            <div className="col-sm-6">
+                                <p>
+                                    <b>Ivo Berkovic</b><br/>
+                                    Switzerland<br/>
+                                    ivo.berkovic@gilead.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row margin-top-md">
+                        <div className="col-sm-6 ">
+                            <div className="yellow-video-block">
+                                <p>
+                                    Learn how the Middle East Medical Affairs team uses a digital platform to expand its reach to local HIV specialists, provide them with much needed scientific information and learn about their interests and behaviors.
+                                </p>
+                                    <div className="embed-responsive embed-responsive-16by9">
+                                        <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/465969769" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                    </div>
+                                <b>Julie Newman</b><br/>
                         Australia<br/>
                         julie.newman@gilead.com
-                    </div>
-                    
-                    
-                    <div class="row margin-top-md">
+                            </div>
+                            <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
+                        </div>
                         <div className="col-sm-6 ">
                             <div className="yellow-video-block">
                                 <p>
