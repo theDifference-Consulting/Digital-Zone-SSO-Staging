@@ -53,30 +53,44 @@ export default function index() {
                     <img src="../img/popcorn-bug.svg" className="bug"/>
                     <h2>Now Showing</h2>
                     <div style={{padding:'30px 0'}}>
-                        Learn about 2020’s ESL IHC convention and our preparations to get the most out of a virtual experience.
+                        Check out the Gilead Middle East database, and how we are using it to connect and share our expertise.
                     </div>
                     <div className="yellow-video-block">
                         <div className="embed-responsive embed-responsive-16by9">
-                            <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/467531893" width="640" height="360" frameBorder="0" allow="fullscreen" allowFullScreen></iframe>
+                            <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463557184" width="640" height="360" frameBorder="0" allow="fullscreen" allowFullScreen></iframe>
                         </div>
-                        <div className="row">
-                            <div className="col-sm-6">
-                                <p>
-                                    <b>Ramon Thali</b><br/>
-                                    Switzerland<br/>
-                                    ramon.thali@gilead.com
-                                </p>
-                            </div>
-                            <div className="col-sm-6">
-                                <p>
-                                    <b>Ivo Berkovic</b><br/>
-                                    Switzerland<br/>
-                                    ivo.berkovic@gilead.com
-                                </p>
-                            </div>
-                        </div>
+                        <b>Sherif Khattab</b><br/>
+                                Dubai, UAE<br/>
+                                sherif.khattab@gilead.com
                     </div>
                     <div className="row margin-top-md">
+                    <div className="col-sm-6 ">
+                            <div className="yellow-video-block">
+                                <p>
+                                    Learn about 2020’s ESL IHC convention and our preparations to get the most out of a virtual experience.
+                                </p>
+                                    <div className="embed-responsive embed-responsive-16by9">
+                                        <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/467531893" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                    </div>
+                                <div className="row">
+                                    <div className="col-sm-6">
+                                        <p>
+                                            <b>Ramon Thali</b><br/>
+                                            Switzerland<br/>
+                                            ramon.thali@gilead.com
+                                        </p>
+                                    </div>
+                                    <div className="col-sm-6">
+                                        <p>
+                                            <b>Ivo Berkovic</b><br/>
+                                            Switzerland<br/>
+                                            ivo.berkovic@gilead.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
+                        </div>
                         <div className="col-sm-6 ">
                             <div className="yellow-video-block">
                                 <p>
@@ -86,11 +100,13 @@ export default function index() {
                                         <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/465969769" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                     </div>
                                 <b>Julie Newman</b><br/>
-                        Australia<br/>
-                        julie.newman@gilead.com
+                                Australia<br/>
+                                julie.newman@gilead.com
                             </div>
                             <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
                         </div>
+                    </div>
+                    <div className="row">
                         <div className="col-sm-6 ">
                             <div className="yellow-video-block">
                                 <p>
