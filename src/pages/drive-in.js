@@ -53,25 +53,42 @@ export default function index() {
                     <img src="../img/popcorn-bug.svg" className="bug"/>
                     <h2>Now Showing</h2>
                     <div style={{padding:'30px 0'}}>
-                        Check out the Gilead Middle East database, and how we are using it to connect and share our expertise.
+                        Explore the world of hackathons and see how we're using developer bootcamps to assist in HIV research.
                     </div>
                     <div className="yellow-video-block">
                         <div className="embed-responsive embed-responsive-16by9">
-                            <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463557184" width="640" height="360" frameBorder="0" allow="fullscreen" allowFullScreen></iframe>
+                            <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/470281346" width="640" height="360" frameBorder="0" allow="fullscreen" allowFullScreen></iframe>
                         </div>
-                        <b>Sherif Khattab</b><br/>
-                                Dubai, UAE<br/>
-                                sherif.khattab@gilead.com
+                        <b>Roberto La Ferla</b><br/>
+                        Italy<br/>
+                        Roberto.LaFerla@gilead.com
                     </div>
                     <div className="row margin-top-md">
-                    <div className="col-sm-6 ">
+                        <div className="col-sm-6 ">
+                            <div className="yellow-video-block">
+                                <p>
+                                    Check out the Gilead Middle East database, and how we are using it to connect and share our expertise.
+                                </p>
+                                <div className="embed-responsive embed-responsive-16by9">
+                                    <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463557184" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                </div>
+
+                                <p>
+                                    <b>Sherif Khattab</b><br/>
+                                    Dubai, UAE<br/>
+                                    sherif.khattab@gilead.com
+                                </p>
+                            </div>
+                            <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
+                        </div>
+                        <div className="col-sm-6 ">
                             <div className="yellow-video-block">
                                 <p>
                                     Learn about 2020’s ESL IHC convention and our preparations to get the most out of a virtual experience.
                                 </p>
-                                    <div className="embed-responsive embed-responsive-16by9">
-                                        <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/467531893" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                                    </div>
+                                <div className="embed-responsive embed-responsive-16by9">
+                                    <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/467531893" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                </div>
                                 <div className="row">
                                     <div className="col-sm-6">
                                         <p>
@@ -91,35 +108,35 @@ export default function index() {
                             </div>
                             <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
                         </div>
-                        <div className="col-sm-6 ">
-                            <div className="yellow-video-block">
-                                <p>
-                                    Learn about the way HIV experts in Australia have adapted to stay connected and share their expertise with each other.
-                                </p>
+                        <div className="row">
+                            <div className="col-sm-6 ">
+                                <div className="yellow-video-block">
+                                    <p>
+                                        Learn about the way HIV experts in Australia have adapted to stay connected and share their expertise with each other.
+                                    </p>
                                     <div className="embed-responsive embed-responsive-16by9">
                                         <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/465969769" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                     </div>
-                                <b>Julie Newman</b><br/>
-                                Australia<br/>
-                                julie.newman@gilead.com
+                                    <b>Julie Newman</b><br/>
+                                    Australia<br/>
+                                    julie.newman@gilead.com
+                                </div>
+                                <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
                             </div>
-                            <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-sm-6 ">
-                            <div className="yellow-video-block">
-                                <p>
-                                    Learn how the Middle East Medical Affairs team uses a digital platform to expand its reach to local HIV specialists, provide them with much needed scientific information and learn about their interests and behaviors.
-                                </p>
-                                    <div className="embed-responsive embed-responsive-16by9">
-                                        <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463555097" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                                    </div>
-                                <b>Sherif Khattab</b><br/>
-                                Dubai, UAE<br/>
-                                sherif.khattab@gilead.com
+                            <div className="col-sm-6 ">
+                                <div className="yellow-video-block">
+                                    <p>
+                                        Learn how the Middle East Medical Affairs team uses a digital platform to expand its reach to local HIV specialists, provide them with much needed scientific information and learn about their interests and behaviors.
+                                    </p>
+                                        <div className="embed-responsive embed-responsive-16by9">
+                                            <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463555097" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                        </div>
+                                    <b>Sherif Khattab</b><br/>
+                                    Dubai, UAE<br/>
+                                    sherif.khattab@gilead.com
+                                </div>
+                                <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
                             </div>
-                            <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
                         </div>
                     </div>
                 </div>
