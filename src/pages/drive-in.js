@@ -53,17 +53,33 @@ export default function index() {
                     <img src="../img/popcorn-bug.svg" className="bug"/>
                     <h2>Now Showing</h2>
                     <div style={{padding:'30px 0'}}>
-                        Explore the world of hackathons and see how we're using developer bootcamps to assist in HIV research.
+                        Take a look at how we are using digital tools to help nurses with their ongoing education.
                     </div>
                     <div className="yellow-video-block">
                         <div className="embed-responsive embed-responsive-16by9">
-                            <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/470281346" width="640" height="360" frameBorder="0" allow="fullscreen" allowFullScreen></iframe>
+                            <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/470263070" width="640" height="360" frameBorder="0" allow="fullscreen" allowFullScreen></iframe>
                         </div>
-                        <b>Roberto La Ferla</b><br/>
-                        Italy<br/>
-                        Roberto.LaFerla@gilead.com
+                        <b>Danielle Brackenridge</b><br/>
+                        UK<br/>
+                        danielle.brackenridge@gilead.com
                     </div>
                     <div className="row margin-top-md">
+                        <div className="col-sm-6 ">
+                            <div className="yellow-video-block">
+                                <p>
+                                    Explore the world of hackathons and see how we're using developer bootcamps to assist in HIV research.
+                                </p>
+                                <div className="embed-responsive embed-responsive-16by9">
+                                    <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/470281346" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                </div>
+                                <p>
+                                    <b>Roberto La Ferla</b><br/>
+                                    Italy<br/>
+                                    Roberto.LaFerla@gilead.com
+                                </p>
+                            </div>
+                            <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
+                        </div>
                         <div className="col-sm-6 ">
                             <div className="yellow-video-block">
                                 <p>
