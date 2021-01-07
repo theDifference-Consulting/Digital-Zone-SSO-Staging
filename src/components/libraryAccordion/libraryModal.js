@@ -10,7 +10,7 @@ export default function LibraryModal({listItem}) {
   return (
   	<>
 	  	<div className="card-wrapper" onClick={handleShow}>
-			<img src={"img/"+item.countryFlag} alt="country flag" className="country-flag"/>
+			<img src={"/img/"+item.countryFlag} alt="country flag" className="country-flag"/>
 			<h5 >{item.project}</h5>
 			Audience: <b>{item.audience}</b><br/>
 			Date: <b>{item.date}</b><br/>
@@ -23,12 +23,12 @@ export default function LibraryModal({listItem}) {
 			centered
 		>
 			<Modal.Header closeButton>
-			  	<img src={"img/"+item.countryFlag} alt="country flag" className="country-flag"/>
+			  	<img src={"/img/"+item.countryFlag} alt="country flag" className="country-flag"/>
 				{item.project}
 			</Modal.Header>
 			<Modal.Body>
 				<a href={item.fileName} target="_blank" rel="noreferrer" className="download-button">
-					<img src="img/download.svg"/>
+					<img src="/img/download.svg"/>
 					Download<br/>
 					Materials
 				</a>
@@ -40,7 +40,7 @@ export default function LibraryModal({listItem}) {
 					))}
 				</ul>
 				<a href={"mailto:"+item.contactEmail} target="_blank" rel="noreferrer" style={{fontWeight:'bold'}}>
-					<img src="img/right-triangle.svg" style={{height:'18px', marginRight: '8px'}}/>
+					<img src="/img/right-triangle.svg" style={{height:'18px', marginRight: '8px'}}/>
 					Contact: {item.contactName}
 				</a>
 			</Modal.Body>
