@@ -1,0 +1,108 @@
+{
+	"AG": [
+		{
+			"project": "GAP Connect",
+			"audience": "Physicians",
+			"date": "Oct. 2020-Oct 2021",
+			"summary": [
+				{
+					"content": "12 month rolling digital ad board"
+				},
+				{
+					"content": "Ability to to receive advisor feedback from either medical, market access or commercial perspective"
+				},
+				{
+					"content": "Digital feedback program at EULAR/ACR where we can pose questions relevant to local market"
+				}
+			],
+			"contactName": "Danielle Croal",
+			"contactEmail": "test@test.com",
+			"fileName": "",
+			"countryFlag": "aus.jpg"
+		},
+		{
+			"project": "GAP Connect",
+			"audience": "Physicians",
+			"date": "Oct. 2020-Oct 2021",
+			"summary": [
+				{
+					"content": "12 month rolling digital ad board"
+				},
+				{
+					"content": "Ability to to receive advisor feedback from either medical, market access or commercial perspective"
+				},
+				{
+					"content": "Digital feedback program at EULAR/ACR where we can pose questions relevant to local market"
+				}
+			],
+			"contactName": "Danielle Croal",
+			"contactEmail": "test@test.com",
+			"fileName": "",
+			"countryFlag": "aus.jpg"
+		},
+		{
+			"project": "GAP Connect",
+			"audience": "Physicians",
+			"date": "Oct. 2020-Oct 2021",
+			"summary": [
+				{
+					"content": "12 month rolling digital ad board"
+				},
+				{
+					"content": "Ability to to receive advisor feedback from either medical, market access or commercial perspective"
+				},
+				{
+					"content": "Digital feedback program at EULAR/ACR where we can pose questions relevant to local market"
+				}
+			],
+			"contactName": "Danielle Croal",
+			"contactEmail": "test@test.com",
+			"fileName": "",
+			"countryFlag": "aus.jpg"
+		}
+	],
+	"HP": [
+		{
+			"project": "",
+			"audience": "",
+			"date": "",
+			"summary": [
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				}
+			],
+			"contactName": "",
+			"contactEmail": "",
+			"fileName": "",
+			"countryFlag": ""
+		}
+	],
+	"QZ": [
+		{
+			"project": "",
+			"audience": "",
+			"date": "",
+			"summary": [
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				}
+			],
+			"contactName": "",
+			"contactEmail": "",
+			"fileName": "",
+			"countryFlag": ""
+		}
+	]
+}
