@@ -4,6 +4,22 @@
 
 .accordion {
 	margin-bottom: 30px;
+	overflow: visible;
+}
+
+@media (min-width: 768px) {
+	.accordion {
+		height:203px;
+	}
+}
+.card .show + .card-header {
+	z-index: 1000;
+}
+
+.cardCategory {
+	width:250px;
+	display: block;
+	margin:30px auto;
 }
 
 .drawer-face {
@@ -24,8 +40,11 @@
 	background-color: #a38061;
 	background-image: url('/img/woodgrain.svg');
 	background-repeat: repeat-y;
-	background-size: 100% auto;
+	background-size: cover;
 	padding: 40px 0;
+	width:100%;
+	border-top:6px solid #dda96b;
+	border-bottom:6px solid #dda96b;
 }
 
 .accordion .card {
@@ -80,11 +99,29 @@
 	font-size:16px;
 }
 .modal-content {
-	border-radius: 12px;
+	border-radius: 0 12px 12px 12px;
 	border:none;
 	box-shadow:4px 4px 0 0 rgba(0,0,0,.3);
 	padding:10px;
 	margin:15px;
+	background-color: #fffaee;
+	background-image: url('/img/card-stamp.svg');
+	background-size:200px;
+	background-position: right top;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1001;
+}
+
+.modal-content:before {
+	content:"";
+	position: absolute;
+	height:30px;
+	width: 200px;
+	top:-30px;
+	left: 0;
+	border-radius: 12px 12px 0 0;
+	background-color: #fffaee;
 }
 
 .modal-content a,.modal-content a:hover {
@@ -92,7 +129,8 @@
 }
 
 .modal-content ul {
-	padding-left: 16px;
+	padding-left: 0;
+	margin-bottom: 4px;
 }
 .modal-backdrop {
 	background-color: rgba(0,0,0,.3);
@@ -101,13 +139,20 @@
 .modal-header {
 	border-bottom: none;
 	padding-bottom: 0;
+	padding-top: 0;
+	padding-left: 75px;
 	align-items:center;
-	justify-content: start;
-	font-size:26px;
-	font-weight: bold;
+	justify-content: start;	
 	text-align: left;
 	display: block;
+}
+.modal-header .country-flag {
+	margin-left: -60px;
+}
 
+.modal-header span {
+	font-size:26px;
+	font-weight: bold;
 }
 
 .modal-header .close {
@@ -120,6 +165,9 @@
 	padding:0;
 	margin:0;
 	float: right;
+	position: absolute;
+	top: 15px;
+	right: 15px;
 }
 
 .modal-header .close span {
@@ -137,5 +185,23 @@
 
 .modal-content .download-button img {
 	width:80px;
+}
 
+.modal-body .summary {
+	border-top:solid 2px #b9987b;
+	border-bottom:solid 2px #b9987b;
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-left: 15px;
+	margin-bottom: 15px;
+}
+.modal-body .summary span {
+	font-weight: bold;
+}
+.modal-body .summary li, .modal-body .summary span {
+	border-bottom:solid 2px #b9987b;
+	border-left:solid 2px #b9987b;
+	width: 100%;
+	display: block;
+	padding: 4px;
 }

@@ -1,77 +1,57 @@
 import React from 'react'
-import Accordion from 'react-bootstrap/Accordion'
 import {Card, Button, Row, Col, Container} from 'react-bootstrap'
-import LibraryModal from "./libraryModal.js"
-import {AG, HP, QZ} from "./libraryAccordion.json"
+import AccordionDrawer from './libraryAccordionDrawer'
+import {AG, HP, QZ} from "./libraryAccordionInflam.json"
 import "./libraryAccordion.css"
-
-function libraryModal() {
-
-  return (
-	<b>Hello world!</b>
-  );
-}
 
 const LibraryAccordion = () => {
 	return (
-		<Container>
-			<Row className="drawer-wrapper">
-				<Col md={4}>
-					<Accordion>
-						<Card>
-							<Accordion.Collapse eventKey="0">
-							    <div>
-							    {AG.map((item, idx) => (
-		      						<LibraryModal listItem={item}/>
-		      						))}
-							  	</div>
-							</Accordion.Collapse>
-							<Card.Header>
-							  <Accordion.Toggle as={Button} variant="link" eventKey="0" className="drawer-face">
-							        <img src="/img/AG-face.svg"/>
-							  </Accordion.Toggle>
-							</Card.Header>
-						</Card>
-					</Accordion>
-				</Col>
-				<Col md={4}>
-					<Accordion>
-					  <Card>
-					    <Accordion.Collapse eventKey="1">
-					      <div>
-							    {HP.map((item, idx) => (
-		      						<LibraryModal listItem={item}/>
-		      						))}
-							  	</div>
-					    </Accordion.Collapse>
-					    <Card.Header>
-					      <Accordion.Toggle as={Button} variant="link" eventKey="1" className="drawer-face">
-					        <img src="/img/HP-face.svg"/>
-					      </Accordion.Toggle>
-					    </Card.Header>
-					  </Card>
-					</Accordion>
-				</Col>
-				<Col md={4}>
-					<Accordion>
-					  <Card>
-					    <Accordion.Collapse eventKey="1">
-					      <div>
-							    {QZ.map((item, idx) => (
-		      						<LibraryModal listItem={item}/>
-		      						))}
-							  	</div>
-					    </Accordion.Collapse>
-					    <Card.Header>
-					      <Accordion.Toggle as={Button} variant="link" eventKey="1" className="drawer-face">
-					        <img src="/img/QZ-face.svg"/>
-					      </Accordion.Toggle>
-					    </Card.Header>
-					  </Card>
-					</Accordion>
-				</Col>
-			</Row>
-		</Container>
+		<div className="drawer-wrapper">
+			<Container>
+				<Row >
+					<Col xs={12}>
+						<img src="img/inflam.svg" className="cardCategory" />
+					</Col>
+					<Col md={4}>
+						<AccordionDrawer data={AG} img="/img/AG-face.svg"/>
+					</Col>
+					<Col md={4}>
+						<AccordionDrawer data={HP} img="/img/HP-face.svg"/>
+					</Col>
+					<Col md={4}>
+						<AccordionDrawer data={QZ} img="/img/QZ-face.svg"/>
+					</Col>
+				</Row>
+				<Row>
+					<Col xs={12}>
+						<img src="img/hiv.svg" className="cardCategory" />
+					</Col>
+					<Col md={4}>
+						<AccordionDrawer data={AG} img="/img/AG-face.svg"/>
+					</Col>
+					<Col md={4}>
+						<AccordionDrawer data={HP} img="/img/HP-face.svg"/>
+					</Col>
+					<Col md={4}>
+						<AccordionDrawer data={QZ} img="/img/QZ-face.svg"/>
+					</Col>
+				</Row>
+				<Row>
+					<Col xs={12}>
+						<img src="img/liver.svg" className="cardCategory" />
+					</Col>
+					<Col md={4}>
+						<AccordionDrawer data={AG} img="/img/AG-face.svg"/>
+					</Col>
+					<Col md={4}>
+						<AccordionDrawer data={HP} img="/img/HP-face.svg"/>
+					</Col>
+					<Col md={4}>
+						<AccordionDrawer data={QZ} img="/img/QZ-face.svg"/>
+					</Col>
+				</Row>
+			</Container>
+		</div>
 	)
 }
 

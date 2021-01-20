@@ -36,7 +36,7 @@ export default function index() {
                     <img src="../img/library-bug.svg" className="bug"/>
                     <h2>Welcome!</h2>
                     <div style={{padding:'30px 0'}}>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla 
+                        Welcome to the card catalog! An inventory of every digital project from across Gilead’s regions. Looking for info or inspiration? Feel free to dig through the drawers, organized by region and area of specialty. Feel free to reach out to project leads for more information through their contact info on each project card. 
                     </div>
                 </div>
             </section>
@@ -45,8 +45,9 @@ export default function index() {
                 <div className="container">
                     <img src="../img/library-bug.svg" className="bug"/>
                     <h2> The Catalog</h2>
+                                    </div>
+
                     <LibraryAccordion/>
-                </div>
             </section>
 	        <footer>
 	            <div className="container">
