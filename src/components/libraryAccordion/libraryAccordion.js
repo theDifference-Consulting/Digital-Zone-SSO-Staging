@@ -10,7 +10,7 @@ const LibraryAccordion = () => {
 			<Container>
 				<Row >
 					<Col xs={12}>
-						<img src="img/inflam.svg" className="cardCategory" />
+						<img src="/img/inflam.svg" className="cardCategory" />
 					</Col>
 					<Col md={4}>
 						<AccordionDrawer data={AG} img="/img/AG-face.svg"/>
@@ -24,7 +24,7 @@ const LibraryAccordion = () => {
 				</Row>
 				<Row>
 					<Col xs={12}>
-						<img src="img/hiv.svg" className="cardCategory" />
+						<img src="/img/hiv.svg" className="cardCategory" />
 					</Col>
 					<Col md={4}>
 						<AccordionDrawer data={AG} img="/img/AG-face.svg"/>
@@ -38,7 +38,7 @@ const LibraryAccordion = () => {
 				</Row>
 				<Row>
 					<Col xs={12}>
-						<img src="img/liver.svg" className="cardCategory" />
+						<img src="/img/liver.svg" className="cardCategory" />
 					</Col>
 					<Col md={4}>
 						<AccordionDrawer data={AG} img="/img/AG-face.svg"/>
