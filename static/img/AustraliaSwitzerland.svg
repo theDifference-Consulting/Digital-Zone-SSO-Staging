@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 56.38 56.38">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-7 {
+        fill: none;
+      }
+
+      .cls-2, .cls-7 {
+        stroke: #a5a7aa;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 1.85px;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: #0037a6;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: #e60026;
+      }
+
+      .cls-7 {
+        stroke-width: 1.85px;
+      }
+
+      .cls-8 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-9 {
+        fill: #ff0005;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle id="SVGID" class="cls-1" cx="13.69" cy="27.88" r="12.49" transform="translate(-15.7 17.85) rotate(-45)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <circle class="cls-1" cx="42.25" cy="28.23" r="12.94" transform="translate(-7.59 18.32) rotate(-22.5)"/>
+    </clipPath>
+  </defs>
+  <g id="Flags">
+    <g>
+      <g>
+        <circle class="cls-2" cx="13.69" cy="27.88" r="12.49" transform="translate(-15.7 17.85) rotate(-45)"/>
+        <g class="cls-3">
+          <g>
+            <g>
+              <rect class="cls-4" x="-5.05" y="15.39" width="37.47" height="24.98"/>
+              <g>
+                <rect class="cls-5" x="4.76" y="22.74" width="2.98" height="5.14"/>
+                <polygon class="cls-5" points="-1.19 27.88 0.43 27.88 6.08 22.79 4.46 21.32 -1.19 26.41 -1.19 27.88"/>
+                <polygon class="cls-6" points="-0.11 27.88 4.74 23.51 3.66 23.51 -1.19 27.88 -0.11 27.88"/>
+                <polygon class="cls-5" points="12.06 27.88 13.69 27.88 13.69 26.41 8.04 21.32 6.41 22.79 12.06 27.88"/>
+                <polygon class="cls-6" points="13.69 27.88 13.69 26.9 9.92 23.51 8.84 23.51 13.69 27.88"/>
+                <polygon class="cls-5" points="13.69 15.39 12.06 15.39 6.41 20.48 8.04 21.94 13.69 16.86 13.69 15.39"/>
+                <polygon class="cls-6" points="12.6 15.39 7.75 19.76 8.84 19.76 13.69 15.39 12.6 15.39"/>
+                <polygon class="cls-5" points="0.43 15.39 -1.19 15.39 -1.19 16.85 4.45 21.94 6.08 20.47 0.43 15.39"/>
+                <rect class="cls-5" x="-1.19" y="19.76" width="6.06" height="3.75"/>
+                <rect class="cls-5" x="4.76" y="15.39" width="2.98" height="5.12"/>
+                <polygon class="cls-6" points="-1.19 15.39 -1.19 16.36 2.57 19.75 3.65 19.75 -1.19 15.39"/>
+                <rect class="cls-5" x="7.62" y="19.76" width="6.06" height="3.75"/>
+                <polygon class="cls-6" points="7.14 20.51 7.14 15.39 5.35 15.39 5.35 20.51 -1.19 20.51 -1.19 22.76 5.35 22.76 5.35 22.76 5.35 22.76 5.35 27.88 7.14 27.88 7.14 22.76 13.69 22.76 13.69 20.51 7.14 20.51"/>
+              </g>
+            </g>
+            <polygon id="Star7" class="cls-5" points="6.92 29.61 7.43 31.19 8.99 30.61 8.07 31.99 9.5 32.84 7.84 32.98 8.07 34.63 6.92 33.42 5.78 34.63 6.01 32.98 4.35 32.84 5.78 31.99 4.86 30.61 6.42 31.19 6.92 29.61"/>
+            <polygon id="Star7-2" data-name="Star7" class="cls-5" points="20.37 32.46 20.61 33.21 21.35 32.93 20.92 33.59 21.6 34 20.81 34.07 20.92 34.85 20.37 34.28 19.83 34.85 19.93 34.07 19.15 34 19.83 33.59 19.39 32.93 20.13 33.21 20.37 32.46"/>
+            <polygon id="Star7-3" data-name="Star7" class="cls-5" points="15.97 25.49 16.21 26.25 16.95 25.97 16.52 26.63 17.2 27.03 16.41 27.1 16.52 27.88 15.97 27.31 15.43 27.88 15.54 27.1 14.75 27.03 15.43 26.63 14.99 25.97 15.73 26.25 15.97 25.49"/>
+            <polygon id="Star7-4" data-name="Star7" class="cls-5" points="20.37 20.73 20.61 21.48 21.35 21.2 20.92 21.86 21.6 22.27 20.81 22.33 20.92 23.12 20.37 22.54 19.83 23.12 19.93 22.33 19.15 22.27 19.83 21.86 19.39 21.2 20.13 21.48 20.37 20.73"/>
+            <polygon id="Star7-5" data-name="Star7" class="cls-5" points="24.28 24.32 24.53 25.07 25.27 24.79 24.83 25.45 25.51 25.86 24.72 25.93 24.83 26.71 24.28 26.14 23.74 26.71 23.85 25.93 23.06 25.86 23.74 25.45 23.3 24.79 24.04 25.07 24.28 24.32"/>
+            <polygon id="Star5" class="cls-5" points="22.13 27.85 22.32 28.32 22.83 28.36 22.44 28.68 22.56 29.18 22.13 28.91 21.7 29.18 21.82 28.68 21.43 28.36 21.94 28.32 22.13 27.85"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <circle class="cls-7" cx="42.25" cy="28.23" r="12.94" transform="translate(-7.59 18.32) rotate(-22.5)"/>
+        <g class="cls-8">
+          <g>
+            <rect class="cls-9" x="22.84" y="15.28" width="38.82" height="25.88"/>
+            <rect class="cls-5" x="34.21" y="25.8" width="16.08" height="4.85"/>
+            <rect class="cls-5" x="39.84" y="20.14" width="4.82" height="16.18"/>
+          </g>
+          <circle class="cls-1" cx="42.25" cy="28.23" r="12.94" transform="translate(-7.59 18.32) rotate(-22.5)"/>
+        </g>
+      </g>
+      <rect class="cls-1" x="1.18" y="1.27" width="53.84" height="53.84"/>
+    </g>
+  </g>
+</svg>

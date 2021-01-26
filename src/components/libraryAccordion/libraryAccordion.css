@@ -12,7 +12,7 @@
 		height:203px;
 	}
 }
-.card .show + .card-header {
+.card .show + .card-header, .collapse.show {
 	z-index: 1000;
 }
 

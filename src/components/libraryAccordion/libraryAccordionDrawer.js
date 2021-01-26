@@ -4,14 +4,13 @@ import Accordion from 'react-bootstrap/Accordion'
 import LibraryModal from "./libraryModal.js"
 
 const LibraryAccordionDrawer = ({data, img, ...props}) => {
-console.log(data)
 	return (
 		<Accordion>
 			<Card>
 				<Accordion.Collapse eventKey="0">
 				    <div>
 				    {data.map((item, idx) => (
-	  						<LibraryModal listItem={item}/>
+	  						<LibraryModal listItem={item} key={item+"_"+idx}/>
 	  						))}
 				  	</div>
 				</Accordion.Collapse>

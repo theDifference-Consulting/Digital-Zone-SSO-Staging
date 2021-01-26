@@ -1,7 +1,7 @@
 import React from 'react'
 import {Card, Button, Row, Col, Container} from 'react-bootstrap'
 import AccordionDrawer from './libraryAccordionDrawer'
-import {AG, HP, QZ} from "./libraryAccordionInflam.json"
+import {HIV, LiverDiseases, Inflammation} from "./libraryAccordion.json"
 import "./libraryAccordion.css"
 
 const LibraryAccordion = () => {
@@ -13,13 +13,13 @@ const LibraryAccordion = () => {
 						<img src="/img/inflam.svg" className="cardCategory" />
 					</Col>
 					<Col md={4}>
-						<AccordionDrawer data={AG} img="/img/AG-face.svg"/>
+						<AccordionDrawer data={HIV[0].AG} img="/img/AG-face.svg"/>
 					</Col>
 					<Col md={4}>
-						<AccordionDrawer data={HP} img="/img/HP-face.svg"/>
+						<AccordionDrawer data={HIV[0].HP} img="/img/HP-face.svg"/>
 					</Col>
 					<Col md={4}>
-						<AccordionDrawer data={QZ} img="/img/QZ-face.svg"/>
+						<AccordionDrawer data={HIV[0].QZ} img="/img/QZ-face.svg"/>
 					</Col>
 				</Row>
 				<Row>
@@ -27,13 +27,13 @@ const LibraryAccordion = () => {
 						<img src="/img/hiv.svg" className="cardCategory" />
 					</Col>
 					<Col md={4}>
-						<AccordionDrawer data={AG} img="/img/AG-face.svg"/>
+						<AccordionDrawer data={LiverDiseases[0].AG} img="/img/AG-face.svg"/>
 					</Col>
 					<Col md={4}>
-						<AccordionDrawer data={HP} img="/img/HP-face.svg"/>
+						<AccordionDrawer data={LiverDiseases[0].HP} img="/img/HP-face.svg"/>
 					</Col>
 					<Col md={4}>
-						<AccordionDrawer data={QZ} img="/img/QZ-face.svg"/>
+						<AccordionDrawer data={LiverDiseases[0].QZ} img="/img/QZ-face.svg"/>
 					</Col>
 				</Row>
 				<Row>
@@ -41,13 +41,13 @@ const LibraryAccordion = () => {
 						<img src="/img/liver.svg" className="cardCategory" />
 					</Col>
 					<Col md={4}>
-						<AccordionDrawer data={AG} img="/img/AG-face.svg"/>
+						<AccordionDrawer data={Inflammation[0].AG} img="/img/AG-face.svg"/>
 					</Col>
 					<Col md={4}>
-						<AccordionDrawer data={HP} img="/img/HP-face.svg"/>
+						<AccordionDrawer data={Inflammation[0].HP} img="/img/HP-face.svg"/>
 					</Col>
 					<Col md={4}>
-						<AccordionDrawer data={QZ} img="/img/QZ-face.svg"/>
+						<AccordionDrawer data={Inflammation[0].QZ} img="/img/QZ-face.svg"/>
 					</Col>
 				</Row>
 			</Container>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.08 55.08">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-8 {
+        fill: none;
+      }
+
+      .cls-2, .cls-8 {
+        stroke: #a5a7aa;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 1.85px;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: red;
+      }
+
+      .cls-5 {
+        fill: #0062d9;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-8 {
+        stroke-width: 1.85px;
+      }
+
+      .cls-9 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-10 {
+        fill: #ff0009;
+      }
+
+      .cls-11 {
+        fill: #0049bf;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle class="cls-1" cx="41.69" cy="26.11" r="11.9" transform="translate(-6.82 17.94) rotate(-22.5)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path class="cls-1" d="M37.69,32.06c-2-.94-4.76-2.81-4.76-6.51s.18-5.39.18-5.39h9.16s.18,1.68.18,5.39S39.65,31.12,37.69,32.06Z"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <circle class="cls-1" cx="13.13" cy="26.11" r="11.9"/>
+    </clipPath>
+  </defs>
+  <g id="Flags">
+    <g>
+      <g>
+        <circle class="cls-2" cx="41.69" cy="26.11" r="11.9" transform="translate(-6.82 17.94) rotate(-22.5)"/>
+        <g class="cls-3">
+          <g>
+            <rect class="cls-4" x="25.14" y="14.21" width="35.71" height="23.8"/>
+            <rect class="cls-5" x="25.14" y="14.21" width="35.71" height="15.87"/>
+            <rect class="cls-6" x="25.14" y="14.21" width="35.71" height="7.93"/>
+            <g>
+              <path id="coa" class="cls-6" d="M37.69,32.6c-2.13-1-5.19-3.07-5.19-7.1s.2-5.87.2-5.87h10s.2,1.83.2,5.87S39.82,31.57,37.69,32.6Z"/>
+              <path id="coa-2" data-name="coa" class="cls-4" d="M37.69,32.06c-2-.94-4.76-2.81-4.76-6.51s.18-5.39.18-5.39h9.16s.18,1.68.18,5.39S39.65,31.12,37.69,32.06Z"/>
+              <path class="cls-6" d="M40.59,24.29a7.5,7.5,0,0,1-2.48.28V23.28a5.81,5.81,0,0,1,2,.29s0-.33,0-.72,0-.71,0-.71a6,6,0,0,1-2,.28,12.33,12.33,0,0,1,.26-1.84s-.49,0-.68,0-.68,0-.68,0a12.33,12.33,0,0,1,.26,1.84,6.11,6.11,0,0,1-2-.28s0,.33,0,.71,0,.72,0,.72a5.9,5.9,0,0,1,2-.29v1.29a7.5,7.5,0,0,1-2.48-.28s0,.33,0,.71,0,.72,0,.72a7.66,7.66,0,0,1,2.48-.28v2h.84v-2a7.68,7.68,0,0,1,2.48.28s0-.33,0-.72S40.59,24.29,40.59,24.29Z"/>
+              <g class="cls-7">
+                <path class="cls-5" d="M37.6,33.28l-4.05-3.62S34.07,28,35.08,28a1.22,1.22,0,0,1,1.1.65s.52-1.36,1.51-1.36,1.51,1.36,1.51,1.36A1.22,1.22,0,0,1,40.3,28c1,0,1.53,1.68,1.53,1.68L37.6,33.28Z"/>
+              </g>
+            </g>
+          </g>
+          <circle class="cls-1" cx="41.69" cy="26.11" r="11.9" transform="translate(-6.82 17.94) rotate(-22.5)"/>
+        </g>
+      </g>
+      <g>
+        <circle class="cls-8" cx="13.13" cy="26.11" r="11.9"/>
+        <g class="cls-9">
+          <g>
+            <rect class="cls-10" x="-1.48" y="14.18" width="35.7" height="23.8"/>
+            <rect class="cls-6" x="-1.48" y="14.18" width="35.7" height="11.9"/>
+            <path class="cls-11" d="M16.37,26.08-1.48,14.18V38Z"/>
+          </g>
+          <circle class="cls-1" cx="13.13" cy="26.11" r="11.9"/>
+        </g>
+      </g>
+      <rect class="cls-1" x="0.62" y="0.62" width="53.84" height="53.84"/>
+    </g>
+  </g>
+</svg>
