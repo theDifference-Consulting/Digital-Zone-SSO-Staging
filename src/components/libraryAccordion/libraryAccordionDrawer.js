@@ -7,7 +7,7 @@ const LibraryAccordionDrawer = ({data, img, ...props}) => {
 	return (
 		<Accordion>
 			<Card>
-				<Accordion.Collapse eventKey="0">
+				<Accordion.Collapse eventKey="0" >
 				    <div>
 				    {data.map((item, idx) => (
 	  						<LibraryModal listItem={item} key={item+"_"+idx}/>

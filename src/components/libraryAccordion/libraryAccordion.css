@@ -12,14 +12,20 @@
 		height:203px;
 	}
 }
-.card .show + .card-header, .collapse.show {
+.card .show + .card-header, .collapse.show, .collapsing {
 	z-index: 1000;
+}
+
+.collapse, .collapsing {
+	max-height: 280px;
+    overflow: scroll;
 }
 
 .cardCategory {
 	width:250px;
 	display: block;
 	margin:30px auto;
+	z-index: -1;
 }
 
 .drawer-face {
