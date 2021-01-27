@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Flags">
+    <g>
+      <circle cx="25" cy="25" r="24.68"/>
+      <path class="cls-1" d="M22.61,16.2v6.6H31.5v4.85H22.61v6.73h11.6v5H16V11.16H34.21v5Z"/>
+    </g>
+  </g>
+</svg>

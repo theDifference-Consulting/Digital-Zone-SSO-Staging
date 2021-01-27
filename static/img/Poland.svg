@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #a5a7aa;
+        stroke-miterlimit: 10;
+        stroke-width: 1.85px;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #f00014;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle class="cls-1" cx="24.92" cy="25" r="23.94" transform="translate(-7.67 11.44) rotate(-22.5)"/>
+    </clipPath>
+  </defs>
+  <g id="Flags">
+    <g>
+      <circle class="cls-2" cx="24.92" cy="25" r="23.94" transform="translate(-7.67 11.44) rotate(-22.5)"/>
+      <g class="cls-3">
+        <g>
+          <rect class="cls-4" x="-10.99" y="1.06" width="71.82" height="47.88"/>
+          <rect class="cls-5" x="-10.99" y="25" width="71.82" height="23.94"/>
+        </g>
+        <circle class="cls-1" cx="24.92" cy="25" r="23.94" transform="translate(-7.67 11.44) rotate(-22.5)"/>
+      </g>
+    </g>
+  </g>
+</svg>

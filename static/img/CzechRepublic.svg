@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #a5a7aa;
+        stroke-miterlimit: 10;
+        stroke-width: 1.85px;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: #ff0009;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: #0049bf;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle class="cls-1" cx="24.87" cy="25" r="23.94"/>
+    </clipPath>
+  </defs>
+  <g id="Flags">
+    <g>
+      <circle class="cls-2" cx="24.87" cy="25" r="23.94"/>
+      <g class="cls-3">
+        <g>
+          <rect class="cls-4" x="-4.51" y="1" width="71.82" height="47.88"/>
+          <rect class="cls-5" x="-4.51" y="1" width="71.82" height="23.94"/>
+          <path class="cls-6" d="M31.4,25-4.51,1V48.89Z"/>
+        </g>
+        <circle class="cls-1" cx="24.87" cy="25" r="23.94"/>
+      </g>
+    </g>
+  </g>
+</svg>

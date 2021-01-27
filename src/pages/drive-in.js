@@ -7,7 +7,7 @@ export default function index() {
   return (
     <>
 	<Helmet>
-        <title>Gilead Digital Zone — QR Castle</title>
+        <title>Gilead Digital Zone — Drive-Innovation Theater</title>
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="../css/style.css"/>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>

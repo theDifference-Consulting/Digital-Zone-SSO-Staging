@@ -35,7 +35,7 @@ export default function index() {
 			<div id="drive-in" className="active-zone anim"></div>
 			<div id="construction02" className="anim"></div>
 			<div id="path-around"></div>
-			<div id="construction01" className="anim"></div>
+			<div id="library" className="active-zone anim"></div>
 			<div id="trees"></div>
 			<div id="path-above"></div>
 			<div id="podcast-alley" className="active-zone anim"></div>
@@ -93,6 +93,16 @@ export default function index() {
 						This is where you’ll find the latest video stories about digital innovation happening around Gilead. We will be posting new videos regularly so check back often!
 					</p>
 					<a href="/drive-in/">
+						<button className="block-highlight">Enter</button>
+					</a>
+				</div>
+			</div>
+			<div className="hidden" id="library-info">
+				<div className="zone-wrapper">
+					<p>
+						Need library description
+					</p>
+					<a href="/library/">
 						<button className="block-highlight">Enter</button>
 					</a>
 				</div>

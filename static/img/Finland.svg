@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #0095ff;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        stroke: #a5a7aa;
+        stroke-miterlimit: 10;
+        stroke-width: 1.85px;
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-7 {
+        fill: #0067cc;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle class="cls-1" cx="-42.98" cy="25" r="23.94" transform="translate(-12.84 -14.55) rotate(-22.5)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <circle class="cls-1" cx="24.92" cy="25" r="23.94" transform="translate(-5.14 43.51) rotate(-76.72)"/>
+    </clipPath>
+  </defs>
+  <g id="Flags">
+    <g class="cls-2">
+      <g>
+        <rect class="cls-3" x="-68.44" y="1.1" width="71.82" height="47.88"/>
+        <g>
+          <polygon class="cls-4" points="-52.24 17.18 -41.53 17.18 -41.53 11.86 -52.24 11.86 -52.24 1.1 -57.6 1.1 -57.6 11.86 -68.44 11.86 -68.44 17.18 -57.6 17.18 -57.6 27.82 -68.44 27.82 -68.44 33.14 3.38 33.14 3.38 27.82 -52.24 27.82 -52.24 17.18"/>
+          <rect class="cls-4" x="-41.53" y="6.54" width="44.91" height="5.32"/>
+          <rect class="cls-4" x="-41.53" y="17.17" width="44.91" height="5.32"/>
+          <rect class="cls-4" x="-68.44" y="38.46" width="71.82" height="5.32"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <circle class="cls-5" cx="24.92" cy="25" r="23.94" transform="translate(-10.38 24.94) rotate(-45)"/>
+      <g class="cls-6">
+        <g>
+          <rect class="cls-4" x="-11.19" y="1.05" width="71.82" height="47.88"/>
+          <g>
+            <rect class="cls-7" x="-6.86" y="18.47" width="71.79" height="13.05"/>
+            <rect class="cls-7" x="14.84" y="1.07" width="13.05" height="47.84"/>
+          </g>
+        </g>
+        <circle class="cls-1" cx="24.92" cy="25" r="23.94" transform="translate(-5.14 43.51) rotate(-76.72)"/>
+      </g>
+    </g>
+  </g>
+</svg>

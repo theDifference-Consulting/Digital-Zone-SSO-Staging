@@ -525,3 +525,9 @@ footer .copyright {
 	width:100%;
 	height: auto;
 }
+
+/* Library */
+
+.library header .container {
+	background-image: url('../img/library-hero.svg');
+}
