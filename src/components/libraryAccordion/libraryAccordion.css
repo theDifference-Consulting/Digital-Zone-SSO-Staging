@@ -12,11 +12,11 @@
 		height:203px;
 	}
 }
-.card .show + .card-header, .collapse.show, .collapsing {
+.card .show + .card-header, .card .collapse.show, .card .collapsing {
 	z-index: 1000;
 }
 
-.collapse, .collapsing {
+.card .collapse, .card .collapsing {
 	max-height: 280px;
     overflow: scroll;
 }
