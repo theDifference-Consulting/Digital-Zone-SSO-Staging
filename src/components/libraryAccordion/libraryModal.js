@@ -28,7 +28,7 @@ export default function LibraryModal({listItem}) {
   return (
   	<>
 	  	<div className="card-wrapper" onClick={handleShow}>
-				<img src={"/img/"+item.Country+".svg"} alt={item.Country + " flag"} className="country-flag"/>
+				<img src={"/img/"+item.Image+".svg"} alt={item.Country + " flag"} className="country-flag"/>
 				<h5 >{item["Project Name"]}</h5>
 				Audience: <b>{item.Audience}</b><br/>
 				Date: <b>{item.Date}</b><br/>
@@ -41,7 +41,8 @@ export default function LibraryModal({listItem}) {
 			centered
 		>
 			<Modal.Header closeButton>
-			  	<img src={"/img/"+item.Country+".svg"} alt={item.Country + " flag"} className="country-flag"/>
+				<div className="countryTab">{item.Country}</div>
+		  	<img src={"/img/"+item.Image+".svg"} alt={item.Country + " flag"} className="country-flag"/>
 				<span>{item["Project Name"]}</span><br/>
 				Audience: <b>{item.Audience}</b><br/>
 				Date: <b>{item.Date}</b>

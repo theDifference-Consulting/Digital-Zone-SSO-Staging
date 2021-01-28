@@ -4,7 +4,6 @@ import { Navbar, Nav } from "react-bootstrap";
 import "./navBar.css";
 
 const CustomNavbar = ({ pageInfo, ...props }) => {
-  console.log(props.activePage);
   return (
     <Navbar expand="xs">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

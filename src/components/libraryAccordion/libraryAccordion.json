@@ -1,1179 +1,1333 @@
-﻿{
-    "HIV": [
-        {
-            "AG": [
-                {
-                    "Country": "ANZ",
-                    "Project Name": "Gilead HIV Academy",
-                    "Audience": "HCPs In HIV Care",
-                    "Date": "Launch Dec 2020",
-                    "Summary": "Masterclass series using 7 KOLs",
-                    "Contact": "Damien Fagan",
-                    "Contact Email": "damien.fagan@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "ANZ",
-                    "Project Name": "HIV in Podcast",
-                    "Audience": "HCPs",
-                    "Date": "Ongoing",
-                    "Summary": "Podcast series released every 2 weeks",
-                    "Contact": "Damien Fagan",
-                    "Contact Email": "damien.fagan@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "ANZ",
-                    "Project Name": "HIV Is: Just a Part of Me",
-                    "Audience": "Patients, HCPs",
-                    "Date": "Launch Dec 2020",
-                    "Summary": "Video series featuring 6 individual PLHIV. Localized version of EU content with a focus on minority populations for ANZ",
-                    "Contact": "Damien Fagan",
-                    "Contact Email": "damien.fagan@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "ANZ",
-                    "Project Name": "Going Viral",
-                    "Audience": "HCPs In HIV Care",
-                    "Date": "Launch Nov 2020 ",
-                    "Summary": "Post-conference newsletter curated by MS",
-                    "Contact": "Lindsey Griffiths",
-                    "Contact Email": "lindsey.griffiths@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Austria",
-                    "Project Name": "All About HIV",
-                    "Audience": "Patients",
-                    "Date": "Nov 2020-Dec 2021",
-                    "Summary": "Short expert videos on topics around HIV for patients",
-                    "Contact": "Matthias Egger",
-                    "Contact Email": "matthias.egger@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Austria",
-                    "Project Name": "General Practitioner Meets HIV",
-                    "Audience": "Non-HIV Physicians",
-                    "Date": "Q4 2020",
-                    "Summary": "HIV eLearning materials for GPs. Part of a multichannel initiative to increase knowledge on HIV among HCPs",
-                    "Contact": "Matthias Egger",
-                    "Contact Email": "matthias.egger@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Austria",
-                    "Project Name": "HIVheute.at",
-                    "Audience": "Patients",
-                    "Date": "Ongoing",
-                    "Summary": "Austrian patient homepage corresponding to HIV.eu with flexible addition of new and up to date content",
-                    "Contact": "Matthias Egger",
-                    "Contact Email": "matthias.egger@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Austria",
-                    "Project Name": "Medical Education Event Livestreams",
-                    "Audience": "Patients, Physicians, Nurses",
-                    "Date": "Ongoing",
-                    "Summary": "Adherence Workshop (Sep 2020), HIV and your Body (Oct 2020), and more events presented as livestream recordings",
-                    "Contact": "Matthias Egger",
-                    "Contact Email": "matthias.egger@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Austria",
-                    "Project Name": "Medical News",
-                    "Audience": "Physicians",
-                    "Date": "Ongoing",
-                    "Summary": "Emails to HCPs with current topics on HIV (e.g. post-congress updates)",
-                    "Contact": "Matthias Egger",
-                    "Contact Email": "matthias.egger@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Austria",
-                    "Project Name": "Netdoktor.at",
-                    "Audience": "Patients",
-                    "Date": "Ongoing",
-                    "Summary": "HIV info presented on Austria’s biggest online health platform",
-                    "Contact": "Matthias Egger",
-                    "Contact Email": "matthias.egger@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Austria",
-                    "Project Name": "PreventR™",
-                    "Audience": "PrEP Users",
-                    "Date": "Q4 2020",
-                    "Summary": "App supporting proper use of PrEP",
-                    "Contact": "Matthias Egger",
-                    "Contact Email": "matthias.egger@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Austria",
-                    "Project Name": "Staying Informed – Staying Connected",
-                    "Audience": "Patients",
-                    "Date": "May, Oct 2020",
-                    "Summary": "Webinar series for PLHIV during COVID-19 times",
-                    "Contact": "Matthias Egger",
-                    "Contact Email": "matthias.egger@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Belgium",
-                    "Project Name": "Backup Virtual Nurse Master Classes",
-                    "Audience": "Nurses, Counsellors",
-                    "Date": "Q4 2020-2021",
-                    "Summary": "Training on several HIV-related topics including immunology and STIs",
-                    "Contact": "Jascha Vervoort",
-                    "Contact Email": "Jascha.Vervoort@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Belgium",
-                    "Project Name": "Virtual Nurse Master Class",
-                    "Audience": "Nurses, Counsellors, PAG Representatives",
-                    "Date": "5 Jun 2020",
-                    "Summary": "Master Class on HIV & COVID-19: Dealing with difficult conversations",
-                    "Contact": "Jascha Vervoort",
-                    "Contact Email": "Jascha.Vervoort@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Belgium",
-                    "Project Name": "Virtual Post Fall HIV Conferences Review",
-                    "Audience": "Physicians",
-                    "Date": "26 Nov 2020",
-                    "Summary": "Summary of major data presented during fall conferences",
-                    "Contact": "Marc Vandenhaute",
-                    "Contact Email": "Marc.Vandenhaute@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Belgium",
-                    "Project Name": "Framingham Publications",
-                    "Audience": "Physicians",
-                    "Date": "3-4x Annually",
-                    "Summary": "Summaries of major recent HIV papers",
-                    "Contact": "Marc Vandenhaute",
-                    "Contact Email": "Marc.Vandenhaute@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Belgium",
-                    "Project Name": "Post Conference Mailings",
-                    "Audience": "Physicians",
-                    "Date": "3-4x Annually",
-                    "Summary": "Gilead portfolio of data from past conferences (CROI, AIDS, Glasgow, IDWeek)",
-                    "Contact": "Marc Vandenhaute",
-                    "Contact Email": "Marc.Vandenhaute@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "CzechRepublic",
-                    "Project Name": "Mailing Regarding Updated Bvy Smpc",
-                    "Audience": "Physicians, HIV Specialists",
-                    "Date": "Q3-Q4 2020",
-                    "Summary": "Mailing featuring updated SmPC of Biktarvy with KOL comments presented as “medical promotional material”",
-                    "Contact": "Vera Vallova",
-                    "Contact Email": "vera.vallova@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "DenmarkNordic",
-                    "Project Name": "PLUS App",
-                    "Audience": "Patients",
-                    "Date": "Q4 2020",
-                    "Summary": "Digital symptom-tracker tool supporting PLHIV to have the best possible quality of life",
-                    "Contact": "Janniche Hammer",
-                    "Contact Email": "Janniche.Hammer@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "EasternEurope",
-                    "Project Name": "Gnetwork",
-                    "Audience": "HCPs",
-                    "Date": "Launch 15 Sep 2020",
-                    "Summary": "Web platform with medical educational content including interactive case studies, learning modules and more",
-                    "Contact": "Sarina Mamula",
-                    "Contact Email": "Sarina.Mamula@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Finland",
-                    "Project Name": "Video Booth",
-                    "Audience": "Physicians, Nurses",
-                    "Date": "Ongoing",
-                    "Summary": "Short video introducing the Finnish cross-functional team and more",
-                    "Contact": "Lars Lynhöj Madsen",
-                    "Contact Email": "marjaana.laitila@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Greece",
-                    "Project Name": "Webinar on Fall HIV Conferences Update",
-                    "Audience": "HCPs In HIV Care",
-                    "Date": "Launch Dec 2020",
-                    "Summary": "Medical education event on scientific updates relevant to HIV care and ART related issues from fall conferences",
-                    "Contact": "Vera Vallova",
-                    "Contact Email": "vera.vallova@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                }
-            ],
-            "HP": [
-                {
-                    "Country": "Israel",
-                    "Project Name": "7Chairs",
-                    "Audience": "Patients of Female Gender",
-                    "Date": "Q4 2020-Q2 2021",
-                    "Summary": "Anonymous women's support group composed of 6 patients & a moderator through a cellular platform",
-                    "Contact": "Karen Rothwell",
-                    "Contact Email": "karen.rothwell@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Israel",
-                    "Project Name": "Patient Survey",
-                    "Audience": "People Living With HIV",
-                    "Date": "Q4 2020-Q3 2021",
-                    "Summary": "A two-step market research to gain insights on patients’ needs, featuring patient interviews and wide-release patient questionnaire",
-                    "Contact": "Karen Rothwell",
-                    "Contact Email": "karen.rothwell@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Netherlands",
-                    "Project Name": "Happi App",
-                    "Audience": "Patient, HCPs",
-                    "Date": "Dec 2020",
-                    "Summary": "App dashboard and network to facilitate communication for PLHIV with their doctors and more",
-                    "Contact": "Almudena Torres Cornejo",
-                    "Contact Email": "almudena.torrescornejo@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Netherlands",
-                    "Project Name": "HIV Persistence, Immune Activation and Comorbidities Workshop",
-                    "Audience": "HCPs",
-                    "Date": "Dec 2020",
-                    "Summary": "Scientific workshop to educate HCPs and facilitate discussion",
-                    "Contact": "Almudena Torres Cornejo",
-                    "Contact Email": "almudena.torrescornejo@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Netherlands",
-                    "Project Name": "Patient Survey Post-Covid HIV Care",
-                    "Audience": "HCPs, PAGs",
-                    "Date": "Ongoing",
-                    "Summary": "Assessing patient perspectives and needs on HIV care during and after COVID-19",
-                    "Contact": "Marieke Bierhoff",
-                    "Contact Email": "marieke.bierhoff@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Netherlands",
-                    "Project Name": "Email Highlight of Conferences: CROI, WAIDS, Glasgow/EACS",
-                    "Audience": "HCPs",
-                    "Date": "Post-conference",
-                    "Summary": "Email campaign to inform and educate HCPs on recent data published in key HIV conferences",
-                    "Contact": "Marieke Bierhoff",
-                    "Contact Email": "marieke.bierhoff@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Nordics",
-                    "Project Name": "Virology in Podcast",
-                    "Audience": "HCPs",
-                    "Date": "Ongoing",
-                    "Summary": "Monthly podcast series to drive awareness of disease and treatment landscapes",
-                    "Contact": "Hassan Aladdin",
-                    "Contact Email": "Hassan.Aladdin@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Poland",
-                    "Project Name": "\"Hello From the Other Side\" Satellite Session",
-                    "Audience": "ID Physicians",
-                    "Date": "16 Oct 2020",
-                    "Summary": "Gilead satellite session during National Conference of Polish AIDs Scientific Society featuring expert discussions about HIV",
-                    "Contact": "Ewa Siewaszewicz",
-                    "Contact Email": "Ewa.Siewaszewicz@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Poland",
-                    "Project Name": "VirusoLOGICAL Standalone Webinars",
-                    "Audience": "ID Specialists, Internists, GPs, Pulmonologists",
-                    "Date": "15 May, 22 Jun 2020",
-                    "Summary": "2 webinars discussing the Covid-19 pandemic impact on HIV care and telemedicine and more",
-                    "Contact": "Ewa Siewaszewicz",
-                    "Contact Email": "Ewa.Siewaszewicz@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Poland",
-                    "Project Name": "Zoom VirusoLOGICAL for Patients",
-                    "Audience": "HIV Infected Patients And NGOs Representatives",
-                    "Date": "18 Nov 2020",
-                    "Summary": "Education from patients and physicians about access and important topics in HIV care during covid-19 and more",
-                    "Contact": "Ioannis Katsarolis",
-                    "Contact Email": "Ioannis.Katsarolis@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Portugal",
-                    "Project Name": "Meet the Gilead Expert",
-                    "Audience": "Selected HCPs",
-                    "Date": "22 Oct 2020",
-                    "Summary": "Zoom meeting with Cal Cohen of Gilead Med Affairs for review of Conference clinical data and Q&A",
-                    "Contact": "Filipa Palha",
-                    "Contact Email": "Filipa.Palha@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Portugal",
-                    "Project Name": "HIV on Top!",
-                    "Audience": "HCPs",
-                    "Date": "Ongoing",
-                    "Summary": "Monthly email newsletter with HIV-related content",
-                    "Contact": "Tiago Antonio",
-                    "Contact Email": "Tiago.Antonio@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Portugal",
-                    "Project Name": "Pro Workshop",
-                    "Audience": "Multidisciplinary Panel",
-                    "Date": "11, 18, 25 Nov 2020",
-                    "Summary": "Zoom Advisory Board for discussion of QoL and PROs in HIV",
-                    "Contact": "Tiago Antonio",
-                    "Contact Email": "Tiago.Antonio@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                }
-            ],
-            "QZ": [
-                {
-                    "Country": "Sweden",
-                    "Project Name": "Collab ID and OST",
-                    "Audience": "Physicians, Nurses",
-                    "Date": "3 Nov 2020",
-                    "Summary": "Webinar showcasing collaboration between ID clinic and OST clinic – practical and hands on tips and tricks",
-                    "Contact": "Johanna Brodin",
-                    "Contact Email": "johanna.brodin@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Sweden",
-                    "Project Name": "Digital Screening Tool",
-                    "Audience": "HCPs, Patients",
-                    "Date": "Q4 2020",
-                    "Summary": "Digital screening program to detect late presenters with HIV",
-                    "Contact": "Susanne von Stockenström",
-                    "Contact Email": "susanne.vonstockenstroem@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Switzerland",
-                    "Project Name": "HIV in Podcast",
-                    "Audience": "HCPs, Patients",
-                    "Date": "Q4 2020-2021",
-                    "Summary": "Podcast series on different topics in HIV",
-                    "Contact": "Corinna Oberle",
-                    "Contact Email": "Corinna.Oberle@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Switzerland",
-                    "Project Name": "HIV Metabolics & Aging Workshop",
-                    "Audience": "HCPs",
-                    "Date": "Q2 2021",
-                    "Summary": "Workshop for ID fellows from Switzerland and abroad, with follow-up podcast series featuring material recorded during the workshop",
-                    "Contact": "Corinna Oberle",
-                    "Contact Email": "Corinna.Oberle@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Switzerland",
-                    "Project Name": "Webinar and E-learning",
-                    "Audience": "HCPs",
-                    "Date": "Q4 2020-2021",
-                    "Summary": "Webinar and e-learning module with international and national experts in the field",
-                    "Contact": "Corinna Oberle",
-                    "Contact Email": "Corinna.Oberle@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Switzerland",
-                    "Project Name": "Conference and Post-conference Mailings",
-                    "Audience": "HCPs",
-                    "Date": "2021",
-                    "Summary": "General information and key conference data highlights sent to HCPs during and after conferences",
-                    "Contact": "Thomas Grabinger",
-                    "Contact Email": "thomas.grabinger@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Switzerland",
-                    "Project Name": "Nurse Workshop",
-                    "Audience": "Nurses",
-                    "Date": "2021",
-                    "Summary": "Workshop on diverse topics with virtual participation",
-                    "Contact": "Thomas Grabinger",
-                    "Contact Email": "thomas.grabinger@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Switzerland",
-                    "Project Name": "Post-conference Videos",
-                    "Audience": "HCPs",
-                    "Date": "Q4 2020-2021",
-                    "Summary": "Post conference videos on B/F/TAF data presented by KOLs",
-                    "Contact": "Thomas Grabinger",
-                    "Contact Email": "thomas.grabinger@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Switzerland",
-                    "Project Name": "Virtual Speaker Tour",
-                    "Audience": "HCPs",
-                    "Date": "Q4 2020-2021",
-                    "Summary": "Virtual speaker tour with international experts of important topics in HIV. Topics TBD",
-                    "Contact": "Thomas Grabinger",
-                    "Contact Email": "thomas.grabinger@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Turkey",
-                    "Project Name": "“30 Minutes in GP Clinic” Webinar",
-                    "Audience": "GPs, Family Physicians",
-                    "Date": "Q2 2020",
-                    "Summary": "Webinar on HIV reaching  >3000 GPs",
-                    "Contact": "Ahmet Yilmaz",
-                    "Contact Email": "ahmet.yilmaz1@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Turkey",
-                    "Project Name": "Comorbidities in HIV Digital Round Table Meeting",
-                    "Audience": "Physicians",
-                    "Date": "2020",
-                    "Summary": "Leveraging regional comorbidities content with local case presentations and more",
-                    "Contact": "Ahmet Yilmaz",
-                    "Contact Email": "ahmet.yilmaz1@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Turkey",
-                    "Project Name": "Veeva Approved Emails",
-                    "Audience": "ID Physicians",
-                    "Date": "Ongoing",
-                    "Summary": "Measurable emailings on predefined topics",
-                    "Contact": "Ahmet Yilmaz",
-                    "Contact Email": "ahmet.yilmaz1@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Turkey",
-                    "Project Name": "HIV in Podcasts",
-                    "Audience": "HCPs, Public",
-                    "Date": "Ongoing",
-                    "Summary": "Podcast series featuring local and global content with HIV experts and patient group representatives",
-                    "Contact": "Ahmet Yilmaz",
-                    "Contact Email": "ahmet.yilmaz1@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Turkey",
-                    "Project Name": "Digital Rapid Surveys",
-                    "Audience": "PlHIV, HCPs",
-                    "Date": "Ongoing",
-                    "Summary": "Online surveys evaluating perception of rapid treatment initiation and more, to be presented as poster in National HIV Congress",
-                    "Contact": "Berna Özelgün",
-                    "Contact Email": "Berna.Ozelgun@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Turkey",
-                    "Project Name": "Family Physicians Fall School: HIV Awareness",
-                    "Audience": "GPs, Family Physicians",
-                    "Date": "Q4 2020",
-                    "Summary": "Virtual Congress for ID Residents; a HIV Awareness Satellite",
-                    "Contact": "Berna Özelgün",
-                    "Contact Email": "Berna.Ozelgun@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Turkey",
-                    "Project Name": "HIV Map Online (Red Ribbon Istanbul Grant)",
-                    "Audience": "Public, PlHIV",
-                    "Date": "Ongoing",
-                    "Summary": "Live map of clinics, testing centers and places for peer support",
-                    "Contact": "Berna Özelgün",
-                    "Contact Email": "Berna.Ozelgun@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Turkey",
-                    "Project Name": "Unmed Needs in HIV Care in Covid Times",
-                    "Audience": "PlHIV, Gilead Internal",
-                    "Date": "Q2 2020",
-                    "Summary": "Virtual workshop with patient groups",
-                    "Contact": "Berna Özelgün",
-                    "Contact Email": "Berna.Ozelgun@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Turkey",
-                    "Project Name": "Japom Women Campaign",
-                    "Audience": "Public",
-                    "Date": "Ongoing",
-                    "Summary": "\"HIV is Just a Part of Me\" women-focused campaign voiced over by Gilead female employees and shared over digital platforms",
-                    "Contact": "Berna Özelgün",
-                    "Contact Email": "Berna.Ozelgun@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Turkey",
-                    "Project Name": "Ankara City Meeting",
-                    "Audience": "ID Specialists",
-                    "Date": "22 Dec 2020",
-                    "Summary": "Ankara Virtual City Meetings among ID Specialists",
-                    "Contact": "Murat Yildirim",
-                    "Contact Email": "Murat.Yildirim@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Turkey",
-                    "Project Name": "Covid Video Library",
-                    "Audience": "Physicians",
-                    "Date": "Q2-3 2020",
-                    "Summary": "21 videos on 16 topics, announced with 98K sms and 120K emails reaching 2.5K physicians, with over 25K views",
-                    "Contact": "Murat Yildirim",
-                    "Contact Email": "Murat.Yildirim@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Turkey",
-                    "Project Name": "Hacettepe Preceptorship",
-                    "Audience": "ID Residents",
-                    "Date": "16-20 Dec 2020",
-                    "Summary": "Ankara Hacettepe University Virtual Preceptorship Program",
-                    "Contact": "Murat Yildirim",
-                    "Contact Email": "Murat.Yildirim@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Turkey",
-                    "Project Name": "HIV Residents School",
-                    "Audience": "ID Residents",
-                    "Date": "2-6 Dec 2020",
-                    "Summary": "Virtual Training Program for ID Residents",
-                    "Contact": "Murat Yildirim",
-                    "Contact Email": "Murat.Yildirim@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                },
-                {
-                    "Country": "Turkey",
-                    "Project Name": "Telemedicine Project (HIVend Grant)",
-                    "Audience": "HCPs In HIV Care, Patients",
-                    "Date": "Ongoing",
-                    "Summary": "Delivering of health-related services and information via MobiLife App to patients",
-                    "Contact": "Murat Yildirim",
-                    "Contact Email": "Murat.Yildirim@gilead.com",
-                    "Specialty Area": "Medical Affairs- HIV"
-                }
-            ]
-        }
-    ],
-    "LiverDiseases": [
-        {
-            "AG": [
-                {
-                    "Country": "Australia",
-                    "Project Name": "Compensated Cirrhotic Patient Management Webinar",
-                    "Audience": "Specialists, GPs, Nurse Practitioners",
-                    "Date": "12 Nov 2020",
-                    "Summary": "Gilead-led webinar with AUS and US faculty covering aspects of cirrhosis management during CV-19 and more",
-                    "Contact": "Aurelie Freismuth",
-                    "Contact Email": "aurelie.freismuth@gilead.com"
-                },
-                {
-                    "Country": "Australia",
-                    "Project Name": "HCV Stigma E-tutor",
-                    "Audience": "GPs, Practice Nurses",
-                    "Date": "Oct 2020-Oct 2021",
-                    "Summary": "Online e-tutor addressing stigma and discrimination experienced by people living with HCV. Developed by MDBriefcase",
-                    "Contact": "Aurelie Freismuth",
-                    "Contact Email": "aurelie.freismuth@gilead.com"
-                },
-                {
-                    "Country": "Australia",
-                    "Project Name": "Hepatology in Podcast (gilead-led)",
-                    "Audience": "HCPs",
-                    "Date": "Jul 2020-Dec 2021",
-                    "Summary": "15-episode series on the practical management of HCV,HBV, NASH and patients with cirrhosis and HCC",
-                    "Contact": "Aurelie Freismuth",
-                    "Contact Email": "aurelie.freismuth@gilead.com"
-                },
-                {
-                    "Country": "Australia",
-                    "Project Name": "Key Opinion in Medicine (commissioned to Wiley)",
-                    "Audience": "Specialists, Rural Doctors",
-                    "Date": "Feb 2021-Dec 2021",
-                    "Summary": "Journal of Gastroenterology and Hepatology insert on the practical management of patients with compensated cirrhosis",
-                    "Contact": "Aurelie Freismuth",
-                    "Contact Email": "aurelie.freismuth@gilead.com"
-                },
-                {
-                    "Country": "Australia",
-                    "Project Name": "Point-of-care Pilot Program Advisory Board",
-                    "Audience": "Specialists, Sexual Health Physicians, Nurse Practitioners",
-                    "Date": "Q2 2021",
-                    "Summary": "Ad board seeking feedback and direction from participants in the CheckCureControl pilot program",
-                    "Contact": "Aurelie Freismuth",
-                    "Contact Email": "aurelie.freismuth@gilead.com"
-                },
-                {
-                    "Country": "Australia",
-                    "Project Name": "Peer Workers Virtual Advisory Board",
-                    "Audience": "HCV Peer Workers",
-                    "Date": "Q2 2021",
-                    "Summary": "HCV peer worker group convened to identify the sector’s successes, needs, gaps, and how Gilead can help support workers",
-                    "Contact": "Dan Godfrey",
-                    "Contact Email": "dan.godfrey@gilead.com"
-                },
-                {
-                    "Country": "Australia",
-                    "Project Name": "Specialist Advisory Board (Co-lead With Marketing)",
-                    "Audience": "Specialists, GPs, Nurse Practitioners",
-                    "Date": "Nov 2020",
-                    "Summary": "Specialist advisory board seeking insight on PI-free narrative and the current management of cirrhotic patients",
-                    "Contact": "Dan Godfrey",
-                    "Contact Email": "dan.godfrey@gilead.com"
-                },
-                {
-                    "Country": "Austria",
-                    "Project Name": "Hepatitis Management Webinar",
-                    "Audience": "Prison Physicians",
-                    "Date": "Q4 2020",
-                    "Summary": "Webinar with a HCV and HBV specialist to educate on disease management incl. pathophysiology, diagnosis, treatment, monitoring",
-                    "Contact": "Sonja Rothweiler",
-                    "Contact Email": "sonja.rothweiler@gilead.com"
-                },
-                {
-                    "Country": "CzechRepublic",
-                    "Project Name": " \"Get Tested Early, Get Tested Now!\" HIV/ HCV Disease Awareness Campaign",
-                    "Audience": "Patients, Public",
-                    "Date": "Ongoing",
-                    "Summary": "Campaign featuring joint HIV/HCV websites, banners at dating and meetup applications, and advertisement in journal for general public",
-                    "Contact": "Katerina Dvorakova",
-                    "Contact Email": "katerina.dvorakova@gilead.com"
-                },
-                {
-                    "Country": "CzechRepublic",
-                    "Project Name": "Webinar – Hepatology from Beginning Till Now",
-                    "Audience": "Physicians",
-                    "Date": "Q4 2020",
-                    "Summary": "Sharing the story of development of the HCV virus (Nobel Prize) till now, and discussion on key HCV topics",
-                    "Contact": "Katerina Dvorakova",
-                    "Contact Email": "katerina.dvorakova@gilead.com"
-                },
-                {
-                    "Country": "CzechRepublic",
-                    "Project Name": "HIV/HCV Webinars for GP",
-                    "Audience": "Internists, GPs",
-                    "Date": "Q4 2020",
-                    "Summary": "Series of presentations to raise awareness about HIV and HCV featuring specialists and much more",
-                    "Contact": "Vera Vallova",
-                    "Contact Email": "vera.vallova@gilead.com"
-                },
-                {
-                    "Country": "CzechRepublic",
-                    "Project Name": "Webinar Mailing Campaign",
-                    "Audience": "Physicians",
-                    "Date": "Q4 2020",
-                    "Summary": "Emails featuring recorded webinars and comments will be sent to a broad range of HCPs to raise cross-specialization awareness",
-                    "Contact": "Vera Vallova",
-                    "Contact Email": "vera.vallova@gilead.com"
-                },
-                {
-                    "Country": "CzechRepublicSlovakia",
-                    "Project Name": "PA and Nobel Prize Mailing",
-                    "Audience": "Internal Colleagues",
-                    "Date": "Oct 2020",
-                    "Summary": "PA campaign and HCV Nobel Prize awareness",
-                    "Contact": "Katerina Dvorakova",
-                    "Contact Email": "katerina.dvorakova@gilead.com"
-                },
-                {
-                    "Country": "CzechRepublicSlovakia",
-                    "Project Name": "Mailing Regarding Updated EASL Guidelines and Post EASL Data",
-                    "Audience": "Hepatologists, Infectologists",
-                    "Date": "Q4 2020",
-                    "Summary": "Ask for the opinion one of our KOL regarding the changes and data presented at EASL 2020",
-                    "Contact": "Katerina Dvorakova",
-                    "Contact Email": "katerina.dvorakova@gilead.com"
-                },
-                {
-                    "Country": "Denmark",
-                    "Project Name": "Hep C’eek and Destroy",
-                    "Audience": "Physicians, Nurses",
-                    "Date": "24 Nov 2020",
-                    "Summary": "Webinar on elimination of HCV – outreach, peer-based and psychiatric patients. Interactive via moderator",
-                    "Contact": "Allan Jensen",
-                    "Contact Email": "Allan.Jensen@gilead.com"
-                },
-                {
-                    "Country": "Finland",
-                    "Project Name": "Webinar OST",
-                    "Audience": "Physicians, Nurses",
-                    "Date": "Jan 2021",
-                    "Summary": "Upcoming Gilead-driven webinar on SLTC and elimination",
-                    "Contact": "Marjaana Laitila",
-                    "Contact Email": "marjaana.laitila@gilead.com"
-                },
-                {
-                    "Country": "Greece",
-                    "Project Name": "HIV and Comorbidities: from Theory to Practice V.5",
-                    "Audience": "HCPs In HIV Care",
-                    "Date": "2-3 Sept 2020",
-                    "Summary": "2-day medical education event focusing on epidemiology/public health and more",
-                    "Contact": "Ioannis Katsarolis",
-                    "Contact Email": "Ioannis.Katsarolis@gilead.com"
-                }
-            ],
-            "HP": [
-                {
-                    "Country": "Israel",
-                    "Project Name": "Family Physicians Advisory Board",
-                    "Audience": "Family Physicians",
-                    "Date": "Q1 2021",
-                    "Summary": "Ad board to understand the existing gaps for HCV treatment by family physicians",
-                    "Contact": "Yehonatan Gottlieb",
-                    "Contact Email": "yehonatan.gottlieb@gilead.com"
-                },
-                {
-                    "Country": "Israel",
-                    "Project Name": "Liver and Covid-19 Webinar",
-                    "Audience": "Internal Medicine Specialists, Liver Specialists, Family Physicians",
-                    "Date": "Q4 2020",
-                    "Summary": "A webinar including liver specialists and infectious disease specialist regarding Covid 19 and liver and Remdesivir",
-                    "Contact": "Yehonatan Gottlieb",
-                    "Contact Email": "yehonatan.gottlieb@gilead.com"
-                },
-                {
-                    "Country": "Israel",
-                    "Project Name": "Motivational Interviewing Workshop",
-                    "Audience": "HCPs, Methadone Centre Social Workers",
-                    "Date": "Q4 2020",
-                    "Summary": "Virtual training to provide initial tools in the motivational approach to mobilizing patients in methadone centres",
-                    "Contact": "Yehonatan Gottlieb",
-                    "Contact Email": "yehonatan.gottlieb@gilead.com"
-                },
-                {
-                    "Country": "Israel",
-                    "Project Name": "Hep C Academy",
-                    "Audience": "Family Physicians",
-                    "Date": "Ongoing",
-                    "Summary": "Educational videos by liver specialists made for family physicians regarding HCV epidemiology, treatment, diagnosis and case studies",
-                    "Contact": "Yehonatan Gottlieb",
-                    "Contact Email": "yehonatan.gottlieb@gilead.com"
-                },
-                {
-                    "Country": "Netherlands",
-                    "Project Name": "Educational Tools of PROs for PLWH",
-                    "Audience": "Patient, HCPs",
-                    "Date": "Ongoing",
-                    "Summary": "Tool informing patients about the value and benefits of Patient Reported Outcomes to improve QoL and empower their voices",
-                    "Contact": "Almudena Torres Cornejo",
-                    "Contact Email": "almudena.torrescornejo@gilead.com"
-                },
-                {
-                    "Country": "Netherlands",
-                    "Project Name": "HCV Elimination Webinar",
-                    "Audience": "HCPs",
-                    "Date": "Ongoing",
-                    "Summary": "Webinar available on-demand for World Hepatitis Day, 28 Jul 2020",
-                    "Contact": "Pim Nieuwenhuizen",
-                    "Contact Email": "pim.nieuwenhuizen@gilead.com"
-                },
-                {
-                    "Country": "Netherlands",
-                    "Project Name": "Ifi Hub",
-                    "Audience": "HCPs",
-                    "Date": "Ongoing",
-                    "Summary": "Website with resources on fungal infections",
-                    "Contact": "Pim Nieuwenhuizen",
-                    "Contact Email": "pim.nieuwenhuizen@gilead.com"
-                },
-                {
-                    "Country": "Netherlands",
-                    "Project Name": "Mijnlever",
-                    "Audience": "Patients",
-                    "Date": "Ongoing",
-                    "Summary": "HBV and HCV patient education videos in multiple languages",
-                    "Contact": "Pim Nieuwenhuizen",
-                    "Contact Email": "pim.nieuwenhuizen@gilead.com"
-                },
-                {
-                    "Country": "Portugal",
-                    "Project Name": "Medical Education in a Local Website",
-                    "Audience": "Physicians, Nurses, Pharmacists",
-                    "Date": "Ongoing",
-                    "Summary": "Ongoing medical education content to be available in a local hepatology website: Hepic.pt",
-                    "Contact": "Rita Freire",
-                    "Contact Email": "rita.freire@gilead.com"
-                },
-                {
-                    "Country": "Portugal",
-                    "Project Name": "Microelimination/SLTC Meeting",
-                    "Audience": "Hospital Physicians, Addiction Units Specialists, NGOs",
-                    "Date": "Dec 2020",
-                    "Summary": "Virtual meeting focused on SLTC best practices sharing and discussion on practical aspects of implementation",
-                    "Contact": "Rita Freire",
-                    "Contact Email": "rita.freire@gilead.com"
-                },
-                {
-                    "Country": "Portugal",
-                    "Project Name": "Newsletter Lvd",
-                    "Audience": "Physicians, Nurses, Pharmacists",
-                    "Date": "Q3 2020-Q1 2021",
-                    "Summary": "Scientific update medical newsletter regarding HCV, HBV, NASH, Hep C elimination, EASL/AASLD highlights; LVD&COVID-19",
-                    "Contact": "Rita Freire",
-                    "Contact Email": "rita.freire@gilead.com"
-                },
-                {
-                    "Country": "Portugal",
-                    "Project Name": "Virtual PWIDs Ad Board",
-                    "Audience": "Addiction Unit Specialists",
-                    "Date": "Nov 2020",
-                    "Summary": "Discussing implementation of SLTC projects and the role of addiction unit specialists in HCV patient management",
-                    "Contact": "Rita Freire",
-                    "Contact Email": "rita.freire@gilead.com"
-                }
-            ],
-            "QZ": [
-                {
-                    "Country": "Slovakia",
-                    "Project Name": "HCV Disease Awareness Campaign",
-                    "Audience": "Public",
-                    "Date": "Q4 2020",
-                    "Summary": "Campaign aspects include banners launched on dating and meetup apps, and public journal advertisement",
-                    "Contact": "Darina Hederova",
-                    "Contact Email": "darina.hederova@gilead.com"
-                },
-                {
-                    "Country": "Sweden",
-                    "Project Name": "HIV and HCV",
-                    "Audience": "Physicians, Nurses",
-                    "Date": "Q3-Q4 2020",
-                    "Summary": "HIV and hepatitis webinar produced in a collaboration between commercial and medical",
-                    "Contact": "Johanna Brodin",
-                    "Contact Email": "johanna.brodin@gilead.com"
-                },
-                {
-                    "Country": "Sweden",
-                    "Project Name": "Linkage C",
-                    "Audience": "Physicians, Nurses",
-                    "Date": "Q4 2020",
-                    "Summary": "Digital meeting through third party vendor. Collaboration with MSD and Karolinska. Sharing best practice from a 2 year SLTC project",
-                    "Contact": "Johanna Brodin",
-                    "Contact Email": "johanna.brodin@gilead.com"
-                },
-                {
-                    "Country": "Switzerland",
-                    "Project Name": "Augmented Reality Liver",
-                    "Audience": "HCPs, Patients",
-                    "Date": "Ongoing",
-                    "Summary": "Innovative digital tool using 3D models of liver disease stages to educate patients and increase awareness of HCV and HBV",
-                    "Contact": "Ivo Berkovic",
-                    "Contact Email": "ivo.berkovic@gilead.com"
-                },
-                {
-                    "Country": "Switzerland",
-                    "Project Name": "EASL Teaser Videos",
-                    "Audience": "HCPs",
-                    "Date": "Q3 2020",
-                    "Summary": "Short videos featuring HCP sharing tips for preparing for EASL Digital Conference",
-                    "Contact": "Ivo Berkovic",
-                    "Contact Email": "ivo.berkovic@gilead.com"
-                },
-                {
-                    "Country": "Switzerland",
-                    "Project Name": "HEP-CUP",
-                    "Audience": "HCPs",
-                    "Date": "Ongoing",
-                    "Summary": "Webinar series delivering summaries and updates from the EASL and AASLD conferences",
-                    "Contact": "Ivo Berkovic",
-                    "Contact Email": "ivo.berkovic@gilead.com"
-                }
-            ]
-        }
-    ],
-    "Inflammation": [
-        {
-            "AG": [
-                {
-                    "Country": "Australia",
-                    "Project Name": "AI Avatar Bots Project",
-                    "Audience": "Patients",
-                    "Date": "Completed by Q1 2021",
-                    "Summary": "Local initiative to support POC study on Avatar “bots” patient support program",
-                    "Contact": "Danielle Croall",
-                    "Contact Email": "danielle.croall@gilead.com"
-                },
-                {
-                    "Country": "Australia",
-                    "Project Name": "Gap Connect: RA Rolling Ad Board",
-                    "Audience": "Physicians",
-                    "Date": "Oct 2020 - Oct 2021",
-                    "Summary": "12-month rolling digital ad board",
-                    "Contact": "Danielle Croall",
-                    "Contact Email": "danielle.croall@gilead.com"
-                },
-                {
-                    "Country": "Australia",
-                    "Project Name": "Gap Connect: Virtual 12-month IBD Filgotinib Investigator Rolling Ad Board",
-                    "Audience": "HCPs",
-                    "Date": "Jul 2020- Jun 2021",
-                    "Summary": "A virtual community of advisors to provide feedback and advice on a regular basis",
-                    "Contact": "Julie Newman",
-                    "Contact Email": "julie.newman@gilead.com"
-                },
-                {
-                    "Country": "Australia",
-                    "Project Name": "My UC Life App",
-                    "Audience": "Patients",
-                    "Date": "Dec 2020",
-                    "Summary": "Mobile phone application developed in conjuction with CCA, Biologic Nurses, Clinicians and Patients",
-                    "Contact": "Julie Newman",
-                    "Contact Email": "julie.newman@gilead.com"
-                },
-                {
-                    "Country": "Australia",
-                    "Project Name": "Virtual IBD Investigator Advisory Board",
-                    "Audience": "Filgotinib Investigators/KOLs",
-                    "Date": "7 Jul 2020",
-                    "Summary": "Provide investigators with an update on clinical trial status and underscore Gilead’s commitment to IBD, plus many other goals",
-                    "Contact": "Julie Newman",
-                    "Contact Email": "julie.newman@gilead.com"
-                },
-                {
-                    "Country": "AustraliaSwitzerland",
-                    "Project Name": "Inflam in Podcast",
-                    "Audience": "Inflam Specialists And Gastros ",
-                    "Date": "Jan 2021",
-                    "Summary": "Medical education podcast series for external HCPs providing a simple, easy way to share the latest information in Inflam",
-                    "Contact": "Julie Newman",
-                    "Contact Email": "julie.newman@gilead.com"
-                },
-                {
-                    "Country": "Austria",
-                    "Project Name": "Gemeinsamaktiv.at",
-                    "Audience": "Patients, General Public",
-                    "Date": "Ongoing",
-                    "Summary": "Website featuring info on vital social, mental health & local COVID-19 resources",
-                    "Contact": "Reiner Ribarics",
-                    "Contact Email": "reiner.ribarics@gilead.com"
-                },
-                {
-                    "Country": "Austria",
-                    "Project Name": "Gileathek.at",
-                    "Audience": "HCPs",
-                    "Date": "Q4 2020",
-                    "Summary": "Online media hub for HCPs",
-                    "Contact": "Reiner Ribarics",
-                    "Contact Email": "reiner.ribarics@gilead.com"
-                },
-                {
-                    "Country": "Greece",
-                    "Project Name": "\"Ask the Expert\" Webinar Series",
-                    "Audience": "HCPs",
-                    "Date": "2021",
-                    "Summary": "Interactive meetings with key experts to discuss practical clinical issues in patient management",
-                    "Contact": "Konstantina Chouchouli",
-                    "Contact Email": "konstantina.chouchouli@gilead.com"
-                },
-                {
-                    "Country": "Greece",
-                    "Project Name": "Pub Explainer Videos",
-                    "Audience": "HCPs",
-                    "Date": "2021",
-                    "Summary": "Key publications on MoA, clinical data",
-                    "Contact": "Konstantina Chouchouli",
-                    "Contact Email": "konstantina.chouchouli@gilead.com"
-                },
-                {
-                    "Country": "Greece",
-                    "Project Name": "Scientific Educational Virtual Events",
-                    "Audience": "HCPs",
-                    "Date": "Q1, Q4 2021",
-                    "Summary": "Educational events focused on key developments on JAKi in RA, implications in clinical practice, and more",
-                    "Contact": "Konstantina Chouchouli",
-                    "Contact Email": "konstantina.chouchouli@gilead.com"
-                },
-                {
-                    "Country": "Greece",
-                    "Project Name": "Scientific RA Virtual Advisory Board",
-                    "Audience": "RA Experts (Academics And Hospital Physicians)",
-                    "Date": "2 Oct 2020",
-                    "Summary": "Multiple-focus ad board recieving feedback on filgotinib, JAKi, and ongoing educational needs from HCPs",
-                    "Contact": "Konstantina Chouchouli",
-                    "Contact Email": "konstantina.chouchouli@gilead.com"
-                }
-            ],
-            "HP": [
-                {
-                    "Country": "Israel",
-                    "Project Name": "Digital Medical Education",
-                    "Audience": "Rheumatologists, Nurses, GPs",
-                    "Date": "2021",
-                    "Summary": "Speaker meetings, 1:1 virtual meetings, journal clubs",
-                    "Contact": "Meital Halperin-Sheinfeld",
-                    "Contact Email": "meital.halperinsheinfeld@gilead.com"
-                },
-                {
-                    "Country": "Israel",
-                    "Project Name": "E- Docate",
-                    "Audience": "Rheumatologists",
-                    "Date": "Q3-Q4 2021",
-                    "Summary": "Virtual patient care simulation with followups and case studies",
-                    "Contact": "Meital Halperin-Sheinfeld",
-                    "Contact Email": "meital.halperinsheinfeld@gilead.com"
-                },
-                {
-                    "Country": "Israel",
-                    "Project Name": "Patient Support Program",
-                    "Audience": "Ra Patients",
-                    "Date": "Q3-Q4 2021",
-                    "Summary": "Adapt digital patient support program to the local environment",
-                    "Contact": "Meital Halperin-Sheinfeld",
-                    "Contact Email": "meital.halperinsheinfeld@gilead.com"
-                },
-                {
-                    "Country": "Israel",
-                    "Project Name": "Shared Decision-making Program",
-                    "Audience": "Ra Patients",
-                    "Date": "Q3-Q4 2021",
-                    "Summary": "Medical education and practical tools for patient empowerment",
-                    "Contact": "Meital Halperin-Sheinfeld",
-                    "Contact Email": "meital.halperinsheinfeld@gilead.com"
-                },
-                {
-                    "Country": "Nordics",
-                    "Project Name": "Nordic Post-UEG IBD Adboard",
-                    "Audience": "Gastroenterologists",
-                    "Date": "Nov 2020",
-                    "Summary": "Virtual adboard using MURAL whiteboard for interactions/capturing insights",
-                    "Contact": "Lila Nikkola",
-                    "Contact Email": "lila.nikkola@gilead.com"
-                },
-                {
-                    "Country": "Nordics",
-                    "Project Name": "Inflammation Virtual Education",
-                    "Audience": "HCPs",
-                    "Date": "2021",
-                    "Summary": "Virtal education series currently in the planning process",
-                    "Contact": "Stine Hansen",
-                    "Contact Email": "stine.hansen@gilead.com"
-                },
-                {
-                    "Country": "Poland",
-                    "Project Name": "Controversies and Advances in Rheumatology",
-                    "Audience": "Physicians",
-                    "Date": "19-21 Nov 2020",
-                    "Summary": "Filgotinib lecture",
-                    "Contact": "Elzbieta Zaborowska-Blachnio",
-                    "Contact Email": "elzbieta.zaborowskablachnio@gilead.com"
-                },
-                {
-                    "Country": "Poland",
-                    "Project Name": "Healthy Bones and Joints",
-                    "Audience": "Physicians",
-                    "Date": "Q1 2021",
-                    "Summary": "RA + Filgotinib lecture at 12th Conference",
-                    "Contact": "Elzbieta Zaborowska-Blachnio",
-                    "Contact Email": "elzbieta.zaborowskablachnio@gilead.com"
-                },
-                {
-                    "Country": "Poland",
-                    "Project Name": "Interdisciplinary Faces of Rheumatology",
-                    "Audience": "Physicians",
-                    "Date": "11-13 Feb 2021",
-                    "Summary": "RA + Filgotinib lecture at 11th National Conference",
-                    "Contact": "Elzbieta Zaborowska-Blachnio",
-                    "Contact Email": "elzbieta.zaborowskablachnio@gilead.com"
-                },
-                {
-                    "Country": "Poland",
-                    "Project Name": "Interdisciplinary Rheumatology Workshops",
-                    "Audience": "Physicians",
-                    "Date": "26-28 Nov 2020",
-                    "Summary": "RA + Filgotinib lecture",
-                    "Contact": "Elzbieta Zaborowska-Blachnio",
-                    "Contact Email": "elzbieta.zaborowskablachnio@gilead.com"
-                },
-                {
-                    "Country": "Poland",
-                    "Project Name": "JAK/STAT Pathway & Filgotinib Lecture",
-                    "Audience": "Physicians",
-                    "Date": " 23-24 Oct 2020",
-                    "Summary": " Lecture from Infectious Diseases, Rheumatology and Hematology Interdisciplinary Educational Forum ",
-                    "Contact": "Elzbieta Zaborowska-Blachnio",
-                    "Contact Email": "elzbieta.zaborowskablachnio@gilead.com"
-                },
-                {
-                    "Country": "Poland",
-                    "Project Name": "Trends in Rheumatology",
-                    "Audience": "Physicians",
-                    "Date": "Q1 2021",
-                    "Summary": "RA + Filgotinib lecture at 12th Conference",
-                    "Contact": "Elzbieta Zaborowska-Blachnio",
-                    "Contact Email": "elzbieta.zaborowskablachnio@gilead.com"
-                },
-                {
-                    "Country": "Poland",
-                    "Project Name": "Zoom Advisor Meetings",
-                    "Audience": "Physicians",
-                    "Date": "Nov 2020",
-                    "Summary": "Series of meetings devoted to Region 2 RA advisory board featuring Prof. Bogdan Batko, MD",
-                    "Contact": "Elzbieta Zaborowska-Blachnio",
-                    "Contact Email": "elzbieta.zaborowskablachnio@gilead.com"
-                }
-            ],
-            "QZ": [
-                {
-                    "Country": "Switzerland",
-                    "Project Name": "Rolling Adboard",
-                    "Audience": "Rheumatologists",
-                    "Date": "2021",
-                    "Summary": "Ad board featuring continuous feedback and input throughout the year",
-                    "Contact": "Ramon Thali",
-                    "Contact Email": "ramon.thali@gilead.com "
-                },
-                {
-                    "Country": "Switzerland",
-                    "Project Name": "Launch Webinar",
-                    "Audience": "Rheumatologists",
-                    "Date": "Q3 2021",
-                    "Summary": "Filgotinib Webinar at launch in Switzerland",
-                    "Contact": "Stephan Labs",
-                    "Contact Email": "stephan.labs@gilead.com"
-                },
-                {
-                    "Country": "Switzerland",
-                    "Project Name": "Augmented Reality",
-                    "Audience": "RA Patients",
-                    "Date": "Q3 2021",
-                    "Summary": "Patient education on disease stages featuring AR visualization of disease progression ",
-                    "Contact": "Tina Raselli",
-                    "Contact Email": "tina.raselli@gilead.com"
-                }
-            ]
-        }
-    ]
-}
+﻿[
+    {
+        "Country": "ANZ",
+        "Image": "ANZ",
+        "Project Name": "Gilead HIV Academy",
+        "Audience": "HCPs In HIV Care",
+        "Date": "Launch Dec 2020",
+        "Summary": "Masterclass series using 7 KOLs",
+        "Contact": "Damien Fagan",
+        "Contact Email (link in contact name)": "damien.fagan@gilead.com",
+        "Specialty Area": "Medical Affairs- HIV"
+    },
+    {
+        "Country": "ANZ",
+        "Image": "ANZ",
+        "Project Name": "HIV in Podcast",
+        "Audience": "HCPs",
+        "Date": "Ongoing",
+        "Summary": "Podcast series released every 2 weeks",
+        "Contact": "Damien Fagan",
+        "Contact Email (link in contact name)": "damien.fagan@gilead.com",
+        "Specialty Area": "Medical Affairs- HIV"
+    },
+    {
+        "Country": "ANZ",
+        "Image": "ANZ",
+        "Project Name": "HIV Is: Just a Part of Me",
+        "Audience": "Patients, HCPs",
+        "Date": "Launch Dec 2020",
+        "Summary": "Video series featuring 6 individual PLHIV. Localized version of EU content with a focus on minority populations for ANZ",
+        "Contact": "Damien Fagan",
+        "Contact Email (link in contact name)": "damien.fagan@gilead.com",
+        "Specialty Area": "Medical Affairs- HIV"
+    },
+    {
+        "Country": "ANZ",
+        "Image": "ANZ",
+        "Project Name": "Going Viral",
+        "Audience": "HCPs In HIV Care",
+        "Date": "Launch Nov 2020 ",
+        "Summary": "Post-conference newsletter curated by MS",
+        "Contact": "Lindsey Griffiths",
+        "Contact Email (link in contact name)": "lindsey.griffiths@gilead.com",
+        "Specialty Area": "Medical Affairs- HIV"
+    },
+    {
+        "Country": "Australia",
+        "Image": "Australia",
+        "Project Name": "Compensated Cirrhotic Patient Management Webinar",
+        "Audience": "Specialists, GPs, Nurse Practitioners",
+        "Date": "12 Nov 2020",
+        "Summary": "Gilead-led webinar with AUS and US faculty covering aspects of cirrhosis management during CV-19 and more",
+        "Contact": "Aurelie Freismuth",
+        "Contact Email (link in contact name)": "aurelie.freismuth@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Australia",
+        "Image": "Australia",
+        "Project Name": "HCV Stigma E-tutor",
+        "Audience": "GPs, Practice Nurses",
+        "Date": "Oct 2020-Oct 2021\r\n",
+        "Summary": "Online e-tutor addressing stigma and discrimination experienced by people living with HCV. Developed by MDBriefcase",
+        "Contact": "Aurelie Freismuth",
+        "Contact Email (link in contact name)": "aurelie.freismuth@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Australia",
+        "Image": "Australia",
+        "Project Name": "Hepatology in Podcast (gilead-led)\r\n",
+        "Audience": "HCPs",
+        "Date": "Jul 2020-Dec 2021\r\n",
+        "Summary": "15-episode series on the practical management of HCV,HBV, NASH and patients with cirrhosis and HCC",
+        "Contact": "Aurelie Freismuth",
+        "Contact Email (link in contact name)": "aurelie.freismuth@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Australia",
+        "Image": "Australia",
+        "Project Name": "Key Opinion in Medicine (commissioned to Wiley)",
+        "Audience": "Specialists, Rural Doctors",
+        "Date": "Feb 2021-Dec 2021\r\n",
+        "Summary": "Journal of Gastroenterology and Hepatology insert on the practical management of patients with compensated cirrhosis",
+        "Contact": "Aurelie Freismuth",
+        "Contact Email (link in contact name)": "aurelie.freismuth@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Australia",
+        "Image": "Australia",
+        "Project Name": "Point-of-care Pilot Program Advisory Board",
+        "Audience": "Specialists, Sexual Health Physicians, Nurse Practitioners\r\n",
+        "Date": "Q2 2021",
+        "Summary": "Ad board seeking feedback and direction from participants in the CheckCureControl pilot program",
+        "Contact": "Aurelie Freismuth",
+        "Contact Email (link in contact name)": "aurelie.freismuth@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Australia",
+        "Image": "Australia",
+        "Project Name": "Peer Workers Virtual Advisory Board",
+        "Audience": "HCV Peer Workers\r\n",
+        "Date": "Q2 2021",
+        "Summary": "HCV peer worker group convened to identify the sector’s successes, needs, gaps, and how Gilead can help support workers",
+        "Contact": "Dan Godfrey",
+        "Contact Email (link in contact name)": "dan.godfrey@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Australia",
+        "Image": "Australia",
+        "Project Name": "Specialist Advisory Board (Co-lead With Marketing)",
+        "Audience": "Specialists, GPs, Nurse Practitioners",
+        "Date": "Nov 2020",
+        "Summary": "Specialist advisory board seeking insight on PI-free narrative and the current management of cirrhotic patients",
+        "Contact": "Dan Godfrey",
+        "Contact Email (link in contact name)": "dan.godfrey@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Australia",
+        "Image": "Australia",
+        "Project Name": "AI Avatar Bots Project",
+        "Audience": "Patients",
+        "Date": "Completed by Q1 2021",
+        "Summary": "Local initiative to support POC study on Avatar “bots” patient support program",
+        "Contact": "Danielle Croall",
+        "Contact Email (link in contact name)": "danielle.croall@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Australia",
+        "Image": "Australia",
+        "Project Name": "Gap Connect: RA Rolling Ad Board",
+        "Audience": "Physicians",
+        "Date": "Oct 2020 - Oct 2021",
+        "Summary": "12-month rolling digital ad board",
+        "Contact": "Danielle Croall",
+        "Contact Email (link in contact name)": "danielle.croall@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Australia",
+        "Image": "Australia",
+        "Project Name": "Gap Connect: Virtual 12-month IBD Filgotinib Investigator Rolling Ad Board",
+        "Audience": "HCPs",
+        "Date": "Jul 2020- Jun 2021",
+        "Summary": "A virtual community of advisors to provide feedback and advice on a regular basis",
+        "Contact": "Julie Newman",
+        "Contact Email (link in contact name)": "julie.newman@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Australia",
+        "Image": "Australia",
+        "Project Name": "My UC Life App",
+        "Audience": "Patients",
+        "Date": "Dec 2020",
+        "Summary": "Mobile phone application developed in conjuction with CCA, Biologic Nurses, Clinicians and Patients",
+        "Contact": "Julie Newman",
+        "Contact Email (link in contact name)": "julie.newman@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Australia",
+        "Image": "Australia",
+        "Project Name": "Virtual IBD Investigator Advisory Board",
+        "Audience": "Filgotinib Investigators/KOLs",
+        "Date": "7 Jul 2020",
+        "Summary": "Provide investigators with an update on clinical trial status and underscore Gilead’s commitment to IBD, plus many other goals",
+        "Contact": "Julie Newman",
+        "Contact Email (link in contact name)": "julie.newman@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Australia / Switzerland",
+        "Image": "AustraliaSwitzerland",
+        "Project Name": "Inflam in Podcast",
+        "Audience": "Inflam Specialists And Gastros ",
+        "Date": "Jan 2021",
+        "Summary": "Medical education podcast series for external HCPs providing a simple, easy way to share the latest information in Inflam",
+        "Contact": "Julie Newman",
+        "Contact Email (link in contact name)": "julie.newman@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Austria",
+        "Image": "Austria",
+        "Project Name": "All About HIV",
+        "Audience": "Patients",
+        "Date": "Nov 2020-Dec 2021",
+        "Summary": "Short expert videos on topics around HIV for patients",
+        "Contact": "Matthias Egger",
+        "Contact Email (link in contact name)": "matthias.egger@gilead.com",
+        "Specialty Area": "Medical Affairs- HIV"
+    },
+    {
+        "Country": "Austria",
+        "Image": "Austria",
+        "Project Name": "General Practitioner Meets HIV",
+        "Audience": "Non-HIV Physicians",
+        "Date": "Q4 2020",
+        "Summary": "HIV eLearning materials for GPs. Part of a multichannel initiative to increase knowledge on HIV among HCPs",
+        "Contact": "Matthias Egger",
+        "Contact Email (link in contact name)": "matthias.egger@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Austria",
+        "Image": "Austria",
+        "Project Name": "HIVheute.at",
+        "Audience": "Patients\r\n",
+        "Date": "Ongoing",
+        "Summary": "Austrian patient homepage corresponding to HIV.eu with flexible addition of new and up to date content",
+        "Contact": "Matthias Egger",
+        "Contact Email (link in contact name)": "matthias.egger@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Austria",
+        "Image": "Austria",
+        "Project Name": "Medical Education Event Livestreams",
+        "Audience": "Patients, Physicians, Nurses",
+        "Date": "Ongoing",
+        "Summary": "Adherence Workshop (Sep 2020), HIV and your Body (Oct 2020), and more events presented as livestream recordings",
+        "Contact": "Matthias Egger",
+        "Contact Email (link in contact name)": "matthias.egger@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Austria",
+        "Image": "Austria",
+        "Project Name": "Medical News",
+        "Audience": "Physicians",
+        "Date": "Ongoing",
+        "Summary": "Emails to HCPs with current topics on HIV (e.g. post-congress updates)",
+        "Contact": "Matthias Egger",
+        "Contact Email (link in contact name)": "matthias.egger@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Austria",
+        "Image": "Austria",
+        "Project Name": "Netdoktor.at",
+        "Audience": "Patients",
+        "Date": "Ongoing",
+        "Summary": "HIV info presented on Austria’s biggest online health platform",
+        "Contact": "Matthias Egger",
+        "Contact Email (link in contact name)": "matthias.egger@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Austria",
+        "Image": "Austria",
+        "Project Name": "PreventR™",
+        "Audience": "PrEP Users",
+        "Date": "Q4 2020",
+        "Summary": "App supporting proper use of PrEP",
+        "Contact": "Matthias Egger",
+        "Contact Email (link in contact name)": "matthias.egger@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Austria",
+        "Image": "Austria",
+        "Project Name": "Staying Informed – Staying Connected",
+        "Audience": "Patients",
+        "Date": "May, Oct 2020",
+        "Summary": "Webinar series for PLHIV during COVID-19 times",
+        "Contact": "Matthias Egger",
+        "Contact Email (link in contact name)": "matthias.egger@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Austria",
+        "Image": "Austria",
+        "Project Name": "Hepatitis Management Webinar",
+        "Audience": "Prison Physicians",
+        "Date": "Q4 2020",
+        "Summary": "Webinar with a HCV and HBV specialist to educate on disease management incl. pathophysiology, diagnosis, treatment, monitoring",
+        "Contact": "Sonja Rothweiler",
+        "Contact Email (link in contact name)": "sonja.rothweiler@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Austria",
+        "Image": "Austria",
+        "Project Name": "Gemeinsamaktiv.at",
+        "Audience": "Patients, General Public",
+        "Date": "Ongoing",
+        "Summary": "Website featuring info on vital social, mental health & local COVID-19 resources",
+        "Contact": "Reiner Ribarics",
+        "Contact Email (link in contact name)": "reiner.ribarics@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Austria",
+        "Image": "Austria",
+        "Project Name": "Gileathek.at",
+        "Audience": "HCPs",
+        "Date": "Q4 2020",
+        "Summary": "Online media hub for HCPs",
+        "Contact": "Reiner Ribarics",
+        "Contact Email (link in contact name)": "reiner.ribarics@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Belgium",
+        "Image": "Belgium",
+        "Project Name": "Backup Virtual Nurse Master Classes",
+        "Audience": "Nurses, Counsellors",
+        "Date": "Q4 2020-2021",
+        "Summary": "Training on several HIV-related topics including immunology and STIs",
+        "Contact": "Jascha Vervoort",
+        "Contact Email (link in contact name)": "Jascha.Vervoort@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Belgium",
+        "Image": "Belgium",
+        "Project Name": "Virtual Nurse Master Class",
+        "Audience": "Nurses, Counsellors, PAG Representatives",
+        "Date": "5 Jun 2020",
+        "Summary": "Master Class on HIV & COVID-19: Dealing with difficult conversations",
+        "Contact": "Jascha Vervoort",
+        "Contact Email (link in contact name)": "Jascha.Vervoort@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Belgium",
+        "Image": "Belgium",
+        "Project Name": "Virtual Post Fall HIV Conferences Review",
+        "Audience": "Physicians",
+        "Date": "26 Nov 2020",
+        "Summary": "Summary of major data presented during fall conferences",
+        "Contact": "Marc Vandenhaute",
+        "Contact Email (link in contact name)": "Marc.Vandenhaute@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Belgium",
+        "Image": "Belgium",
+        "Project Name": "Framingham Publications",
+        "Audience": "Physicians",
+        "Date": "3-4x Annually",
+        "Summary": "Summaries of major recent HIV papers",
+        "Contact": "Marc Vandenhaute",
+        "Contact Email (link in contact name)": "Marc.Vandenhaute@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Belgium",
+        "Image": "Belgium",
+        "Project Name": "Post Conference Mailings",
+        "Audience": "Physicians",
+        "Date": "3-4x Annually",
+        "Summary": "Gilead portfolio of data from past conferences (CROI, AIDS, Glasgow, IDWeek)",
+        "Contact": "Marc Vandenhaute",
+        "Contact Email (link in contact name)": "Marc.Vandenhaute@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Czech Republic",
+        "Image": "CzechRepublic",
+        "Project Name": "Mailing Regarding Updated Bvy Smpc",
+        "Audience": "Physicians, HIV Specialists",
+        "Date": "Q3-Q4 2020",
+        "Summary": "Mailing featuring updated SmPC of Biktarvy with KOL comments presented as “medical promotional material”",
+        "Contact": "Vera Vallova",
+        "Contact Email (link in contact name)": "vera.vallova@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Czech Republic",
+        "Image": "CzechRepublic",
+        "Project Name": " \"Get Tested Early, Get Tested Now!\" HIV/ HCV Disease Awareness Campaign",
+        "Audience": "Patients, Public",
+        "Date": "Ongoing",
+        "Summary": "Campaign featuring joint HIV/HCV websites, banners at dating and meetup applications, and advertisement in journal for general public",
+        "Contact": "Katerina Dvorakova",
+        "Contact Email (link in contact name)": "katerina.dvorakova@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Czech Republic",
+        "Image": "CzechRepublic",
+        "Project Name": "Webinar – Hepatology from Beginning Till Now",
+        "Audience": "Physicians",
+        "Date": "Q4 2020",
+        "Summary": "Sharing the story of development of the HCV virus (Nobel Prize) till now, and discussion on key HCV topics",
+        "Contact": "Katerina Dvorakova",
+        "Contact Email (link in contact name)": "katerina.dvorakova@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Czech Republic",
+        "Image": "CzechRepublic",
+        "Project Name": "HIV/HCV Webinars for GP",
+        "Audience": "Internists, GPs",
+        "Date": "Q4 2020",
+        "Summary": "Series of presentations to raise awareness about HIV and HCV featuring specialists and much more",
+        "Contact": "Vera Vallova",
+        "Contact Email (link in contact name)": "vera.vallova@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Czech Republic",
+        "Image": "CzechRepublic",
+        "Project Name": "Webinar Mailing Campaign",
+        "Audience": "Physicians",
+        "Date": "Q4 2020",
+        "Summary": "Emails featuring recorded webinars and comments will be sent to a broad range of HCPs to raise cross-specialization awareness",
+        "Contact": "Vera Vallova",
+        "Contact Email (link in contact name)": "vera.vallova@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Czech Republic / Slovakia",
+        "Image": "CzechRepublicSlovakia",
+        "Project Name": "PA and Nobel Prize Mailing",
+        "Audience": "Internal Colleagues",
+        "Date": "Oct 2020",
+        "Summary": "PA campaign and HCV Nobel Prize awareness",
+        "Contact": "Katerina Dvorakova",
+        "Contact Email (link in contact name)": "katerina.dvorakova@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Czech Republic / Slovakia",
+        "Image": "CzechRepublicSlovakia",
+        "Project Name": "Mailing Regarding Updated EASL Guidelines and Post EASL Data",
+        "Audience": "Hepatologists, Infectologists",
+        "Date": "Q4 2020",
+        "Summary": "Ask for the opinion one of our KOL regarding the changes and data presented at EASL 2020\r\n",
+        "Contact": "Katerina Dvorakova",
+        "Contact Email (link in contact name)": "katerina.dvorakova@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Denmark",
+        "Image": "Denmark",
+        "Project Name": "Hep C’eek and Destroy",
+        "Audience": "Physicians, Nurses",
+        "Date": "24 Nov 2020",
+        "Summary": "Webinar on elimination of HCV – outreach, peer-based and psychiatric patients. Interactive via moderator",
+        "Contact": "Allan Jensen",
+        "Contact Email (link in contact name)": "Allan.Jensen@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Denmark / Nordic",
+        "Image": "DenmarkNordic",
+        "Project Name": "PLUS App",
+        "Audience": "Patients",
+        "Date": "Q4 2020",
+        "Summary": "Digital symptom-tracker tool supporting PLHIV to have the best possible quality of life",
+        "Contact": "Janniche Hammer",
+        "Contact Email (link in contact name)": "Janniche.Hammer@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Eastern Europe 12",
+        "Image": "EasternEurope",
+        "Project Name": "Gnetwork",
+        "Audience": "HCPs",
+        "Date": "Launch 15 Sep 2020",
+        "Summary": "Web platform with medical educational content including interactive case studies, learning modules and more",
+        "Contact": "Sarina Mamula",
+        "Contact Email (link in contact name)": "Sarina.Mamula@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Finland",
+        "Image": "Finland",
+        "Project Name": "Video Booth",
+        "Audience": "Physicians, Nurses",
+        "Date": "Ongoing",
+        "Summary": "Short video introducing the Finnish cross-functional team and more",
+        "Contact": "Lars Lynhöj Madsen",
+        "Contact Email (link in contact name)": "marjaana.laitila@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Finland",
+        "Image": "Finland",
+        "Project Name": "Webinar OST",
+        "Audience": "Physicians, Nurses",
+        "Date": "Jan 2021",
+        "Summary": "Upcoming Gilead-driven webinar on SLTC and elimination",
+        "Contact": "Marjaana Laitila",
+        "Contact Email (link in contact name)": "marjaana.laitila@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Greece",
+        "Image": "Greece",
+        "Project Name": "Webinar on Fall HIV Conferences Update",
+        "Audience": "HCPs In HIV Care",
+        "Date": "Launch Dec 2020",
+        "Summary": "Medical education event on scientific updates relevant to HIV care and ART related issues from fall conferences",
+        "Contact": "Vera Vallova",
+        "Contact Email (link in contact name)": "vera.vallova@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Greece",
+        "Image": "Greece",
+        "Project Name": "HIV and Comorbidities: from Theory to Practice V.5",
+        "Audience": "HCPs In HIV Care",
+        "Date": "2-3 Sept 2020",
+        "Summary": "2-day medical education event focusing on epidemiology/public health and more",
+        "Contact": "Ioannis Katsarolis",
+        "Contact Email (link in contact name)": "Ioannis.Katsarolis@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Greece",
+        "Image": "Greece",
+        "Project Name": "\"Ask the Expert\" Webinar Series",
+        "Audience": "HCPs",
+        "Date": "2021",
+        "Summary": "Interactive meetings with key experts to discuss practical clinical issues in patient management",
+        "Contact": "Konstantina Chouchouli",
+        "Contact Email (link in contact name)": "konstantina.chouchouli@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Greece",
+        "Image": "Greece",
+        "Project Name": "Pub Explainer Videos",
+        "Audience": "HCPs",
+        "Date": "2021",
+        "Summary": "Key publications on MoA, clinical data",
+        "Contact": "Konstantina Chouchouli",
+        "Contact Email (link in contact name)": "konstantina.chouchouli@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Greece",
+        "Image": "Greece",
+        "Project Name": "Scientific Educational Virtual Events",
+        "Audience": "HCPs",
+        "Date": "Q1, Q4 2021",
+        "Summary": "Educational events focused on key developments on JAKi in RA, implications in clinical practice, and more",
+        "Contact": "Konstantina Chouchouli",
+        "Contact Email (link in contact name)": "konstantina.chouchouli@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Greece",
+        "Image": "Greece",
+        "Project Name": "Scientific RA Virtual Advisory Board",
+        "Audience": "RA Experts (Academics And Hospital Physicians)",
+        "Date": "2 Oct 2020",
+        "Summary": "Multiple-focus ad board recieving feedback on filgotinib, JAKi, and ongoing educational needs from HCPs",
+        "Contact": "Konstantina Chouchouli",
+        "Contact Email (link in contact name)": "konstantina.chouchouli@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Israel",
+        "Image": "Israel",
+        "Project Name": "7Chairs",
+        "Audience": "Patients of Female Gender",
+        "Date": "Q4 2020-Q2 2021",
+        "Summary": "Anonymous women's support group composed of 6 patients & a moderator through a cellular platform",
+        "Contact": "Karen Rothwell",
+        "Contact Email (link in contact name)": "karen.rothwell@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Israel",
+        "Image": "Israel",
+        "Project Name": "Patient Survey",
+        "Audience": "People Living With HIV",
+        "Date": "Q4 2020-Q3 2021",
+        "Summary": "A two-step market research to gain insights on patients’ needs, featuring patient interviews and wide-release patient questionnaire",
+        "Contact": "Karen Rothwell",
+        "Contact Email (link in contact name)": "karen.rothwell@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Israel",
+        "Image": "Israel",
+        "Project Name": "Family Physicians Advisory Board",
+        "Audience": "Family Physicians",
+        "Date": "Q1 2021",
+        "Summary": "Ad board to understand the existing gaps for HCV treatment by family physicians",
+        "Contact": "Yehonatan Gottlieb",
+        "Contact Email (link in contact name)": "yehonatan.gottlieb@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Israel",
+        "Image": "Israel",
+        "Project Name": "Liver and Covid-19 Webinar",
+        "Audience": "Internal Medicine Specialists, Liver Specialists, Family Physicians",
+        "Date": "Q4 2020",
+        "Summary": "A webinar including liver specialists and infectious disease specialist regarding Covid 19 and liver and Remdesivir",
+        "Contact": "Yehonatan Gottlieb",
+        "Contact Email (link in contact name)": "yehonatan.gottlieb@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Israel",
+        "Image": "Israel",
+        "Project Name": "Motivational Interviewing Workshop",
+        "Audience": "HCPs, Methadone Centre Social Workers",
+        "Date": "Q4 2020",
+        "Summary": "Virtual training to provide initial tools in the motivational approach to mobilizing patients in methadone centres",
+        "Contact": "Yehonatan Gottlieb",
+        "Contact Email (link in contact name)": "yehonatan.gottlieb@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Israel",
+        "Image": "Israel",
+        "Project Name": "Hep C Academy",
+        "Audience": "Family Physicians",
+        "Date": "Ongoing",
+        "Summary": "Educational videos by liver specialists made for family physicians regarding HCV epidemiology, treatment, diagnosis and case studies",
+        "Contact": "Yehonatan Gottlieb\r\n",
+        "Contact Email (link in contact name)": "yehonatan.gottlieb@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Israel",
+        "Image": "Israel",
+        "Project Name": "Digital Medical Education",
+        "Audience": "Rheumatologists, Nurses, GPs",
+        "Date": "2021",
+        "Summary": "Speaker meetings, 1:1 virtual meetings, journal clubs",
+        "Contact": "Meital Halperin-Sheinfeld",
+        "Contact Email (link in contact name)": "meital.halperinsheinfeld@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Israel",
+        "Image": "Israel",
+        "Project Name": "E- Docate",
+        "Audience": "Rheumatologists",
+        "Date": "Q3-Q4 2021",
+        "Summary": "Virtual patient care simulation with followups and case studies",
+        "Contact": "Meital Halperin-Sheinfeld",
+        "Contact Email (link in contact name)": "meital.halperinsheinfeld@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Israel",
+        "Image": "Israel",
+        "Project Name": "Patient Support Program",
+        "Audience": "Ra Patients",
+        "Date": "Q3-Q4 2021",
+        "Summary": "Adapt digital patient support program to the local environment",
+        "Contact": "Meital Halperin-Sheinfeld",
+        "Contact Email (link in contact name)": "meital.halperinsheinfeld@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Israel",
+        "Image": "Israel",
+        "Project Name": "Shared Decision-making Program",
+        "Audience": "Ra Patients",
+        "Date": "Q3-Q4 2021",
+        "Summary": "Medical education and practical tools for patient empowerment",
+        "Contact": "Meital Halperin-Sheinfeld",
+        "Contact Email (link in contact name)": "meital.halperinsheinfeld@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Netherlands",
+        "Image": "Netherlands",
+        "Project Name": "Happi App",
+        "Audience": "Patient, HCPs",
+        "Date": "Dec 2020",
+        "Summary": "App dashboard and network to facilitate communication for PLHIV with their doctors and more",
+        "Contact": "Almudena Torres Cornejo",
+        "Contact Email (link in contact name)": "almudena.torrescornejo@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Netherlands",
+        "Image": "Netherlands",
+        "Project Name": "HIV Persistence, Immune Activation and Comorbidities Workshop",
+        "Audience": "HCPs",
+        "Date": "Dec 2020",
+        "Summary": "Scientific workshop to educate HCPs and facilitate discussion",
+        "Contact": "Almudena Torres Cornejo",
+        "Contact Email (link in contact name)": "almudena.torrescornejo@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Netherlands",
+        "Image": "Netherlands",
+        "Project Name": "Patient Survey Post-Covid HIV Care",
+        "Audience": "HCPs, PAGs",
+        "Date": "Ongoing",
+        "Summary": "Assessing patient perspectives and needs on HIV care during and after COVID-19",
+        "Contact": "Marieke Bierhoff",
+        "Contact Email (link in contact name)": "marieke.bierhoff@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Netherlands",
+        "Image": "Netherlands",
+        "Project Name": "Email Highlight of Conferences: CROI, WAIDS, Glasgow/EACS",
+        "Audience": "HCPs",
+        "Date": "Post-conference",
+        "Summary": "Email campaign to inform and educate HCPs on recent data published in key HIV conferences",
+        "Contact": "Marieke Bierhoff",
+        "Contact Email (link in contact name)": "marieke.bierhoff@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Netherlands",
+        "Image": "Netherlands",
+        "Project Name": "Educational Tools of PROs for PLWH",
+        "Audience": "Patient, HCPs",
+        "Date": "Ongoing",
+        "Summary": "Tool informing patients about the value and benefits of Patient Reported Outcomes to improve QoL and empower their voices",
+        "Contact": "Almudena Torres Cornejo",
+        "Contact Email (link in contact name)": "almudena.torrescornejo@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Netherlands",
+        "Image": "Netherlands",
+        "Project Name": "HCV Elimination Webinar",
+        "Audience": "HCPs",
+        "Date": "Ongoing",
+        "Summary": "Webinar available on-demand for World Hepatitis Day, 28 Jul 2020",
+        "Contact": "Pim Nieuwenhuizen",
+        "Contact Email (link in contact name)": "pim.nieuwenhuizen@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Netherlands",
+        "Image": "Netherlands",
+        "Project Name": "Ifi Hub",
+        "Audience": "HCPs",
+        "Date": "Ongoing",
+        "Summary": "Website with resources on fungal infections",
+        "Contact": "Pim Nieuwenhuizen",
+        "Contact Email (link in contact name)": "pim.nieuwenhuizen@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Netherlands",
+        "Image": "Netherlands",
+        "Project Name": "Mijnlever\r\n",
+        "Audience": "Patients",
+        "Date": "Ongoing",
+        "Summary": "HBV and HCV patient education videos in multiple languages",
+        "Contact": "Pim Nieuwenhuizen",
+        "Contact Email (link in contact name)": "pim.nieuwenhuizen@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Nordics",
+        "Image": "Nordics",
+        "Project Name": "Virology in Podcast",
+        "Audience": "HCPs",
+        "Date": "Ongoing",
+        "Summary": "Monthly podcast series to drive awareness of disease and treatment landscapes",
+        "Contact": "Hassan Aladdin",
+        "Contact Email (link in contact name)": "Hassan.Aladdin@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Nordics",
+        "Image": "Nordics",
+        "Project Name": "Nordic Post-UEG IBD Adboard",
+        "Audience": "Gastroenterologists",
+        "Date": "Nov 2020",
+        "Summary": "Virtual adboard using MURAL whiteboard for interactions/capturing insights",
+        "Contact": "Lila Nikkola",
+        "Contact Email (link in contact name)": "lila.nikkola@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Nordics",
+        "Image": "Nordics",
+        "Project Name": "Inflammation Virtual Education",
+        "Audience": "HCPs",
+        "Date": "2021",
+        "Summary": "Virtal education series currently in the planning process",
+        "Contact": "Stine Hansen",
+        "Contact Email (link in contact name)": "stine.hansen@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Poland",
+        "Image": "Poland",
+        "Project Name": "\"Hello From the Other Side\" Satellite Session",
+        "Audience": "ID Physicians",
+        "Date": "16 Oct 2020",
+        "Summary": "Gilead satellite session during National Conference of Polish AIDs Scientific Society featuring expert discussions about HIV",
+        "Contact": "Ewa Siewaszewicz",
+        "Contact Email (link in contact name)": "Ewa.Siewaszewicz@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Poland",
+        "Image": "Poland",
+        "Project Name": "VirusoLOGICAL Standalone Webinars",
+        "Audience": "ID Specialists, Internists, GPs, Pulmonologists",
+        "Date": "15 May, 22 Jun 2020",
+        "Summary": "2 webinars discussing the Covid-19 pandemic impact on HIV care and telemedicine and more",
+        "Contact": "Ewa Siewaszewicz",
+        "Contact Email (link in contact name)": "Ewa.Siewaszewicz@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Poland",
+        "Image": "Poland",
+        "Project Name": "Zoom VirusoLOGICAL for Patients",
+        "Audience": "HIV Infected Patients And NGOs Representatives",
+        "Date": "18 Nov 2020",
+        "Summary": "Education from patients and physicians about access and important topics in HIV care during covid-19 and more",
+        "Contact": "Ioannis Katsarolis",
+        "Contact Email (link in contact name)": "Ioannis.Katsarolis@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Poland",
+        "Image": "Poland",
+        "Project Name": "Controversies and Advances in Rheumatology",
+        "Audience": "Physicians",
+        "Date": "19-21 Nov 2020",
+        "Summary": "Filgotinib lecture",
+        "Contact": "Elzbieta Zaborowska-Blachnio",
+        "Contact Email (link in contact name)": "elzbieta.zaborowskablachnio@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Poland",
+        "Image": "Poland",
+        "Project Name": "Healthy Bones and Joints",
+        "Audience": "Physicians",
+        "Date": "Q1 2021",
+        "Summary": "RA + Filgotinib lecture at 12th Conference",
+        "Contact": "Elzbieta Zaborowska-Blachnio",
+        "Contact Email (link in contact name)": "elzbieta.zaborowskablachnio@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Poland",
+        "Image": "Poland",
+        "Project Name": "Interdisciplinary Faces of Rheumatology",
+        "Audience": "Physicians",
+        "Date": "11-13 Feb 2021",
+        "Summary": "RA + Filgotinib lecture at 11th National Conference",
+        "Contact": "Elzbieta Zaborowska-Blachnio",
+        "Contact Email (link in contact name)": "elzbieta.zaborowskablachnio@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Poland",
+        "Image": "Poland",
+        "Project Name": "Interdisciplinary Rheumatology Workshops\r\n",
+        "Audience": "Physicians",
+        "Date": "26-28 Nov 2020",
+        "Summary": "RA + Filgotinib lecture",
+        "Contact": "Elzbieta Zaborowska-Blachnio",
+        "Contact Email (link in contact name)": "elzbieta.zaborowskablachnio@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Poland",
+        "Image": "Poland",
+        "Project Name": "JAK/STAT Pathway & Filgotinib Lecture",
+        "Audience": "Physicians",
+        "Date": " 23-24 Oct 2020",
+        "Summary": " Lecture from Infectious Diseases, Rheumatology and Hematology Interdisciplinary Educational Forum ",
+        "Contact": "Elzbieta Zaborowska-Blachnio",
+        "Contact Email (link in contact name)": "elzbieta.zaborowskablachnio@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Poland",
+        "Image": "Poland",
+        "Project Name": "Trends in Rheumatology",
+        "Audience": "Physicians",
+        "Date": "Q1 2021",
+        "Summary": "RA + Filgotinib lecture at 12th Conference",
+        "Contact": "Elzbieta Zaborowska-Blachnio",
+        "Contact Email (link in contact name)": "elzbieta.zaborowskablachnio@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Poland",
+        "Image": "Poland",
+        "Project Name": "Zoom Advisor Meetings",
+        "Audience": "Physicians",
+        "Date": "Nov 2020",
+        "Summary": "Series of meetings devoted to Region 2 RA advisory board featuring Prof. Bogdan Batko, MD",
+        "Contact": "Elzbieta Zaborowska-Blachnio",
+        "Contact Email (link in contact name)": "elzbieta.zaborowskablachnio@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Portugal",
+        "Image": "Portugal",
+        "Project Name": "Meet the Gilead Expert",
+        "Audience": "Selected HCPs",
+        "Date": "22 Oct 2020",
+        "Summary": "Zoom meeting with Cal Cohen of Gilead Med Affairs for review of Conference clinical data and Q&A",
+        "Contact": "Filipa Palha",
+        "Contact Email (link in contact name)": "Filipa.Palha@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Portugal",
+        "Image": "Portugal",
+        "Project Name": "HIV on Top!",
+        "Audience": "HCPs",
+        "Date": "Ongoing",
+        "Summary": "Monthly email newsletter with HIV-related content",
+        "Contact": "Tiago Antonio",
+        "Contact Email (link in contact name)": "Tiago.Antonio@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Portugal",
+        "Image": "Portugal",
+        "Project Name": "Pro Workshop",
+        "Audience": "Multidisciplinary Panel",
+        "Date": "11, 18, 25 Nov 2020",
+        "Summary": "Zoom Advisory Board for discussion of QoL and PROs in HIV",
+        "Contact": "Tiago Antonio",
+        "Contact Email (link in contact name)": "Tiago.Antonio@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Portugal",
+        "Image": "Portugal",
+        "Project Name": "Medical Education in a Local Website",
+        "Audience": "Physicians, Nurses, Pharmacists",
+        "Date": "Ongoing",
+        "Summary": "Ongoing medical education content to be available in a local hepatology website: Hepic.pt",
+        "Contact": "Rita Freire",
+        "Contact Email (link in contact name)": "rita.freire@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Portugal",
+        "Image": "Portugal",
+        "Project Name": "Microelimination/SLTC Meeting",
+        "Audience": "Hospital Physicians, Addiction Units Specialists, NGOs",
+        "Date": "Dec 2020",
+        "Summary": "Virtual meeting focused on SLTC best practices sharing and discussion on practical aspects of implementation",
+        "Contact": "Rita Freire",
+        "Contact Email (link in contact name)": "rita.freire@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Portugal",
+        "Image": "Portugal",
+        "Project Name": "Newsletter Lvd",
+        "Audience": "Physicians, Nurses, Pharmacists",
+        "Date": "Q3 2020-Q1 2021",
+        "Summary": "Scientific update medical newsletter regarding HCV, HBV, NASH, Hep C elimination, EASL/AASLD highlights; LVD&COVID-19",
+        "Contact": "Rita Freire",
+        "Contact Email (link in contact name)": "rita.freire@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Portugal",
+        "Image": "Portugal",
+        "Project Name": "Virtual PWIDs Ad Board",
+        "Audience": "Addiction Unit Specialists\r\n",
+        "Date": "Nov 2020",
+        "Summary": "Discussing implementation of SLTC projects and the role of addiction unit specialists in HCV patient management",
+        "Contact": "Rita Freire",
+        "Contact Email (link in contact name)": "rita.freire@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Slovakia",
+        "Image": "Slovakia",
+        "Project Name": "HCV Disease Awareness Campaign",
+        "Audience": "Public",
+        "Date": "Q4 2020",
+        "Summary": "Campaign aspects include banners launched on dating and meetup apps, and public journal advertisement",
+        "Contact": "Darina Hederova",
+        "Contact Email (link in contact name)": "darina.hederova@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Sweden",
+        "Image": "Sweden",
+        "Project Name": "Collab ID and OST",
+        "Audience": "Physicians, Nurses",
+        "Date": "3 Nov 2020",
+        "Summary": "Webinar showcasing collaboration between ID clinic and OST clinic – practical and hands on tips and tricks",
+        "Contact": "Johanna Brodin",
+        "Contact Email (link in contact name)": "johanna.brodin@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Sweden",
+        "Image": "Sweden",
+        "Project Name": "Digital Screening Tool",
+        "Audience": "HCPs, Patients",
+        "Date": "Q4 2020",
+        "Summary": "Digital screening program to detect late presenters with HIV",
+        "Contact": "Susanne von Stockenström",
+        "Contact Email (link in contact name)": "susanne.vonstockenstroem@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Sweden",
+        "Image": "Sweden",
+        "Project Name": "HIV and HCV",
+        "Audience": "Physicians, Nurses",
+        "Date": "Q3-Q4 2020",
+        "Summary": "HIV and hepatitis webinar produced in a collaboration between commercial and medical",
+        "Contact": "Johanna Brodin",
+        "Contact Email (link in contact name)": "johanna.brodin@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Sweden",
+        "Image": "Sweden",
+        "Project Name": "Linkage C",
+        "Audience": "Physicians, Nurses",
+        "Date": "Q4 2020",
+        "Summary": "Digital meeting through third party vendor. Collaboration with MSD and Karolinska. Sharing best practice from a 2 year SLTC project",
+        "Contact": "Johanna Brodin",
+        "Contact Email (link in contact name)": "johanna.brodin@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Switzerland",
+        "Image": "Switzerland",
+        "Project Name": "HIV in Podcast",
+        "Audience": "HCPs, Patients",
+        "Date": "Q4 2020-2021",
+        "Summary": "Podcast series on different topics in HIV",
+        "Contact": "Corinna Oberle",
+        "Contact Email (link in contact name)": "Corinna.Oberle@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Switzerland",
+        "Image": "Switzerland",
+        "Project Name": "HIV Metabolics & Aging Workshop",
+        "Audience": "HCPs",
+        "Date": "Q2 2021",
+        "Summary": "Workshop for ID fellows from Switzerland and abroad, with follow-up podcast series featuring material recorded during the workshop",
+        "Contact": "Corinna Oberle",
+        "Contact Email (link in contact name)": "Corinna.Oberle@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Switzerland",
+        "Image": "Switzerland",
+        "Project Name": "Webinar and E-learning",
+        "Audience": "HCPs",
+        "Date": "Q4 2020-2021",
+        "Summary": "Webinar and e-learning module with international and national experts in the field",
+        "Contact": "Corinna Oberle",
+        "Contact Email (link in contact name)": "Corinna.Oberle@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Switzerland",
+        "Image": "Switzerland",
+        "Project Name": "Conference and Post-conference Mailings",
+        "Audience": "HCPs",
+        "Date": "2021",
+        "Summary": "General information and key conference data highlights sent to HCPs during and after conferences",
+        "Contact": "Thomas Grabinger",
+        "Contact Email (link in contact name)": "thomas.grabinger@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Switzerland",
+        "Image": "Switzerland",
+        "Project Name": "Nurse Workshop",
+        "Audience": "Nurses",
+        "Date": "2021",
+        "Summary": "Workshop on diverse topics with virtual participation",
+        "Contact": "Thomas Grabinger",
+        "Contact Email (link in contact name)": "thomas.grabinger@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Switzerland",
+        "Image": "Switzerland",
+        "Project Name": "Post-conference Videos",
+        "Audience": "HCPs",
+        "Date": "Q4 2020-2021",
+        "Summary": "Post conference videos on B/F/TAF data presented by KOLs",
+        "Contact": "Thomas Grabinger",
+        "Contact Email (link in contact name)": "thomas.grabinger@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Switzerland",
+        "Image": "Switzerland",
+        "Project Name": "Virtual Speaker Tour",
+        "Audience": "HCPs",
+        "Date": "Q4 2020-2021",
+        "Summary": "Virtual speaker tour with international experts of important topics in HIV. Topics TBD",
+        "Contact": "Thomas Grabinger",
+        "Contact Email (link in contact name)": "thomas.grabinger@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Switzerland",
+        "Image": "Switzerland",
+        "Project Name": "Augmented Reality Liver",
+        "Audience": "HCPs, Patients",
+        "Date": "Ongoing",
+        "Summary": "Innovative digital tool using 3D models of liver disease stages to educate patients and increase awareness of HCV and HBV",
+        "Contact": "Ivo Berkovic",
+        "Contact Email (link in contact name)": "ivo.berkovic@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Switzerland",
+        "Image": "Switzerland",
+        "Project Name": "EASL Teaser Videos",
+        "Audience": "HCPs",
+        "Date": "Q3 2020",
+        "Summary": "Short videos featuring HCP sharing tips for preparing for EASL Digital Conference",
+        "Contact": "Ivo Berkovic",
+        "Contact Email (link in contact name)": "ivo.berkovic@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Switzerland",
+        "Image": "Switzerland",
+        "Project Name": "HEP-CUP",
+        "Audience": "HCPs",
+        "Date": "Ongoing",
+        "Summary": "Webinar series delivering summaries and updates from the EASL and AASLD conferences",
+        "Contact": "Ivo Berkovic",
+        "Contact Email (link in contact name)": "ivo.berkovic@gilead.com",
+        "Specialty Area": "Liver Diseases"
+    },
+    {
+        "Country": "Switzerland",
+        "Image": "Switzerland",
+        "Project Name": "Rolling Adboard",
+        "Audience": "Rheumatologists",
+        "Date": "2021",
+        "Summary": "Ad board featuring continuous feedback and input throughout the year",
+        "Contact": "Ramon Thali",
+        "Contact Email (link in contact name)": "ramon.thali@gilead.com ",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Switzerland",
+        "Image": "Switzerland",
+        "Project Name": "Launch Webinar",
+        "Audience": "Rheumatologists",
+        "Date": "Q3 2021",
+        "Summary": "Filgotinib Webinar at launch in Switzerland",
+        "Contact": "Stephan Labs",
+        "Contact Email (link in contact name)": "stephan.labs@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Switzerland",
+        "Image": "Switzerland",
+        "Project Name": "Augmented Reality",
+        "Audience": "RA Patients",
+        "Date": "Q3 2021",
+        "Summary": "Patient education on disease stages featuring AR visualization of disease progression ",
+        "Contact": "Tina Raselli",
+        "Contact Email (link in contact name)": "tina.raselli@gilead.com",
+        "Specialty Area": "Inflammation"
+    },
+    {
+        "Country": "Turkey",
+        "Image": "Turkey",
+        "Project Name": "“30 Minutes in GP Clinic” Webinar",
+        "Audience": "GPs, Family Physicians",
+        "Date": "Q2 2020",
+        "Summary": "Webinar on HIV reaching  >3000 GPs",
+        "Contact": "Ahmet Yilmaz",
+        "Contact Email (link in contact name)": "ahmet.yilmaz1@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Turkey",
+        "Image": "Turkey",
+        "Project Name": "Comorbidities in HIV Digital Round Table Meeting",
+        "Audience": "Physicians",
+        "Date": "2020",
+        "Summary": "Leveraging regional comorbidities content with local case presentations and more",
+        "Contact": "Ahmet Yilmaz",
+        "Contact Email (link in contact name)": "ahmet.yilmaz1@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Turkey",
+        "Image": "Turkey",
+        "Project Name": "Veeva Approved Emails",
+        "Audience": "ID Physicians",
+        "Date": "Ongoing",
+        "Summary": "Measurable emailings on predefined topics",
+        "Contact": "Ahmet Yilmaz",
+        "Contact Email (link in contact name)": "ahmet.yilmaz1@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Turkey",
+        "Image": "Turkey",
+        "Project Name": "HIV in Podcasts",
+        "Audience": "HCPs, Public",
+        "Date": "Ongoing",
+        "Summary": "Podcast series featuring local and global content with HIV experts and patient group representatives",
+        "Contact": "Ahmet Yilmaz",
+        "Contact Email (link in contact name)": "ahmet.yilmaz1@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Turkey",
+        "Image": "Turkey",
+        "Project Name": "Digital Rapid Surveys",
+        "Audience": "PlHIV, HCPs",
+        "Date": "Ongoing",
+        "Summary": "Online surveys evaluating perception of rapid treatment initiation and more, to be presented as poster in National HIV Congress",
+        "Contact": "Berna Özelgün",
+        "Contact Email (link in contact name)": "Berna.Ozelgun@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Turkey",
+        "Image": "Turkey",
+        "Project Name": "Family Physicians Fall School: HIV Awareness",
+        "Audience": "GPs, Family Physicians",
+        "Date": "Q4 2020",
+        "Summary": "Virtual Congress for ID Residents; a HIV Awareness Satellite",
+        "Contact": "Berna Özelgün",
+        "Contact Email (link in contact name)": "Berna.Ozelgun@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Turkey",
+        "Image": "Turkey",
+        "Project Name": "HIV Map Online (Red Ribbon Istanbul Grant)",
+        "Audience": "Public, PlHIV",
+        "Date": "Ongoing",
+        "Summary": "Live map of clinics, testing centers and places for peer support",
+        "Contact": "Berna Özelgün",
+        "Contact Email (link in contact name)": "Berna.Ozelgun@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Turkey",
+        "Image": "Turkey",
+        "Project Name": "Unmed Needs in HIV Care in Covid Times",
+        "Audience": "PlHIV, Gilead Internal",
+        "Date": "Q2 2020",
+        "Summary": "Virtual workshop with patient groups",
+        "Contact": "Berna Özelgün",
+        "Contact Email (link in contact name)": "Berna.Ozelgun@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Turkey",
+        "Image": "Turkey",
+        "Project Name": "Japom Women Campaign",
+        "Audience": "Public",
+        "Date": "Ongoing",
+        "Summary": "\"HIV is Just a Part of Me\" women-focused campaign voiced over by Gilead female employees and shared over digital platforms",
+        "Contact": "Berna Özelgün",
+        "Contact Email (link in contact name)": "Berna.Ozelgun@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Turkey",
+        "Image": "Turkey",
+        "Project Name": "Ankara City Meeting",
+        "Audience": "ID Specialists",
+        "Date": "22 Dec 2020",
+        "Summary": "Ankara Virtual City Meetings among ID Specialists",
+        "Contact": "Murat Yildirim",
+        "Contact Email (link in contact name)": "Murat.Yildirim@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Turkey",
+        "Image": "Turkey",
+        "Project Name": "Covid Video Library",
+        "Audience": "Physicians",
+        "Date": "Q2-3 2020",
+        "Summary": "21 videos on 16 topics, announced with 98K sms and 120K emails reaching 2.5K physicians, with over 25K views",
+        "Contact": "Murat Yildirim",
+        "Contact Email (link in contact name)": "Murat.Yildirim@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Turkey",
+        "Image": "Turkey",
+        "Project Name": "Hacettepe Preceptorship",
+        "Audience": "ID Residents",
+        "Date": "16-20 Dec 2020",
+        "Summary": "Ankara Hacettepe University Virtual Preceptorship Program",
+        "Contact": "Murat Yildirim",
+        "Contact Email (link in contact name)": "Murat.Yildirim@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Turkey",
+        "Image": "Turkey",
+        "Project Name": "HIV Residents School",
+        "Audience": "ID Residents",
+        "Date": "2-6 Dec 2020",
+        "Summary": "Virtual Training Program for ID Residents",
+        "Contact": "Murat Yildirim",
+        "Contact Email (link in contact name)": "Murat.Yildirim@gilead.com",
+        "Specialty Area": "HIV"
+    },
+    {
+        "Country": "Turkey",
+        "Image": "Turkey",
+        "Project Name": "Telemedicine Project (HIVend Grant)",
+        "Audience": "HCPs In HIV Care, Patients",
+        "Date": "Ongoing",
+        "Summary": "Delivering of health-related services and information via MobiLife App to patients",
+        "Contact": "Murat Yildirim",
+        "Contact Email (link in contact name)": "Murat.Yildirim@gilead.com",
+        "Specialty Area": "HIV"
+    }
+]

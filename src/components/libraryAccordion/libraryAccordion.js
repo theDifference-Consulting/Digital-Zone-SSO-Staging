@@ -1,7 +1,7 @@
 import React from 'react'
 import {Card, Button, Row, Col, Container} from 'react-bootstrap'
 import AccordionDrawer from './libraryAccordionDrawer'
-import {HIV, LiverDiseases, Inflammation} from "./libraryAccordion.json"
+import ProjectData from "./libraryAccordion.json"
 import "./libraryAccordion.css"
 
 const LibraryAccordion = () => {
@@ -10,45 +10,21 @@ const LibraryAccordion = () => {
 			<Container style={{display: "flex",flexDirection: "column-reverse"}}>
 				<Row>
 					<Col xs={12}>
-						<img src="/img/liver.svg" className="cardCategory" />
+						<img src="/img/regions-qz.svg" className="cardCategory" />
 					</Col>
-					<Col md={4}>
-						<AccordionDrawer data={Inflammation[0].AG} img="/img/AG-face.svg"/>
-					</Col>
-					<Col md={4}>
-						<AccordionDrawer data={Inflammation[0].HP} img="/img/HP-face.svg"/>
-					</Col>
-					<Col md={4}>
-						<AccordionDrawer data={Inflammation[0].QZ} img="/img/QZ-face.svg"/>
-					</Col>
+						<AccordionDrawer data={ProjectData} lower={"q"} upper={"z"}/>
 				</Row>
 				<Row>
 					<Col xs={12}>
-						<img src="/img/hiv.svg" className="cardCategory" />
+						<img src="/img/regions-hp.svg" className="cardCategory" />
 					</Col>
-					<Col md={4}>
-						<AccordionDrawer data={LiverDiseases[0].AG} img="/img/AG-face.svg"/>
-					</Col>
-					<Col md={4}>
-						<AccordionDrawer data={LiverDiseases[0].HP} img="/img/HP-face.svg"/>
-					</Col>
-					<Col md={4}>
-						<AccordionDrawer data={LiverDiseases[0].QZ} img="/img/QZ-face.svg"/>
-					</Col>
+					<AccordionDrawer data={ProjectData} lower={"h"} upper={"p"}/>
 				</Row>
 				<Row>
 					<Col xs={12}>
-						<img src="/img/inflam.svg" className="cardCategory" />
+						<img src="/img/regions-ag.svg" className="cardCategory" />
 					</Col>
-					<Col md={4}>
-						<AccordionDrawer data={HIV[0].AG} img="/img/AG-face.svg"/>
-					</Col>
-					<Col md={4}>
-						<AccordionDrawer data={HIV[0].HP} img="/img/HP-face.svg"/>
-					</Col>
-					<Col md={4}>
-						<AccordionDrawer data={HIV[0].QZ} img="/img/QZ-face.svg"/>
-					</Col>
+					<AccordionDrawer data={ProjectData} lower={"a"} upper={"g"}/>
 				</Row>
 			</Container>
 		</div>
