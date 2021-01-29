@@ -471,3 +471,7 @@ footer .copyright {
 .library header .container {
 	background-image: url('../img/library-hero.svg');
 }
+
+.library-halo * {
+	display: contents;
+}
