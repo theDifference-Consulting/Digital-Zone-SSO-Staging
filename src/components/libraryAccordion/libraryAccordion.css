@@ -4,7 +4,7 @@
 
 .accordion {
 	margin-bottom: 30px;
-	overflow: visible;
+	overflow-y: visible;
 }
 
 @media (min-width: 768px) {
