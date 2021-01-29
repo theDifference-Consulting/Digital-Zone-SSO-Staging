@@ -8,7 +8,7 @@ const CustomNavbar = ({ pageInfo, ...props }) => {
     <Navbar expand="xs">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="navbar" activeKey={props.activePage}>
+        <Nav activeKey={props.activePage}>
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link eventKey="visitor-centre" href="/visitor-centre/">Visitor Info</Nav.Link>
           <Nav.Link eventKey="podcast-alley" href="/podcast-alley/">Podcast Alley</Nav.Link>
