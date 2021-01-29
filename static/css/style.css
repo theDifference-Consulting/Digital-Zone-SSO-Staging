@@ -472,6 +472,6 @@ footer .copyright {
 	background-image: url('../img/library-hero.svg');
 }
 
-.library-halo * {
+#library-halo * {
 	display: contents;
 }
