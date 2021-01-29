@@ -2,10 +2,13 @@
 	outline:none !important;
 }
 
+.card {
+	overflow-y: visible;
+	overflow-x:hidden;
+}
+
 .accordion {
 	margin-bottom: 30px;
-	overflow-y: visible;
-	overflow-x: hidden;
 }
 
 @media (min-width: 768px) {
