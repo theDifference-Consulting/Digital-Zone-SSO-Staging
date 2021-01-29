@@ -100,7 +100,7 @@ export default function index() {
 			<div className="hidden" id="library-info">
 				<div className="zone-wrapper">
 					<p>
-						Need library description
+						An inventory of every digital project from across Gilead’s regions.
 					</p>
 					<a href="/library/">
 						<button className="block-highlight">Enter</button>
