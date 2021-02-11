@@ -83,9 +83,9 @@ function animLoad() {
 	const zones = document.getElementsByClassName("active-zone");
 	var arr = [];
 	for (var i = 0; i < zones.length; i++) {
-		var e = document.querySelector("#" + zones[i].id + " > svg > g");
-			setTimeout(function() {
+		setTimeout(function() {
 			},500);
+		var e = document.querySelector("#" + zones[i].id + " > svg > g");
 		e.addEventListener('click', function() {
 			let zoneMargin = 80;
 			let zoneWidth = this.getBoundingClientRect().width + zoneMargin;
