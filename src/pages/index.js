@@ -120,7 +120,7 @@ export default function index() {
 			<source src="/media/beach-ambience1.mp3" type="audio/mpeg"/>
 		</audio>
     	<Helmet>
-			<script defer src="../js/script.js" type="text/javascript"/>
+			<script async src="../js/script.js" type="text/javascript"/>
 		</Helmet>
  	</>
 	)
