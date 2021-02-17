@@ -2,11 +2,12 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 
+import Island from "../components/island/island"
+
 export default function index() {
   return (
     <>
     	<Helmet>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.7/lottie.js" type="text/javascript" />
 			<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript" />
 			<meta name="robots" content="noindex, nofollow"/>
 			<link href="https://fonts.googleapis.com/css?family=Lato:300,900&display=swap" rel="stylesheet"/>
@@ -23,22 +24,7 @@ export default function index() {
 			<link rel="preload" as="image" href="img/DigitalZoneLoading.gif"/>
 		</Helmet>
 		<div id="wrapper">
-			<div id="bg-water"></div>
-			<div id="water-loop" className="anim"></div>
-			<div id="lighthouse" className="active-zone anim"></div>
-			<div id="arrow" className="anim"></div>
-			<div id="island"></div>
-			<div id="waterfall" className="anim"></div>
-			<div id="sea-monster" className="anim"></div>
-			<div id="qr-castle" className="active-zone anim"></div>
-			<div id="airship" className="active-zone anim"></div>
-			<div id="drive-in" className="active-zone anim"></div>
-			<div id="construction02" className="anim"></div>
-			<div id="path-around"></div>
-			<div id="library" className="active-zone anim"></div>
-			<div id="trees"></div>
-			<div id="path-above"></div>
-			<div id="podcast-alley" className="active-zone anim"></div>
+			<Island />
 		</div>
 		<div className="info-wrapper">
 			<div className="hidden" id="qr-castle-info">
@@ -113,14 +99,18 @@ export default function index() {
 		<div id="ie-notice">
 			Note: this site works best on a more modern browswer than Internet Explorer. Please consider updating for a better experience.
 		</div>
-		<div id="cloud-1"></div>
-		<div id="cloud-2"></div>
-		<img src="img/DigitalZoneLoading.gif" id="loading"/>
+		{
+			//	<div id="cloud-1"></div>
+			//<div id="cloud-2"></div>
+			//<img src="img/DigitalZoneLoading.gif" id="loading"/>
+		}
 		<audio id="audio" autoPlay loop>
 			<source src="/media/beach-ambience1.mp3" type="audio/mpeg"/>
 		</audio>
     	<Helmet>
-			<script async src="../js/script.js" type="text/javascript"/>
+			{
+				//<script async src="../js/script.js" type="text/javascript"/>
+			}
 		</Helmet>
  	</>
 	)
