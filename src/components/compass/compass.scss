@@ -6,7 +6,7 @@
 	height:200px;
 	width:200px;
 	border-radius: 200px;
-	background-image: url("./img/compass-bg.svg");
+	background-image: url("/img/compass-bg.svg");
 	background-size: 200px 200px;
 	background-position: center;
 	position: fixed;
@@ -27,7 +27,7 @@
 	display: block;
 	position: absolute;
 	left:0;
-	background-image: url("./img/compass-arrow.svg");
+	background-image: url("/img/compass-arrow.svg");
 	background-size: 200px 200px;
 	background-position: center;
 	transform:rotate(30deg);
@@ -48,7 +48,8 @@
 	cursor: pointer;
 	left:0;
 	opacity:0;
-	content: url("./img/compass-back-btn.svg");
+	content: "";
+	background-image: url("/img/compass-back-btn.svg");
 	background-size: 200px 200px;
 	background-position: center;
 	z-index: 10000;
