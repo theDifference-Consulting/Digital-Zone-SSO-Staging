@@ -120,15 +120,15 @@ function animLoad() {
 // 	},300);
 // });
 
-document.querySelector("#compass").addEventListener('click', function() {
-	setZoom(calcZoom(baseWidth, baseHeight));
-	wrapper.classList.remove("zoomed-in");
-	this.classList.toggle("spin");
-	this.classList.remove("back");
-	try {
-		document.getElementById(activeZone + "-info").classList.add('hidden');
-	} catch (error){}
-});
+// document.querySelector("#compass").addEventListener('click', function() {
+// 	setZoom(calcZoom(baseWidth, baseHeight));
+// 	wrapper.classList.remove("zoomed-in");
+// 	this.classList.toggle("spin");
+// 	this.classList.remove("back");
+// 	try {
+// 		document.getElementById(activeZone + "-info").classList.add('hidden');
+// 	} catch (error){}
+// });
 
 var playing = true;
 document.getElementById('play-mute').addEventListener('click', function() {
