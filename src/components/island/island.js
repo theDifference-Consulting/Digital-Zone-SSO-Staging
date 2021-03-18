@@ -79,7 +79,8 @@ const Island = () => {
 
     window.addEventListener('resize', handleResize, false); //browser resized
     document.addEventListener("keydown", (e) => { if(e.keyCode === 27) {zoomReset();}}, false); // reset zoom with escape key
-    window.addEventListener('load', () => {handleResize(); hideClouds();}, false); // size the island wrapper once page has loaded
+    window.addEventListener('load', handleResize(), false); // size the island wrapper once page has loaded
+    window.addEventListener('load', hideClouds(), false); // hide clouds once page has loaded
     handleZoom(); // fire handle zoom when zoneInfo is modified
 	}, [zoneInfo]);
 
