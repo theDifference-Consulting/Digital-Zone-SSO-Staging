@@ -19,7 +19,7 @@ export default function index() {
         <script src="../js/bootstrap.min.js" type="text/javascript" />
     </Helmet>
     <main className="secondary-template">
-        <div className="container-fluid podcast-alley">
+        <div className="container-fluid qr-castle">
             <Navbar activePage='qr-castle'/>
             <header>
                 <div className="container">
