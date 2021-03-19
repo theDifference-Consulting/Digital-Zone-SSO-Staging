@@ -15,7 +15,7 @@ const CustomNavbar = ({ pageInfo, ...props }) => {
           <Nav.Link eventKey="qr-castle" href="/qr-castle/">QR Castle</Nav.Link>
           <Nav.Link eventKey="drive-in" href="/drive-in/">Drive-Innovation Theater</Nav.Link>
           <Nav.Link eventKey="library" href="/library/">Library</Nav.Link>
-          <Nav.Link eventKey="news" href="/news/">News</Nav.Link>
+          <Nav.Link eventKey="epic-quest" href="/epic-quest/">Epic Quest</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
