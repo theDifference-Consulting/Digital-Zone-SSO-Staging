@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Navbar from "../components/navBar"
 
 import Wiggle from "../components/wiggle"
+import GoogleForm from "../components/epicFormModal"
 
 export default function index() {
     return (
@@ -85,9 +86,7 @@ export default function index() {
                                 <p>
                                     All Hub Quest Knights must stay alert for announcements about how they can double or even triple their points at certain times during the Quest. Click on the button below to become an Epic Hub Quest Knight!
                                 </p>
-                                <a href="" className="giant-button">
-                                    GET STARTED NOW!
-                                </a>
+                                <GoogleForm/>
                             </div>
                         </div>
                     </div>

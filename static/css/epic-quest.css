@@ -38,6 +38,7 @@ hr {
 	background-color: white;
 	color:#434345;
 	box-shadow: 10px 10px 0 rgba(0,0,0,.3);
+	cursor: pointer;
 }
 
 .giant-button:hover, .giant-button:focus {
@@ -144,4 +145,24 @@ footer .copyright {
 	#back-compass {
 		display:none;
 	}
+}
+
+/* Modal styling */
+
+.epic-quest .modal-dialog {
+	max-width:inherit;
+}
+
+.epic-quest .modal-content {
+	width: auto;
+    margin: 0 auto;
+}
+
+.epic-quest .modal-header {
+	height:30px;
+}
+
+.epic-quest .modal-header .close {
+	background-color: #fff;
+	z-index: 30000;
 }
