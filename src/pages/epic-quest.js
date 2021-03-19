@@ -57,7 +57,7 @@ export default function index() {
                                 <img src="/img/icon-list.svg" className="icon"/>
                                 <h4>Step 1: <span>EXPLORE</span></h4>
                                 <p>
-                                    Click on the Register Here button below to fill our the form and participate in our ACE MAAC activity to get started and learn more. You’ll make quick progress on the Quest and receive <b>STAR KNIGHT</b> recognition. Literally! You will receive a unique, celestial reward just for participating in the first Epic Hub Quest Challenge. As you venture into the Digital Zone and Development Hub, explore the different topic areas and materials that interest you. You’ll make a plan and set a goal that will advance your development and help you create your Hub habit and achieve your Epic Quest!
+                                    Click on the button below to fill out the form and become a Quest Knight. Then participate in our ACE MAAC activity to get started and learn more. You’ll make quick progress on the Quest and receive <b>STAR KNIGHT</b> recognition. Literally! You will receive a unique, celestial reward just for participating in the first Epic Hub Quest Challenge. As you venture into the Digital Zone and Development Hub, explore the different topic areas and materials that interest you. You’ll make a plan and set a goal that will advance your development and help you create your Hub habit and achieve your Epic Quest!
                                 </p>
                             </div>
                             <div className="col-md-4" style={{marginBottom: "30px"}}>
