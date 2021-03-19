@@ -184,7 +184,7 @@ export default function index() {
 
 	        <footer>
 	            <div className="container">
-	                <div className="copyright">©2020 Gilead</div>
+	                <div className="copyright">©2021 Gilead</div>
 	            </div>
 	        </footer>
 	        <a href="/" id="back-compass"></a>

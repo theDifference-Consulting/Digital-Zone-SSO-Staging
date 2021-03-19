@@ -59,10 +59,10 @@ const Island = () => {
 		}
 
 		function handleZoom() {
-			handleResize();
+			//handleResize();
 			if (document.getElementById(zoneInfo.id)) {
 				let zoomControl = document.getElementById('zoomControl').getBoundingClientRect();
-				let clickedZone = document.getElementById(zoneInfo.id).parentElement.parentElement.getBoundingClientRect(); //doesnt work on multi clicks for some reason
+				let clickedZone = document.getElementById(zoneInfo.id).parentElement.parentElement.getBoundingClientRect();
 				
 				let padding = 40;
 				let heightZoomFactor = zoomControl.height  / (clickedZone.height + 2 * padding);
