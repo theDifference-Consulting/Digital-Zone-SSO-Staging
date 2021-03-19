@@ -10,7 +10,7 @@ import arrow from "../../anim/arrow.json";
 import waterfall from "../../anim/waterfall.json";
 import seaMonster from "../../anim/seaMonster.json";
 import qrCastle from "../../anim/qrCastle.json";
-import airship from "../../anim/airship.json";
+import epicHubQuest from "../../anim/epicHubQuest.json";
 import driveIn from "../../anim/driveIn.json";
 import construction02 from "../../anim/construction02.json";
 import library from "../../anim/library.json";
@@ -45,8 +45,8 @@ const Island = () => {
 		//handle flexWrapper scaling the island when window is loaded, or resized
 		function handleResize() {
 			// fallback on window dimensions for initial load
-			let width = document.getElementById('flexWrapper').offsetWidth || window.offsetWidth
-			let height = document.getElementById('flexWrapper').offsetHeight || window.offsetHeight
+			let width = document.getElementById('flexWrapper').offsetWidth || window.innerWidth
+			let height = document.getElementById('flexWrapper').offsetHeight || window.innerHeight
 			if (width / height > 1.778) {
 				setWrapperSize({width: height * 1.778, height: height}); 
 			} else { //set width
@@ -137,12 +137,12 @@ const Island = () => {
 						link="/qr-castle/"
 						/>
 					<LottiePlayer 
-						animData={airship} 
+						animData={epicHubQuest} 
 						activeZone={true}
 						onclick={zoneZoom}
-						zoneOutline='airship-halo'
-						info="Check here often for breaking news about some of the innovations and digital projects that are happening across Gilead and the world."
-						link="/news/"
+						zoneOutline='hubship-halo'
+						info="JOIN US ON OUR EPIC QUEST FOR KNOWLEDGE<br/>ACE Medical Affairs invites you on an adventure in BOLD leadership where you OWN your development by unlocking the wealth of knowledge that lies in the HP Development Hub."
+						link="/epic-quest/"
 						/>
 					<LottiePlayer 
 						animData={driveIn} 

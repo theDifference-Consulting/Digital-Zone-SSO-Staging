@@ -99,7 +99,8 @@
 		#qr-halo,
 		#lighthouse-halo,
 		#drivein-halo,
-		#libraryhalo {
+		#libraryhalo,
+		#hubship-halo {
 			opacity:0;
 			transition: opacity .2s ease;
 			pointer-events: auto !important;
@@ -110,7 +111,8 @@
 			#qr-halo,
 			#lighthouse-halo,
 			#drivein-halo,
-			#libraryhalo {
+			#libraryhalo,
+			#hubship-halo {
 				opacity:1;
 				transition: opacity .2s ease;
 			}
