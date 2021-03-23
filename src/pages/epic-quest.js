@@ -153,6 +153,7 @@ export default function index() {
                                     Country Medical Director/Leadership
                                 </p>
                             </div>
+                            <a href="/media/EpicQuestZoom.zip" target="_blank" rel="noreferrer" className="zoomlinks">Click here to download your Epic Quest Zoom backgrounds!</a>
                         </div>
                         <div className="big-footer-text">
                             <img src="/img/good-luck.svg" className="good-luck"/>
