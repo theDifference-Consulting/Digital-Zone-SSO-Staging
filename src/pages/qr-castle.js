@@ -22,8 +22,8 @@ export default function index() {
         <div className="container-fluid qr-castle">
             <Navbar activePage='qr-castle'/>
             <header>
-                <div className="container">
-                    <div className="heading-cloud-wrapper row">
+                <div className="">
+                    <div className="heading-cloud-wrapper ">
                         <h1>QR Castle</h1>
                     </div>
                 </div>

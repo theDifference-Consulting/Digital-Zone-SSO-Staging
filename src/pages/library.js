@@ -19,8 +19,8 @@ export default function index() {
         <div className="container-fluid library">
             <Navbar activePage='library'/>
             <header>
-                <div className="container">
-                    <div className="heading-cloud-wrapper row">
+                <div className="">
+                    <div className="heading-cloud-wrapper">
                         <h1>Digital Project <br/>Library</h1>
                     </div>
                 </div>

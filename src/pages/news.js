@@ -25,8 +25,8 @@ export default class BlogIndexPage extends React.Component {
         <div className="container-fluid news">
             <Navbar activePage='news'/>
             <header>
-                <div className="container">
-                    <div className="heading-cloud-wrapper row">
+                <div className="">
+                    <div className="heading-cloud-wrapper">
                         <h1>News</h1>
                     </div>
                 </div>

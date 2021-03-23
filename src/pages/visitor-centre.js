@@ -19,11 +19,11 @@ export default function index() {
         <script src="../js/bootstrap.min.js" type="text/javascript" />
     </Helmet>
     <main className="secondary-template">
-        <div className="container-fluid podcast-alley">
+        <div className="container-fluid visitor-info">
             <Navbar activePage='visitor-centre'/>
             <header>
-                <div className="container">
-                    <div className="heading-cloud-wrapper row">
+                <div className="">
+                    <div className="heading-cloud-wrapper">
                         <h1>Visitor Centre</h1>
                     </div>
                 </div>

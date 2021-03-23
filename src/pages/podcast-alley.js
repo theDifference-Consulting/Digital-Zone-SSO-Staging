@@ -23,8 +23,8 @@ export default function index() {
         <div className="container-fluid podcast-alley">
             <Navbar activePage='podcast-alley'/>
             <header>
-                <div className="container">
-                    <div className="heading-cloud-wrapper row">
+                <div className="">
+                    <div className="heading-cloud-wrapper ">
                         <h1>Podcast Alley</h1>
                     </div>
                 </div>
