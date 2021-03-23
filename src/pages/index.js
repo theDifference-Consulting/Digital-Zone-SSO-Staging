@@ -3,8 +3,32 @@ import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 
 import Island from "../components/island/island"
+import Mobile from "../components/mobile/mobile"
 
 const Index = () => {
+
+	const [ifMobile, setIfMobile] = useState(false);
+
+	useEffect(() => {
+		function checkSize() {
+			if (Math.min(window.innerWidth, window.innerHeight) < 600) {
+				setIfMobile(true)
+				console.log(ifMobile)
+			} else {
+				setIfMobile(false)
+				console.log(ifMobile)
+			}
+		}
+		checkSize();
+		//window.addEventListener("resize",checkSize, false);
+	},[])
+
+	function MobileSelector() {
+		if(ifMobile) {
+			return (<Mobile/>)
+		}
+		return ( <Island/>)
+	}
 
   return (
     <>
@@ -29,7 +53,7 @@ const Index = () => {
 			</Helmet>
 			<img src="img/cloud-left.svg" style={{display: "none"}}/>
 			<img src="img/cloud-right.svg" style={{display: "none"}}/>
-			<Island/>
+			<MobileSelector/>
 		</>
 	)
 }

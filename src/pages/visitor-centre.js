@@ -89,7 +89,7 @@ export default function index() {
                     </p>
                     <br/>
                     <div className="row">
-                        <div className="col-sm-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="headshot-bg">
                                 <h3>
                                 Julie Newman
@@ -99,7 +99,7 @@ export default function index() {
                                 <img src="../img/Julie_ProfilePic.png"/>
                             </div>
                         </div>
-                        <div className="col-sm-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="headshot-bg">
                                 <h3>
                                 Ramon Thali
@@ -109,7 +109,7 @@ export default function index() {
                                 <img src="../img/ramon.jpg"/>
                             </div>
                         </div>
-                        <div className="col-sm-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="headshot-bg">
                                 <h3>
                                 Ahmet Yilmaz
@@ -120,7 +120,7 @@ export default function index() {
                             </div>
                         </div>
                         <div className="clearfix hidden-xs"></div>
-                        <div className="col-sm-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="headshot-bg">
                                 <h3>
                                 Nimesh Vadgama
@@ -130,7 +130,7 @@ export default function index() {
                                 <img src="../img/nimesh.jpg"/>
                             </div>
                         </div>
-                        <div className="col-sm-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="headshot-bg">
                                 <h3>
                                 Hassan Aladdin, PhD
@@ -140,7 +140,7 @@ export default function index() {
                                 <img src="../img/Hassan-Alladin.png"/>
                             </div>
                         </div>
-                        <div className="col-sm-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="headshot-bg">
                                 <h3>
                                 Cindy Elliott
@@ -151,7 +151,7 @@ export default function index() {
                             </div>
                         </div>
                         <div className="clearfix hidden-xs"></div>
-                        <div className="col-sm-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="headshot-bg">
                                 <h3>Mario Garcia</h3>
                                 Spain<br/>
@@ -159,7 +159,7 @@ export default function index() {
                                 <img src="../img/mario.jpg"/>
                             </div>
                         </div>
-                        <div className="col-sm-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="headshot-bg">
                                 <h3>
                                 Joyeta Das
@@ -169,7 +169,7 @@ export default function index() {
                                 <img src="../img/joyeta.jpg"/>
                             </div>
                         </div>
-                        <div className="col-sm-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="headshot-bg">
                                 <h3>
                                 Olivier Lada
@@ -180,7 +180,7 @@ export default function index() {
                             </div>
                         </div>
                         <div className="clearfix hidden-xs"></div>
-                        <div className="col-sm-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="headshot-bg">
                                 <h3>
                                 Tina Raselli
@@ -190,7 +190,7 @@ export default function index() {
                                 <img src="../img/tina.jpg"/>
                             </div>
                         </div>
-                        <div className="col-sm-4">
+                        <div className="col-md-6 col-lg-4">
                             <div className="headshot-bg">
                                 <h3>
                                 Guillaume Walckenaer

@@ -130,7 +130,7 @@ export default function index() {
                         <img src="../img/qr-bug.svg" className="bug"/>
                         <h2>Advice From QR Code Pros</h2>
                         <div className="row">
-                            <div className="col-sm-4 col-sm-offset-2">
+                            <div className="col-sm-6 col-md-4 col-md-offset-2">
                                 <div className="headshot-bg">
                                     <h3>
                                     Damien Fagan
@@ -157,7 +157,7 @@ export default function index() {
                                     </li>
                                 </ol>
                             </div>
-                            <div className="col-sm-4">
+                            <div className="col-sm-6 col-md-4">
                                 <div className="headshot-bg">
                                     <h3>
                                     Mike Tran

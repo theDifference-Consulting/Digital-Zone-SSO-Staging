@@ -140,7 +140,8 @@ export default function index() {
                             </div>
                             <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
                         </div>
-                        <div className="row">
+                    </div>
+                    <div className="row">
                             <div className="col-sm-6 ">
                                 <div className="yellow-video-block">
                                     <p>
@@ -170,7 +171,6 @@ export default function index() {
                                 <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
                             </div>
                         </div>
-                    </div>
                 </div>
             </section>
 	        <footer>
