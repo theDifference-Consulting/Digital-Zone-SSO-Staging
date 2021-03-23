@@ -128,7 +128,7 @@ export default function index() {
                             </div>
                             <div className="col-sm-6 col-md-4 text-center mb-5">
                                 <a href="/media/Gilead-Medical_Sciences_Skills_Discussion-Template.pdf" className="card-icon " target="_blank" rel="noreferrer">
-                                    <img src="/img/card-sciences.jpg"/>
+                                    <img src="/img/card-sciences.jpg" className="img-responsive"/>
                                 </a>
                                 <p>
                                     <b>Discussion Template</b><br/>
@@ -137,7 +137,7 @@ export default function index() {
                             </div>
                             <div className="col-sm-6 col-md-4 text-center mb-5">
                                 <a href="/media/Gilead-Medical_Manager_Skills_Discussion-Template.pdf" className="card-icon " target="_blank" rel="noreferrer">
-                                    <img src="/img/card-manager.jpg"/>
+                                    <img src="/img/card-manager.jpg" className="img-responsive"/>
                                 </a>
                                 <p>
                                     <b>Discussion Template</b><br/>
@@ -146,7 +146,7 @@ export default function index() {
                             </div>
                             <div className="col-sm-6 col-md-4 text-center mb-5">
                                 <a href="/media/Gilead-Country_Medical_Director-Leadership_Skills_Discussion-Template.pdf" className="card-icon " target="_blank" rel="noreferrer">
-                                    <img src="/img/card-leadership.jpg"/>
+                                    <img src="/img/card-leadership.jpg" className="responsive"/>
                                 </a>
                                 <p>
                                     <b>Discussion Template</b><br/>

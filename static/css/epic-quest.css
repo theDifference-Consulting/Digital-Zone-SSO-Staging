@@ -55,6 +55,7 @@ hr {
 .card-icon img {
 	box-shadow: 6px 6px 0 #d1d3d4;
 	margin-bottom: 30px;
+	width:100%;
 }
 
 .card-icon img:hover {
