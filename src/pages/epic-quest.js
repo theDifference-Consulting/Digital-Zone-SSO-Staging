@@ -99,7 +99,7 @@ export default function index() {
                         </div>
                         <hr/>
                         <div className="row">
-                            <div className="col-sm-6 col-md-3 text-center">
+                            <div className="col-sm-6 col-md-4 text-center mb-5">
                                 <a href="/media/Gilead-Epic_Quest-Tool_Cards-Navigating_The_Hub.pdf" className="card-icon" target="_blank" rel="noreferrer">
                                     <img src="/img/card-navigating.svg"/>
                                 </a>
@@ -108,7 +108,7 @@ export default function index() {
                                     Tool Card
                                 </p>
                             </div>
-                            <div className="col-sm-6 col-md-3 text-center mb-5">
+                            <div className="col-sm-6 col-md-4 text-center mb-5">
                                 <a href="/media/Gilead-Epic_Quest-Tool_Cards-Hub_Development_Plan_Usage.pdf" className="card-icon" target="_blank" rel="noreferrer">
                                     <img src="/img/card-how-to.svg"/>
                                 </a>
@@ -117,22 +117,40 @@ export default function index() {
                                     Tool Card
                                 </p>
                             </div>
-                            <div className="col-sm-6 col-md-3 text-center">
-                                <a href="" className="card-icon " style={{pointerEvents: "none"}} target="_blank" rel="noreferrer">
-                                    <img src="/img/card-tbd.svg"/>
-                                </a>
-                                <p>
-                                    <b>Hub Development Discussion</b><br/>
-                                    Worksheet
-                                </p>
-                            </div>
-                            <div className="col-sm-6 col-md-3 text-center">
+                            <div className="col-sm-6 col-md-4 text-center mb-5">
                                 <a href="/media/Gilead-Epic_Quest-One_Pager.pdf" className="card-icon" target="_blank" rel="noreferrer">
                                     <img src="/img/card-explainer.svg"/>
                                 </a>
                                 <p>
                                     <b>The Epic Quest</b><br/>
                                     Explainer
+                                </p>
+                            </div>
+                            <div className="col-sm-6 col-md-4 text-center mb-5">
+                                <a href="/media/Gilead-Medical_Sciences_Skills_Discussion-Template.pdf" className="card-icon " target="_blank" rel="noreferrer">
+                                    <img src="/img/card-sciences.svg"/>
+                                </a>
+                                <p>
+                                    <b>Discussion Template</b><br/>
+                                    Medical Sciences
+                                </p>
+                            </div>
+                            <div className="col-sm-6 col-md-4 text-center mb-5">
+                                <a href="/media/Gilead-Medical_Manager_Skills_Discussion-Template.pdf" className="card-icon " target="_blank" rel="noreferrer">
+                                    <img src="/img/card-manager.svg"/>
+                                </a>
+                                <p>
+                                    <b>Discussion Template</b><br/>
+                                    Medical Manager
+                                </p>
+                            </div>
+                            <div className="col-sm-6 col-md-4 text-center mb-5">
+                                <a href="/media/Gilead-Country_Medical_Director-Leadership_Skills_Discussion-Template.pdf" className="card-icon " target="_blank" rel="noreferrer">
+                                    <img src="/img/card-leadership.svg"/>
+                                </a>
+                                <p>
+                                    <b>Discussion Template</b><br/>
+                                    Country Medical Director/Leadership
                                 </p>
                             </div>
                         </div>
