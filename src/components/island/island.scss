@@ -100,7 +100,8 @@
 		#lighthouse-halo,
 		#drivein-halo,
 		#libraryhalo,
-		#hubship-halo {
+		#hubship-halo,
+		#newsletterdepot-halo-old {
 			opacity:0;
 			transition: opacity .2s ease;
 			pointer-events: auto !important;
@@ -112,7 +113,8 @@
 			#lighthouse-halo,
 			#drivein-halo,
 			#libraryhalo,
-			#hubship-halo {
+			#hubship-halo,
+			#newsletterdepot-halo-old {
 				opacity:1;
 				transition: opacity .2s ease;
 			}

@@ -12,7 +12,7 @@ import seaMonster from "../../anim/seaMonster.json";
 import qrCastle from "../../anim/qrCastle.json";
 import epicHubQuest from "../../anim/epicHubQuest.json";
 import driveIn from "../../anim/driveIn.json";
-import construction02 from "../../anim/construction02.json";
+import newsletter from "../../anim/newsletter.json";
 import library from "../../anim/library.json";
 import podcastAlley from "../../anim/podcastAlley.json";
 
@@ -152,7 +152,14 @@ const Island = () => {
 						info="This is where you’ll find the latest video stories about digital innovation happening around Gilead. We will be posting new videos regularly so check back often!"
 						link="/drive-in/"
 						/>
-					<LottiePlayer animData={construction02}/>
+					<LottiePlayer 
+						animData={newsletter} 
+						activeZone={true}
+						onclick={zoneZoom}
+						zoneOutline='newsletterdepot-halo-old'
+						info=""
+						link="/newsletter-depot/"
+						/>
 					<div id="path-around"></div>
 					<LottiePlayer 
 						animData={library} 

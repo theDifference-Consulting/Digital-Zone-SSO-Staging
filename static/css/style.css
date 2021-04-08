@@ -477,3 +477,49 @@ footer .copyright {
 #library-halo * {
 	display: contents;
 }
+
+/* Newsletter */
+.newsletter header > div {
+	background-image: url('../img/newsletter.svg');
+}
+
+.newsletter .templates img{
+	width:100%;
+	border-radius: 5px 5px 0 0;
+	box-shadow: 5px 0 0 rgba(0,0,0,.3);
+	position: relative;
+	margin-top:-5px;
+}
+
+.newsletter .templates div:before {
+	content:"";
+	background-color: #CCCCCC;
+	position: absolute;
+	top:-10px;
+	height:10px;
+	width:90%;
+	margin-left:2.5%;
+}
+.newsletter .templates div:after {
+	content:"";
+	background-image: url(../img/template-overlay.svg);
+	background-size: contain;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	width:calc(100% - 30px);
+	height: 100%;
+	display: block;
+	position: absolute;
+	bottom: 0;
+}
+
+.wood-background {
+	background-color: #a38061;
+	background-image: url('/img/woodgrain.svg');
+	background-repeat: repeat-y;
+	background-size: cover;
+	padding: 40px 20px 0 20px;
+	width:100%;
+	border-top:6px solid #dda96b;
+	border-bottom:6px solid #dda96b;
+}
