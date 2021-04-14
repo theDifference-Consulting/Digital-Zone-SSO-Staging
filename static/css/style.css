@@ -491,7 +491,7 @@ footer .copyright {
 	margin-top:-5px;
 }
 
-.newsletter .templates div:before {
+.newsletter .templates a:before {
 	content:"";
 	background-color: #CCCCCC;
 	position: absolute;
@@ -500,7 +500,7 @@ footer .copyright {
 	width:90%;
 	margin-left:2.5%;
 }
-.newsletter .templates div:after {
+.newsletter .templates a:after {
 	content:"";
 	background-image: url(../img/template-overlay.svg);
 	background-size: contain;

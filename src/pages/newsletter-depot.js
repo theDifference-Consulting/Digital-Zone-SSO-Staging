@@ -2,6 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 import Navbar from "../components/navBar"
+import newsletter from "../components/newsletter"
 
 export default function index() {
   return (
@@ -17,6 +18,8 @@ export default function index() {
     <main className="secondary-template">
         <div className="container-fluid newsletter">
             <Navbar activePage='newsletter'/>
+
+
             <header>
                 <div className="">
                     <div className="heading-cloud-wrapper">
@@ -44,30 +47,25 @@ export default function index() {
                     <h2> Templates</h2>
                     <div className="wood-background">
                         <div className="row templates">
-                            <div className="col-md-6">
-                                <img src="/img/sample-template.jpg" className="img-fluid"/>
-                            </div>
-                            <div className="col-md-6">
-                                <img src="/img/sample-template.jpg" className="img-responsive"/>
-                            </div>
-                            <div className="col-md-6">
-                                <img src="/img/sample-template.jpg" className="img-responsive"/>
-                            </div>
-                            <div className="col-md-6">
-                                <img src="/img/sample-template.jpg" className="img-responsive"/>
-                            </div>
+                            {newsletter.map((item, idx) => (
+                            <Link to={"/media/newsletter/" + item.fileName} target="_blank" rel="noreferrer" className="col-md-6" key={item.fileName + '_' + idx}>
+                                <img src={"/media/newsletter/" + item.img} className="img-fluid"/>
+                            </Link>
+                            ))}
                         </div>
                     </div>
                 </div>
             </section>
+
+
 	        <footer>
 	            <div className="container">
 	                <div className="copyright">©2021 Gilead</div>
 	            </div>
 	        </footer>
 	        <a href="/" id="back-compass"></a>
-	        </div>
-	    </main>
+        </div>
+    </main>
     </>
 	)
 }
