@@ -48,12 +48,25 @@ export default function index() {
                     <div className="wood-background">
                         <div className="row templates">
                             {newsletter.map((item, idx) => (
-                            <Link to={"/media/newsletter/" + item.fileName} target="_blank" rel="noreferrer" className="col-md-6" key={item.fileName + '_' + idx}>
+                            <a href={"/media/newsletter/" + item.fileName} target="_blank" rel="noreferrer" className="col-md-6" key={item.fileName + '_' + idx}>
                                 <img src={"/media/newsletter/" + item.img} className="img-fluid"/>
-                            </Link>
+                            </a>
                             ))}
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className="light-bg row" id="now-showing">
+                <div className="container">
+                    <img src="../img/newsletter-bug.svg" className="bug"/>
+                    <h2> Templates</h2>
+                    <p>
+                        Got a great template that you’d like to add to our collection? Upload it here! 
+                        All templates must be in .doc or .docx format, compatible with Microsoft Word.
+                    </p>
+                    <a href="mailto:Mario.Garcia@gilead.com?cc=tina.raselli@gilead.com&subject=Digital%20Zone%20Newsletter%20Template%20Submission&body=Hi%20Mario%20and%20Tina,%20I%20found%20this%20great%20email%20template%20that%20I’d%20love%20to%20share%20on%20the%20Digital%20Zone.%0D%0DThank%20you,%0D[your name here]" className="btn block-highlight" style={{textTransform: "capitalize"}}>
+                        submit your template for review
+                    </a>
                 </div>
             </section>
 
