@@ -156,7 +156,7 @@ const Island = () => {
 						animData={newsletter} 
 						activeZone={true}
 						onclick={zoneZoom}
-						zoneOutline='newsletterdepot-halo-old'
+						zoneOutline='newsletterdepot-halo'
 						info="Welcome to the Newsletter Depot! Here you can find a variety of helpful email templates that can be downloaded for use in any of your email campaign needs."
 						link="/newsletter-depot/"
 						/>
