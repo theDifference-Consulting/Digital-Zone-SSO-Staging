@@ -44,7 +44,6 @@ export default function index() {
                             Stockley Park, UK<br/>
                             michael.elliott@gilead.com
                     </div>
-                    
                 </div>
             </section>
 
@@ -53,18 +52,50 @@ export default function index() {
                     <img src="../img/popcorn-bug.svg" className="bug"/>
                     <h2>Now Showing</h2>
                     <div style={{padding:'30px 0'}}>
-                        Get to know the Covid-19 Middle East Chatbot and how it's being used to share knowledge efficiently.
+                        Learn all about the Gilead Advisory Platform, a powerful new Advisory Board connection tool.
                     </div>
                     <div className="yellow-video-block">
                         <div className="embed-responsive embed-responsive-16by9">
-                            <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463559431" width="640" height="360" frameBorder="0" allow="fullscreen" allowFullScreen></iframe>
+                            <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/483166427" width="640" height="360" frameBorder="0" allow="fullscreen" allowFullScreen></iframe>
                         </div>
-                        <b>Sherif Khattab</b><br/>
-                        Dubai, UAE<br/>
-                        sherif.khattab@gilead.com
+                        <b>Julie Newman</b><br/>
+                        Australia<br/>
+                        julie.newman@gilead.com
                     </div>
                     <div className="row margin-top-md">
-                    <div className="col-sm-6 ">
+                        <div className="col-sm-6 ">
+                            <div className="yellow-video-block">
+                                <p>
+                                    Take a journey through our powerful new medication reminder tool, the PrEP app.
+                                </p>
+                                <div className="embed-responsive embed-responsive-16by9">
+                                    <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/536992198" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                </div>
+                                <p>
+                                    <b>Julie Newman</b><br/>
+                                    Australia<br/>
+                                    julie.newman@gilead.com
+                                </p>
+                            </div>
+                            <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
+                        </div>
+                        <div className="col-sm-6 ">
+                            <div className="yellow-video-block">
+                                <p>
+                                    Get to know the Covid-19 Middle East Chatbot and how it's being used to share knowledge efficiently.
+                                </p>
+                                <div className="embed-responsive embed-responsive-16by9">
+                                    <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/463559431" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                </div>
+                                <p>
+                                    <b>Sherif Khattab</b><br/>
+                                    Dubai, UAE<br/>
+                                    sherif.khattab@gilead.com
+                                </p>
+                            </div>
+                            <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img"/>
+                        </div>
+                        <div className="col-sm-6 ">
                             <div className="yellow-video-block">
                                 <p>
                                     Take a look at how we are using digital tools to help nurses with their ongoing education.
