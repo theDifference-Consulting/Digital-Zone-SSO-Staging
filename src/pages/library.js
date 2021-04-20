@@ -3,29 +3,11 @@ import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 import Navbar from "../components/navBar"
 import LibraryAccordion from "../components/libraryAccordion/libraryAccordion"
+import Layout from "../components/layout"
 
 export default function index() {
   return (
-    <>
-	<Helmet>
-        <title>Gilead Digital Zone — Digital Project Library</title>
-        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
-        <link type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,900&display=swap" rel="stylesheet"/>
-    	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
-    </Helmet>
-    <main className="secondary-template">
-        <div className="container-fluid library">
-            <Navbar activePage='library'/>
-            <header>
-                <div className="">
-                    <div className="heading-cloud-wrapper">
-                        <h1>Digital Project <br/>Library</h1>
-                    </div>
-                </div>
-            </header>
-
+        <Layout pageName="Digital Project Library" activePage='library' containerClass="library">
 			<section className="light-bg row" id="welcome">
                 <div className="container">
                     <img src="../img/library-bug.svg" className="bug"/>
@@ -43,14 +25,6 @@ export default function index() {
                 </div>
                 <LibraryAccordion/>
             </section>
-	        <footer>
-	            <div className="container">
-	                <div className="copyright">©2021 Gilead</div>
-	            </div>
-	        </footer>
-	        <a href="/" id="back-compass"></a>
-	        </div>
-	    </main>
-    </>
+        </Layout>
 	)
 }
