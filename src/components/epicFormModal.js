@@ -38,15 +38,16 @@ export default function LibraryModal({listItem}) {
 				  <Form.Group controlId="exampleForm.ControlSelect1">
 				    <Form.Label>Which of the three available roles and corresponding competencies will you focus on?</Form.Label>
 				    <Form.Control as="select">
-				      <option>Country Medical Director</option>
-				      <option>Medical Sciences</option>
-				      <option>Medical Manager</option>
-				      <option>Other (please state below)</option>
+				      <option disabled selected>Select One Option</option>
+ 				      <option value="Country Medical Director">Country Medical Director</option>
+				      <option value="Medical Sciences">Medical Sciences</option>
+				      <option value="Medical Manager">Medical Manager</option>
+				      <option value="Other">Other (please state below)</option>
 				    </Form.Control>
 				  </Form.Group>
 				  <Form.Group controlId="exampleForm.ControlTextarea1">
 				    <Form.Label>What will mastery in at least one competency/skill help you achieve in life and your career within this role? </Form.Label>
-				    <Form.Control as="textarea" rows={3} />
+				    <Form.Control as="textarea" name="message" rows={3} />
 				  </Form.Group>
 				  <Button variant="primary" type="submit">
 				    Submit
