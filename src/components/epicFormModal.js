@@ -37,7 +37,7 @@ export default function LibraryModal({listItem}) {
 				  </Form.Group>
 				  <Form.Group controlId="exampleForm.ControlSelect1">
 				    <Form.Label>Which of the three available roles and corresponding competencies will you focus on?</Form.Label>
-				    <Form.Control as="select">
+				    <Form.Control as="select" name="role">
 				      <option disabled selected>Select One Option</option>
  				      <option value="Country-Medical-Director">Country Medical Director</option>
 				      <option value="Medical-Sciences">Medical Sciences</option>
