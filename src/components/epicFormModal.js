@@ -39,9 +39,9 @@ export default function LibraryModal({listItem}) {
 				    <Form.Label>Which of the three available roles and corresponding competencies will you focus on?</Form.Label>
 				    <Form.Control as="select">
 				      <option disabled selected>Select One Option</option>
- 				      <option value="Country Medical Director">Country Medical Director</option>
-				      <option value="Medical Sciences">Medical Sciences</option>
-				      <option value="Medical Manager">Medical Manager</option>
+ 				      <option value="Country-Medical-Director">Country Medical Director</option>
+				      <option value="Medical-Sciences">Medical Sciences</option>
+				      <option value="Medical-Manager">Medical Manager</option>
 				      <option value="Other">Other (please state below)</option>
 				    </Form.Control>
 				  </Form.Group>
