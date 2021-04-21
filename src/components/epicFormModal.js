@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Button, Modal} from 'react-bootstrap'
+import {Button, Modal, Form} from 'react-bootstrap'
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function LibraryModal({listItem}) {
@@ -23,16 +23,36 @@ export default function LibraryModal({listItem}) {
 			<Modal.Header closeButton>
 			</Modal.Header>
 			<Modal.Body>
-				<iframe 
-					src="https://docs.google.com/forms/d/e/1FAIpQLScp-QGx_xXvMzrVZP5u8CPlM-USOuJtMZO2NphHYJGOtFFuwQ/viewform?embedded=true" 
-					width="640" 
-					height="940" 
-					frameborder="0" 
-					marginheight="0" 
-					marginwidth="0"
-					>
-					Loading…
-				</iframe>
+			  <h2>Hub Quest Registration Form</h2>
+			  Ready for the Quest? Excellent! First, tell us a little more about yourself.
+    		<Form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" style={{marginTop: "30px"}}>
+				  <Form.Control type="hidden" name="form-name" value="contact" />
+				  <Form.Group controlId="formBasicText">
+				    <Form.Label>Your Name:</Form.Label>
+				    <Form.Control type="text" name="name" />
+				  </Form.Group>
+				  <Form.Group controlId="formBasicEmail">
+				    <Form.Label>Email address</Form.Label>
+				    <Form.Control type="email" name="email" />
+				  </Form.Group>
+				  <Form.Group controlId="exampleForm.ControlSelect1">
+				    <Form.Label>Which of the three available roles and corresponding competencies will you focus on?</Form.Label>
+				    <Form.Control as="select">
+				      <option>Country Medical Director</option>
+				      <option>Medical Sciences</option>
+				      <option>Medical Manager</option>
+				      <option>Other (please state below)</option>
+				    </Form.Control>
+				  </Form.Group>
+				  <Form.Group controlId="exampleForm.ControlTextarea1">
+				    <Form.Label>What will mastery in at least one competency/skill help you achieve in life and your career within this role? </Form.Label>
+				    <Form.Control as="textarea" rows={3} />
+				  </Form.Group>
+				  <Button variant="primary" type="submit">
+				    Submit
+				  </Button>
+				</Form>
+
 			</Modal.Body>
 		</Modal>
 	</>
