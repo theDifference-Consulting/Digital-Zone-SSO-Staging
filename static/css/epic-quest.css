@@ -47,6 +47,12 @@ hr {
 	box-shadow: 12px 12px 0 rgba(0,0,0,.3);
 }
 
+form button, form button:hover, form button:active, form button:focus {
+	background-color: #C50F36 !important;
+	outline:none !important;
+	border:none !important;
+}
+
 .icon {
 	height: 60px;
 	margin-bottom: 10px;
