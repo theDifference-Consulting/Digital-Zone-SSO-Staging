@@ -34,22 +34,19 @@ const BoardMembers = boardMemberData.map((e) => {
 const championsData = [
     { name: "Julie Newman", country: "Australia", email: "julie.newman@gilead.com" },
     { name: "Martin Baril", country: "Canada", email: "martin.baril@gilead.com" },
-    { name: "Dylana Mumm", country: "Canada", email: "dylana.mumm@gilead.com" },
-    { name: "Christopher Robinson", country: "UK", email: "christopher.robinson@gilead.com" },
+    { name: "Ricky Tsang", country: "UK", email: "ricky.tsang@gilead.com " },
     { name: "Christine Millet-Dusastre", country: "France", email: "christine.milletdusastre@gilead.com" },
-    { name: "Silvia Dambacher", country: "Germany", email: "silvia.dambacher@gilead.com" },
     { name: "Boris Albuquerque", country: "Germany", email: "boris.albuquerque@gilead.com" },
-    { name: "Daniel Canimanuel", country: "Spain", email: "daniel.canimanuel@gilead.com" },
+    { name: "Mario Garcia", country: "Spain", email: "Mario.Garcia@gilead.com" },
     { name: "Roberto La Ferla", country: "Italy", email: "roberto.laferla@gilead.com" },
     { name: "Reiner Ribarics", country: "Austria", email: "reiner.ribarics@gilead.com" },
     { name: "Thierry Marysael", country: "Belgium", email: "thierry.marysael@gilead.com" },
     { name: "Ramon Thali", country: "Switzerland", email: "ramon.thali@gilead.com" },
     { name: "Hassan Aladdin", country: "Nordics", email: "hassan.aladdin@gilead.com" },
     { name: "Ahmet Yilmaz", country: "Turkey", email: "ahmet.yilmaz1@gilead.com" },
-    { name: "Tiago Antonio", country: "Portugal", email: "tiago.antonio@gilead.com" },
     { name: "Carla Santos", country: "Portugal", email: "carla.santos@gilead.com" },
-    { name: "Yulia Ivanets", country: "Russia", email: "yulia.ivanets@gilead.com" },
-    { name: "Sherif Khatab", country: "Middle East", email: "sherif.khattab@gilead.com" }
+    { name: "Igor Vinogradov", country: "Russia", email: "igor.vinogradov@gilead.com" },
+    { name: "Howaida Abdelwahab", country: "Middle East", email: "howaida.abdelwahab@gilead.com" }
 ]
 
 const Champions = championsData.map((e) => {
