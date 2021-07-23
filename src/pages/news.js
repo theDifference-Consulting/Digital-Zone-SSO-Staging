@@ -1,8 +1,4 @@
 import React from "react"
-import { graphql } from "gatsby"
-import { Helmet } from "react-helmet"
-import { Link } from "gatsby"
-import Navbar from "../components/navBar"
 import BlogRoll from '../components/blogRoll'
 import Layout from '../components/layout'
 

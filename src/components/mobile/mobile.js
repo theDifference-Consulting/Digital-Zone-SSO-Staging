@@ -47,7 +47,7 @@ const Content = () => {
 			<div className="zone-content">
 				<h3>{z.title}</h3>
 				<p>{z.desc}</p>
-				<img src={"/img/" + z.image} alt={z.title}/>
+				<img src={"/img/" + z.image} alt={"section" + z.title + "illustration"}/>
 			</div>
 		</a>
 	)
@@ -67,7 +67,7 @@ const Mobile = () => {
 							Our mission is to increase the use of digital tools at Gilead to facilitate the sharing of information with healthcare professionals, patients and caregivers!
 						</p>
 					</div>
-					<img src="img/monster.svg" className="monster"/>
+					<img src="img/monster.svg" className="monster" alt="monster illustration"/>
 				</div>
 				<Content/>
 				<footer>

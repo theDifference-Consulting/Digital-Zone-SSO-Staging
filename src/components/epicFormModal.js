@@ -3,7 +3,6 @@ import {Button, Modal, Form} from 'react-bootstrap'
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function LibraryModal({listItem}) {
-	let item = listItem;
 	const [show, setShow] = useState(false);
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
@@ -22,7 +21,7 @@ export default function LibraryModal({listItem}) {
 
   return (
   	<>
-	  	<div className="giant-button" onClick={handleShow}>
+	  	<div className="giant-button" onClick={handleShow} onKeyDown={handleShow} role="button" tabIndex={0}>
 	  	GET STARTED NOW!
 	  	</div>
 	  	<Modal 

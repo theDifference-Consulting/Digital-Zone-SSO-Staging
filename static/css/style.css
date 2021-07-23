@@ -211,10 +211,10 @@ header h1 {
 	display: block;
 	padding:20px 60px 30px 190px;
 	position: absolute;
-	right: 60px;
+	right: 15px;
 	bottom:30px;
 	z-index: 1000;
-	margin-left:-190px;
+	margin-left:-175px;
 }
 
 .secondary-template h2 {
@@ -245,7 +245,8 @@ header h1 {
     top: -8px;
 }
 
-.secondary-template section {
+.secondary-template section,
+.secondary-template .section  {
 	margin-bottom:80px;
 	padding-top:60px;
 	padding-bottom: 60px;

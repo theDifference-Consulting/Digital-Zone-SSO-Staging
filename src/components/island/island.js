@@ -86,7 +86,6 @@ const Island = () => {
 
 	useEffect(() => {
 		const audio = document.getElementById("audio");
-		const button = document.getElementById("play-mute");
 		if (playAudio) {
 				audio.play()
 
@@ -191,8 +190,12 @@ const Island = () => {
 			</div>
 			<Compass reset={zoomReset} back={zoneInfo.zoom}/>
 			<div 
+				role="button"
+				tabIndex={0}
 				id="play-mute" 
 				onClick={() => {setPlayAudio(!playAudio)}}
+				onKeyDown={() => {setPlayAudio(!playAudio)}}
+				aria-label="play pause audio"
 				className={playAudio ? "" : "play"}></div>
 
 			<div id="ie-notice">
@@ -200,8 +203,10 @@ const Island = () => {
 			</div>
 			<div className={cloudState.cloud + " cloud left"}></div>
 			<div className={cloudState.cloud + " cloud right"}></div>
-			<img src="img/DigitalZoneLoading.gif" className={cloudState.loading} id="loading"/>
-			<audio id="audio" autoPlay loop >
+			<img src="img/DigitalZoneLoading.gif" className={cloudState.loading} id="loading" alt="loading"/>
+			{/*eslint-disable*/}
+				<audio id="audio" autoPlay loop > {/*disable audio track warning since it's a background track*/}
+			{/*eslint-enable*/}
 				<source src="/media/beach-ambience1.mp3" type="audio/mpeg"/>
 			</audio>
 		</div>

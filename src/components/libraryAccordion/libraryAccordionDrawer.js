@@ -28,7 +28,7 @@ const LibraryAccordionDrawer = ({data, lower, upper, ...props}) => {
 					</Accordion.Collapse>
 					<Card.Header>
 					  <Accordion.Toggle as={Button} variant="link" eventKey="0" className="drawer-face">
-					        <img src="/img/drawer-face.svg"/>
+					        <img src="/img/drawer-face.svg" alt="drawer face"/>
 					  </Accordion.Toggle>
 					</Card.Header>
 				</Card>
@@ -46,7 +46,7 @@ const LibraryAccordionDrawer = ({data, lower, upper, ...props}) => {
 					</Accordion.Collapse>
 					<Card.Header>
 					  <Accordion.Toggle as={Button} variant="link" eventKey="0" className="drawer-face">
-					        <img src="/img/drawer-face.svg"/>
+					        <img src="/img/drawer-face.svg" alt="drawer face"/>
 					  </Accordion.Toggle>
 					</Card.Header>
 				</Card>
@@ -64,7 +64,7 @@ const LibraryAccordionDrawer = ({data, lower, upper, ...props}) => {
 					</Accordion.Collapse>
 					<Card.Header>
 					  <Accordion.Toggle as={Button} variant="link" eventKey="0" className="drawer-face">
-					        <img src="/img/drawer-face.svg"/>
+					        <img src="/img/drawer-face.svg" alt="drawer face"/>
 					  </Accordion.Toggle>
 					</Card.Header>
 				</Card>

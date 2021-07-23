@@ -14,12 +14,15 @@ const LottiePlayer = (props) => {
       }
     })
 
-  }, [])
+  }, [props.animData])
 
   return (
     <div 
+      role="button"
+      tabIndex={0}
       className={props.activeZone ? "active-zone anim" : "anim"}
       onClick={() => props.onclick()}
+      onKeyDown={() => props.onclick()}
       >
       <Lottie
         options={defaultOptions} 

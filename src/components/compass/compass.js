@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import './compass.scss'
 
 
@@ -22,8 +22,11 @@ const Compass = (props) => {
 
 	return (
 		<div 
+			role="button"
+			tabIndex={0}
 			id="compass"
 			onClick={clickActions}
+			onKeyDown={clickActions}
 			className={spin ? "spin " + props.back : props.back}
 			>
 		</div>

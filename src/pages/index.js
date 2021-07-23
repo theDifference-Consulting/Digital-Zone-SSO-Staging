@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import { Helmet } from "react-helmet"
-import { Link } from "gatsby"
 
 import Island from "../components/island/island"
 import Mobile from "../components/mobile/mobile"
@@ -9,7 +8,7 @@ const Index = () => {
 
 	const [ifMobile, setIfMobile] = useState(false);
 
-	useEffect(() => {
+	useEffect((ifMobile) => {
 		function checkSize() {
 			if (Math.min(window.innerWidth, window.innerHeight) < 600) {
 				setIfMobile(true)
@@ -51,8 +50,8 @@ const Index = () => {
 				
 				<link rel="preload" as="image" href="img/DigitalZoneLoading.gif"/>
 			</Helmet>
-			<img src="img/cloud-left.svg" style={{display: "none"}}/>
-			<img src="img/cloud-right.svg" style={{display: "none"}}/>
+			<img src="img/cloud-left.svg" style={{display: "none"}} alt="cloud curtain left"/>
+			<img src="img/cloud-right.svg" style={{display: "none"}} alt="cloud curtain right"/>
 			<MobileSelector/>
 		</>
 	)

@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import {Button, Modal} from 'react-bootstrap'
+import {Modal} from 'react-bootstrap'
 import "bootstrap/dist/css/bootstrap.min.css";
 
 	function linkCheck(linkHref, text) {
 		if (linkHref) {
 			return (
     		<a href={"mailto:" + linkHref} target="_blank" rel="noreferrer" style={{fontWeight:'bold', fontSize:'20px'}}>
-					<img src="/img/right-triangle.svg" style={{height:'18px', marginRight: '8px'}}/>
+					<img src="/img/right-triangle.svg" style={{height:'18px', marginRight: '8px'}} alt="right triangle"/>
 					Contact: {text}
 				</a>
     	)
   	} else {
   		return (
   			<div>
-	  			<img src="/img/right-triangle.svg" style={{height:'18px', marginRight: '8px'}}/>
+	  			<img src="/img/right-triangle.svg" style={{height:'18px', marginRight: '8px'}} alt="right triangle"/>
 	  			<span style={{fontWeight:'bold', fontSize:'20px'}}>Contact: {text}</span>
   			</div>
   		)
@@ -27,7 +27,7 @@ export default function LibraryModal({listItem}) {
 	const handleShow = () => setShow(true);
   return (
   	<>
-	  	<div className="card-wrapper" onClick={handleShow}>
+	  	<div className="card-wrapper" onClick={handleShow} aria-hidden="true" >
 				<img src={"/img/"+item.Image+".svg"} alt={item.Country + " flag"} className="country-flag"/>
 				<h5 >{item["Project Name"]}</h5>
 				Audience: <b>{item.Audience}</b><br/>
