@@ -37,7 +37,7 @@ const championsData = [
     { name: "Ricky Tsang", country: "UK", email: "ricky.tsang@gilead.com " },
     { name: "Christine Millet-Dusastre", country: "France", email: "christine.milletdusastre@gilead.com" },
     { name: "Boris Albuquerque", country: "Germany", email: "boris.albuquerque@gilead.com" },
-    { name: "Mario Garcia", country: "Spain", email: "Mario.Garcia@gilead.com" },
+    { name: "Mario Garcia", country: "Spain", email: "mario.garcia@gilead.com" },
     { name: "Roberto La Ferla", country: "Italy", email: "roberto.laferla@gilead.com" },
     { name: "Reiner Ribarics", country: "Austria", email: "reiner.ribarics@gilead.com" },
     { name: "Thierry Marysael", country: "Belgium", email: "thierry.marysael@gilead.com" },
