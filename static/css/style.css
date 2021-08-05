@@ -522,3 +522,15 @@ footer .copyright {
 	border-top:6px solid #dda96b;
 	border-bottom:6px solid #dda96b;
 }
+
+/*Digital Adivsory Board*/
+h4.left-arrow {
+	padding-left: 30px;
+	background-image: url('/img/left-arrow.svg');
+	background-repeat: no-repeat;
+	background-size: 40px auto;
+}
+
+.digital-advisory-board-lab header > div {
+	background-image: url('../img/dab-header.svg');
+}

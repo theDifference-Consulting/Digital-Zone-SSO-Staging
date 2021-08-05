@@ -10,11 +10,11 @@ import arrow from "../../anim/arrow.json";
 import waterfall from "../../anim/waterfall.json";
 import seaMonster from "../../anim/seaMonster.json";
 import qrCastle from "../../anim/qrCastle.json";
-import epicHubQuest from "../../anim/epicHubQuest.json";
 import driveIn from "../../anim/driveIn.json";
 import newsletter from "../../anim/newsletter.json";
 import library from "../../anim/library.json";
 import podcastAlley from "../../anim/podcastAlley.json";
+import digitalAdvisoryBoardLab from "../../anim/digitalAdvisoryBoardLab.json";
 
 const Island = () => {
 
@@ -136,14 +136,6 @@ const Island = () => {
 						link="/qr-castle/"
 						/>
 					<LottiePlayer 
-						animData={epicHubQuest} 
-						activeZone={true}
-						onclick={zoneZoom}
-						zoneOutline='hubship-halo'
-						info="JOIN US ON OUR EPIC QUEST FOR KNOWLEDGE<br/>ACE Medical Affairs invites you on an adventure in BOLD leadership where you OWN your development by unlocking the wealth of knowledge that lies in the HP Development Hub."
-						link="/epic-quest/"
-						/>
-					<LottiePlayer 
 						animData={driveIn} 
 						activeZone={true}
 						onclick={zoneZoom}
@@ -177,6 +169,14 @@ const Island = () => {
 						zoneOutline='PodcastAlley-Halo'
 						info="Here you'll find the Digital Zone's podcasting resources. You can listen and subscribe to episodes and get tips and guidance to help make your own podcasts."
 						link="/podcast-alley/"
+						/>
+						<LottiePlayer 
+						animData={digitalAdvisoryBoardLab} 
+						activeZone={true}
+						onclick={zoneZoom}
+						zoneOutline='adboardlab-halo'
+						info="Visit the Digital Advisory Board Lab, where you can learn all about the virtual innovation that allows users to gain insight from other professionals without geographical or other restrictions."
+						link="/digital-advisory-board-lab/"
 						/>
 				</div>
 			</div>

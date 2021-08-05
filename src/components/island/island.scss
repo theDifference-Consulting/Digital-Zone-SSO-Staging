@@ -101,7 +101,8 @@
 		#drivein-halo,
 		#libraryhalo,
 		#hubship-halo,
-		#newsletterdepot-halo {
+		#newsletterdepot-halo,
+		#adboardlab-halo {
 			opacity:0;
 			transition: opacity .2s ease;
 			pointer-events: auto !important;
@@ -114,7 +115,8 @@
 			#drivein-halo,
 			#libraryhalo,
 			#hubship-halo,
-			#newsletterdepot-halo {
+			#newsletterdepot-halo,
+			#adboardlab-halo {
 				opacity:1;
 				transition: opacity .2s ease;
 			}
