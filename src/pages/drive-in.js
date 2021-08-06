@@ -5,7 +5,7 @@ import {Container, Row, Col} from "react-bootstrap"
 export default function index() {
     return (
         <Layout pageName="Drive-Innovation Theater" activePage='drive-in' containerClass="drive-in">
-			<Row className="light-bg section" id="welcome">
+            <Row className="light-bg section" id="welcome">
                 <Container>
                     <img src="../img/popcorn-bug.svg" className="bug" alt="bug icon"/>
                     <h2>Welcome!</h2>
@@ -37,13 +37,13 @@ export default function index() {
                     <img src="../img/popcorn-bug.svg" className="bug" alt="bug icon"/>
                     <h2>Now Showing</h2>
                     <div style={{padding:'30px 0'}}>
-                        Learn all about the Gilead Advisory Platform, a powerful new Advisory Board connection tool.
+                        Learn all a bold new digital tool for HIV-treating physicians.
                     </div>
                     <div className="yellow-video-block">
                         <div className="embed-responsive embed-responsive-16by9">
                             <iframe
                                 className="embed-responsive-item" 
-                                src="https://player.vimeo.com/video/483166427" 
+                                src="https://player.vimeo.com/video/582243291" 
                                 width="640" 
                                 height="360" 
                                 frameBorder="0" 
@@ -52,11 +52,36 @@ export default function index() {
                                 title="Gap Connect"
                             ></iframe>
                         </div>
-                        <b>Julie Newman</b><br/>
-                        Australia<br/>
-                        julie.newman@gilead.com
+                        <b>Ahmet Yilmaz</b><br/>
+                        Turkey<br/>
+                        ahmet.yilmaz1@gilead.com
                     </div>
                     <Row className="margin-top-md">
+                        <Col sm={6}>
+                            <div className="yellow-video-block">
+                                <p>
+                                    Learn all about the Gilead Advisory Platform, a powerful new Advisory Board connection tool.
+                                </p>
+                                <div className="embed-responsive embed-responsive-16by9">
+                                    <iframe 
+                                    className="embed-responsive-item" 
+                                    src="https://player.vimeo.com/video/483166427" 
+                                    width="640" 
+                                    height="360" 
+                                    frameborder="0" 
+                                    allow="autoplay; fullscreen" 
+                                    allowfullscreen
+                                    title="Gap Connect"
+                                ></iframe>
+                                </div>
+                                <p>
+                                    <b>Julie Newman</b><br/>
+                                    Australia<br/>
+                                    julie.newman@gilead.com
+                                </p>
+                            </div>
+                            <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img" alt="backgound element"/>
+                        </Col>
                         <Col sm={6}>
                             <div className="yellow-video-block">
                                 <p>
@@ -219,8 +244,6 @@ export default function index() {
                             </div>
                             <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img" alt="backgound element"/>
                         </Col>
-                    </Row>
-                    <Row>
                         <div className="col-sm-6 ">
                             <div className="yellow-video-block">
                                 <p>
@@ -271,5 +294,5 @@ export default function index() {
                 </Container>
             </Row>
         </Layout>
-	)
+    )
 }
