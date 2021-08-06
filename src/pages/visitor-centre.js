@@ -13,7 +13,8 @@ const boardMemberData = [
     { name: "Joyeta Das", country: "London", email: "joyeta.das@gilead.com", img: "../img/joyeta.jpg" },
     { name: "Olivier Lada", country: "France", email: "olivier.lada@gilead.com", img: "../img/olivier.jpg" },
     { name: "Tina Raselli", country: "Switzerland", email: "tina.raselli@gilead.com", img: "../img/tina.jpg" },
-    { name: "Guillaume Walckenaer", country: "France", email: "Guillaume.Walckenaer@gilead.com", img: "../img/GuillaumeWalckenaer.png" }
+    { name: "Guillaume Walckenaer", country: "France", email: "Guillaume.Walckenaer@gilead.com", img: "../img/GuillaumeWalckenaer.png" },
+    { name: "Sivana Koren", country: "Israel", email: "sivana.koren@gilead.com", img: "../img/SivanaKoren-ProfilePicture.jpg" }
 ]
 
 const BoardMembers = boardMemberData.map((e) => {

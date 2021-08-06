@@ -5,7 +5,7 @@ import {Container, Row, Col} from "react-bootstrap"
 export default function index() {
     return (
         <Layout pageName="Drive-Innovation Theater" activePage='drive-in' containerClass="drive-in">
-			<Row className="light-bg section" id="welcome">
+            <Row className="light-bg section" id="welcome">
                 <Container>
                     <img src="../img/popcorn-bug.svg" className="bug" alt="bug icon"/>
                     <h2>Welcome!</h2>
@@ -294,5 +294,5 @@ export default function index() {
                 </Container>
             </Row>
         </Layout>
-	)
+    )
 }
