@@ -1,18 +1,13 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.69 76.18">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #e1f5f4;
-      }
-
-      .cls-2 {
-        fill: #ffd255;
-      }
-    </style>
-  </defs>
-  <title>headshot-bottom-bg</title>
-  <rect class="cls-1" width="245.69" height="77.73"/>
-  <rect class="cls-2" x="209.95" y="8.38" width="13.17" height="13.17"/>
-  <rect class="cls-2" x="12.34" width="22.39" height="14.97"/>
-  <rect class="cls-2" x="27.76" y="24.97" width="12.34" height="12.34"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 245.7 76.2" style="enable-background:new 0 0 245.7 76.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E1F5F4;}
+	.st1{fill:#FFD255;}
+</style>
+<polygon class="st0" points="-1.1,-1.5 247,-1.5 247,76.3 -1.1,77.7 "/>
+<rect x="209.9" y="8.4" class="st1" width="13.2" height="13.2"/>
+<rect x="12.3" class="st1" width="22.4" height="15"/>
+<rect x="27.8" y="25" class="st1" width="12.3" height="12.3"/>
 </svg>
