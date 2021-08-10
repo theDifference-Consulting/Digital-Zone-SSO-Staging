@@ -104,7 +104,7 @@ export default function index() {
                             Associate Director, Medical Affairs<br/>
                             COVID-19<br/>
                             Netherlands
-                            <img src="../img/xxx.jpg" alt="Vincent Lempers headshot"/>
+                            <img src="../img/VincentLempers-TipsPic.jpg" alt="Vincent Lempers headshot"/>
                         </div>
                         <ol>
                             <li>
@@ -132,7 +132,7 @@ export default function index() {
                             Associate Director, HIV <br/>
                             Medical Affairs<br/>
                             Switzerland
-                            <img src="../img/xxx.jpg" alt="Corinna Oberle, Ph.D headshot"/>
+                            <img src="../img/CorinnaOberle-TipsPic.jpg" alt="Corinna Oberle, Ph.D headshot"/>
                         </div>
                         <ol>
                             <li>
@@ -160,7 +160,7 @@ export default function index() {
                             Associate Director, Medical Affairs<br/>
                             Liver Diseases<br/>
                             Portugal
-                            <img src="../img/xxx.jpg" alt="Rita Freire headshot"/>
+                            <img src="../img/RitaFreire-TipsPic.jpg" alt="Rita Freire headshot"/>
                         </div>
                         <ol>
                             <li>
@@ -194,7 +194,7 @@ export default function index() {
                                 Associate Director, Liver Diseases<br/>
                                 Medical Affairs<br/>
                                 Melbourne, AUS
-                            <img src="../img/xxx.jpg" alt="Aurelie Freismuth, PharmD headshot"/>
+                            <img src="../img/AurelieFreismuth-TipsPic.jpg" alt="Aurelie Freismuth, PharmD headshot"/>
                         </div>
                         <ol>
                             <li>
