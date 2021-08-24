@@ -37,13 +37,13 @@ export default function index() {
                     <img src="../img/popcorn-bug.svg" className="bug" alt="bug icon"/>
                     <h2>Now Showing</h2>
                     <div style={{padding:'30px 0'}}>
-                        Learn all a bold new digital tool for HIV-treating physicians.
+                        Check out our incredible collaboration with Turkish superstar Tankurt Manas for World AIDS Day.
                     </div>
                     <div className="yellow-video-block">
                         <div className="embed-responsive embed-responsive-16by9">
                             <iframe
                                 className="embed-responsive-item" 
-                                src="https://player.vimeo.com/video/582243291" 
+                                src="https://player.vimeo.com/video/591140992" 
                                 width="640" 
                                 height="360" 
                                 frameBorder="0" 
@@ -52,11 +52,36 @@ export default function index() {
                                 title="Gap Connect"
                             ></iframe>
                         </div>
-                        <b>Ahmet Yilmaz</b><br/>
+                        <b>Berna Özelgün</b><br/>
                         Turkey<br/>
-                        ahmet.yilmaz1@gilead.com
+                        Berna.Ozelgun@gilead.com
                     </div>
                     <Row className="margin-top-md">
+                        <Col sm={6}>
+                            <div className="yellow-video-block">
+                                <p>
+                                    Learn all about a bold new digital tool for HIV-treating physicians.
+                                </p>
+                                <div className="embed-responsive embed-responsive-16by9">
+                                    <iframe 
+                                    className="embed-responsive-item" 
+                                    src="https://player.vimeo.com/video/582243291" 
+                                    width="640" 
+                                    height="360" 
+                                    frameborder="0" 
+                                    allow="autoplay; fullscreen" 
+                                    allowfullscreen
+                                    title="Gap Connect"
+                                ></iframe>
+                                </div>
+                                <p>
+                                    <b>Ahmet Yilmaz</b><br/>
+                                    Turkey<br/>
+                                    ahmet.yilmaz1@gilead.com
+                                </p>
+                            </div>
+                            <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img" alt="backgound element"/>
+                        </Col>
                         <Col sm={6}>
                             <div className="yellow-video-block">
                                 <p>
