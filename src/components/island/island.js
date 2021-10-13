@@ -14,6 +14,7 @@ import driveIn from "../../anim/driveIn.json";
 import newsletter from "../../anim/newsletter.json";
 import library from "../../anim/library.json";
 import podcastAlley from "../../anim/podcastAlley.json";
+import digitalAdvisoryBoardLab from "../../anim/digitalAdvisoryBoardLab.json";
 
 const Island = () => {
 
@@ -168,6 +169,14 @@ const Island = () => {
 						zoneOutline='PodcastAlley-Halo'
 						info="Here you'll find the Digital Zone's podcasting resources. You can listen and subscribe to episodes and get tips and guidance to help make your own podcasts."
 						link="/podcast-alley/"
+						/>
+						<LottiePlayer 
+						animData={digitalAdvisoryBoardLab} 
+						activeZone={true}
+						onclick={zoneZoom}
+						zoneOutline='adboardlab-halo'
+						info="Visit the Digital Advisory Board Lab, where you can learn all about the virtual innovation that allows users to gain insight from other professionals without geographical or other restrictions."
+						link="/digital-advisory-board-lab/"
 						/>
 				</div>
 			</div>

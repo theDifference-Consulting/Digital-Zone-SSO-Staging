@@ -20,7 +20,7 @@
 </defs>
 <mask maskUnits="userSpaceOnUse" x="560" y="223.6" width="956.3" height="617.4" id="Map_Path_2_1_">
 	<g class="st0">
-		<polygon class="st1" points="1127.9,168.9 1102.8,422.6 1298.3,1017 40.6,1058 63.1,64.5 		"/>
+		<path class="st1" d="M1148.8,463.7l8.8-71.8L1634,315c0,0,10-268,7-268S418,47,418,47v961l864-88l42-330.2L1148.8,463.7z"/>
 	</g>
 </mask>
 <g id="Map_Path_2" class="st2">
