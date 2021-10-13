@@ -38,18 +38,18 @@ export default function index() {
                         Over the course of the pandemic, we’ve been experimenting and innovating. We now have three different types of digital advisory boards to suit different situations.
                     </p>
                     <Row>
-                        <Col>
+                        <Col sm={4} className="mb-3">
                             <h4  className="left-arrow">Synchronous Advisory Boards</h4>
                             <p>
                                 These are very similar to in-person advisory boards but they are virtual. We gather a set of advisors to provide their expertise and guidance for a half day or other short period. We use a virtual meeting platform and focus our discussions on a single topic or set of topics
                             </p>
                         </Col>
-                        <Col>
+                        <Col sm={4} className="mb-3">
                             <h4 className="left-arrow">Asynchronous Advisory Boards</h4>
                             <p>
                                 These types of advisory boards allow you to collate real-time insights during a period of time that couple be weeks, months or a year. We use a virtual messenger platform to facilitate the discussions with the advisors. All participants are able to see and respond to everyone’s conversations within the platform.                            </p>
                         </Col>
-                        <Col>
+                        <Col sm={4} className="mb-3">
                             <h4 className="left-arrow">Rolling Asynchronous Advisory Boards</h4>
                             <p>
                                 Physicians on these advisory boards engage for 6 months, a year or more, providing feedback and input on a variety of topics with a combination of synchronous and asynchronous interactions. These Advisory Boards are excellent when we need input at various stages of our research.
