@@ -10,10 +10,10 @@ const zones = [
 		image: "mobile-lighthouse.svg"
 	},
 	{
-		title: "Epic Hub Quest",
-		desc: "Join us on our epic quest for knowledge.",
-		link: "/epic-quest",
-		image: "mobile-epic.svg"
+		title: "Digital AdBoard Lab",
+		desc: "Visit the Digital Advisory Board Lab, where you can learn all about the virtual innovation that allows users to gain insight from other professionals without geographical or other restrictions.",
+		link: "/digital-advisory-board-lab",
+		image: "DAB-mobile-bug.svg"
 	},
 	{
 		title: "QR Castle",
@@ -38,7 +38,13 @@ const zones = [
 		desc: "An inventory of every digital project from across Gilead’s regions.",
 		link: "/library",
 		image: "mobile-library.svg"
-	}
+	},
+	{
+		title: "Newsletter Depot",
+		desc: "Welcome to the Newsletter Depot! Here you can find a variety of helpful email templates that can be downloaded for use in any of your email campaign needs.",
+		link: "/newsletter-depot",
+		image: "newsletter-mobile-bug.svg"
+	},
 ]
 
 const Content = () => {
