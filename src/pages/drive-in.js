@@ -82,7 +82,7 @@ export default function index() {
                             </div>
                             <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img" alt="backgound element"/>
                         </Col>
-                        <Col sm={6} id="gap-connect">
+                        <Col sm={6}>
                             <div className="yellow-video-block">
                                 <p>
                                     Learn all about the Gilead Advisory Platform, a powerful new Advisory Board connection tool.
