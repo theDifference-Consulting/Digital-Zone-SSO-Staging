@@ -41,7 +41,7 @@ export default function index() {
                         <Col sm={4} className="mb-3">
                             <h4  className="left-arrow">Synchronous Advisory Boards</h4>
                             <p>
-                                These are very similar to in-person advisory boards but they are virtual. We gather a set of advisors to provide their expertise and guidance for a half day or other short period. We use a virtual meeting platform and focus our discussions on a single topic or set of topics
+                                These are very similar to in-person advisory boards but they are virtual. We gather a set of advisors to provide their expertise and guidance for a half day or other short period. We use a virtual meeting platform and focus our discussions on a single topic or set of topics. GAP Connect is an internally developed virtual advisory platform that may be of interest to you. Please <a href="/drive-in#gap-connect">click here</a> to find out more about the capabilities of GAP Connect.
                             </p>
                         </Col>
                         <Col sm={4} className="mb-3">

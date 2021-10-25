@@ -49,7 +49,7 @@ export default function index() {
                                 frameBorder="0" 
                                 allow="fullscreen" 
                                 allowFullScreen
-                                title="Gap Connect"
+                                title="Gilead Turkey on World Aids Day"
                             ></iframe>
                         </div>
                         <b>Berna Özelgün</b><br/>
@@ -71,7 +71,7 @@ export default function index() {
                                     frameborder="0" 
                                     allow="autoplay; fullscreen" 
                                     allowfullscreen
-                                    title="Gap Connect"
+                                    title="Gilead Turkey on HIV Tips"
                                 ></iframe>
                                 </div>
                                 <p>
@@ -82,7 +82,7 @@ export default function index() {
                             </div>
                             <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img" alt="backgound element"/>
                         </Col>
-                        <Col sm={6}>
+                        <Col sm={6} id="gap-connect">
                             <div className="yellow-video-block">
                                 <p>
                                     Learn all about the Gilead Advisory Platform, a powerful new Advisory Board connection tool.
