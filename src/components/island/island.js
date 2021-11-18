@@ -15,6 +15,7 @@ import newsletter from "../../anim/newsletter.json";
 import library from "../../anim/library.json";
 import podcastAlley from "../../anim/podcastAlley.json";
 import digitalAdvisoryBoardLab from "../../anim/digitalAdvisoryBoardLab.json";
+import metricsOutpost from "../../anim/metricsOutpost.json";
 
 const Island = () => {
 
@@ -177,6 +178,14 @@ const Island = () => {
 						zoneOutline='adboardlab-halo'
 						info="Visit the Digital Advisory Board Lab, where you can learn all about the virtual innovation that allows users to gain insight from other professionals without geographical or other restrictions."
 						link="/digital-advisory-board-lab/"
+						/>
+						<LottiePlayer 
+						animData={metricsOutpost} 
+						activeZone={true}
+						onclick={zoneZoom}
+						zoneOutline='metrics-halo'
+						info="We often spend a lot of time and effort planning, designing and executing our digital activities. But how do we know if our efforts were fruitful? Was the activity a success? Did it reach its target and goals? This is where metrics come in. Enter here to begin your journey into the world of metrics at Gilead!"
+						link="/metrics-outpost/"
 						/>
 				</div>
 			</div>

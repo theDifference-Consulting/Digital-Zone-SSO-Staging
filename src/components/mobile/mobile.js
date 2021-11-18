@@ -45,6 +45,12 @@ const zones = [
 		link: "/newsletter-depot",
 		image: "newsletter-mobile-bug.svg"
 	},
+	{
+		title: "Metrics Outpost",
+		desc: "We often spend a lot of time and effort planning, designing and executing our digital activities. But how do we know if our efforts were fruitful? Was the activity a success? Did it reach its target and goals? This is where metrics come in. Enter here to begin your journey into the world of metrics at Gilead!",
+		link: "/metrics-outpost",
+		image: "metrics-outpost-mobile.svg"
+	},
 ]
 
 const Content = () => {
