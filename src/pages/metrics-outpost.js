@@ -101,7 +101,7 @@ export default function index() {
                     <img src="../img/metrics-advice-bug.svg" className="bug" alt="lightbulb icon"/>
                     <h2>Advice From Metrics @ Gilead Pros</h2>
                      <Row>
-                     <Col sm={6} className="pros">
+                   {/*  <Col sm={6} className="pros">
                         <div className="headshot-bg">
                             <h3>
                                 Olivia Eckel
@@ -122,8 +122,8 @@ export default function index() {
                             <li>
                             </li>
                         </ol>
-                    </Col>
-                     <Col sm={6} className="pros">
+                    </Col>*/}
+                     <Col md={6} className="pros">
                         <div className="headshot-bg">
                             <h3>
                                 Sivana Koren
@@ -132,6 +132,8 @@ export default function index() {
                             Israel
                             <img src="../img/SivanaKoren-ProfilePicture.jpg" alt="Corinna Oberle, Ph.D headshot"/>
                         </div>
+                        </Col>
+                        <Col md={6}>
                         <ol>
                             <li>
                                 Decide in advance who is the most accurate audience for your newsletter so that you can build content that is interesting for them specifically
