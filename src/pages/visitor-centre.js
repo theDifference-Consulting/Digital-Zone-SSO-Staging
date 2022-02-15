@@ -5,15 +5,13 @@ import { Row, Col, Container } from "react-bootstrap";
 const boardMemberData = [
     { name: "Julie Newman", country: "Australia", email: "julie.newman@gilead.com", img: "../img/Julie_ProfilePic.png" },
     { name: "Ramon Thali", country: "Switzerland", email: "ramon.thali@gilead.com", img: "../img/ramon.jpg" },
-    { name: "Ahmet Yilmaz", country: "Turkey", email: "ahmet.yilmaz1@gilead.com", img: "../img/ahmet.jpg" },
     { name: "Nimesh Vadgama", country: "UK", email: "nimesh.vadgama@gilead.com", img: "../img/nimesh.jpg" },
     { name: "Hassan Aladdin, PhD", country: "Nordics", email: "Hassan.Aladdin@gilead.com", img: "../img/Hassan-Alladin.png" },
     { name: "Cindy Elliott", country: "UK", email: "cindy.elliott@gilead.com", img: "../img/cindy.jpg" },
     { name: "Mario Garcia", country: "Spain", email: "mario.garcia@gilead.com", img: "../img/mario.jpg" },
-    { name: "Joyeta Das", country: "London", email: "joyeta.das@gilead.com", img: "../img/joyeta.jpg" },
-    { name: "Olivier Lada", country: "France", email: "olivier.lada@gilead.com", img: "../img/olivier.jpg" },
     { name: "Tina Raselli", country: "Switzerland", email: "tina.raselli@gilead.com", img: "../img/tina.jpg" },
     { name: "Guillaume Walckenaer", country: "France", email: "Guillaume.Walckenaer@gilead.com", img: "../img/GuillaumeWalckenaer.png" },
+    { name: "Cindy Wanger", country: "Switzerland/Austria", email: "cindy.wanger@gilead.com", img: "../img/Cindy-Wanger.jpg" },
     { name: "Sivana Koren", country: "Israel", email: "sivana.koren@gilead.com", img: "../img/SivanaKoren-ProfilePicture.jpg" }
 ]
 
