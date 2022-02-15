@@ -42,7 +42,6 @@ const championsData = [
     { name: "Thierry Marysael", country: "Belgium", email: "thierry.marysael@gilead.com" },
     { name: "Ramon Thali", country: "Switzerland", email: "ramon.thali@gilead.com" },
     { name: "Hassan Aladdin", country: "Nordics", email: "hassan.aladdin@gilead.com" },
-    { name: "Ahmet Yilmaz", country: "Turkey", email: "ahmet.yilmaz1@gilead.com" },
     { name: "Carla Santos", country: "Portugal", email: "carla.santos@gilead.com" },
     { name: "Igor Vinogradov", country: "Russia", email: "igor.vinogradov@gilead.com" },
     { name: "Howaida Abdelwahab", country: "Middle East", email: "howaida.abdelwahab@gilead.com" }
