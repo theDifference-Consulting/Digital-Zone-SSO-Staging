@@ -165,19 +165,19 @@ textarea, select, input, button { outline: none; }
 /*--------------------*/
 
 .secondary-template header {
-	height:400px;
-    margin-left: -15px;
-    margin-right: -15px;
+  height: 80vh;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .full-width {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-top:20px;
-	margin-bottom: 20px;
-	width: 100vw;
-    margin-left: 50%;
-    transform: translateX(-50%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top:20px;
+  margin-bottom: 20px;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 header > div {
@@ -200,7 +200,7 @@ header > div {
 }
 
 header .heading-cloud-wrapper {
-    height: 400px;
+    height: 80vh;
     position: relative;
 }
 
