@@ -1,3 +1,32 @@
-/*
-something
-*/
+.animated-header {
+  margin-bottom: 80px;
+
+  h4 {
+    background-color: #FFD255;
+    padding: 15px 30px;
+    display:table;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  h4:before {
+    content: '';
+    background-color: #FFD255;
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    right: -15px;
+    bottom: -15px;
+  }
+
+  h4:after {
+    content: '';
+    background-color: #FFD255;
+    width: 22px;
+    height: 28px;
+    position: absolute;
+    left: -13px;
+    top: -8px;
+  }
+}
+

@@ -11,9 +11,13 @@ export default function index() {
             <p class="mb-3">
                 The exciting digital world brings with it expanding channels of engagement with our stakeholders, both internally and externally. As a result, we often spend a lot of time and effort planning, designing and executing our digital activities. But how do we know if our efforts were fruitful? Was the activity a success? Did it reach its target and goals? 
             </p>
-            <p>
-                This is where metrics come in…
-            </p>
+            <h4>
+              This is where metrics come in…
+            </h4>
+          </Container>
+        </Row>
+        <Row className="light-bg section" id="welcome">
+          <Container>
             <AnimatedHeader svg="metrics-welcome-bug" title="Welcome!"/>
             <div className="embed-responsive embed-responsive-16by9">
               <iframe 

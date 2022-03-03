@@ -29,15 +29,15 @@
   border-radius: 4px;
   background-color: #FFD255;
   border:none;
-  padding:6px;
+  padding:16px;
   top: 15px;
   right: 15px;
   z-index: 100000000;
 }
 
 .navbar .navbar-toggler-icon {
-  width:22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
 }
 
 .navbar-collapse.collapse, .navbar-collapse.collapsing {

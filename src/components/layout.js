@@ -12,7 +12,6 @@ import Navbar from "../components/navBar"
 import "animate.css/animate.min.css"
 
 const Layout = ({ pageName, containerClass, activePage, children }) => {
-console.log(pageName)
   return (
     <>
       <Helmet>
@@ -27,17 +26,17 @@ console.log(pageName)
       	<div className={`container-fluid ${containerClass} overflow-hidden`}>
           <Navbar activePage={activePage}/>
           <header>
-            <div className="">
-              <div className="heading-cloud-wrapper">
-                <h1>{pageName}</h1>
-              </div>
+            <div className="heading-cloud-wrapper">
+              <h1>{pageName}</h1>
+              <div class="cloud" style={{ top: 0, right: 0}}></div>
+              <div class="cloud" style={{ left: "3px", top: "calc(50% - 112.02px/2 + 19.01px)"}}></div>
             </div>
           </header>
           {children}
         </div>
         <footer>
           <div className="container">
-          <div className="copyright">©2021 Gilead</div>
+          <div className="copyright">©2022 Gilead</div>
           </div>
         </footer>
         <a href="/" id="back-compass" aria-label="back button">&nbsp;</a>

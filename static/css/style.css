@@ -3,7 +3,7 @@ body, html {
 }
 
 body {
-	background-color: #D0F0EF;
+	background: url('../img/header-water-sprinks.svg') top center #CEEEED no-repeat;
 	color:#474747;
 	font-size: 18px;
 	font-weight: 300;
@@ -153,7 +153,7 @@ textarea, select, input, button { outline: none; }
 /* Color Classes */
 
 .light-bg {
-	background-color: #E1F5F4;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 6.25%);
 }
 
 .yellow-bg {
@@ -165,7 +165,7 @@ textarea, select, input, button { outline: none; }
 /*--------------------*/
 
 .secondary-template header {
-  height: 80vh;
+  height: 75vh;
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -180,7 +180,7 @@ textarea, select, input, button { outline: none; }
   transform: translateX(-50%);
 }
 
-header > div {
+header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom center;
@@ -200,50 +200,53 @@ header > div {
 }
 
 header .heading-cloud-wrapper {
-    height: 80vh;
-    position: relative;
-}
-
-header h1 {
-	background-image: url('../img/h1-cloud-highlight.svg');
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-	display: block;
-	padding:20px 60px 30px 190px;
+	display: flex;
 	position: absolute;
-	right: 15px;
-	bottom:30px;
-	z-index: 1000;
-	margin-left:-175px;
+  right: 85px;
+  top: 507px;
+	width: 437px;
+	height: 156px;
+	justify-content: center;
+	align-items: center;
 }
 
-.secondary-template h2 {
+header .heading-cloud-wrapper h1 {
+	font-size: 38px;
+  line-height: 46px;
 	background-color: #FFD255;
-	padding:10px 8px 0 20px;
-	display:table;
-	margin-bottom: 30px;
-	position: relative;
+	padding: 20px;
+	z-index: 1;
+}
+header .heading-cloud-wrapper h1:before {
+  content: '';
+  background-color: #FFD255;
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  right: 50px;
+  top: 10px;
 }
 
-.secondary-template h2:before {
-	content: '';
-	background-color: #FFD255;
-	width:20px;
-	height:30px;
-	position: absolute;
-	right:-25px;
-	bottom: -15px;
+header .heading-cloud-wrapper h1:after  {
+  content: '';
+  background-color: #FFD255;
+  width: 22px;
+  height: 28px;
+  position: absolute;
+  left: 50px;
+  bottom: 24px;
 }
 
-.secondary-template h2:after {
-	content: '';
-    background-color: #FFD255;
-    width: 22px;
-    height: 28px;
-    position: absolute;
-    left: -13px;
-    top: -8px;
+header .cloud {
+  position: absolute;
+  width: 307.17px;
+  height: 112.02px;
+  right: 0px;
+  top: 0px;
+  border-radius: 80px;
+
+  /* DZ White */
+  background: #F5FFFE;
 }
 
 .secondary-template section,
@@ -256,7 +259,7 @@ header h1 {
 
 
 .secondary-template .bug {
-	height:40px;
+	height:72px;
 	width: auto;
 	float:right;
 }
@@ -285,7 +288,7 @@ footer .copyright {
 /* Podcast Alley */
 
 
-.podcast-alley header > div {
+.podcast-alley header {
 	background-image: url('../img/podcast-alley-header.svg');
 }
 
@@ -380,7 +383,7 @@ footer .copyright {
 
 /* QR Castle */
 
-.qr-castle header > div {
+.qr-castle header {
 	background-image: url('../img/qr-castle-hero.svg');
 }
 
@@ -412,7 +415,7 @@ footer .copyright {
 
 /* News */
 
-.news header > div {
+.news header {
 	background-image: url('../img/news-header.svg');
 }
 
@@ -423,7 +426,7 @@ footer .copyright {
 
 /* Visitor Info */
 
-.visitor-info header > div {
+.visitor-info header {
 	background-image: url('../img/visitor-info.svg');
 }
 
@@ -445,7 +448,7 @@ footer .copyright {
 
 /* Drive-In*/
 
-.drive-in header > div {
+.drive-in header {
 	background-image: url('../img/drive-in-hero.svg');
 }
 
@@ -470,7 +473,7 @@ footer .copyright {
 
 /* Library */
 
-.library header > div {
+.library header {
 	background-image: url('../img/library-hero.svg');
 }
 
@@ -479,7 +482,7 @@ footer .copyright {
 }
 
 /* Newsletter */
-.newsletter header > div {
+.newsletter header {
 	background-image: url('../img/newsletter.svg');
 }
 
@@ -532,13 +535,13 @@ h4.left-arrow {
 	background-size: 40px auto;
 }
 
-.digital-advisory-board-lab header > div {
+.digital-advisory-board-lab header {
 	background-image: url('../img/dab-header.svg');
 }
 
 /*Metrics Outpost*/
 
-.metrics-outpost header > div {
+.metrics-outpost header {
 	background-image: url('../img/metrics-outpost-header.svg');
 	background-position: center;
 }
