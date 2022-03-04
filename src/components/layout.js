@@ -17,7 +17,7 @@ const Layout = ({ pageName, containerClass, activePage, children }) => {
       <Helmet>
         <title>Gilead Digital Zone — {pageName}</title>
         <link rel="stylesheet" type="text/css" href="../css/style.css"/>
-        <link type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,900&display=swap" rel="stylesheet"/>
+        <link type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet"/>
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
@@ -31,13 +31,12 @@ const Layout = ({ pageName, containerClass, activePage, children }) => {
               <div class="cloud" style={{ top: 0, right: 0}}></div>
               <div class="cloud" style={{ left: "3px", top: "calc(50% - 112.02px/2 + 19.01px)"}}></div>
             </div>
+            <div className="header-fade"></div>
           </header>
           {children}
         </div>
-        <footer>
-          <div className="container">
+        <footer className="d-flex justify-content-center align-items-center">
           <div className="copyright">©2022 Gilead</div>
-          </div>
         </footer>
         <a href="/" id="back-compass" aria-label="back button">&nbsp;</a>
       </main>

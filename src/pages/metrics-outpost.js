@@ -2,6 +2,23 @@ import React from "react"
 import Layout from "../components/layout"
 import { Row, Col, Container } from "react-bootstrap"
 import { AnimatedHeader } from "../components/animatedHeader"
+import { AdvicerMessage } from "../components/advicerMessage"
+
+// TODO: I think gatsby allows for a more easy and flexible way of adding info
+
+const advicers = [{
+  img: "../img/SivanaKoren-ProfilePicture.jpg",
+  name: "Sivana Koren",
+  title: "Senior Medical Manager",
+  country: "Israel",
+  messages: [
+    "Decide in advance who is the most accurate audience for your newsletter so that you can build content that is interesting for them specifically",
+    "Find out which days of the week and hours of the day when HCPs are more prone to open e-mails they receive, and aim to send your e-newsletter during those time points.",
+    "Learn what is the benchmark for opening rates of e-mails/e-newsletters coming from pharma, in order to set your expectations and KPIs accordingly",
+    "Before distribution make sure that the metrics of Opening Rates, Opening Times etc. will be available to you after sending the e-newsletters, in order to learn from these analytics and improve in future distributions",
+    "Aim to send your newsletter at consistent intervals, e.g. once a month or once every two months. An audience that is expecting to receive an e-mail is more likely to open it"
+  ]
+}];
 
 export default function index() {
     return (
@@ -103,56 +120,11 @@ export default function index() {
           <Container>
             <AnimatedHeader svg="metrics-advice-bug" title="Advice From Metrics @ Gilead Pros"/>
             <Row>
-              {/*  <Col sm={6} className="pros">
-                  <div className="headshot-bg">
-                      <h3>
-                          Olivia Eckel
-                      </h3>
-                      Product Manager, Anti-infectives<br/>
-                      Australia
-                      <img src="../img/olivia-eckel.jpg" alt="Vincent Lempers headshot"/>
-                  </div>
-                  <ol>
-                      <li>
-                      </li>
-                      <li>
-                      </li>
-                      <li>
-                      </li>
-                      <li>
-                      </li>
-                      <li>
-                      </li>
-                  </ol>
-              </Col>*/}
-              <Col md={6} className="pros">
-                <div className="headshot-bg">
-                    <h3>
-                        Sivana Koren
-                    </h3>
-                    Senior Medical Manager<br/>
-                    Israel
-                    <img src="../img/SivanaKoren-ProfilePicture.jpg" alt="Corinna Oberle, Ph.D headshot"/>
-                </div>
-              </Col>
-              <Col md={6}>
-                <ol>
-                    <li>
-                        Decide in advance who is the most accurate audience for your newsletter so that you can build content that is interesting for them specifically
-                    </li>
-                    <li>
-                        Find out which days of the week and hours of the day when HCPs are more prone to open e-mails they receive, and aim to send your e-newsletter during those time points.
-                    </li>
-                    <li>
-                        Learn what is the benchmark for opening rates of e-mails/e-newsletters coming from pharma, in order to set your expectations and KPIs accordingly
-                    </li>
-                    <li>
-                        Before distribution make sure that the metrics of Opening Rates, Opening Times etc. will be available to you after sending the e-newsletters, in order to learn from these analytics and improve in future distributions
-                    </li>
-                    <li>
-                        Aim to send your newsletter at consistent intervals, e.g. once a month or once every two months. An audience that is expecting to receive an e-mail is more likely to open it                            </li>
-                </ol>
-              </Col>
+              { advicers.map((advicer) => (
+                <Col md={4} className="pros">
+                  <AdvicerMessage advicer={advicer} />
+                </Col>
+              ))} 
             </Row>
           </Container>
         </Row>

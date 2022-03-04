@@ -5,8 +5,8 @@ body, html {
 body {
 	background: url('../img/header-water-sprinks.svg') top center #CEEEED no-repeat;
 	color:#474747;
-	font-size: 18px;
-	font-weight: 300;
+	font-size: 16px;
+	font-weight: 400;
 	font-family: 'Lato', sans-serif;
 	position: relative;
 }
@@ -184,6 +184,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom center;
+	position: relative;
 }
 
 @media (min-width: 1200px) {
@@ -249,6 +250,14 @@ header .cloud {
   background: #F5FFFE;
 }
 
+.header-fade {
+  position: absolute;
+  width: 100%;
+  height: 35vh;
+  background: transparent url('../img/header-fade.svg') no-repeat top center;
+  bottom: 0;
+}
+
 .secondary-template section,
 .secondary-template .section  {
 	margin-bottom:80px;
@@ -257,6 +266,10 @@ header .cloud {
 	position: relative;
 }
 
+.secondary-template section,
+.secondary-template .section:last-child  {
+	margin-bottom: 0;
+}
 
 .secondary-template .bug {
 	height:72px;
@@ -265,20 +278,9 @@ header .cloud {
 }
 
 footer {
-	background-color:#FFD255;
-	padding-bottom:10px;
-	text-align: center;
-	margin-top: 60px;
-}
-
-footer .row  div {
+	background: url('../img/footer-water-sprinks.svg') top center #FFD255 no-repeat;
+	height: 148px;
 	font-size: 20px;
-	font-weight: 900;
-}
-
-footer .copyright {
-	text-align: center;
-	padding-top: 40px;
 }
 
 /*-----------------------*/
@@ -544,4 +546,5 @@ h4.left-arrow {
 .metrics-outpost header {
 	background-image: url('../img/metrics-outpost-header.svg');
 	background-position: center;
+	background-size: auto; /* TODO: maybe make the same for all landing bgs */
 }

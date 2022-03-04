@@ -16,7 +16,7 @@ export const AnimatedHeader = ({ svg, title, ...props }) => (
 )
 
 AnimatedHeader.propTypes = {
-  svg: PropTypes.string,
-  title: PropTypes.string
+  svg: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
 }
 
