@@ -23,7 +23,7 @@ const advicers = [{
 export default function index() {
     return (
       <Layout pageName="Metrics Outpost" activePage='metrics-outpost' containerClass="metrics-outpost">
-        <Row className="light-bg section" id="welcome">
+        <Row className="section" id="welcome">
           <Container>
             <p class="mb-3">
                 The exciting digital world brings with it expanding channels of engagement with our stakeholders, both internally and externally. As a result, we often spend a lot of time and effort planning, designing and executing our digital activities. But how do we know if our efforts were fruitful? Was the activity a success? Did it reach its target and goals? 
@@ -121,7 +121,7 @@ export default function index() {
             <AnimatedHeader svg="metrics-advice-bug" title="Advice From Metrics @ Gilead Pros"/>
             <Row>
               { advicers.map((advicer) => (
-                <Col md={4} className="pros">
+                <Col md={4} sm={12} className="pros">
                   <AdvicerMessage advicer={advicer} />
                 </Col>
               ))} 

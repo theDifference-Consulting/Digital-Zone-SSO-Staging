@@ -203,7 +203,7 @@ header {
 header .heading-cloud-wrapper {
 	display: flex;
 	position: absolute;
-  right: 85px;
+  right: 0;
   top: 507px;
 	width: 437px;
 	height: 156px;
@@ -211,12 +211,18 @@ header .heading-cloud-wrapper {
 	align-items: center;
 }
 
+@media (min-width: 600px) {
+  header .heading-cloud-wrapper {
+    right: 85px;
+  }
+}
+
 header .heading-cloud-wrapper h1 {
 	font-size: 38px;
   line-height: 46px;
 	background-color: #FFD255;
 	padding: 20px;
-	z-index: 1;
+	z-index: 2;
 }
 header .heading-cloud-wrapper h1:before {
   content: '';
@@ -245,9 +251,8 @@ header .cloud {
   right: 0px;
   top: 0px;
   border-radius: 80px;
-
-  /* DZ White */
   background: #F5FFFE;
+  z-index: 1;
 }
 
 .header-fade {
