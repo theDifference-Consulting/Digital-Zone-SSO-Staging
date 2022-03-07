@@ -186,8 +186,8 @@ textarea, select, input, button { outline: none; }
 header .heading-cloud-wrapper {
 	display: flex;
 	position: absolute;
-  right: -75px;
-  bottom: 30px;
+  right: -95px;
+  bottom: 0;
 	width: 437px;
 	height: 156px;
 	justify-content: center;
@@ -197,6 +197,7 @@ header .heading-cloud-wrapper {
 @media (min-width: 600px) {
   header .heading-cloud-wrapper {
     right: calc(10vw - 85px);
+    bottom: 30px;
   }
 }
 
@@ -247,8 +248,8 @@ header .cloud {
   bottom: 0;
 }
 
-.secondary-template section,
-.secondary-template .section  {
+.secondary-template section + section,
+.secondary-template .section + .section  {
 	margin-left: -0.75rem;
 	margin-right: -0.75rem;
 	padding-top: 50px;
@@ -256,7 +257,13 @@ header .cloud {
 	position: relative;
 }
 
-.secondary-template .section:last-child  {
+.secondary-template section,
+.secondary-template .section {
+	padding-bottom: 60px;
+}
+
+.secondary-template section:last-child,
+.secondary-template .section:last-child {
 	padding-bottom: 0;
 }
 
