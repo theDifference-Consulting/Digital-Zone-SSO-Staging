@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import Navbar from "../components/navBar"
 import "animate.css/animate.min.css"
+import { Container, Row } from "react-bootstrap"
 
 const Layout = ({ pageName, containerClass, activePage, children }) => {
   return (
@@ -23,18 +24,22 @@ const Layout = ({ pageName, containerClass, activePage, children }) => {
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
       </Helmet>
       <main className="secondary-template">
-      	<div className={`container-fluid ${containerClass} overflow-hidden`}>
-          <Navbar activePage={activePage}/>
+      	<Container fluid className={`${containerClass} overflow-hidden`}>
+          <Row>
+            <Navbar activePage={activePage}/>
+          </Row>
+          <Row>
           <header>
             <div className="heading-cloud-wrapper">
               <h1>{pageName}</h1>
-              <div class="cloud" style={{ top: 0, right: 0}}></div>
-              <div class="cloud" style={{ left: "3px", top: "calc(50% - 112.02px/2 + 19.01px)"}}></div>
+              <div class="cloud" style={{ top: 0, right: "85px"}}></div>
+              <div class="cloud" style={{ left: "-70px", top: "calc(50% - 112.02px/2 + 19.01px)"}}></div>
             </div>
             <div className="header-fade"></div>
           </header>
+          </Row>
           {children}
-        </div>
+        </Container>
         <footer className="d-flex justify-content-center align-items-center">
           <div className="copyright">©2022 Gilead</div>
         </footer>

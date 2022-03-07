@@ -1,4 +1,7 @@
+$bug-overflow: 8px;
+
 .animated-header {
+  margin-top: $bug-overflow;
   margin-bottom: 80px;
 
   h4 {
@@ -26,7 +29,7 @@
     height: 28px;
     position: absolute;
     left: -13px;
-    top: -8px;
+    top: - $bug-overflow;
   }
 }
 

@@ -166,8 +166,11 @@ textarea, select, input, button { outline: none; }
 
 .secondary-template header {
   height: 75vh;
-  margin-left: -15px;
-  margin-right: -15px;
+	position: relative;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
 }
 
 .full-width {
@@ -180,40 +183,20 @@ textarea, select, input, button { outline: none; }
   transform: translateX(-50%);
 }
 
-header {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: bottom center;
-	position: relative;
-}
-
-@media (min-width: 1200px) {
-		header .container {
-		background-size: 900px;
-	}
-}
-
-@media (max-width: 768px) {
-	header .container {
-		margin-right: -15px;
-		margin-left: -15px;
-	}
-}
-
 header .heading-cloud-wrapper {
 	display: flex;
 	position: absolute;
-  right: 0;
-  top: 507px;
+  right: -85px;
+  bottom: 30px;
 	width: 437px;
 	height: 156px;
 	justify-content: center;
 	align-items: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   header .heading-cloud-wrapper {
-    right: 85px;
+    right: 0;
   }
 }
 
@@ -223,14 +206,16 @@ header .heading-cloud-wrapper h1 {
 	background-color: #FFD255;
 	padding: 20px;
 	z-index: 2;
+	margin-left: -140px;
 }
+
 header .heading-cloud-wrapper h1:before {
   content: '';
   background-color: #FFD255;
   width: 20px;
   height: 30px;
   position: absolute;
-  right: 50px;
+  right: 135px;
   top: 10px;
 }
 
@@ -240,7 +225,7 @@ header .heading-cloud-wrapper h1:after  {
   width: 22px;
   height: 28px;
   position: absolute;
-  left: 50px;
+  left: 0;
   bottom: 24px;
 }
 
@@ -248,7 +233,6 @@ header .cloud {
   position: absolute;
   width: 307.17px;
   height: 112.02px;
-  right: 0px;
   top: 0px;
   border-radius: 80px;
   background: #F5FFFE;
@@ -265,9 +249,8 @@ header .cloud {
 
 .secondary-template section,
 .secondary-template .section  {
-	margin-bottom:80px;
-	padding-top:60px;
-	padding-bottom: 60px;
+	padding-top: 50px;
+	padding-bottom: 100px;
 	position: relative;
 }
 
@@ -460,7 +443,7 @@ footer {
 }
 
 .embed-responsive {
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 }
 
 .margin-top-md {
