@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import {Modal} from 'react-bootstrap'
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Modal } from 'react-bootstrap'
 
 	function linkCheck(linkHref, text) {
 		if (linkHref) {

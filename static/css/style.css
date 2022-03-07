@@ -186,7 +186,7 @@ textarea, select, input, button { outline: none; }
 header .heading-cloud-wrapper {
 	display: flex;
 	position: absolute;
-  right: -85px;
+  right: -75px;
   bottom: 30px;
 	width: 437px;
 	height: 156px;
@@ -194,9 +194,9 @@ header .heading-cloud-wrapper {
 	align-items: center;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   header .heading-cloud-wrapper {
-    right: 0;
+    right: calc(10vw - 85px);
   }
 }
 
@@ -249,14 +249,15 @@ header .cloud {
 
 .secondary-template section,
 .secondary-template .section  {
+	margin-left: -0.75rem;
+	margin-right: -0.75rem;
 	padding-top: 50px;
 	padding-bottom: 100px;
 	position: relative;
 }
 
-.secondary-template section,
 .secondary-template .section:last-child  {
-	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 .secondary-template .bug {
@@ -442,8 +443,10 @@ footer {
 	background-image: url('../img/drive-in-hero.svg');
 }
 
-.embed-responsive {
-	/*margin-bottom: 30px;*/
+@media (max-width: 576px) {
+  .ratio {
+    margin-bottom: 30px;
+  }
 }
 
 .margin-top-md {

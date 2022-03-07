@@ -25,14 +25,14 @@
   display: block;
   position: absolute;
   top: 77px;
-  right: 107px;
+  right: 10vw;
   border-radius: 8px;
   background-color: #FFD255;
   border:none;
   padding:16px;
   z-index: 1;
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     top: 20px;
     right: 20px;
   }

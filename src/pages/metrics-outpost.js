@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import { Row, Col, Container } from "react-bootstrap"
 import { AnimatedHeader } from "../components/animatedHeader"
 import { AdvicerMessage } from "../components/advicerMessage"
+import { Section } from "../components/section"
 
 // TODO: I think gatsby allows for a more easy and flexible way of adding info
 
@@ -23,7 +24,7 @@ const advicers = [{
 export default function index() {
     return (
       <Layout pageName="Metrics Outpost" activePage='metrics-outpost' containerClass="metrics-outpost">
-        <Row className="section" id="welcome">
+        <Section>
           <Container>
             <p class="mb-3">
                 The exciting digital world brings with it expanding channels of engagement with our stakeholders, both internally and externally. As a result, we often spend a lot of time and effort planning, designing and executing our digital activities. But how do we know if our efforts were fruitful? Was the activity a success? Did it reach its target and goals? 
@@ -32,16 +33,13 @@ export default function index() {
               This is where metrics come in…
             </h4>
           </Container>
-        </Row>
-        <Row className="light-bg section" id="welcome">
+        </Section>
+        <Section light>
           <Container>
             <AnimatedHeader svg="metrics-welcome-bug" title="Welcome!"/>
-            <div className="embed-responsive embed-responsive-16by9">
+            <div className="ratio ratio-16x9">
               <iframe 
-                  className="embed-responsive-item" 
                   src="https://player.vimeo.com/video/646652856" 
-                  width="640" 
-                  height="360" 
                   frameBorder="0" 
                   allow="fullscreen" 
                   allowFullScreen
@@ -49,8 +47,8 @@ export default function index() {
               ></iframe>
             </div>
           </Container>
-        </Row>
-        <Row className="light-bg section" id="">
+        </Section>
+        <Section light>
           <Container>
             <AnimatedHeader svg="metrics-info-bug" title="What are Metrics?"/>
             <p> 
@@ -76,12 +74,9 @@ export default function index() {
             </p>
             <Row>
                 <Col sm={6}>
-                    <div className="embed-responsive embed-responsive-16by9">
+                    <div className="ratio ratio-16x9">
                         <iframe 
-                            className="embed-responsive-item" 
                             src="https://player.vimeo.com/video/646642479" 
-                            width="640" 
-                            height="360" 
                             frameBorder="0" 
                             allow="fullscreen" 
                             allowFullScreen
@@ -90,12 +85,9 @@ export default function index() {
                     </div>
                 </Col>
                 <Col sm={6}>
-                    <div className="embed-responsive embed-responsive-16by9">
+                    <div className="ratio ratio-16x9">
                         <iframe 
-                            className="embed-responsive-item" 
                             src="https://player.vimeo.com/video/646671611" 
-                            width="640" 
-                            height="360" 
                             frameBorder="0" 
                             allow="fullscreen" 
                             allowFullScreen
@@ -115,19 +107,19 @@ export default function index() {
                 Talk to your Commercial Operations colleagues today and find out what tools are available to you. If you have a good enough understanding of your goals and the metrics that will define your performance, then choosing the right tools will be much easier.
             </p>
           </Container>
-        </Row>
-        <Row className="light-bg section" id="">
+        </Section>
+        <Section light>
           <Container>
             <AnimatedHeader svg="metrics-advice-bug" title="Advice From Metrics @ Gilead Pros"/>
             <Row>
               { advicers.map((advicer) => (
-                <Col md={4} sm={12} className="pros">
+                <Col md={6} lg={4} sm={12} className="pros">
                   <AdvicerMessage advicer={advicer} />
                 </Col>
               ))} 
             </Row>
           </Container>
-        </Row>
+        </Section>
       </Layout>
     )
 }
