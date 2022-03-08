@@ -8,7 +8,7 @@ import { Section } from "../components/section"
 // TODO: I think gatsby allows for a more easy and flexible way of adding info
 
 const advicers = [{
-  img: "../img/SivanaKoren-ProfilePicture.jpg",
+  img: "../img/SivanaKoren-ProfilePicture",
   name: "Sivana Koren",
   title: "Senior Medical Manager",
   country: "Israel",
@@ -26,7 +26,7 @@ export default function index() {
       <Layout pageName="Metrics Outpost" activePage='metrics-outpost' containerClass="metrics-outpost">
         <Section>
           <Container>
-            <p class="mb-3">
+            <p className="mb-3">
                 The exciting digital world brings with it expanding channels of engagement with our stakeholders, both internally and externally. As a result, we often spend a lot of time and effort planning, designing and executing our digital activities. But how do we know if our efforts were fruitful? Was the activity a success? Did it reach its target and goals? 
             </p>
             <h4>
@@ -36,7 +36,7 @@ export default function index() {
         </Section>
         <Section light>
           <Container>
-            <AnimatedHeader svg="metrics-welcome-bug" title="Welcome!"/>
+            <AnimatedHeader svg="metrics-welcome-icon" title="Welcome!"/>
             <div className="ratio ratio-16x9">
               <iframe 
                   src="https://player.vimeo.com/video/646652856" 
@@ -50,7 +50,7 @@ export default function index() {
         </Section>
         <Section light>
           <Container>
-            <AnimatedHeader svg="metrics-info-bug" title="What are Metrics?"/>
+            <AnimatedHeader svg="metrics-info-icon" title="What are Metrics?"/>
             <p> 
                 Whether it is web social media, apps, podcasts or other digital channels, metrics are values that help us measure, track, report and improve the performance of our digital activities.
             </p>
@@ -66,12 +66,12 @@ export default function index() {
             </p>
             <p>
               As an example, important metrics to understand website performance include:
-              <ul>
-                <li>Overall site traffic – how many unique visitors per week/month</li>
-                <li>Bounce rate – how often are visitors immediately leaving or “bouncing” away from your website</li>
-                <li>Page visits - how many pages do visitors view before they leave your site.</li>
-              </ul>
             </p>
+            <ul>
+              <li>Overall site traffic – how many unique visitors per week/month</li>
+              <li>Bounce rate – how often are visitors immediately leaving or “bouncing” away from your website</li>
+              <li>Page visits - how many pages do visitors view before they leave your site.</li>
+            </ul>
             <Row>
                 <Col sm={6}>
                     <div className="ratio ratio-16x9">
@@ -110,10 +110,10 @@ export default function index() {
         </Section>
         <Section light>
           <Container>
-            <AnimatedHeader svg="metrics-advice-bug" title="Advice From Metrics @ Gilead Pros"/>
+            <AnimatedHeader svg="metrics-advice-icon" title="Advice From Metrics @ Gilead Pros"/>
             <Row>
               { advicers.map((advicer) => (
-                <Col md={6} lg={4} sm={12} className="pros">
+                <Col md={6} lg={4} sm={12} className="p-0" key={advicer.name}>
                   <AdvicerMessage advicer={advicer} />
                 </Col>
               ))} 

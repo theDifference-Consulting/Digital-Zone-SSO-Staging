@@ -95,14 +95,11 @@ ul.triangle li:before {
 }
 
 #back-compass {
-	background-image: url('../img/compass-back-mini.svg');
-	background-repeat: no-repeat;
-	background-size: contain;
-    width: 70px;
-    height: 76px;
-    position: fixed;
-    bottom: 9px;
-    right: 15px;
+  width: 125px;
+  height: 125px;
+  position: fixed;
+  bottom: 40px;
+  right: 70px;
 }
 
 @media (max-width: 1340px) {
@@ -202,6 +199,7 @@ header .heading-cloud-wrapper {
 }
 
 header .heading-cloud-wrapper h1 {
+	position: relative;
 	font-size: 38px;
   line-height: 46px;
 	background-color: #FFD255;
@@ -210,34 +208,23 @@ header .heading-cloud-wrapper h1 {
 	margin-left: -140px;
 }
 
-header .heading-cloud-wrapper h1:before {
-  content: '';
-  background-color: #FFD255;
-  width: 20px;
-  height: 30px;
-  position: absolute;
-  right: 135px;
-  top: 10px;
-}
-
-header .heading-cloud-wrapper h1:after  {
-  content: '';
-  background-color: #FFD255;
-  width: 22px;
-  height: 28px;
-  position: absolute;
-  left: 0;
-  bottom: 24px;
-}
-
 header .cloud {
   position: absolute;
   width: 307.17px;
   height: 112.02px;
-  top: 0px;
   border-radius: 80px;
   background: #F5FFFE;
   z-index: 1;
+}
+
+header .heading__down-tag {
+  position: absolute;
+  left: 15px;
+  top: 100%;
+  margin-top: 5px;
+  height: 100px;
+  width: 50px;
+  background: url('../img/header-down-tag.svg') transparent left top no-repeat;
 }
 
 .header-fade {
@@ -248,11 +235,16 @@ header .cloud {
   bottom: 0;
 }
 
+
+.secondary-template section,
+.secondary-template .section  {
+	padding-top: 50px;
+}
+
 .secondary-template section + section,
 .secondary-template .section + .section  {
 	margin-left: -0.75rem;
 	margin-right: -0.75rem;
-	padding-top: 50px;
 	padding-bottom: 100px;
 	position: relative;
 }
@@ -360,23 +352,6 @@ footer {
 
 .podcast-alley .dark-bg {
 	background-color: #8E9E9E;
-}
-
-.headshot-bg {
-	background-color:#FFD255;
-	text-align: center;
-	background-image: url('../img/headshot-bottom-bg.svg');
-	background-position: bottom;
-	background-size: contain;
-	background-repeat: no-repeat;
-	padding:30px 20px 10px 20px;
-}
-
-.headshot-bg img {
-	width: 75%;
-	height:auto;
-	display: block;
-	margin:15px auto;
 }
 
 /* QR Castle */
