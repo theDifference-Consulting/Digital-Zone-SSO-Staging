@@ -10,8 +10,8 @@ const LottiePlayer = (props) => {
     animData = {},
   } = props;
   const [defaultOptions, setDefaultOptions] = useState({})
-  const [isStopped, setIsStopped] = useState(!!playOnHover)
   const isStopping = useRef(false)
+  const [direction, setDirection] = useState(1);
 
   useEffect(() => {
     setDefaultOptions({
@@ -27,7 +27,7 @@ const LottiePlayer = (props) => {
   const tryToStop = useCallback(() => {
     if (isStopping.current) {
       console.log("stopped")
-      setIsStopped(true)
+      setDirection(-1)
       isStopping.current = false
     }
   }, [])
@@ -36,7 +36,7 @@ const LottiePlayer = (props) => {
     if (playOnHover) {
       console.log("playing")
       isStopping.current = false
-      setIsStopped(false)
+      setDirection(1)
     }
   }, [playOnHover])
 
@@ -44,7 +44,7 @@ const LottiePlayer = (props) => {
     if (playOnHover) {
       if (!isStopping.current) {
         isStopping.current = true
-        setTimeout(tryToStop, 500)
+        setTimeout(tryToStop, 100)
       }
     }
   }, [playOnHover, tryToStop])
@@ -64,8 +64,8 @@ const LottiePlayer = (props) => {
       onTouchEnd={() => mouseOut()}
       >
       <Lottie
+        direction={direction}
         options={defaultOptions} 
-        isStopped={isStopped}
         height={'100%'}
         width={'100%'}
         />
