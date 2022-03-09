@@ -1,13 +1,14 @@
 import React, {useState, useEffect, useCallback, useRef} from 'react'
 import Lottie from 'react-lottie'
 
-const LottiePlayer = ({
+const LottiePlayer = (props) => {
+  const {
     activeZone,
     noloop = false,
     playOnHover = false,
     onclick = () => {},
     animData = {},
-  }) => {
+  } = props;
   const [defaultOptions, setDefaultOptions] = useState({})
   const [isStopped, setIsStopped] = useState(!!playOnHover)
   const isStopping = useRef(false)
@@ -21,7 +22,7 @@ const LottiePlayer = ({
       }
     })
 
-  }, [animData, playOnHover])
+  }, [animData, playOnHover, noloop])
 
   const tryToStop = useCallback(() => {
     if (isStopping.current) {
@@ -29,7 +30,7 @@ const LottiePlayer = ({
       setIsStopped(true)
       isStopping.current = false
     }
-  }, [isStopped])
+  }, [])
 
   const mouseOver = useCallback(() => {
     if (playOnHover) {
@@ -46,15 +47,15 @@ const LottiePlayer = ({
         setTimeout(tryToStop, 500)
       }
     }
-  }, [playOnHover])
+  }, [playOnHover, tryToStop])
 
   return (
     <div 
       role="button"
       tabIndex={0}
       className={activeZone ? "active-zone anim" : "anim"}
-      onClick={() => onclick()}
-      onKeyDown={() => onclick()}
+      onClick={() => props.onclick()}
+      onKeyDown={() => props.onclick()}
       onTouchStart={() => mouseOver()}
       onMouseOver={() => mouseOver()}
       onFocus={() => mouseOver()}
