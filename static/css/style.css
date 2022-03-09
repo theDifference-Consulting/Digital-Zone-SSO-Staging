@@ -3,10 +3,10 @@ body, html {
 }
 
 body {
-	background: url('../img/header-water-sprinks.svg') top center #CEEEED no-repeat;
+	background-color: #D0F0EF;
 	color:#474747;
-	font-size: 16px;
-	font-weight: 400;
+	font-size: 18px;
+	font-weight: 300;
 	font-family: 'Lato', sans-serif;
 	position: relative;
 }
@@ -95,11 +95,14 @@ ul.triangle li:before {
 }
 
 #back-compass {
-  width: 125px;
-  height: 125px;
-  position: fixed;
-  bottom: 40px;
-  right: 70px;
+	background-image: url('../img/compass-back-mini.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+    width: 70px;
+    height: 76px;
+    position: fixed;
+    bottom: 9px;
+    right: 15px;
 }
 
 @media (max-width: 1340px) {
@@ -150,7 +153,7 @@ textarea, select, input, button { outline: none; }
 /* Color Classes */
 
 .light-bg {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 6.25%);
+	background-color: #E1F5F4;
 }
 
 .yellow-bg {
@@ -162,113 +165,117 @@ textarea, select, input, button { outline: none; }
 /*--------------------*/
 
 .secondary-template header {
-  height: 75vh;
-	position: relative;
-	width: 100%;
+	height:400px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.full-width {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top:20px;
+	margin-bottom: 20px;
+	width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+header > div {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom center;
 }
 
-.full-width {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-top:20px;
-  margin-bottom: 20px;
-  width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
+@media (min-width: 1200px) {
+		header .container {
+		background-size: 900px;
+	}
+}
+
+@media (max-width: 768px) {
+	header .container {
+		margin-right: -15px;
+		margin-left: -15px;
+	}
 }
 
 header .heading-cloud-wrapper {
-	display: flex;
+    height: 400px;
+    position: relative;
+}
+
+header h1 {
+	background-image: url('../img/h1-cloud-highlight.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	display: block;
+	padding:20px 60px 30px 190px;
 	position: absolute;
-  right: -95px;
-  bottom: 0;
-	width: 437px;
-	height: 156px;
-	justify-content: center;
-	align-items: center;
+	right: 15px;
+	bottom:30px;
+	z-index: 1000;
+	margin-left:-175px;
 }
 
-@media (min-width: 600px) {
-  header .heading-cloud-wrapper {
-    right: calc(10vw - 85px);
-    bottom: 30px;
-  }
-}
-
-header .heading-cloud-wrapper h1 {
-	position: relative;
-	font-size: 38px;
-  line-height: 46px;
+.secondary-template h2 {
 	background-color: #FFD255;
-	padding: 20px;
-	z-index: 2;
-	margin-left: -140px;
+	padding:10px 8px 0 20px;
+	display:table;
+	margin-bottom: 30px;
+	position: relative;
 }
 
-header .cloud {
-  position: absolute;
-  width: 307.17px;
-  height: 112.02px;
-  border-radius: 80px;
-  background: #F5FFFE;
-  z-index: 1;
+.secondary-template h2:before {
+	content: '';
+	background-color: #FFD255;
+	width:20px;
+	height:30px;
+	position: absolute;
+	right:-25px;
+	bottom: -15px;
 }
 
-header .heading__down-tag {
-  position: absolute;
-  left: 15px;
-  top: 100%;
-  margin-top: 5px;
-  height: 100px;
-  width: 50px;
-  background: url('../img/header-down-tag.svg') transparent left top no-repeat;
+.secondary-template h2:after {
+	content: '';
+    background-color: #FFD255;
+    width: 22px;
+    height: 28px;
+    position: absolute;
+    left: -13px;
+    top: -8px;
 }
-
-.header-fade {
-  position: absolute;
-  width: 100%;
-  height: 35vh;
-  background: transparent url('../img/header-fade.svg') no-repeat top center;
-  bottom: 0;
-}
-
 
 .secondary-template section,
 .secondary-template .section  {
-	padding-top: 50px;
-}
-
-.secondary-template section + section,
-.secondary-template .section + .section  {
-	margin-left: -0.75rem;
-	margin-right: -0.75rem;
-	padding-bottom: 100px;
+	margin-bottom:80px;
+	padding-top:60px;
+	padding-bottom: 60px;
 	position: relative;
 }
 
-.secondary-template section,
-.secondary-template .section {
-	padding-bottom: 60px;
-}
-
-.secondary-template section:last-child,
-.secondary-template .section:last-child {
-	padding-bottom: 0;
-}
 
 .secondary-template .bug {
-	height:72px;
+	height:40px;
 	width: auto;
 	float:right;
 }
 
 footer {
-	background: url('../img/footer-water-sprinks.svg') top center #FFD255 no-repeat;
-	height: 148px;
+	background-color:#FFD255;
+	padding-bottom:10px;
+	text-align: center;
+	margin-top: 60px;
+}
+
+footer .row  div {
 	font-size: 20px;
+	font-weight: 900;
+}
+
+footer .copyright {
+	text-align: center;
+	padding-top: 40px;
 }
 
 /*-----------------------*/
@@ -278,7 +285,7 @@ footer {
 /* Podcast Alley */
 
 
-.podcast-alley header {
+.podcast-alley header > div {
 	background-image: url('../img/podcast-alley-header.svg');
 }
 
@@ -354,9 +361,26 @@ footer {
 	background-color: #8E9E9E;
 }
 
+.headshot-bg {
+	background-color:#FFD255;
+	text-align: center;
+	background-image: url('../img/headshot-bottom-bg.svg');
+	background-position: bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding:30px 20px 10px 20px;
+}
+
+.headshot-bg img {
+	width: 75%;
+	height:auto;
+	display: block;
+	margin:15px auto;
+}
+
 /* QR Castle */
 
-.qr-castle header {
+.qr-castle header > div {
 	background-image: url('../img/qr-castle-hero.svg');
 }
 
@@ -388,7 +412,7 @@ footer {
 
 /* News */
 
-.news header {
+.news header > div {
 	background-image: url('../img/news-header.svg');
 }
 
@@ -399,7 +423,7 @@ footer {
 
 /* Visitor Info */
 
-.visitor-info header {
+.visitor-info header > div {
 	background-image: url('../img/visitor-info.svg');
 }
 
@@ -421,14 +445,12 @@ footer {
 
 /* Drive-In*/
 
-.drive-in header {
+.drive-in header > div {
 	background-image: url('../img/drive-in-hero.svg');
 }
 
-@media (max-width: 576px) {
-  .ratio {
-    margin-bottom: 30px;
-  }
+.embed-responsive {
+	margin-bottom: 30px;
 }
 
 .margin-top-md {
@@ -448,7 +470,7 @@ footer {
 
 /* Library */
 
-.library header {
+.library header > div {
 	background-image: url('../img/library-hero.svg');
 }
 
@@ -457,7 +479,7 @@ footer {
 }
 
 /* Newsletter */
-.newsletter header {
+.newsletter header > div {
 	background-image: url('../img/newsletter.svg');
 }
 
@@ -510,14 +532,13 @@ h4.left-arrow {
 	background-size: 40px auto;
 }
 
-.digital-advisory-board-lab header {
+.digital-advisory-board-lab header > div {
 	background-image: url('../img/dab-header.svg');
 }
 
 /*Metrics Outpost*/
 
-.metrics-outpost header {
+.metrics-outpost header > div {
 	background-image: url('../img/metrics-outpost-header.svg');
 	background-position: center;
-	background-size: auto; /* TODO: maybe make the same for all landing bgs */
 }

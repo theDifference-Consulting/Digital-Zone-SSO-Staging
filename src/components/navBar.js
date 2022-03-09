@@ -1,10 +1,10 @@
 import React from "react";  
 import { Navbar, Nav } from "react-bootstrap";
-import "./navBar.scss";
+import "./navBar.css";
 
 const CustomNavbar = ({ pageInfo, ...props }) => {
   return (
-    <Navbar className="dg-navbar" expand="xs">
+    <Navbar expand="xs">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav activeKey={props.activePage}>

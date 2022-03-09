@@ -1,55 +1,31 @@
-import React, {useState, useEffect, useCallback} from 'react'
+import React, {useState, useEffect} from 'react'
 import Lottie from 'react-lottie';
 
-const LottiePlayer = ({
-    activeZone,
-    playOnHover = false,
-    onclick = () => {},
-    animData = {},
-  }) => {
+const LottiePlayer = (props) => {
   const [defaultOptions, setDefaultOptions] = useState({});
-  const [isPaused, setIsPaused] = useState(!!playOnHover);
 
   useEffect(() => {
     setDefaultOptions({
       loop: true,
-      animationData: animData,
+      autoplay: true,
+      animationData: props.animData,
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice'
       }
     })
 
-  }, [animData, playOnHover])
-
-  const mouseOver = useCallback(() => {
-    if (playOnHover) {
-      setIsPaused(false);
-    }
-  }, [playOnHover])
-
-  const mouseOut = useCallback(() => {
-    if (playOnHover) {
-      setIsPaused(true);
-    }
-  }, [playOnHover])
+  }, [props.animData])
 
   return (
     <div 
       role="button"
       tabIndex={0}
-      className={activeZone ? "active-zone anim" : "anim"}
-      onClick={() => onclick()}
-      onKeyDown={() => onclick()}
-      onTouchStart={() => mouseOver()}
-      onMouseOver={() => mouseOver()}
-      onFocus={() => mouseOver()}
-      onMouseOut={() => mouseOut()}
-      onBlur={() => mouseOut()}
-      onTouchEnd={() => mouseOut()}
+      className={props.activeZone ? "active-zone anim" : "anim"}
+      onClick={() => props.onclick()}
+      onKeyDown={() => props.onclick()}
       >
       <Lottie
         options={defaultOptions} 
-        isPaused={isPaused}
         height={'100%'}
         width={'100%'}
         />
