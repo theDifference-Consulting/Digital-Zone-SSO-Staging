@@ -37,15 +37,17 @@ export default function index() {
         <Section light>
           <Container>
             <AnimatedHeader svg="metrics-welcome-icon" title="Welcome!"/>
-            <div className="ratio ratio-16x9">
-              <iframe 
-                  src="https://player.vimeo.com/video/646652856" 
-                  frameBorder="0" 
-                  allow="fullscreen" 
-                  allowFullScreen
-                  title="Metrics Outpost Welcome" 
-              ></iframe>
-            </div>
+            <Row className="video-container">
+              <div className="ratio ratio-16x9">
+                <iframe 
+                    src="https://player.vimeo.com/video/646652856" 
+                    frameBorder="0" 
+                    allow="fullscreen" 
+                    allowFullScreen
+                    title="Metrics Outpost Welcome" 
+                ></iframe>
+              </div>
+            </Row>
           </Container>
         </Section>
         <Section light>
@@ -57,6 +59,19 @@ export default function index() {
             <p>
                 Metrics are often referred to as Key Performance Indicators (KPIs), but there is a difference. A metric is a number, where a KPI is the meaning of that number. A KPI includes insights. It is an interpretation of the data. To determine a KPI, it is useful to compare the actual value of the metric you are tracking with the average value for that certain activity in the industry. This helps you understand what success looks like.
             </p>
+            <Row className="video-container">
+              <Col md={{ span: 8, offset: 2 }}>
+                <div className="ratio ratio-16x9">
+                  <iframe 
+                      src="https://player.vimeo.com/video/646642479" 
+                      frameBorder="0" 
+                      allow="fullscreen" 
+                      allowFullScreen
+                      title="Metrics Case Study: Highlights Video" 
+                  ></iframe>
+                </div>
+              </Col>
+            </Row>
             <h3 className="mt-5">Choosing the Best Digital Metrics for your Project</h3>
             <p>
                 Different digital channels and tools have different metrics, and it’s important to identify which metrics are most important to track for any given project. The metrics you choose should help you make more informed decisions to continuously improve performance.
@@ -72,29 +87,18 @@ export default function index() {
               <li>Bounce rate – how often are visitors immediately leaving or “bouncing” away from your website</li>
               <li>Page visits - how many pages do visitors view before they leave your site.</li>
             </ul>
-            <Row>
-                <Col sm={6}>
-                    <div className="ratio ratio-16x9">
-                        <iframe 
-                            src="https://player.vimeo.com/video/646642479" 
-                            frameBorder="0" 
-                            allow="fullscreen" 
-                            allowFullScreen
-                            title="Metrics Case Study: Highlights Video" 
-                        ></iframe>
-                    </div>
-                </Col>
-                <Col sm={6}>
-                    <div className="ratio ratio-16x9">
-                        <iframe 
-                            src="https://player.vimeo.com/video/646671611" 
-                            frameBorder="0" 
-                            allow="fullscreen" 
-                            allowFullScreen
-                            title="Metrics Case Study: Email Newsletter" 
-                        ></iframe>
-                    </div>
-                </Col>
+            <Row className="video-container">
+              <Col md={{ span: 8, offset: 2 }}>
+                <div className="ratio ratio-16x9">
+                  <iframe 
+                      src="https://player.vimeo.com/video/646671611" 
+                      frameBorder="0" 
+                      allow="fullscreen" 
+                      allowFullScreen
+                      title="Metrics Case Study: Email Newsletter" 
+                  ></iframe>
+                </div>
+              </Col>
             </Row>
             <h3 className="mt-5">Selecting Your Tools of Measurement</h3>
             <p>

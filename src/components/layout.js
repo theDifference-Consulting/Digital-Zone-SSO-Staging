@@ -58,7 +58,7 @@ const Layout = ({ pageName, containerClass, activePage, children }) => {
           <div className="copyright">©2022 Gilead</div>
         </footer>
         <a href="/" id="back-compass" aria-label="back button">
-					<LottiePlayer animData={compass} playOnHover={true} />
+					<LottiePlayer animData={compass} playOnHover={true} noloop />
         </a>
       </main>
     </>

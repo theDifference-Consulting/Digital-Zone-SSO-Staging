@@ -185,6 +185,7 @@
 
 .modal-header .close span {
 	vertical-align: text-top;
+  line-height: 18px;
 }
 
 .modal-content .download-button {
@@ -226,4 +227,9 @@
     position: absolute;
     top: -26px;
     left: 20px;
+}
+
+/* TOOD: we should update react-bootstrap instead */
+.sr-only {
+  display: none;
 }
