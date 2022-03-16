@@ -6,7 +6,6 @@ const LottiePlayer = (props) => {
     activeZone,
     noloop = false,
     playOnHover = false,
-    onclick = () => {},
     animData = {},
   } = props;
   const [defaultOptions, setDefaultOptions] = useState({})
