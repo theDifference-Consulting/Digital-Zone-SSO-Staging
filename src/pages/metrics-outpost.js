@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { Row, Col, Container } from "react-bootstrap"
 import { AnimatedHeader } from "../components/animatedHeader"
-import { AdvicerMessage } from "../components/advicerMessage"
+import { AdviserMessage } from "../components/advicerMessage"
 import { Section } from "../components/section"
 
 // TODO: I think gatsby allows for a more easy and flexible way of adding info
@@ -118,7 +118,7 @@ export default function index() {
             <Row>
               { advicers.map((advicer) => (
                 <Col md={6} lg={4} sm={12} className="p-0" key={advicer.name}>
-                  <AdvicerMessage advicer={advicer} />
+                  <AdviserMessage adviser={advicer} />
                 </Col>
               ))} 
             </Row>

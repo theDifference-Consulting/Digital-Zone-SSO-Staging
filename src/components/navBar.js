@@ -9,6 +9,7 @@ const CustomNavbar = ({ pageInfo, ...props }) => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav activeKey={props.activePage}>
           <Nav.Link eventKey="home" href="/">Home</Nav.Link>
+          <Nav.Link eventKey="metrics-outpost" href="/metrics-outpost/">Metrics Outpost</Nav.Link>
           <Nav.Link eventKey="visitor-centre" href="/visitor-centre/">Visitor Info</Nav.Link>
           <Nav.Link eventKey="podcast-alley" href="/podcast-alley/">Podcast Alley</Nav.Link>
           <Nav.Link eventKey="qr-castle" href="/qr-castle/">QR Castle</Nav.Link>

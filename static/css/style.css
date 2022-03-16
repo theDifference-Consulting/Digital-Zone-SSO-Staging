@@ -256,7 +256,7 @@ header .heading__down-tag {
 
 .secondary-template section:last-child,
 .secondary-template .section:last-child {
-	padding-bottom: 0;
+	padding-bottom: 20px;
 }
 
 .secondary-template .bug {
@@ -339,7 +339,8 @@ footer {
 }
 
 #advice .pros {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  padding: 0 26px;
 }
 
 .podcast-alley .podcast-guide {
@@ -423,6 +424,10 @@ footer {
 
 .drive-in header {
 	background-image: url('../img/drive-in-hero.svg');
+}
+
+.drive-in .ratio {
+  margin-bottom: 30px;
 }
 
 @media (max-width: 576px) {
