@@ -11,7 +11,7 @@ export const AdviserMessage = ({ adviser }) => (
       <Row className="adviser-message__messages">
         <Col md={12}>
           <Nav variant="pills justify-content-between d-flex">
-          { adviser.messages.slice(0,5).map((_, i) => ( // slice to ensure no more than 5
+          { adviser.messages.map((_, i) => (
             <Nav.Item key={i}>
               <Nav.Link eventKey={i}>{i+1}</Nav.Link>
             </Nav.Item>

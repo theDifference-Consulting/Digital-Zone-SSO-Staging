@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { Row, Col, Container } from "react-bootstrap";
 import { AnimatedHeader } from "../components/animatedHeader"
 import { Section } from "../components/section"
-import {AdviserHeadshot} from "../components/adviserHeadshot";
+import {AdviserMessage} from "../components/advicerMessage";
 
 const advisers = {
   damien: {
@@ -11,12 +11,24 @@ const advisers = {
     img: "../img/damien-fagan",
     title: "Associate Director",
     role: "Medical Affairs, HIV",
+    messages: [
+      "Start planning and outreach as early as possible since there are a lot of people across different functions to potentially involve.",
+      "Leverage your network of global colleagues and relationships to reach out to the primary author, especially if they are external.",
+      "Give clear guidance on your objective, timelines and expectations from the beginning. Keep in mind that many clinicians may not prioritize this endeavor, so you may need to be persistent and send a few reminder emails.",
+      "Provide some local context for why you believe this research is beneficial to your key opinion leaders (KOLs) – this helps the author tailor the communication to your audience.",
+      "Think outside the box. For example, we are looking at other ways to bring data to life, including augmented reality – watch this space for that!",
+    ]
   },
   mike: {
     name: "Hassan Aladdin, PhD",
     img: "../img/mike-tran",
     title: "Senior Manager,",
     role: "Graphics Services",
+    messages: [
+      "Consider people’s time and attention span at conferences and keep the video to 2 minutes or less.",
+      "If shooting the video yourself with an iPhone, use a tripod for stability, good lighting and a quiet environment.",
+      "Be creative! People appreciate the extra effort, and you’ll have more people watching the entire video.",
+    ]
   },
 }
 
@@ -132,38 +144,10 @@ export default function index() {
               <AnimatedHeader svg="qr-bug" title="Advice From QR Code Pros"/>
               <Row>
                 <Col sm={5} md={{span: 4, offset: 1}} xs={12}>
-                  <AdviserHeadshot adviser={advisers.damien} />
-                  <ol>
-                    <li>
-                        Start planning and outreach as early as possible since there are a lot of people across different functions to potentially involve.
-                    </li>
-                    <li>
-                        Leverage your network of global colleagues and relationships to reach out to the primary author, especially if they are external.
-                    </li>
-                    <li>
-                        Give clear guidance on your objective, timelines and expectations from the beginning. Keep in mind that many clinicians may not prioritize this endeavor, so you may need to be persistent and send a few reminder emails.
-                    </li>
-                    <li>
-                        Provide some local context for why you believe this research is beneficial to your key opinion leaders (KOLs) – this helps the author tailor the communication to your audience.
-                    </li>
-                    <li>
-                        Think outside the box. For example, we are looking at other ways to bring data to life, including augmented reality – watch this space for that!
-                    </li>
-                  </ol>
+                  <AdviserMessage adviser={advisers.damien} />
                 </Col>
                 <Col sm={{ span: 5, offset: 2}} md={{ span: 4, offset: 2}}  xs={12}>
-                  <AdviserHeadshot adviser={advisers.mike} />
-                  <ol>
-                    <li>
-                        Consider people’s time and attention span at conferences and keep the video to 2 minutes or less.
-                    </li>
-                    <li>
-                        If shooting the video yourself with an iPhone, use a tripod for stability, good lighting and a quiet environment.
-                    </li>
-                    <li>
-                        Be creative! People appreciate the extra effort, and you’ll have more people watching the entire video.
-                    </li>
-                  </ol>
+                  <AdviserMessage adviser={advisers.mike} />
                 </Col>
               </Row>
             </Container>

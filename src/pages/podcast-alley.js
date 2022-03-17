@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import {Container, Row, Col, Button} from "react-bootstrap"
 import { AnimatedHeader } from "../components/animatedHeader"
 import { Section } from "../components/section"
-import { AdviserHeadshot } from "../components/adviserHeadshot"
+import {AdviserMessage} from "../components/advicerMessage"
 
 const advisers = {
   ahmet: {
@@ -11,24 +11,54 @@ const advisers = {
     img: "../img/ahmet",
     title: "Senior Medical Project Manager,",
     role: "Turkey Podcast Lead",
+    messages: [
+      "Multichannel communication with HCPs require digital communication consents. The cross-functional team helps obtain these consents to reach a broader audience, which is ongoing in Turkey.",
+      "Experts suggest releasing new content every 7-10 days; that is why it is essential to have buffer content. Translating Australian podcasts helps to produce buffer content.",
+      "Having one moderator/presenter hosting different speakers is more achievable than having different hosts.",
+      "Contrast within your content and speakers will increase your hit rate. For example, having one very senior and one very junior HCP or one HCP who is very didactic and one who is very practical, etc.",
+      "Multichannel promotions of podcasts should be in place, including leave-behind pieces like pamphlets, conference booth promotions, regular emails and feedback requests.",
+      'It is crucial to localize some generic "terms and conditions" statements with the legal department. These descriptions cover the registration and personal information storage areas for HCPs.',
+    ]
   },
   hassan: {
     name: "Hassan Aladdin, PhD",
     img: "../img/hassan",
     title: "Associate Director, Medical Affairs,",
     role: "Nordic Podcast Lead",
+    messages: [
+      "Planning is the key word.",
+      "Involve Gilead Legal ahead of your plan.",
+      "Find out about local health authorities’ requirements regarding digital media.",
+      "Feature topics that are relevant for your region and audience.",
+      "Use resources within Gilead to get started.",
+      "Pharmagenesis is a great resource to help you."
+    ]
   },
   julie: {
     name: "Julie Newman",
     img: "../img/julie",
     title: "Associate Medical Director,",
     role: "Australia Podcast Lead",
+    messages: [
+      "Pick an engaging and engaged host. You want someone dynamic and committed to hosting the podcast series.",
+      "Try to utilize speakers who may already be speaking at a Gilead event. It is an easy way to share that information more broadly.",
+      "While you may record for an hour or so, be sure to break up the recording into smaller bits, no more than 10 minutes per segment.",
+      "Create a slide announcing the podcasts and include that at Gilead meetings. The podcasts are on-label, so that you can share with your local HCPs.",
+      "If possible, work with a local medical society to accredit or endorse the podcasts. They are truly excellent examples of medical education!"
+    ]
   },
   janniche: {
     name: "Janniche Hammer",
     img: "../img/janniche",
     title: "Director Medical Affairs, HIV",
     role: "Nordic Podcasting Team Member",
+    messages: [
+      "Include the legal team early in the process. There are many legal aspects to consider before launching the podcast, which may take some time to look into.",
+      "Engage with the commercial team to promote the podcast. Also, encourage the participating physicians to promote the podcast at their department.",
+      "Two episode recordings on the same day is perfect.",
+      "Voice coaching for the moderator improves the quality of the interviews, and the moderator appreciates the training.",
+      "Pharmagenesis is very professional and great to work with. They know the processes well and provide excellent support.",
+    ]
   },
 }
 
@@ -141,91 +171,17 @@ export default function index() {
               <AnimatedHeader svg="tool-bug" title="Advice From Podcast Pros"/>
               <Row>
                 <Col sm={6} xs={12} className="pros">
-                  <AdviserHeadshot adviser={advisers.julie} />
-                    <ol>
-                        <li>
-                            Pick an engaging and engaged host. You want someone dynamic and committed to hosting the podcast series.
-                        </li>
-                        <li>
-                            Try to utilize speakers who may already be speaking at a Gilead event. It is an easy way to share that information more broadly.
-                        </li>
-                        <li>
-                            While you may record for an hour or so, be sure to break up the recording into smaller bits, no more than 10 minutes per segment.
-                        </li>
-                        <li>
-                            Create a slide announcing the podcasts and include that at Gilead meetings. The podcasts are on-label, so that you can share with your local HCPs.
-                        </li>
-                        <li>
-                            If possible, work with a local medical society to accredit or endorse the podcasts. They are truly excellent examples of medical education!
-                        </li>
-                    </ol>
+                  <AdviserMessage  adviser={advisers.julie} />
                 </Col>
                 <Col sm={6} className="pros">
-                  <AdviserHeadshot adviser={advisers.hassan} />
-                  <ol>
-                      <li>
-                          Planning is the key word.
-                      </li>
-                      <li>
-                          Involve Gilead Legal ahead of your plan.
-                      </li>
-                      <li>
-                          Find out about local health authorities’ requirements regarding digital media.
-                      </li>
-                      <li>
-                          Feature topics that are relevant for your region and audience.
-                      </li>
-                      <li>
-                          Use resources within Gilead to get started.
-                      </li>
-                      <li>
-                          Pharmagenesis is a great resource to help you.
-                      </li>
-                  </ol>
+                  <AdviserMessage adviser={advisers.hassan} />
                 </Col>
-                  <Col sm={6} className="pros">
-                    <AdviserHeadshot adviser={advisers.janniche} />
-                      <ol>
-                          <li>
-                              Include the legal team early in the process. There are many legal aspects to consider before launching the podcast, which may take some time to look into.
-                          </li>
-                          <li>
-                              Engage with the commercial team to promote the podcast. Also, encourage the participating physicians to promote the podcast at their department.
-                          </li>
-                          <li>
-                              Two episode recordings on the same day is perfect.
-                          </li>
-                          <li>
-                              Voice coaching for the moderator improves the quality of the interviews, and the moderator appreciates the training.
-                          </li>
-                          <li>
-                              Pharmagenesis is very professional and great to work with. They know the processes well and provide excellent support.
-                          </li>
-                      </ol>
-                  </Col>
-                  <Col sm={6} className="pros">
-                    <AdviserHeadshot adviser={advisers.ahmet} />
-                      <ol>
-                          <li>
-                              Multichannel communication with HCPs require digital communication consents. The cross-functional team helps obtain these consents to reach a broader audience, which is ongoing in Turkey.
-                          </li>
-                          <li>
-                              Experts suggest releasing new content every 7-10 days; that is why it is essential to have buffer content. Translating Australian podcasts helps to produce buffer content.
-                          </li>
-                          <li>
-                              Having one moderator/presenter hosting different speakers is more achievable than having different hosts.
-                          </li>
-                          <li>
-                              Contrast within your content and speakers will increase your hit rate. For example, having one very senior and one very junior HCP or one HCP who is very didactic and one who is very practical, etc.
-                          </li>
-                          <li>
-                              Multichannel promotions of podcasts should be in place, including leave-behind pieces like pamphlets, conference booth promotions, regular emails and feedback requests.
-                          </li>
-                          <li>
-                              It is crucial to localize some generic "terms and conditions" statements with the legal department. These descriptions cover the registration and personal information storage areas for HCPs.
-                          </li>
-                      </ol>
-                  </Col>
+                <Col sm={6} className="pros">
+                  <AdviserMessage adviser={advisers.janniche} />
+                </Col>
+                <Col sm={6} className="pros">
+                  <AdviserMessage adviser={advisers.ahmet} />
+                </Col>
               </Row>
             </Container>
         </Section>

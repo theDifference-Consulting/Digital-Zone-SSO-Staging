@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { Row, Col, Container } from "react-bootstrap";
 import { AnimatedHeader } from "../components/animatedHeader"
 import { Section } from "../components/section"
-import { AdviserHeadshot } from "../components/adviserHeadshot"
+import { AdviserMessage } from "../components/advicerMessage";
 
 const advisers = {
   vincent: {
@@ -11,29 +11,58 @@ const advisers = {
     img: "../img/vincent",
     title: "Associate Director, Medical Affairs<br/>",
     role: "COVID-19",
-    country: "Netherlands"
+    country: "Netherlands",
+    messages: [
+      "Make sure all advisors have the correct zoom link and have the meeting in their calendar. On the day of the ad board, email the advisors with a reminder that you are looking forward to seeing them",
+      "Make sure that all advisors are 5 minutes early so everyone can soundcheck and test their camera",
+      "If you record the session clearly state this up front and use a disclaimer in line with BC",
+      "If you are using polls it may be useful to have IT assistance on site so the polling questions can be pre-loaded",
+      "If your internet is better over 4G than WiFi, make a portal using your phone so you can assure good connection throughout the ad board",
+    ]
   },
   corinna: {
     name: "Corinna Oberle, Ph.D",
     img: "../img/corinna",
     title: "Associate Director, HIV ",
     role: "Medical Affairs",
-    country: "Switzerland"
+    country: "Switzerland",
+    messages: [
+      "Have another Medical colleague attend so that one can present data by sharing slides and the other can moderate chat, be timekeeper and handle questions and comments from advisors",
+      "Have IT support before and during meeting for any issues that may come up",
+      "Do not run a virtual ad board for more than 2.5 hrs, and have breaks during the event",
+      "To encourage interactivity during virtual ad boards, be prepared to address questions directly to advisors and use interactive tools such as Slido",
+      "During discussion, stop screen sharing the presentation slides so that the discussion feels more personal",
+    ]
   },
-
   aurelie: {
     name: "Aurelie Freismuth, PharmD",
     img: "../img/aurelie",
     title: "Associate Director, Liver Diseases",
     role: "Medical Affairs",
-    country: "Melbourne, AUS"
+    country: "Melbourne, AUS",
+    messages: [
+      "Do a full IT check prior to the event",
+      "Get an agency to attend on the night to fix IT issues in the background and move slides for you if you are chairing as it’s one less thing to think about",
+      "Cap virtual ad boards at 1.5 hours max. Better to run 2 sessions over 2 weeks than do a longer ad board as people’s attention will decline over time ",
+      "Think outside the box with timing. Given that people don’t need to travel, they could be free before their clinic in the morning or at lunchtime instead of the usual 6pm-8pm",
+      "Send questions in advance so that the time on the call is best utilised towards discussion",
+    ]
   },
   rita: {
     name: "Rita Freire",
     img: "../img/rita",
     title: "Associate Director, Medical Affairs",
     role: "Liver Diseases",
-    country: "Portugal"
+    country: "Portugal",
+    messages: [
+      "Develop the agenda for 2-2.5 hrs max",
+      "Start and end on time, and ask advisors to join 5 min early. If there is a topic that you would like to discuss further, do it as follow-up of the Ad board",
+      "Invite 5-6 advisors maximum ",
+      "Send information and materials in advance, allowing advisors to be better prepared and focused for the discussion",
+      "Make sure you can see all advisors during the meeting and involve them in the discussion in a balanced way",
+      "Use dynamic exercises to collect feedback (eg. jamboard.google.com; miro.com)",
+      "Include a short break for stretching",
+    ]
   },
 }
 
@@ -125,90 +154,16 @@ export default function index() {
                 <AnimatedHeader svg="light-bug" title="Advice From Rolling Advisory Board Pros"/>
                  <Row>
                  <Col sm={6} className="pros">
-                    <AdviserHeadshot adviser={advisers.vincent} />
-                    <ol>
-                        <li>
-                        Make sure all advisors have the correct zoom link and have the meeting in their calendar. On the day of the ad board, email the advisors with a reminder that you are looking forward to seeing them
-                        </li>
-                        <li>
-                        Make sure that all advisors are 5 minutes early so everyone can soundcheck and test their camera
-                        </li>
-                        <li>
-                        If you record the session clearly state this up front and use a disclaimer in line with BC
-                        </li>
-                        <li>
-                        If you are using polls it may be useful to have IT assistance on site so the polling questions can be pre-loaded
-                        </li>
-                        <li>
-                        If your internet is better over 4G than WiFi, make a portal using your phone so you can assure good connection throughout the ad board
-                        </li>
-                    </ol>
+                    <AdviserMessage adviser={advisers.vincent} />
                 </Col>
                  <Col sm={6} className="pros">
-                    <AdviserHeadshot adviser={advisers.corinna} />
-                    <ol>
-                        <li>
-                        Have another Medical colleague attend so that one can present data by sharing slides and the other can moderate chat, be timekeeper and handle questions and comments from advisors
-                        </li>
-                        <li>
-                        Have IT support before and during meeting for any issues that may come up
-                        </li>
-                        <li>
-                        Do not run a virtual ad board for more than 2.5 hrs, and have breaks during the event
-                        </li>
-                        <li>
-                        To encourage interactivity during virtual ad boards, be prepared to address questions directly to advisors and use interactive tools such as Slido
-                        </li>
-                        <li>
-                        During discussion, stop screen sharing the presentation slides so that the discussion feels more personal
-                        </li>
-                    </ol>
+                    <AdviserMessage adviser={advisers.corinna} />
                 </Col>
                  <Col sm={6} className="pros">
-                    <AdviserHeadshot adviser={advisers.rita} />
-                    <ol>
-                        <li>
-                        Develop the agenda for 2-2.5 hrs max
-                        </li>
-                        <li>
-                        Start and end on time, and ask advisors to join 5 min early. If there is a topic that you would like to discuss further, do it as follow-up of the Ad board
-                        </li>
-                        <li>
-                        Invite 5-6 advisors maximum 
-                        </li>
-                        <li>
-                        Send information and materials in advance, allowing advisors to be better prepared and focused for the discussion
-                        </li>
-                        <li>
-                        Make sure you can see all advisors during the meeting and involve them in the discussion in a balanced way
-                        </li>
-                        <li>
-                        Use dynamic exercises to collect feedback (eg. jamboard.google.com; miro.com)
-                        </li>
-                        <li>
-                        Include a short break for stretching
-                        </li>
-                    </ol>
+                    <AdviserMessage adviser={advisers.rita} />
                 </Col>
                 <Col sm={6} className="pros">
-                    <AdviserHeadshot adviser={advisers.aurelie} />
-                    <ol>
-                        <li>
-                        Do a full IT check prior to the event
-                        </li>
-                        <li>
-                        Get an agency to attend on the night to fix IT issues in the background and move slides for you if you are chairing as it’s one less thing to think about
-                        </li>
-                        <li>
-                        Cap virtual ad boards at 1.5 hours max. Better to run 2 sessions over 2 weeks than do a longer ad board as people’s attention will decline over time 
-                        </li>
-                        <li>
-                        Think outside the box with timing. Given that people don’t need to travel, they could be free before their clinic in the morning or at lunchtime instead of the usual 6pm-8pm
-                        </li>
-                        <li>
-                        Send questions in advance so that the time on the call is best utilised towards discussion
-                        </li>
-                    </ol>
+                    <AdviserMessage adviser={advisers.aurelie} />
                 </Col>
             </Row>
           </Container>

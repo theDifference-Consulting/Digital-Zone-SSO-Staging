@@ -10,12 +10,13 @@ const LottiePlayer = (props) => {
   } = props;
   const [defaultOptions, setDefaultOptions] = useState({})
   const isStopping = useRef(false)
-  const [direction, setDirection] = useState(1);
+  const [direction, setDirection] = useState(playOnHover ? -1 : 1); // maybe it should be another parameter
 
   useEffect(() => {
     setDefaultOptions({
       loop: !noloop,
       animationData: animData,
+      autoplay: !playOnHover,
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice'
       }
@@ -25,7 +26,6 @@ const LottiePlayer = (props) => {
 
   const tryToStop = useCallback(() => {
     if (isStopping.current) {
-      console.log("stopped")
       setDirection(-1)
       isStopping.current = false
     }
@@ -33,7 +33,6 @@ const LottiePlayer = (props) => {
 
   const mouseOver = useCallback(() => {
     if (playOnHover) {
-      console.log("playing")
       isStopping.current = false
       setDirection(1)
     }
@@ -47,6 +46,8 @@ const LottiePlayer = (props) => {
       }
     }
   }, [playOnHover, tryToStop])
+
+  console.log(defaultOptions, direction);
 
   return (
     <div 
