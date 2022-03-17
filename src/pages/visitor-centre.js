@@ -63,6 +63,16 @@ const Champions = championsData.map((e) => {
 export default function index() {
     return (
         <Layout pageName="Visitor Centre" activePage='visitor-centre' containerClass="visitor-info">
+          <Section>
+            <Container>
+              <p className="mt-5 mb-3">
+                TODO: Add some short intro
+              </p>
+              <h4>
+                TODO: Add some title here
+              </h4>
+            </Container>
+          </Section>
           <Section light>
             <Container>
               <AnimatedHeader svg="info-bug" title="Welcome!" />

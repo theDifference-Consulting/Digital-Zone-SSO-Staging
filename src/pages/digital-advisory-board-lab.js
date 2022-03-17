@@ -69,7 +69,7 @@ export default function index() {
         <Layout pageName="Digital Advisory Board Lab" activePage='digital-advisory-board-lab' containerClass="digital-advisory-board-lab">
         <Section>
           <Container>
-            <p className="mb-3">
+            <p className="mt-5 mb-3">
               Welcome to the Digital Advisory Board Lab, where you can learn all about the virtual innovation that allows users to gain insight from other professionals without geographical or other restrictions.
             </p>
             <h4>

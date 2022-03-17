@@ -10,7 +10,7 @@ export default function index() {
       <Layout pageName="Newsletter Depot" activePage='newsletter' containerClass="newsletter">
         <Section>
           <Container>
-            <p className="mt-3 mb-3">
+            <p className="mt-5 mb-3">
               Welcome to the Newsletter Depot! Here you can find a variety of helpful email templates that can be downloaded for use in any of your email campaign needs. Check out the video below to get the most out of this Zone.  
             </p>
             <h4>
