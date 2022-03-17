@@ -269,7 +269,7 @@ header .heading__down-tag {
 
 .secondary-template section:last-child,
 .secondary-template .section:last-child {
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 .secondary-template .bug {
@@ -508,6 +508,13 @@ footer {
 	display: block;
 	position: absolute;
 	bottom: 0;
+}
+
+.newsletter .block-highlight {
+  display: block;
+  width: 300px;
+  text-align: center;
+  margin: 12px auto;
 }
 
 .wood-background {

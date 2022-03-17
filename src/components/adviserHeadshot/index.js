@@ -21,7 +21,7 @@ export const AdviserHeadshot = ({ adviser }) => (
           {adviser.email || ""}
         </p>
         <p>
-          {adviser.email || ""}
+          {adviser.role || ""}
         </p>
         <LilCubes left="-8px" top="-8px" />
         <LilCubes left="-6px" bottom="-34px" />

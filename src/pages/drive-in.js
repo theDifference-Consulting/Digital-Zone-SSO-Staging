@@ -7,25 +7,27 @@ import { Section } from "../components/section"
 export default function index() {
     return (
         <Layout pageName="Drive-Innovation Theater" activePage='drive-in' containerClass="drive-in">
+          <Section>
+            <Container>
+              <p className="mb-5 mt-5">
+                This is where you’ll find the latest video stories about digital innovation happening around Gilead. We will be posting new videos regularly so check back often!
+              </p>
+              <h4>
+                TODO: add some title
+              </h4>
+            </Container>
+          </Section>
             <Section light id="welcome">
                 <Container>
                   <AnimatedHeader svg="popcorn-bug" title="Welcome!"/>
-                    <div style={{padding:'30px 0'}}>
-                        This is where you’ll find the latest video stories about digital innovation happening around Gilead. We will be posting new videos regularly so check back often!
-                    </div>
-                    <div className="yellow-video-block">
-                      <div className="ratio ratio-16x9">
-                        <iframe 
-                          src="https://player.vimeo.com/video/463565573" 
-                          frameBorder="0" 
-                          allow="fullscreen" 
-                          allowFullScreen
-                          title="Mike Elliot: Welcome"
-                        ></iframe>
-                      </div>
-                      <b>Mike Elliott</b><br/>
-                        Stockley Park, UK<br/>
-                        michael.elliott@gilead.com
+                    <div className="ratio ratio-16x9">
+                      <iframe 
+                        src="https://player.vimeo.com/video/463565573" 
+                        frameBorder="0" 
+                        allow="fullscreen" 
+                        allowFullScreen
+                        title="Mike Elliot: Welcome"
+                      ></iframe>
                     </div>
                 </Container>
             </Section>
@@ -50,6 +52,11 @@ export default function index() {
                         Turkey<br/>
                         Berna.Ozelgun@gilead.com
                     </div>
+                </Container>
+            </Section>
+            <Section light id="now-showing">
+                <Container>
+                  <AnimatedHeader svg="popcorn-bug" title="Drive-In Theatre Masterpiece Collection"/>
                     <Row className="margin-top-md">
                       <Col sm={6}>
                         <div className="yellow-video-block">

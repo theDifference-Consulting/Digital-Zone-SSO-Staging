@@ -20,7 +20,7 @@ const advisers = {
     ]
   },
   mike: {
-    name: "Hassan Aladdin, PhD",
+    name: "Mike Tran",
     img: "../img/mike-tran",
     title: "Senior Manager,",
     role: "Graphics Services",
@@ -35,6 +35,16 @@ const advisers = {
 export default function index() {
   return (
     <Layout pageName="QR Castle" activePage='qr-castle' containerClass="qr-castle">
+      <Section>
+        <Container>
+          <p className="mb-3 mt-5">
+            Here at the QR Castle you’ll learn all about using QR codes at Gilead. See examples, get tips and hear how colleagues are using them to enhance and extend conference posters.
+          </p>
+          <h4>
+            TODO: add some title
+          </h4>
+        </Container>
+      </Section>
     	<Section light id="welcome">
         <Container>
           <AnimatedHeader svg="qr-bug" title="Welcome!"/>
@@ -54,7 +64,7 @@ export default function index() {
           </Row>
         </Container>
       </Section>
-      <section className="audio-quote">
+      <Section light>
         <Container>
           <blockquote>
             “Using QR video links on conference posters is an effective way of communicating the science, and video may be a preferable form of media for many conference attendees. It’s key to continuously improve the way we communicate data externally since it ultimately impacts patient care. Having QR video links on Gilead conference posters would be great as standard practice; especially recently with virtual conferences where there is no person-to-person interaction at the poster.”
@@ -64,7 +74,7 @@ export default function index() {
             Director, Medical Affairs Research
           </p>
         </Container>
-      </section>
+      </Section>
       <Section light id="what-qr">
         <Container>
           <AnimatedHeader svg="qr-bug" title="What Is A QR Code?"/>

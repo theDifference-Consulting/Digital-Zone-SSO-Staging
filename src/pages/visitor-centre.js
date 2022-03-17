@@ -116,7 +116,7 @@ export default function index() {
           <Section light>
             <Container>
               <AnimatedHeader svg="info-bug" title="Who We Are" />
-              <Row>
+              <Row className="pb-5">
                 <p>
                     We are the Digital Zone Tourism Board, a group of dedicated digital pioneers across Gilead who have teamed up to make sure the Zone is filled with exciting and useful content for you.
                 </p>

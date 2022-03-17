@@ -9,7 +9,7 @@ const advisers = {
   vincent: {
     name: "Vincent Lempers",
     img: "../img/vincent",
-    title: "Associate Director, Medical Affairs<br/>",
+    title: "Associate Director, Medical Affairs",
     role: "COVID-19",
     country: "Netherlands",
     messages: [
@@ -55,8 +55,6 @@ const advisers = {
     role: "Liver Diseases",
     country: "Portugal",
     messages: [
-      "Develop the agenda for 2-2.5 hrs max",
-      "Start and end on time, and ask advisors to join 5 min early. If there is a topic that you would like to discuss further, do it as follow-up of the Ad board",
       "Invite 5-6 advisors maximum ",
       "Send information and materials in advance, allowing advisors to be better prepared and focused for the discussion",
       "Make sure you can see all advisors during the meeting and involve them in the discussion in a balanced way",
@@ -69,18 +67,27 @@ const advisers = {
 export default function index() {
     return (
         <Layout pageName="Digital Advisory Board Lab" activePage='digital-advisory-board-lab' containerClass="digital-advisory-board-lab">
+        <Section>
+          <Container>
+            <p className="mb-3">
+              Welcome to the Digital Advisory Board Lab, where you can learn all about the virtual innovation that allows users to gain insight from other professionals without geographical or other restrictions.
+            </p>
+            <h4>
+              TODO: add some title here
+            </h4>
+          </Container>
+        </Section>
           <Section light id="welcome">
             <Container>
               <AnimatedHeader svg="handshake-bug" title="Welcome!"/>
-                <p class="mb-3">Welcome to the Digital Advisory Board Lab, where you can learn all about the virtual innovation that allows users to gain insight from other professionals without geographical or other restrictions.</p>
                 <div className="ratio ratio-16x9">
-                    <iframe 
-                        src="https://player.vimeo.com/video/631114194" 
-                        frameBorder="0" 
-                        allow="fullscreen" 
-                        allowFullScreen
-                        title="Vincent Lempers Welcome"
-                    ></iframe>
+                  <iframe 
+                    src="https://player.vimeo.com/video/631114194" 
+                    frameBorder="0" 
+                    allow="fullscreen" 
+                    allowFullScreen
+                    title="Vincent Lempers Welcome"
+                  ></iframe>
                 </div>
             </Container>
           </Section>
@@ -98,21 +105,22 @@ export default function index() {
                 </p>
                 <Row>
                     <Col sm={4} className="mb-3">
-                        <h4  className="left-arrow">Synchronous Advisory Boards</h4>
-                        <p>
-                            These are very similar to in-person advisory boards but they are virtual. We gather a set of advisors to provide their expertise and guidance for a half day or other short period. We use a virtual meeting platform and focus our discussions on a single topic or set of topics. GAP Connect is an internally developed virtual advisory platform that may be of interest to you. Please <a href="https://vimeo.com/483166427/f361761084" target="_blank" rel="noreferrer">click here</a> to find out more about the capabilities of GAP Connect.
-                        </p>
+                      <h4  className="left-arrow">Synchronous Advisory Boards</h4>
+                      <p>
+                          These are very similar to in-person advisory boards but they are virtual. We gather a set of advisors to provide their expertise and guidance for a half day or other short period. We use a virtual meeting platform and focus our discussions on a single topic or set of topics. GAP Connect is an internally developed virtual advisory platform that may be of interest to you. Please <a href="https://vimeo.com/483166427/f361761084" target="_blank" rel="noreferrer">click here</a> to find out more about the capabilities of GAP Connect.
+                      </p>
                     </Col>
                     <Col sm={4} className="mb-3">
-                        <h4 className="left-arrow">Asynchronous Advisory Boards</h4>
-                        <p>
-                            These types of advisory boards allow you to collate real-time insights during a period of time that couple be weeks, months or a year. We use a virtual messenger platform to facilitate the discussions with the advisors. All participants are able to see and respond to everyone’s conversations within the platform.                            </p>
+                      <h4 className="left-arrow">Asynchronous Advisory Boards</h4>
+                      <p>
+                          These types of advisory boards allow you to collate real-time insights during a period of time that couple be weeks, months or a year. We use a virtual messenger platform to facilitate the discussions with the advisors. All participants are able to see and respond to everyone’s conversations within the platform.
+                      </p>
                     </Col>
                     <Col sm={4} className="mb-3">
-                        <h4 className="left-arrow">Rolling Asynchronous Advisory Boards</h4>
-                        <p>
-                            Physicians on these advisory boards engage for 6 months, a year or more, providing feedback and input on a variety of topics with a combination of synchronous and asynchronous interactions. These Advisory Boards are excellent when we need input at various stages of our research.
-                        </p>
+                      <h4 className="left-arrow">Rolling Asynchronous Advisory Boards</h4>
+                      <p>
+                        Physicians on these advisory boards engage for 6 months, a year or more, providing feedback and input on a variety of topics with a combination of synchronous and asynchronous interactions. These Advisory Boards are excellent when we need input at various stages of our research.
+                      </p>
                     </Col>
                 </Row>
             </Container>

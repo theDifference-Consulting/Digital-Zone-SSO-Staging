@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 export const Section = ({ light, children, ...props }) => {
   return (
-    <div className={`section ${light?"light-bg":""}`} {...props}>
+    <div {...props} className={`section ${light?"light-bg":""} ${props.className || ""}`} >
       {children}
     </div>
   )
