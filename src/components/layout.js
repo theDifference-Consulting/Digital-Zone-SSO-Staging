@@ -34,8 +34,8 @@ const Layout = ({ pageName, containerClass, activePage, children }) => {
           <Row>
           <header>
             <div className="d-none d-md-block">
-              <div className="cloud" style={{ bottom: "85px", left: "calc(7vw + 185px)"}}></div>
-              <div className="cloud" style={{ bottom: "35px", left: "7vw" }}></div>
+              <div className="cloud cloud--small" style={{ bottom: "85px", left: "calc(7vw + 105px)"}}></div>
+              <div className="cloud cloud--small" style={{ bottom: "35px", left: "7vw" }}></div>
             </div>
             <div className="heading-cloud-wrapper">
               <h1>

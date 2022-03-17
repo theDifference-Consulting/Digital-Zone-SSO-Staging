@@ -166,8 +166,15 @@ textarea, select, input, button { outline: none; }
 	position: relative;
 	width: 100%;
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: bottom center;
+	background-size: auto 100%;
+	background-position: top 5vh center;
+}
+
+@media (max-height: 700px) {
+  .secondary-template header {
+    background-size: auto 85%;
+    height: 100vh;
+  }
 }
 
 .full-width {
@@ -183,7 +190,7 @@ textarea, select, input, button { outline: none; }
 header .heading-cloud-wrapper {
 	display: flex;
 	position: absolute;
-  right: -95px;
+  right: -105px;
   bottom: 0;
 	width: 437px;
 	height: 156px;
@@ -191,7 +198,7 @@ header .heading-cloud-wrapper {
 	align-items: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   header .heading-cloud-wrapper {
     right: calc(10vw - 85px);
     bottom: 30px;
@@ -215,6 +222,11 @@ header .cloud {
   border-radius: 80px;
   background: #F5FFFE;
   z-index: 1;
+}
+
+header .cloud.cloud--small {
+  width: 250px;
+  height: 90px;
 }
 
 header .heading__down-tag {
@@ -280,6 +292,7 @@ footer {
 
 .podcast-alley header {
 	background-image: url('../img/podcast-alley-header.svg');
+	background-position: top 7.5vh center;
 }
 
 .podcast-alley .vimeo-embed {
@@ -358,7 +371,7 @@ footer {
 /* QR Castle */
 
 .qr-castle header {
-	background-image: url('../img/qr-castle-hero.svg');
+	background-image: url('../img/qr-castle-header.svg');
 }
 
 #qr-at-gilead h3{
@@ -401,7 +414,7 @@ footer {
 /* Visitor Info */
 
 .visitor-info header {
-	background-image: url('../img/visitor-info.svg');
+	background-image: url('../img/visitor-info-header.svg');
 }
 
 #digital-champions .full-width {
@@ -423,7 +436,7 @@ footer {
 /* Drive-In*/
 
 .drive-in header {
-	background-image: url('../img/drive-in-hero.svg');
+	background-image: url('../img/drive-innovation-header.svg');
 }
 
 .drive-in .ratio {
@@ -454,7 +467,7 @@ footer {
 /* Library */
 
 .library header {
-	background-image: url('../img/library-hero.svg');
+	background-image: url('../img/digital-library-header.svg');
 }
 
 #library-halo * {
@@ -463,7 +476,7 @@ footer {
 
 /* Newsletter */
 .newsletter header {
-	background-image: url('../img/newsletter.svg');
+	background-image: url('../img/newsletter-depot-header.svg');
 }
 
 .newsletter .templates img{
@@ -517,14 +530,14 @@ h4.left-arrow {
 
 .digital-advisory-board-lab header {
 	background-image: url('../img/dab-header.svg');
+	background-position: top 7.5vh center;
 }
 
 /*Metrics Outpost*/
 
 .metrics-outpost header {
 	background-image: url('../img/metrics-outpost-header.svg');
-	background-position: center;
-	background-size: auto; /* TODO: maybe make the same for all landing bgs */
+	background-position: top 7.5vh center;
 }
 
 .metrics-outpost .section:last-child {
