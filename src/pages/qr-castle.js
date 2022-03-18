@@ -8,7 +8,7 @@ import {AdviserMessage} from "../components/advicerMessage";
 const advisers = {
   damien: {
     name: "Damien Fagan",
-    img: "../img/damien-fagan",
+    img: "../img/damien",
     title: "Associate Director",
     role: "Medical Affairs, HIV",
     messages: [
@@ -21,7 +21,7 @@ const advisers = {
   },
   mike: {
     name: "Mike Tran",
-    img: "../img/mike-tran",
+    img: "../img/mike",
     title: "Senior Manager,",
     role: "Graphics Services",
     messages: [
