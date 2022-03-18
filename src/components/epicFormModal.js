@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {Button, Modal, Form} from 'react-bootstrap'
-import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function LibraryModal({listItem}) {
 	const [show, setShow] = useState(false);

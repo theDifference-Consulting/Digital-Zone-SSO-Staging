@@ -1,1 +1,1 @@
-Site for https://gileaddigitalzone.com
+https://gileaddigitalzone.com
