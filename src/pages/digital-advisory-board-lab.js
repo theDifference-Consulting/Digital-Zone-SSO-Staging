@@ -79,7 +79,7 @@ export default function index() {
         </Section>
           <Section light id="welcome">
             <Container>
-              <AnimatedHeader svg="handshake-bug" title="Welcome!"/>
+              <AnimatedHeader svg="icon-DAL-welcome" title="Welcome!"/>
                 <div className="ratio ratio-16x9">
                   <iframe 
                     src="https://player.vimeo.com/video/631114194" 
@@ -93,7 +93,7 @@ export default function index() {
           </Section>
           <Section light id="">
             <Container>
-              <AnimatedHeader svg="convo-bug" title="What is a Digital Advisory Board?"/>
+              <AnimatedHeader svg="icon-DAL-whatis" title="What is a Digital Advisory Board?"/>
                 <p> 
                     A traditional advisory board is an in-person gathering of physicians where we seek their input to help shape our strategies and research. 
                 </p>
@@ -127,7 +127,7 @@ export default function index() {
           </Section>
           <Section light id="">
             <Container>
-                <AnimatedHeader svg="plan-bug" title="Digital Advisory Board Planning Considerations"/>
+                <AnimatedHeader svg="icon-DAL-planning" title="Digital Advisory Board Planning Considerations"/>
                 <p class="mb-3">
                     Hosting a Digital Advisory Board takes a lot of planning and coordination. The good news is we’ve already learned a lot and are happy to share our key planning considerations to get you started. 
                 </p>
@@ -159,7 +159,7 @@ export default function index() {
           </Section>
           <Section light id="advice">
             <Container>
-                <AnimatedHeader svg="light-bug" title="Advice From Rolling Advisory Board Pros"/>
+                <AnimatedHeader svg="icon-DAL-advice" title="Advice From Rolling Advisory Board Pros"/>
                  <Row>
                  <Col sm={6} className="pros">
                     <AdviserMessage adviser={advisers.vincent} />

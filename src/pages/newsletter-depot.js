@@ -20,7 +20,7 @@ export default function index() {
         </Section>
         <Section light id="welcome">
           <Container>
-            <AnimatedHeader svg="newsletter-bug" title="Welcome!"/>
+            <AnimatedHeader svg="icon-newsletter-welcome" title="Welcome!"/>
             <div className="ratio ratio-16x9">
                 <iframe 
                   src="https://player.vimeo.com/video/537391928" 
@@ -34,7 +34,7 @@ export default function index() {
         </Section>
         <Section light id="now-showing">
           <Container>
-            <AnimatedHeader svg="newsletter-bug" title="Templates"/>
+            <AnimatedHeader svg="icon-newsletter-template" title="Templates"/>
             <div className="wood-background">
               <Row className="templates">
                   {newsletter.map((item, idx) => (
@@ -48,7 +48,7 @@ export default function index() {
         </Section>
         <Section light id="now-showing">
           <Container>
-            <AnimatedHeader svg="newsletter-bug" title="Share Your Own Templates"/>
+            <AnimatedHeader svg="icon-newsletter-submit" title="Share Your Own Templates"/>
             <p>
                 Got a great template that you’d like to add to our collection? Upload it here! 
                 All templates must be in .doc or .docx format, compatible with Microsoft Word.

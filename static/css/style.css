@@ -215,7 +215,7 @@ header .heading-cloud-wrapper h1 {
 	margin-left: -140px;
 }
 
-header .cloud {
+.secondary-template .cloud {
   position: absolute;
   width: 307.17px;
   height: 112.02px;
@@ -224,7 +224,7 @@ header .cloud {
   z-index: 1;
 }
 
-header .cloud.cloud--small {
+.secondary-template .cloud.cloud--small {
   width: 250px;
   height: 90px;
 }
@@ -272,10 +272,28 @@ header .heading__down-tag {
 	padding-bottom: 30px;
 }
 
-.secondary-template .bug {
-	height:72px;
-	width: auto;
+.secondary-template .bug-container {
+  width: 146.61px;
+  position: relative;
 	float:right;
+	height: 87px;
+}
+.secondary-template .bug {
+  width: 75px;
+  height: 75px;
+  background: #FFD255;
+  border-radius: 10px;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 48px;
+  top: 12px;
+  z-index: 2;
+}
+.secondary-template .bug .icon {
+  width: 50px;
+  height: 45px;
 }
 
 footer {

@@ -76,7 +76,7 @@ export default function Index() {
         </Section>
         <Section light>
           <Container>
-            <AnimatedHeader svg="podcast-bug" title="Welcome!"/>
+            <AnimatedHeader svg="icon-podcasting-welcome" title="Welcome!"/>
             <div className="vimeo-embed" style={{padding:`56.25% 0 0 0`, position:`relative`}}>
               <iframe 
                     src="https://player.vimeo.com/video/416415760?title=0&byline=0&portrait=0" 
@@ -113,7 +113,7 @@ export default function Index() {
         </Section>
         <Section light id="what-podcast">
             <Container>
-                <AnimatedHeader svg="podcast-bug" title="What Is A Podcast?"/>
+                <AnimatedHeader svg="icon-podcasting-whatis" title="What Is A Podcast?"/>
               <Row>
                 <p>
                     A podcast is a digital audio file made available on the internet for downloading to a computer or mobile device. Podcasts are typically 10–30 minutes long and available as a series. New episodes can be automatically received by subscribers. Podcasts are an engaging and convenient way to deliver medical education because busy professionals can listen to episodes whenever, wherever and how often they like.
@@ -123,7 +123,7 @@ export default function Index() {
         </Section>
         <Section light id="in-podcast">
         <Container>
-          <AnimatedHeader svg="podcast-bug" title="in Podcast @ Gilead"/>
+          <AnimatedHeader svg="icon-podcasting-inpodcast" title="in Podcast @ Gilead"/>
           <Row>
             <p>
                 The in Podcast series is an educational initiative created by Gilead for the benefit of healthcare professionals and patients. It explores the latest innovations in healthcare by way of interviews and insights from some of the world’s leading medical experts. Hear more about the series from its creator, Julie Newman.
@@ -153,7 +153,7 @@ export default function Index() {
       </Section>
       <Section light id="create-own">
           <Container>
-            <AnimatedHeader svg="tool-bug" title="Ready To Create Your Own?"/>
+            <AnimatedHeader svg="icon-podcasting-ready" title="Ready To Create Your Own?"/>
               <blockquote>Download Gilead’s Guide to in Podcast</blockquote>
               <a href="../media/Gilead_PodcastingGuide.pdf">
                   <img src="../img/podcast-guide.svg" className="podcast-guide img-fluid" alt="podcast guide"/>
@@ -162,7 +162,7 @@ export default function Index() {
       </Section>
       <Section light id="advice">
           <Container>
-            <AnimatedHeader svg="tool-bug" title="Advice From Podcast Pros"/>
+            <AnimatedHeader svg="icon-podcasting-tips" title="Advice From Podcast Pros"/>
             <Row>
               <Col sm={6} xs={12} className="pros">
                 <AdviserMessage  adviser={advisers.julie} />

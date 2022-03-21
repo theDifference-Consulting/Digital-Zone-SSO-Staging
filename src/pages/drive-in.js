@@ -19,7 +19,7 @@ export default function index() {
           </Section>
             <Section light id="welcome">
                 <Container>
-                  <AnimatedHeader svg="popcorn-bug" title="Welcome!"/>
+                  <AnimatedHeader svg="icon-drivein-welcome" title="Welcome!"/>
                     <div className="ratio ratio-16x9">
                       <iframe 
                         src="https://player.vimeo.com/video/463565573" 
@@ -34,7 +34,7 @@ export default function index() {
 
             <Section light id="now-showing">
                 <Container>
-                  <AnimatedHeader svg="popcorn-bug" title="Now Showing"/>
+                  <AnimatedHeader svg="icon-drivein-nowshowing" title="Now Showing"/>
                     <div style={{padding:'30px 0'}}>
                         Check out our incredible collaboration with Turkish superstar Tankurt Manas for World AIDS Day.
                     </div>
@@ -56,7 +56,7 @@ export default function index() {
             </Section>
             <Section light id="now-showing">
                 <Container>
-                  <AnimatedHeader svg="popcorn-bug" title="Drive-In Theatre Masterpiece Collection"/>
+                  <AnimatedHeader svg="icon-drivein-collection" title="Drive-In Theatre Masterpiece Collection"/>
                     <Row className="margin-top-md">
                       <Col sm={6}>
                         <div className="yellow-video-block">

@@ -75,7 +75,7 @@ export default function index() {
           </Section>
           <Section light>
             <Container>
-              <AnimatedHeader svg="info-bug" title="Welcome!" />
+              <AnimatedHeader svg="icon-visitor-welcome" title="Welcome!" />
               <Row>
                 <h3>Welcome to the Digital Zone!</h3>
                 <p>
@@ -105,7 +105,7 @@ export default function index() {
           </Section>
           <Section light>
             <Container>
-              <AnimatedHeader svg="info-bug" title="Navigating the Zone" />
+              <AnimatedHeader svg="icon-visitor-navigating" title="Navigating the Zone" />
               <Row>
                 <p>
                     The island is your main navigation page. The topic areas are structures around the island, and each active topic area is labeled. Click on a topic area to zoom in and see a summary of the topic.
@@ -125,7 +125,7 @@ export default function index() {
           </Section>
           <Section light>
             <Container>
-              <AnimatedHeader svg="info-bug" title="Who We Are" />
+              <AnimatedHeader svg="icon-visitor-resource" title="Who We Are" />
               <Row className="pb-5">
                 <p>
                     We are the Digital Zone Tourism Board, a group of dedicated digital pioneers across Gilead who have teamed up to make sure the Zone is filled with exciting and useful content for you.
@@ -142,7 +142,7 @@ export default function index() {
           </Section>
           <Section light id="digital-champions">
             <Container>
-              <AnimatedHeader svg="info-bug" title="Local Digital Champions are a Great Resource" />
+              <AnimatedHeader svg="icon-visitor-whoweare" title="Local Digital Champions are a Great Resource" />
               <Row>
                 <p>
                     <h3><b>Digital Champion Role:</b> (there are some differences among countries)</h3>

@@ -20,7 +20,7 @@ export default function index() {
       </Section>
       <Section light id="now-showing">
         <Container>
-          <AnimatedHeader svg="library-bug" title="Browse the Catalog"/>
+          <AnimatedHeader svg="icon-library-browse" title="Browse the Catalog"/>
             <p className="pb-5">
               Looking for info or inspiration? Dig through the drawers, organized by region and area of specialty, to see all the digital projects that Gilead professionals across the globe have created. For more information, feel free to reach out to project leads through their contact info on each project card.
             </p>

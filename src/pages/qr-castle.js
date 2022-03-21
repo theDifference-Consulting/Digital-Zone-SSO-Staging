@@ -47,7 +47,7 @@ export default function index() {
       </Section>
     	<Section light id="welcome">
         <Container>
-          <AnimatedHeader svg="qr-bug" title="Welcome!"/>
+          <AnimatedHeader svg="icon-qr-welcome" title="Welcome!"/>
           <Row>
             <Col sm={5}>
                 <img src="../img/welcome-qr.svg" alt="welcome qr code"/>
@@ -77,7 +77,7 @@ export default function index() {
       </Section>
       <Section light id="what-qr">
         <Container>
-          <AnimatedHeader svg="qr-bug" title="What Is A QR Code?"/>
+          <AnimatedHeader svg="icon-qr-whatis" title="What Is A QR Code?"/>
           <p>
             A QR code or "Quick Response" code is a type of barcode that contains a matrix of dots that can be scanned by your smartphone camera to open a webpage, send an email, access additional data or deliver an augmented reality experience.
           </p>
@@ -85,7 +85,7 @@ export default function index() {
         </Section>
         <Section light id="qr-at-gilead">
           <Container>
-            <AnimatedHeader svg="qr-bug" title="QR Codes @ Gilead"/>
+            <AnimatedHeader svg="icon-qr-atgilead" title="QR Codes @ Gilead"/>
             <Row>
               <p>
                   QR Codes have a variety of applications, and one of the hottest right now at Gilead is to enhance and extend the content and reach of your conference poster.
@@ -124,7 +124,7 @@ export default function index() {
         </Section>
         <Section light id="create-own">
           <Container>
-            <AnimatedHeader svg="tool-bug" title="Ready To Use QR Codes On Your Posters?"/>
+            <AnimatedHeader svg="icon-qr-ready" title="Ready To Use QR Codes On Your Posters?"/>
             <h3 className="yellow-bg">Here’s What to Do</h3>
             <Row>
               <Col xsHidden sm={{span: 2, offset: 1}}>
@@ -151,7 +151,7 @@ export default function index() {
         </Section>
         <Section light id="qr-pros">
             <Container>
-              <AnimatedHeader svg="qr-bug" title="Advice From QR Code Pros"/>
+              <AnimatedHeader svg="icon-qr-advice" title="Advice From QR Code Pros"/>
               <Row>
                 <Col sm={5} md={{span: 4, offset: 1}} xs={12}>
                   <AdviserMessage adviser={advisers.damien} />

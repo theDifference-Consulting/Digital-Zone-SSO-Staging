@@ -36,7 +36,7 @@ export default function index() {
         </Section>
         <Section light>
           <Container>
-            <AnimatedHeader svg="metrics-welcome-icon" title="Welcome!"/>
+            <AnimatedHeader svg="icon-metrics-welcome" title="Welcome!"/>
             <Row className="video-container">
               <div className="ratio ratio-16x9">
                 <iframe 
@@ -52,7 +52,7 @@ export default function index() {
         </Section>
         <Section light>
           <Container>
-            <AnimatedHeader svg="metrics-info-icon" title="What are Metrics?"/>
+            <AnimatedHeader svg="icon-metrics-whatare" title="What are Metrics?"/>
             <p> 
                 Whether it is web social media, apps, podcasts or other digital channels, metrics are values that help us measure, track, report and improve the performance of our digital activities.
             </p>
@@ -114,7 +114,7 @@ export default function index() {
         </Section>
         <Section light>
           <Container>
-            <AnimatedHeader svg="metrics-advice-icon" title="Advice From Metrics @ Gilead Pros"/>
+            <AnimatedHeader svg="icon-metrics-advice" title="Advice From Metrics @ Gilead Pros"/>
             <Row>
               { advicers.map((advicer) => (
                 <Col md={6} lg={4} sm={12} className="p-0" key={advicer.name}>
