@@ -163,16 +163,16 @@ export default function Index() {
           <Container>
             <AnimatedHeader svg="icon-podcasting-tips" title="Advice From Podcast Pros"/>
             <Row>
-              <Col md={6} className="pros">
+              <Col md={4} className="pros">
                 <AdviserMessage  adviser={advisers.julie} />
               </Col>
-              <Col md={6} className="pros">
+              <Col md={4} className="pros">
                 <AdviserMessage adviser={advisers.hassan} />
               </Col>
-              <Col md={6} className="pros">
+              <Col md={4} className="pros">
                 <AdviserMessage adviser={advisers.janniche} />
               </Col>
-              <Col md={6} className="pros">
+              <Col md={4} className="pros">
                 <AdviserMessage adviser={advisers.ahmet} />
               </Col>
             </Row>
