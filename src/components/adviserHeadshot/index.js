@@ -46,7 +46,7 @@ AdviserHeadshot.propTypes = {
   adviser: PropTypes.shape({
     img: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    country: PropTypes.string.isRequired,
+    country: PropTypes.string,
     title: PropTypes.string,
     email: PropTypes.string,
     role: PropTypes.string,

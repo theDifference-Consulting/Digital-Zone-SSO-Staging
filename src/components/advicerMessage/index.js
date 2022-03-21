@@ -38,8 +38,10 @@ AdviserMessage.propTypes = {
   adviser: PropTypes.shape({
     img: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    country: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
+    country: PropTypes.string,
+    title: PropTypes.string,
+    email: PropTypes.string,
+    role: PropTypes.string,
     messages: PropTypes.arrayOf(PropTypes.string).isRequired
   }).isRequired
 }

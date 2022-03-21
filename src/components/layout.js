@@ -32,25 +32,25 @@ const Layout = ({ pageName, containerClass, activePage, children }) => {
             <Navbar activePage={activePage}/>
           </Row>
           <Row>
-          <header>
-            <div className="d-none d-md-block">
-              <div className="cloud cloud--small" style={{ bottom: "85px", left: "calc(9vw + 105px)"}}></div>
-              <div className="cloud cloud--small" style={{ bottom: "35px", left: "9vw" }}></div>
-            </div>
-            <div className="heading-cloud-wrapper">
-              <h1>
-                {pageName}
-                <LilCubes left="-8px" top="-8px" />
-                <LilCubes left="-12px" bottom="-10px" />
-                <LilCubes right="20px" top="-8px" />
-                <LilCubes right="-6px" bottom="-10px" />
-                <div className="heading__down-tag"></div>
-              </h1>
-              <div className="cloud" style={{ top: 0, right: "85px"}}></div>
-              <div className="cloud" style={{ left: "-70px", top: "calc(50% - 112.02px/2 + 19.01px)"}}></div>
-            </div>
-            <div className="header-fade"></div>
-          </header>
+            <header>
+              <div className="d-none d-md-block">
+                <div className="cloud cloud--small" style={{ bottom: "85px", left: "calc(9vw + 105px)"}}></div>
+                <div className="cloud cloud--small" style={{ bottom: "35px", left: "9vw" }}></div>
+              </div>
+              <div className="heading-cloud-wrapper">
+                <h1>
+                  {pageName}
+                  <LilCubes left="-8px" top="-8px" />
+                  <LilCubes left="-12px" bottom="-10px" />
+                  <LilCubes right="20px" top="-8px" />
+                  <LilCubes right="-6px" bottom="-10px" />
+                  <div className="heading__down-tag"></div>
+                </h1>
+                <div className="cloud" style={{ top: 0, right: "85px"}}></div>
+                <div className="cloud" style={{ left: "-70px", top: "calc(50% - 112.02px/2 + 19.01px)"}}></div>
+              </div>
+              <div className="header-fade"></div>
+            </header>
           </Row>
           {children}
         </Container>

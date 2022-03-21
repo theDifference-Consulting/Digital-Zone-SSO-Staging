@@ -83,7 +83,6 @@ export default function Index() {
                     style={{position:`absolute`, top:`0`, left:`0`, width:`100%`, height:`100%`}} 
                     frameBorder="0" 
                     allow="autoplay; fullscreen" 
-                    allowFullScreen
                     title="Welcome video"
                 ></iframe>
             </div>
@@ -133,7 +132,7 @@ export default function Index() {
                     src="https://player.vimeo.com/video/416414834?title=0&byline=0&portrait=0" 
                     style={{position:`absolute`, top:`0`, left:`0`, width:`100%`, height:`100%`}} 
                     frameBorder="0" 
-                    allow="autoplay; fullscreen allowfullscreen"
+                    allow="autoplay; fullscreen"
                     title="Podcast video"
                 ></iframe>
             </div>

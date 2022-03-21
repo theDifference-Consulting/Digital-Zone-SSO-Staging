@@ -127,7 +127,7 @@ export default function index() {
             <AnimatedHeader svg="icon-qr-ready" title="Ready To Use QR Codes On Your Posters?"/>
             <h3 className="yellow-bg">Here’s What to Do</h3>
             <Row>
-              <Col xsHidden sm={{span: 2, offset: 1}}>
+              <Col className="d-none d-sm-block" sm={{span: 2, offset: 1}}>
                 <img src="../img/poster.svg" className="img-fluid" alt="poster"/>
               </Col>
               <Col sm={6}>

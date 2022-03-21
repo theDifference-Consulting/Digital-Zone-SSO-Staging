@@ -47,15 +47,13 @@ const LottiePlayer = (props) => {
     }
   }, [playOnHover, tryToStop])
 
-  console.log(defaultOptions, direction);
-
   return (
     <div 
       role="button"
       tabIndex={0}
       className={activeZone ? "active-zone anim" : "anim"}
-      onClick={() => props.onclick()}
-      onKeyDown={() => props.onclick()}
+      onClick={() => props.onclick && props.onclick()}
+      onKeyDown={() => props.onclick && props.onclick()}
       onTouchStart={() => mouseOver()}
       onMouseOver={() => mouseOver()}
       onFocus={() => mouseOver()}

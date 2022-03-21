@@ -25,7 +25,6 @@ export default function index() {
                         src="https://player.vimeo.com/video/463565573" 
                         frameBorder="0" 
                         allow="fullscreen" 
-                        allowFullScreen
                         title="Mike Elliot: Welcome"
                       ></iframe>
                     </div>
@@ -44,7 +43,6 @@ export default function index() {
                               src="https://player.vimeo.com/video/591140992" 
                               frameBorder="0" 
                               allow="fullscreen" 
-                              allowFullScreen
                               title="Gilead Turkey on World Aids Day"
                             ></iframe>
                         </div>
@@ -68,7 +66,6 @@ export default function index() {
                               src="https://player.vimeo.com/video/582243291" 
                               frameborder="0" 
                               allow="autoplay; fullscreen" 
-                              allowfullscreen
                               title="Gilead Turkey on HIV Tips"
                           ></iframe>
                           </div>
@@ -90,7 +87,6 @@ export default function index() {
                               src="https://player.vimeo.com/video/483166427" 
                               frameborder="0" 
                               allow="autoplay; fullscreen" 
-                              allowfullscreen
                               title="Gap Connect"
                             ></iframe>
                             </div>
@@ -112,7 +108,6 @@ export default function index() {
                               src="https://player.vimeo.com/video/536992198" 
                               frameborder="0" 
                               allow="autoplay; fullscreen" 
-                              allowfullscreen
                               title="PrEP App"
                             ></iframe>
                             </div>
@@ -134,7 +129,6 @@ export default function index() {
                                   src="https://player.vimeo.com/video/463559431" 
                                   frameborder="0" 
                                   allow="autoplay; fullscreen" 
-                                  allowfullscreen
                                   title="Sherif Khatta on Come Chat"
                               ></iframe>
                             </div>
@@ -156,7 +150,6 @@ export default function index() {
                                 src="https://player.vimeo.com/video/470263070" 
                                 frameborder="0" 
                                 allow="autoplay; fullscreen" 
-                                allowfullscreen
                                 title="Danielle Brackenridge on Assist-RA"
                               ></iframe>
                             </div>
@@ -178,7 +171,6 @@ export default function index() {
                                         src="https://player.vimeo.com/video/470281346" 
                                         frameborder="0" 
                                         allow="autoplay; fullscreen" 
-                                        allowfullscreen
                                         title="Roberto La Ferla on Hackathon"
                                     ></iframe>
                                 </div>
@@ -200,7 +192,6 @@ export default function index() {
                                         src="https://player.vimeo.com/video/463557184" 
                                         frameborder="0" 
                                         allow="autoplay; fullscreen" 
-                                        allowfullscreen
                                         title="Sherif Khattab on GMED"
                                     ></iframe>
                                 </div>
@@ -223,7 +214,6 @@ export default function index() {
                                         src="https://player.vimeo.com/video/467531893" 
                                         frameborder="0" 
                                         allow="autoplay; fullscreen" 
-                                        allowfullscreen
                                         title="Ramon Thali and Ivo Berkobic on Virtual IHC"
                                     ></iframe>
                                 </div>
@@ -256,7 +246,6 @@ export default function index() {
                                         src="https://player.vimeo.com/video/465969769" 
                                         frameborder="0" 
                                         allow="autoplay; fullscreen" 
-                                        allowfullscreen
                                         title="Julie Newman on Virtual HIV Meetings"
                                     ></iframe>
                                 </div>
@@ -276,7 +265,6 @@ export default function index() {
                                   src="https://player.vimeo.com/video/463555097" 
                                   frameborder="0" 
                                   allow="autoplay; fullscreen" 
-                                  allowfullscreen
                                   title="Sherif Khattab on HIV Academy"
                                 ></iframe>
                               </div>
