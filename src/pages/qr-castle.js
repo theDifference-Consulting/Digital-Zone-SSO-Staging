@@ -38,10 +38,10 @@ export default function index() {
       <Section>
         <Container>
           <p className="mb-3 mt-5">
-            Here at the QR Castle you’ll learn all about using QR codes at Gilead. See examples, get tips and hear how colleagues are using them to enhance and extend conference posters.
+            So, you’ve crossed the drawbridge into the QR castle. Get ready to learn all about using QR codes at Gilead. See examples, get tips and hear how colleagues are using them to enhance and extend conference posters.
           </p>
           <h4>
-            TODO: add some title
+            Scroll forth, brave visitor!
           </h4>
         </Container>
       </Section>

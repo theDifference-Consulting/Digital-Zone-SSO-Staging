@@ -67,7 +67,7 @@ export default function Index() {
         <Section>
           <Container>
             <p className="mb-5 mt-5">
-                This is where you will learn everything you need to know about this exciting new trend in medical education!
+              Ready to learn everything you need to know about an exciting new trend in medical education?
             </p>
             <h4>
               Welcome to the wonderful world of podcasting.
@@ -164,16 +164,16 @@ export default function Index() {
           <Container>
             <AnimatedHeader svg="icon-podcasting-tips" title="Advice From Podcast Pros"/>
             <Row>
-              <Col sm={6} xs={12} className="pros">
+              <Col md={6} className="pros">
                 <AdviserMessage  adviser={advisers.julie} />
               </Col>
-              <Col sm={6} className="pros">
+              <Col md={6} className="pros">
                 <AdviserMessage adviser={advisers.hassan} />
               </Col>
-              <Col sm={6} className="pros">
+              <Col md={6} className="pros">
                 <AdviserMessage adviser={advisers.janniche} />
               </Col>
-              <Col sm={6} className="pros">
+              <Col md={6} className="pros">
                 <AdviserMessage adviser={advisers.ahmet} />
               </Col>
             </Row>

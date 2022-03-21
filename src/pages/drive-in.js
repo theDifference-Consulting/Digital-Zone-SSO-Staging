@@ -10,10 +10,10 @@ export default function index() {
           <Section>
             <Container>
               <p className="mb-5 mt-5">
-                This is where you’ll find the latest video stories about digital innovation happening around Gilead. We will be posting new videos regularly so check back often!
+                Here at the Drive-Innovation Theater, you’ll find the latest video stories about digital innovation happening around Gilead.
               </p>
               <h4>
-                TODO: add some title
+                We’ll be posting new videos regularly, so check back often!
               </h4>
             </Container>
           </Section>

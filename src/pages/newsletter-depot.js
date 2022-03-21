@@ -11,10 +11,10 @@ export default function index() {
         <Section>
           <Container>
             <p className="mt-5 mb-3">
-              Welcome to the Newsletter Depot! Here you can find a variety of helpful email templates that can be downloaded for use in any of your email campaign needs. Check out the video below to get the most out of this Zone.  
+              Welcome to the Newsletter Depot! Here you can find a variety of helpful email templates that can be downloaded for use in any of your email campaign needs.
             </p>
             <h4>
-              TODO: Add some title here
+              Check out the video below to get the most out of this Zone.
             </h4>
           </Container>
         </Section>

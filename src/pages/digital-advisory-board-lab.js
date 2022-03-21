@@ -70,10 +70,10 @@ export default function index() {
         <Section>
           <Container>
             <p className="mt-5 mb-3">
-              Welcome to the Digital Advisory Board Lab, where you can learn all about the virtual innovation that allows users to gain insight from other professionals without geographical or other restrictions.
+              Here at the Digital Advisory Board Lab, you can learn all about the virtual innovation that allows users to gain insight from other professionals without geographical or other restrictions.
             </p>
             <h4>
-              TODO: add some title here
+              Scroll down to get started!
             </h4>
           </Container>
         </Section>
@@ -161,16 +161,16 @@ export default function index() {
             <Container>
                 <AnimatedHeader svg="icon-DAL-advice" title="Advice From Rolling Advisory Board Pros"/>
                  <Row>
-                 <Col sm={6} className="pros">
+                 <Col md={4} className="pros">
                     <AdviserMessage adviser={advisers.vincent} />
                 </Col>
-                 <Col sm={6} className="pros">
+                 <Col md={4} className="pros">
                     <AdviserMessage adviser={advisers.corinna} />
                 </Col>
-                 <Col sm={6} className="pros">
+                 <Col md={4} className="pros">
                     <AdviserMessage adviser={advisers.rita} />
                 </Col>
-                <Col sm={6} className="pros">
+                <Col md={4} className="pros">
                     <AdviserMessage adviser={advisers.aurelie} />
                 </Col>
             </Row>

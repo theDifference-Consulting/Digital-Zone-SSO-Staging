@@ -11,10 +11,10 @@ export default function index() {
       <Section>
         <Container>
           <p className="mt-5 mb-3">
-            Welcome to the card catalog! An inventory of every digital project from across Gilead’s regions. Looking for info or inspiration? Feel free to dig through the drawers, organized by region and area of specialty. Feel free to reach out to project leads for more information through their contact info on each project card. 
+            Shh! You’re in the Digital Project Library, an inventory of every digital project from across Gilead’s regions.
           </p>
           <h4>
-            TODO: Add some title here
+            Enjoy your browsing!
           </h4>
         </Container>
       </Section>

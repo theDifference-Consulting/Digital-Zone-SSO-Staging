@@ -77,8 +77,12 @@ ol li:before {
     margin-right: 6px;
  }
 
+ .row ol {
+  padding-left: 3.2em;
+ }
+
 ul.triangle {
-    padding: 0 1em;
+    padding: 0 2em;
     list-style: none;
 }
 ul.triangle li:before { 

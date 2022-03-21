@@ -66,10 +66,10 @@ export default function index() {
           <Section>
             <Container>
               <p className="mt-5 mb-3">
-                TODO: Add some short intro
+                You’ve arrived at the Gilead Digital Zone Visitor Centre.
               </p>
               <h4>
-                TODO: Add some title here
+                Read on to learn more about the Digital Zone and the people behind it!
               </h4>
             </Container>
           </Section>
