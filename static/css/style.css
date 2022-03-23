@@ -178,13 +178,6 @@ textarea, select, input, button { outline: none; }
 	padding-right: 0;
 }
 
-@media (max-height: 700px) {
-  .secondary-template header {
-    background-size: auto 85%;
-    height: 100vh;
-  }
-}
-
 .full-width {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -200,7 +193,6 @@ header .heading-cloud-wrapper {
 	position: absolute;
   right: -105px;
   bottom: 0;
-	width: 437px;
 	height: 156px;
 	justify-content: center;
 	align-items: center;
@@ -220,7 +212,8 @@ header .heading-cloud-wrapper h1 {
 	background-color: #FFD255;
 	padding: 20px;
 	z-index: 2;
-	margin-left: -140px;
+  margin-right: 120px;
+  max-width: 350px;
 }
 
 .secondary-template .cloud {
@@ -583,3 +576,15 @@ h4.left-arrow {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+@media (max-height: 700px) {
+  .secondary-template header {
+    background-position: top 20px center;
+    background-size: auto 75%;
+    height: 100vh;
+  }
+  .header-fade {
+    bottom: 70px;
+  }
+}
+
