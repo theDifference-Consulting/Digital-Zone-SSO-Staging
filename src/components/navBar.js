@@ -1,14 +1,15 @@
 import React from "react";  
 import { Navbar, Nav } from "react-bootstrap";
-import "./navBar.css";
+import "./navBar.scss";
 
 const CustomNavbar = ({ pageInfo, ...props }) => {
   return (
-    <Navbar expand="xs">
+    <Navbar className="dg-navbar" expand="xs">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav activeKey={props.activePage}>
           <Nav.Link eventKey="home" href="/">Home</Nav.Link>
+          <Nav.Link eventKey="metrics-outpost" href="/metrics-outpost/">Metrics Outpost</Nav.Link>
           <Nav.Link eventKey="visitor-centre" href="/visitor-centre/">Visitor Info</Nav.Link>
           <Nav.Link eventKey="podcast-alley" href="/podcast-alley/">Podcast Alley</Nav.Link>
           <Nav.Link eventKey="qr-castle" href="/qr-castle/">QR Castle</Nav.Link>

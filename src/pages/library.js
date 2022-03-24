@@ -1,28 +1,32 @@
 import React from "react"
 import LibraryAccordion from "../components/libraryAccordion/libraryAccordion"
 import Layout from "../components/layout"
-import { Row, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { Section } from "../components/section"
+import { AnimatedHeader } from "../components/animatedHeader"
 
 export default function index() {
   return (
-        <Layout pageName="Digital Project Library" activePage='library' containerClass="library">
-			<Row className="light-bg section" id="welcome">
-                <Container>
-                    <img src="../img/library-bug.svg" className="bug" alt="bug icon"/>
-                    <h2>Welcome!</h2>
-                    <div style={{padding:'30px 0'}}>
-                        Welcome to the card catalog! An inventory of every digital project from across Gilead’s regions. Looking for info or inspiration? Feel free to dig through the drawers, organized by region and area of specialty. Feel free to reach out to project leads for more information through their contact info on each project card. 
-                    </div>
-                </Container>
-            </Row>
-
-            <Row className="light-bg section" id="now-showing">
-                <Container>
-                    <img src="../img/library-bug.svg" className="bug" alt="bug icon"/>
-                    <h2> The Catalog</h2>
-                </Container>
-                <LibraryAccordion/>
-            </Row>
-        </Layout>
+    <Layout pageName="Digital Project Library" activePage='library' containerClass="library">
+      <Section>
+        <Container>
+          <p className="mt-5 mb-3">
+            Shh! You’re in the Digital Project Library, an inventory of every digital project from across Gilead’s regions.
+          </p>
+          <h4>
+            Enjoy your browsing!
+          </h4>
+        </Container>
+      </Section>
+      <Section light id="now-showing">
+        <Container>
+          <AnimatedHeader svg="icon-library-browse" title="Browse the Catalog"/>
+            <p className="pb-5">
+              Looking for info or inspiration? Dig through the drawers, organized by region and area of specialty, to see all the digital projects that Gilead professionals across the globe have created. For more information, feel free to reach out to project leads through their contact info on each project card.
+            </p>
+          <LibraryAccordion/>
+        </Container>
+      </Section>
+    </Layout>
 	)
 }

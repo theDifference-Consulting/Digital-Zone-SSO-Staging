@@ -1,0 +1,31 @@
+.adviser-message {
+  margin-top: 20px;
+  line-height: 24px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0;
+  }
+  .nav-pills .nav-link {
+    font-size: 20px;
+    margin: 4px auto;
+    font-weight: 900;
+    border-radius: 100px;
+  }
+  .nav-pills .nav-link {
+    background-color: #FFD255;
+    color: #515151;
+  }
+  .nav-pills .nav-link:hover,
+  .nav-pills .nav-link.active {
+    background-color: #515151;
+    color: #FFD255;
+  }
+
+  .tab-content {
+    margin-top: 16px;
+    min-height: 164px; // 6 lines ~ 220 characters
+  }
+
+}

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import {Modal} from 'react-bootstrap'
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Modal } from 'react-bootstrap'
 
 	function linkCheck(linkHref, text) {
 		if (linkHref) {
@@ -34,18 +33,18 @@ export default function LibraryModal({listItem}) {
 				Date: <b>{item.Date}</b><br/>
 	  	</div>
 	  	<Modal 
-			show={show} 
-			onHide={handleClose}
-			size="lg"
-			aria-labelledby="contained-modal-title-vcenter"
-			centered
-		>
+        show={show} 
+        onHide={handleClose}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
 			<Modal.Header closeButton>
 				<div className="countryTab">{item.Country}</div>
 		  	<img src={"/img/"+item.Image+".svg"} alt={item.Country + " flag"} className="country-flag"/>
 				<span>{item["Project Name"]}</span><br/>
-				Audience: <b>{item.Audience}</b><br/>
-				Date: <b>{item.Date}</b>
+				Audience: {item.Audience}<br/>
+				Date: {item.Date}
 			</Modal.Header>
 			<Modal.Body>
 				<div className="summary">

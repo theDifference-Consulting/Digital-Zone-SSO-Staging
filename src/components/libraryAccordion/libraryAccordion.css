@@ -3,7 +3,7 @@
 }
 
 .card {
-	overflow-y: scroll;
+	overflow-y: auto;
 	overflow-x: hidden;
 }
 
@@ -61,6 +61,9 @@
 	width:100%;
 	border-top:6px solid #dda96b;
 	border-bottom:6px solid #dda96b;
+  border-radius: 20px 0 0 20px;
+  border-left: 2px solid sandybrown;
+  border-right: 4px solid saddlebrown;
 }
 
 .accordion .card {
@@ -107,9 +110,6 @@
 }
 
 /* Modal Styling */
-.fade {
-	opacity: 1 !important;
-}
 
 .modal-dialog {
 	font-size:16px;
@@ -188,6 +188,7 @@
 
 .modal-header .close span {
 	vertical-align: text-top;
+  line-height: 18px;
 }
 
 .modal-content .download-button {
@@ -229,4 +230,9 @@
     position: absolute;
     top: -26px;
     left: 20px;
+}
+
+/* TOOD: we should update react-bootstrap instead */
+.sr-only {
+  display: none;
 }
