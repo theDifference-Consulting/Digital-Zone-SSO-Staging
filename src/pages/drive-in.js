@@ -35,20 +35,20 @@ export default function index() {
                 <Container>
                   <AnimatedHeader svg="icon-drivein-nowshowing" title="Now Showing"/>
                     <div style={{padding:'30px 0'}}>
-                        Check out our incredible collaboration with Turkish superstar Tankurt Manas for World AIDS Day.
+                      Take a moment to learn about the powerful insights gained through Project SiSMO, a cutting-edge social media listening program developed within Gilead.
                     </div>
                     <div className="yellow-video-block">
                         <div className="ratio ratio-16x9">
                             <iframe
-                              src="https://player.vimeo.com/video/591140992" 
+                              src="https://player.vimeo.com/video/714615320?h=d9634656c2" 
                               frameBorder="0" 
                               allow="fullscreen" 
                               title="Gilead Turkey on World Aids Day"
                             ></iframe>
                         </div>
-                        <b>Berna Özelgün</b><br/>
-                        Turkey<br/>
-                        Berna.Ozelgun@gilead.com
+                        <b>Mario Garcia</b><br/>
+                        Spain<br/>
+                        mario.garcia@gilead.com
                     </div>
                 </Container>
             </Section>
@@ -273,6 +273,25 @@ export default function index() {
                               sherif.khattab@gilead.com
                             </div>
                             <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img" alt="backgound element"/>
+                        </div>
+                        <div className="col-sm-6 ">
+                          <div className="yellow-video-block">
+                            <p>
+                              Check out our incredible collaboration with Turkish superstar Tankurt Manas for World AIDS Day.
+                            </p>
+                            <div className="ratio ratio-16x9">
+                              <iframe
+                                src="https://player.vimeo.com/video/591140992" 
+                                frameBorder="0" 
+                                allow="fullscreen" 
+                                title="Gilead Turkey on World Aids Day"
+                              ></iframe>
+                            </div>
+                            <b>Sherif Khattab</b><br/>
+                            Dubai, UAE<br/>
+                            sherif.khattab@gilead.com
+                          </div>
+                          <img src="../img/headshot-bottom-bg.svg" className="yellow-video-block-img" alt="backgound element"/>
                         </div>
                     </Row>
                 </Container>
