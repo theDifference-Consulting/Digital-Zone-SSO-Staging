@@ -4,6 +4,7 @@ import LottiePlayer from "../../components/lottiePlayer";
 import Compass from "../compass/compass";
 
 //import lottie files
+import onlineListeningPub from "../../anim/onlineListeningPub.json";
 import waterLoop from "../../anim/waterLoop.json";
 import lighthouse from "../../anim/lighthouse.json";
 import arrow from "../../anim/arrow.json";
@@ -109,6 +110,14 @@ const Island = () => {
 				>
 					<LottiePlayer animData={waterLoop}/>
 					<LottiePlayer 
+            animData={onlineListeningPub}
+						activeZone={true}
+						onclick={zoneZoom}
+						zoneOutline='listening-halo'
+						info="Placeholder text"
+            link="/listening-pub/"
+					/>
+					<LottiePlayer 
 						animData={lighthouse} 
 						activeZone={true}
 						onclick={zoneZoom}
@@ -152,7 +161,6 @@ const Island = () => {
 						info="Welcome to the Newsletter Depot! Here you can find a variety of helpful email templates that can be downloaded for use in any of your email campaign needs."
 						link="/newsletter-depot/"
 						/>
-					<div id="path-around"></div>
 					<LottiePlayer 
 						animData={library} 
 						activeZone={true}
@@ -161,8 +169,6 @@ const Island = () => {
 						info="An inventory of every digital project from across Gilead’s regions."
 						link="/library/"
 						/>
-					<div id="trees"></div>
-					<div id="path-above"></div>
 					<LottiePlayer 
 						animData={podcastAlley} 
 						activeZone={true}
@@ -205,7 +211,7 @@ const Island = () => {
 				onClick={() => {setPlayAudio(!playAudio)}}
 				onKeyDown={() => {setPlayAudio(!playAudio)}}
 				aria-label="play pause audio"
-				className={playAudio ? "" : "play"}></div>
+				className={!playAudio ? "" : "play"}></div>
 
 			<div id="ie-notice">
 				Note: this site works best on a more modern browswer than Internet Explorer. Please consider updating for a better experience.

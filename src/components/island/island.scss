@@ -12,17 +12,16 @@
 	overflow:hidden;
 
 	&:before { /* formerly set on the body tag */
-		background-image: url('/img/bg-pixels.svg');
-		background-size: 1920px 1080px;
-		background-position: center;
-		background-size: cover;
+		background-image: url('/img/bg-pixels1.svg'), url('/img/bg-pixels2.svg');
+		background-position: top center, bottom center;
+		background-size: contain;
+		background-repeat: no-repeat;
 		content:"";
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		left: 0;
 		right: 0;
-		opacity: .3;
 	}
 
 	/* Zoom and position control */
@@ -58,18 +57,6 @@
 		/* Static background images */
 		#island {
 			background-image: url('/img/bg-island.svg');
-		}
-
-		#trees {
-			background-image: url('/img/trees.svg');
-		}
-
-		#path-around {
-			background-image: url('/img/path-around.svg');
-		}
-
-		#path-above {
-			background-image: url('/img/path-above.svg');
 		}
 	}
 
