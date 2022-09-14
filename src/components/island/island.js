@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './island.scss';
 import LottiePlayer from "../../components/lottiePlayer";
-import Compass from "../compass/compass";
+// import Compass from "../compass/compass";
 
 //import lottie files
 import onlineListeningPub from "../../anim/onlineListeningPub.json";
@@ -17,6 +17,7 @@ import library from "../../anim/library.json";
 import podcastAlley from "../../anim/podcastAlley.json";
 import digitalAdvisoryBoardLab from "../../anim/digitalAdvisoryBoardLab.json";
 import metricsOutpost from "../../anim/metricsOutpost.json";
+import compass from "../../anim/MainCompass-Hover.json";
 
 const Island = () => {
 
@@ -114,7 +115,7 @@ const Island = () => {
 						activeZone={true}
 						onclick={zoneZoom}
 						zoneOutline='listening-halo'
-						info="Placeholder text"
+            info="With Internet and social media at consumers’ fingertips, we have the opportunity to use social and search listening to rapidly gain information about our patient’s needs.<br/>Visit the Online Listening Pub to learn all about these powerful tools!"
             link="/listening-pub/"
 					/>
 					<LottiePlayer 
@@ -203,7 +204,16 @@ const Island = () => {
 					</a>
 				</div>
 			</div>
-			<Compass reset={zoomReset} back={zoneInfo.zoom}/>
+      {/* <Compass reset={zoomReset} back={zoneInfo.zoom}/> */}
+
+      <div id="compass" className={zoneInfo.zoom}>
+        <LottiePlayer 
+          animData={compass} 
+          playOnHover={true}
+          onclick={zoomReset} 
+          noloop 
+          />
+      </div>
 			<div 
 				role="button"
 				tabIndex={0}

@@ -22,7 +22,7 @@ export default function index() {
               <AnimatedHeader svg="icon-listening-1" title="Welcome!"/>
                 <div className="ratio ratio-16x9">
                   <iframe 
-                    src="https://player.vimeo.com/video/631114194" 
+                    src="https://player.vimeo.com/video/749620381" 
                     frameBorder="0" 
                     allow="fullscreen" 
                     allowFullScreen
@@ -52,7 +52,7 @@ export default function index() {
                 <h4 class="mb-3">See how your colleagues are applying Online Listening in their own work.</h4>
                 <div className="ratio ratio-16x9 mt-5">
                   <iframe 
-                    src="https://player.vimeo.com/video/631114194" 
+                    src="https://player.vimeo.com/video/748127174" 
                     frameBorder="0" 
                     allow="fullscreen" 
                     allowFullScreen
@@ -61,7 +61,7 @@ export default function index() {
                 </div>
                 <div className="ratio ratio-16x9 mt-5">
                   <iframe 
-                    src="https://player.vimeo.com/video/631114194" 
+                    src="https://player.vimeo.com/video/748114148" 
                     frameBorder="0" 
                     allow="fullscreen" 
                     allowFullScreen

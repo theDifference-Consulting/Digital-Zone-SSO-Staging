@@ -259,5 +259,35 @@
 			background-image: url('/img/play.svg');
 		}
 	}
+}
 
+#compass {
+	height:200px;
+	width:200px;
+	border-radius: 200px;
+	background-image: url("/img/compass/compass-bg.svg");
+	background-size: 200px 200px;
+	background-position: center;
+	position: fixed;
+	right:30px;
+	bottom:30px;
+}
+
+#compass > div:before {
+	content:"";
+	height:200px;
+	width:200px;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	left:0;
+	opacity:0;
+	content: "";
+	background-image: url("/img/compass/compass-back-btn.svg");
+	background-size: 200px 200px;
+	background-position: center;
+	z-index: 10000;
+}
+#compass.back > div:before {
+	opacity:1;
 }
