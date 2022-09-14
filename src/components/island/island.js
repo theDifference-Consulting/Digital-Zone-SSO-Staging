@@ -39,7 +39,7 @@ const Island = () => {
 			text: this.info, 
 			link: this.link, 
 			height:'auto', 
-			id: this.zoneOutline,
+			id: this.zoomElement || this.zoneOutline,
 			zoom: "back"
 		});
 	}
@@ -65,7 +65,7 @@ const Island = () => {
 			//handleResize();
 			if (document.getElementById(zoneInfo.id)) {
 				let zoomControl = document.getElementById('zoomControl').getBoundingClientRect();
-				let clickedZone = document.getElementById(zoneInfo.id).parentElement.parentElement.getBoundingClientRect();
+				let clickedZone = document.getElementById(zoneInfo.id).getBoundingClientRect();
 				
 				let padding = 40;
 				let heightZoomFactor = zoomControl.height  / (clickedZone.height + 2 * padding);
@@ -158,7 +158,8 @@ const Island = () => {
             animData={onlineListeningPub}
 						activeZone={true}
 						onclick={zoneZoom}
-						zoneOutline='listening-halo'
+						zoneOutline='listeninghalo'
+						zoomElement="Base"
             info="With Internet and social media at consumers’ fingertips, we have the opportunity to use social and search listening to rapidly gain information about our patient’s needs.<br/>Visit the Online Listening Pub to learn all about these powerful tools!"
             link="/listening-pub/"
 					/>
