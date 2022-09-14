@@ -111,14 +111,6 @@ const Island = () => {
 				>
 					<LottiePlayer animData={waterLoop}/>
 					<LottiePlayer 
-            animData={onlineListeningPub}
-						activeZone={true}
-						onclick={zoneZoom}
-						zoneOutline='listening-halo'
-            info="With Internet and social media at consumers’ fingertips, we have the opportunity to use social and search listening to rapidly gain information about our patient’s needs.<br/>Visit the Online Listening Pub to learn all about these powerful tools!"
-            link="/listening-pub/"
-					/>
-					<LottiePlayer 
 						animData={lighthouse} 
 						activeZone={true}
 						onclick={zoneZoom}
@@ -162,6 +154,14 @@ const Island = () => {
 						info="Welcome to the Newsletter Depot! Here you can find a variety of helpful email templates that can be downloaded for use in any of your email campaign needs."
 						link="/newsletter-depot/"
 						/>
+					<LottiePlayer 
+            animData={onlineListeningPub}
+						activeZone={true}
+						onclick={zoneZoom}
+						zoneOutline='listening-halo'
+            info="With Internet and social media at consumers’ fingertips, we have the opportunity to use social and search listening to rapidly gain information about our patient’s needs.<br/>Visit the Online Listening Pub to learn all about these powerful tools!"
+            link="/listening-pub/"
+					/>
 					<LottiePlayer 
 						animData={library} 
 						activeZone={true}
