@@ -12,10 +12,8 @@ const Index = () => {
 		function checkSize() {
 			if (Math.min(window.innerWidth, window.innerHeight) < 600) {
 				setIfMobile(true)
-				console.log(ifMobile)
 			} else {
 				setIfMobile(false)
-				console.log(ifMobile)
 			}
 		}
 		checkSize();

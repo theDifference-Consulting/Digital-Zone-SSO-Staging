@@ -48,8 +48,8 @@ const Island = () => {
 		//handle flexWrapper scaling the island when window is loaded, or resized
 		function handleResize() {
 			// fallback on window dimensions for initial load
-			let width = document.getElementById('flexWrapper').offsetWidth || window.innerWidth
-			let height = document.getElementById('flexWrapper').offsetHeight || window.innerHeight
+			let width = document.getElementById('flexWrapper')?.offsetWidth || window.innerWidth
+			let height = document.getElementById('flexWrapper')?.offsetHeight || window.innerHeight
 			if (width / height > 1.778) {
 				setWrapperSize({width: height * 1.778, height: height}); 
 			} else { //set width

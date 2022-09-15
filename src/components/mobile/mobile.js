@@ -46,6 +46,12 @@ const zones = [
 		image: "newsletter-mobile-bug.svg"
 	},
 	{
+		title: "Online Listening Pub",
+		desc: "With Internet and social media at consumers’ fingertips, we have the opportunity to use social and search listening to rapidly gain information about our patient’s needs. Visit the Online Listening Pub to learn all about these powerful tools!",
+		link: "/listening-pub",
+		image: "listening-mobile.svg"
+	},
+	{
 		title: "Metrics Outpost",
 		desc: "We often spend a lot of time and effort planning, designing and executing our digital activities. But how do we know if our efforts were fruitful? Was the activity a success? Did it reach its target and goals? This is where metrics come in. Enter here to begin your journey into the world of metrics at Gilead!",
 		link: "/metrics-outpost",
