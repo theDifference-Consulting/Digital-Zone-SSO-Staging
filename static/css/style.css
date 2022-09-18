@@ -560,6 +560,11 @@ h4.left-arrow {
 	background-position: top 7.5vh center;
 }
 
+.online-listening-pub header {
+	background-image: url('../img/online-listening-header.svg');
+	background-position: top 5.5vh center;
+}
+
 /*Metrics Outpost*/
 
 .metrics-outpost header {

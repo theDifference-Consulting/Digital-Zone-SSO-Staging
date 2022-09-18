@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import './island.scss';
 import LottiePlayer from "../../components/lottiePlayer";
-import Compass from "../compass/compass";
+// import Compass from "../compass/compass";
 
 //import lottie files
+import onlineListeningPub from "../../anim/onlineListeningPub.json";
 import waterLoop from "../../anim/waterLoop.json";
 import lighthouse from "../../anim/lighthouse.json";
 import arrow from "../../anim/arrow.json";
@@ -16,6 +17,7 @@ import library from "../../anim/library.json";
 import podcastAlley from "../../anim/podcastAlley.json";
 import digitalAdvisoryBoardLab from "../../anim/digitalAdvisoryBoardLab.json";
 import metricsOutpost from "../../anim/metricsOutpost.json";
+import compass from "../../anim/MainCompass-Hover.json";
 
 const Island = () => {
 
@@ -37,7 +39,7 @@ const Island = () => {
 			text: this.info, 
 			link: this.link, 
 			height:'auto', 
-			id: this.zoneOutline,
+			id: this.zoomElement || this.zoneOutline,
 			zoom: "back"
 		});
 	}
@@ -46,8 +48,8 @@ const Island = () => {
 		//handle flexWrapper scaling the island when window is loaded, or resized
 		function handleResize() {
 			// fallback on window dimensions for initial load
-			let width = document.getElementById('flexWrapper').offsetWidth || window.innerWidth
-			let height = document.getElementById('flexWrapper').offsetHeight || window.innerHeight
+			let width = document.getElementById('flexWrapper')?.offsetWidth || window.innerWidth
+			let height = document.getElementById('flexWrapper')?.offsetHeight || window.innerHeight
 			if (width / height > 1.778) {
 				setWrapperSize({width: height * 1.778, height: height}); 
 			} else { //set width
@@ -63,7 +65,7 @@ const Island = () => {
 			//handleResize();
 			if (document.getElementById(zoneInfo.id)) {
 				let zoomControl = document.getElementById('zoomControl').getBoundingClientRect();
-				let clickedZone = document.getElementById(zoneInfo.id).parentElement.parentElement.getBoundingClientRect();
+				let clickedZone = document.getElementById(zoneInfo.id).getBoundingClientRect();
 				
 				let padding = 40;
 				let heightZoomFactor = zoomControl.height  / (clickedZone.height + 2 * padding);
@@ -148,11 +150,19 @@ const Island = () => {
 						animData={newsletter} 
 						activeZone={true}
 						onclick={zoneZoom}
-						zoneOutline='newsletterdepot-halo'
+						zoneOutline='newsletterhalo'
 						info="Welcome to the Newsletter Depot! Here you can find a variety of helpful email templates that can be downloaded for use in any of your email campaign needs."
 						link="/newsletter-depot/"
 						/>
-					<div id="path-around"></div>
+					<LottiePlayer 
+            animData={onlineListeningPub}
+						activeZone={true}
+						onclick={zoneZoom}
+						zoneOutline='listeninghalo'
+						zoomElement="Base"
+            info="With Internet and social media at consumers’ fingertips, we have the opportunity to use social and search listening to rapidly gain information about our patient’s needs.<br/>Visit the Online Listening Pub to learn all about these powerful tools!"
+            link="/listening-pub/"
+					/>
 					<LottiePlayer 
 						animData={library} 
 						activeZone={true}
@@ -161,8 +171,6 @@ const Island = () => {
 						info="An inventory of every digital project from across Gilead’s regions."
 						link="/library/"
 						/>
-					<div id="trees"></div>
-					<div id="path-above"></div>
 					<LottiePlayer 
 						animData={podcastAlley} 
 						activeZone={true}
@@ -197,7 +205,16 @@ const Island = () => {
 					</a>
 				</div>
 			</div>
-			<Compass reset={zoomReset} back={zoneInfo.zoom}/>
+      {/* <Compass reset={zoomReset} back={zoneInfo.zoom}/> */}
+
+      <div id="compass" className={zoneInfo.zoom}>
+        <LottiePlayer 
+          animData={compass} 
+          playOnHover={true}
+          onclick={zoomReset} 
+          noloop 
+          />
+      </div>
 			<div 
 				role="button"
 				tabIndex={0}
@@ -205,7 +222,7 @@ const Island = () => {
 				onClick={() => {setPlayAudio(!playAudio)}}
 				onKeyDown={() => {setPlayAudio(!playAudio)}}
 				aria-label="play pause audio"
-				className={playAudio ? "" : "play"}></div>
+				className={!playAudio ? "" : "play"}></div>
 
 			<div id="ie-notice">
 				Note: this site works best on a more modern browswer than Internet Explorer. Please consider updating for a better experience.

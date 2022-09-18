@@ -12,10 +12,8 @@ const Index = () => {
 		function checkSize() {
 			if (Math.min(window.innerWidth, window.innerHeight) < 600) {
 				setIfMobile(true)
-				console.log(ifMobile)
 			} else {
 				setIfMobile(false)
-				console.log(ifMobile)
 			}
 		}
 		checkSize();
@@ -39,7 +37,6 @@ const Index = () => {
 				<link rel="preload" as="image" href="img/cloud-left.svg"/>
 				<link rel="preload" as="image" href="img/cloud-right.svg"/>
 				{
-				//	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript" />
 				}
 				<meta name="robots" content="noindex, nofollow"/>
 				<link href="https://fonts.googleapis.com/css?family=Lato:300,900&display=swap" rel="stylesheet"/>
