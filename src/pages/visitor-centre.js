@@ -8,13 +8,9 @@ import { AdviserHeadshot } from "../components/adviserHeadshot";
 const boardMemberData = [
     { name: "Julie Newman", country: "Australia", email: "julie.newman@gilead.com", img: "../img/julie" },
     { name: "Ramon Thali", country: "Switzerland", email: "ramon.thali@gilead.com", img: "../img/ramon" },
-    { name: "Nimesh Vadgama", country: "UK", email: "nimesh.vadgama@gilead.com", img: "../img/nimesh" },
     { name: "Hassan Aladdin, PhD", country: "Nordics", email: "Hassan.Aladdin@gilead.com", img: "../img/hassan" },
-    { name: "Cindy Elliott", country: "UK", email: "cindy.elliott@gilead.com", img: "../img/cindy-e" },
     { name: "Mario Garcia", country: "Spain", email: "mario.garcia@gilead.com", img: "../img/mario" },
     { name: "Tina Raselli", country: "Switzerland", email: "tina.raselli@gilead.com", img: "../img/tina" },
-    { name: "Guillaume Walckenaer", country: "France", email: "Guillaume.Walckenaer@gilead.com", img: "../img/guillaume" },
-    { name: "Cindy Wanger", country: "Switzerland/Austria", email: "cindy.wanger@gilead.com", img: "../img/cindy-w" },
     { name: "Sivana Koren", country: "Israel", email: "sivana.koren@gilead.com", img: "../img/SivanaKoren-ProfilePicture" }
 ]
 
