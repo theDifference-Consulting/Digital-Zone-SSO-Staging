@@ -8,9 +8,9 @@ const Index = () => {
 
 	const [ifMobile, setIfMobile] = useState(false);
 
-	useEffect((ifMobile) => {
+	useEffect(() => {
 		function checkSize() {
-			if (Math.min(window.innerWidth, window.innerHeight) < 600) {
+			if (Math.min(window.innerWidth, window.innerHeight) < 500) {
 				setIfMobile(true)
 			} else {
 				setIfMobile(false)
