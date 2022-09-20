@@ -34,7 +34,6 @@ export const AdviserHeadshot = ({ adviser }) => (
       <img 
           alt={`${adviser.name}, ${adviser.title||""} headshot`}
           srcSet={`${adviser.img}-1.jpg 300w, ${adviser.img}-3.jpg 600w`}
-          src={`${adviser.img}-3.png}`}
           sizes="(max-width: 300px) 200px, 100%"
       />
     </Row>

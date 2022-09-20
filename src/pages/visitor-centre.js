@@ -11,7 +11,8 @@ const boardMemberData = [
     { name: "Hassan Aladdin, PhD", country: "Nordics", email: "Hassan.Aladdin@gilead.com", img: "../img/hassan" },
     { name: "Mario Garcia", country: "Spain", email: "mario.garcia@gilead.com", img: "../img/mario" },
     { name: "Tina Raselli", country: "Switzerland", email: "tina.raselli@gilead.com", img: "../img/tina" },
-    { name: "Sivana Koren", country: "Israel", email: "sivana.koren@gilead.com", img: "../img/SivanaKoren-ProfilePicture" }
+    { name: "Sivana Koren", country: "Israel", email: "sivana.koren@gilead.com", img: "../img/SivanaKoren-ProfilePicture" },
+    { name: "Samer El-Ali", country: "United Arab Emirates", email: "samer.el-aid@gilead.com", img: "../img/AsSamerElAli-Profile" }
 ]
 
 const BoardMembers = boardMemberData.map((e) => {
@@ -131,7 +132,7 @@ export default function index() {
                 </p>
                 <br/>
               </Row>
-              <Row>
+              <Row style={{justifyContent: "center"}}>
                   {BoardMembers}
               </Row>
             </Container>
