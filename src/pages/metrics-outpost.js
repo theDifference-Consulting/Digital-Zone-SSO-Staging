@@ -4,6 +4,7 @@ import { Row, Col, Container } from "react-bootstrap"
 import { AnimatedHeader } from "../components/animatedHeader"
 import { AdviserMessage } from "../components/advicerMessage"
 import { Section } from "../components/section"
+import {Blocked} from '../components/blocked'
 
 // TODO: I think gatsby allows for a more easy and flexible way of adding info
 
@@ -22,6 +23,7 @@ const advicers = [{
 }];
 
 export default function index() {
+  return <Blocked />
     return (
       <Layout pageName="Metrics Outpost" activePage='metrics-outpost' containerClass="metrics-outpost">
         <Section>

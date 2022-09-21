@@ -4,6 +4,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import { AnimatedHeader } from "../components/animatedHeader"
 import { Section } from "../components/section"
 import { AdviserMessage } from "../components/advicerMessage";
+import {Blocked} from '../components/blocked'
 
 const advisers = {
   vincent: {
@@ -65,6 +66,7 @@ const advisers = {
 }
 
 export default function index() {
+    return <Blocked />
     return (
         <Layout pageName="Digital Advisory Board Lab" activePage='digital-advisory-board-lab' containerClass="digital-advisory-board-lab">
         <Section>

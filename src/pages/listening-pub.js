@@ -3,8 +3,10 @@ import Layout from "../components/layout"
 import { Container } from "react-bootstrap";
 import { AnimatedHeader } from "../components/animatedHeader"
 import { Section } from "../components/section"
+import {Blocked} from '../components/blocked'
 
 export default function index() {
+  return <Blocked />
     return (
       <Layout pageName="Online Listening Pub" activePage="online-listening-pub" containerClass="online-listening-pub">
         <Section>

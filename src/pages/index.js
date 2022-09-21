@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import { Helmet } from "react-helmet"
+import {Blocked} from '../components/blocked'
 
 import Island from "../components/island/island"
 import Mobile from "../components/mobile/mobile"
 
 const Index = () => {
+  return <Blocked />
 
 	const [ifMobile, setIfMobile] = useState(false);
 

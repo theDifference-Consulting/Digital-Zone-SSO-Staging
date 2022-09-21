@@ -2,11 +2,13 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Navbar from "../components/navBar"
 import { Row, Col, Container } from "react-bootstrap";
+import {Blocked} from '../components/blocked'
 
 import Wiggle from "../components/wiggle"
 import GoogleForm from "../components/epicFormModal"
 
 export default function index() {
+    return <Blocked />
     return (
         <>
         	<Helmet>

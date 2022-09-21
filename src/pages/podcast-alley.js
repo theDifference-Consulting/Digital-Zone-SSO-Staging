@@ -4,6 +4,7 @@ import {Container, Row, Col, Button} from "react-bootstrap"
 import { AnimatedHeader } from "../components/animatedHeader"
 import { Section } from "../components/section"
 import {AdviserMessage} from "../components/advicerMessage"
+import {Blocked} from '../components/blocked'
 
 const advisers = {
   ahmet: {
@@ -61,6 +62,7 @@ const advisers = {
 }
 
 export default function Index() {
+    return <Blocked />
     const audioRef = useRef(null);
     return (
       <Layout pageName="Podcast Alley" activePage='podcast-alley' containerClass="podcast-alley">

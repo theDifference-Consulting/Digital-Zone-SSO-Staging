@@ -4,8 +4,10 @@ import Layout from "../components/layout"
 import { Container } from "react-bootstrap";
 import { Section } from "../components/section"
 import { AnimatedHeader } from "../components/animatedHeader"
+import {Blocked} from '../components/blocked'
 
 export default function index() {
+  return <Blocked />
   return (
     <Layout pageName="Digital Project Library" activePage='library' containerClass="library">
       <Section>

@@ -4,8 +4,10 @@ import Layout from "../components/layout"
 import {Container, Row} from "react-bootstrap"
 import { AnimatedHeader } from "../components/animatedHeader"
 import { Section } from "../components/section"
+import {Blocked} from '../components/blocked'
 
 export default function index() {
+  return <Blocked />
     return (
       <Layout pageName="Newsletter Depot" activePage='newsletter' containerClass="newsletter">
         <Section>

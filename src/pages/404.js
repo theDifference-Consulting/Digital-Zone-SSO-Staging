@@ -1,8 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 import {Container} from "react-bootstrap"
+import {Blocked} from '../components/blocked'
 
 export default function index() {
+  return <Blocked />
     return (
         <Layout pageName="404" activePage=" " containerClass=" ">
             <Container style={{marginTop: "60px", marginBottom: "40%"}}>

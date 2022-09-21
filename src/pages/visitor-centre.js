@@ -4,6 +4,7 @@ import { Row, Col, Container } from "react-bootstrap"
 import { AnimatedHeader } from "../components/animatedHeader"
 import { Section } from "../components/section"
 import { AdviserHeadshot } from "../components/adviserHeadshot";
+import {Blocked} from '../components/blocked'
 
 const boardMemberData = [
     { name: "Julie Newman", country: "Australia", email: "julie.newman@gilead.com", img: "../img/julie" },
@@ -58,6 +59,7 @@ const Champions = championsData.map((e) => {
 })  
 
 export default function index() {
+  return <Blocked />
     return (
         <Layout pageName="Visitor Centre" activePage='visitor-centre' containerClass="visitor-info">
           <Section>
