@@ -51,6 +51,7 @@ If you prefer to use Heroku, you will need to set up a Node.js environment:
 
 ## Environment Variables
 Depending on the SSO implementation and other settings, you may need to configure environment variables. Add them to your deployment settings (e.g., Netlify or Heroku) as needed.
+In the gatsby-config.js, there is a Google Analytics trackingId hardcoded as UA-167767244-1 -- you will need to update this as necessary.
 
 ## License
 This project is private and internal to `thedifferenceconsulting.com` for client use only. Unauthorized use is prohibited.
